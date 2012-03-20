@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
   <head>
     <meta charset="utf-8"/>
-    <title>Using Bootstrap grid</title>
+    <title>Adding icons</title>
     <link rel="stylesheet" type="text/less" href="../../../style/less/o-blog.less">
     <script src="../../../style/js/less-1.2.2.min.js" type="text/javascript"></script>
     <script src="../../../style/js/jquery-1.7.1.min.js" type="text/javascript"></script>
@@ -64,15 +64,15 @@
 </li>
 <li><a href="#"><i>icon-file icon-white</i> Tips</a>
 <ul>
-<li><a href="../../../Tips/2012/03/20_.html">测试个新条目哦</a>
+<li><a href="../../../Tips/2012/03/20_c2ec4d348537a9228ab418d28932a7ae.html">测试个新条目哦</a>
 </li>
-<li><a href="../../../Tips/2012/02/10_using-bootstrap-grid.html">Using Bootstrap grid</a>
+<li><a href="../../../Tips/2012/02/10_26e59636038458d13660fd8012c5d97a.html">Using Bootstrap grid</a>
 </li>
-<li><a href="../../../Tips/2012/02/10_adding-icons.html">Adding icons</a>
+<li><a href="../../../Tips/2012/02/10_b45da1ff7c09d67a0d7ef10b903e4e1b.html">Adding icons</a>
 </li>
-<li><a href="../../../Tips/2012/02/09_using-modal-source-code.html">Using modal source code</a>
+<li><a href="../../../Tips/2012/02/09_4c04a0db5c11b33d7bb752f3fbe45b6a.html">Using modal source code</a>
 </li>
-<li><a href="../../../Tips/2012/01/15_alerts.html">Alerts</a>
+<li><a href="../../../Tips/2012/01/15_df583ae7ba964fd4806b55904da81813.html">Alerts</a>
 
 </li>
 </ul>
@@ -103,7 +103,7 @@
       <div class="container">
 	<ul class="breadcrumb">
   <li><a href="../../../index.html">Home</a> <span class="divider">/</span></li>
-  <li><a href="../../../Tips/index.html">Tips</a> <span class="divider">/</span></li><li><a href="../../../Tips/2012/index.html">2012</a> <span class="divider">/</span></li><li><a href="../../../Tips/2012/02/index.html">02</a> <span class="divider">/</span></li><li>Using Bootstrap grid</li>
+  <li><a href="../../../Tips/index.html">Tips</a> <span class="divider">/</span></li><li><a href="../../../Tips/2012/index.html">2012</a> <span class="divider">/</span></li><li><a href="../../../Tips/2012/02/index.html">02</a> <span class="divider">/</span></li><li>Adding icons</li>
   </ul>
 
       </div>
@@ -120,11 +120,11 @@
 	  <div class=" date-y"><a href="../../../Tips/2012/index.html">2012</a>
 	  </div>
 	</div>
-	<h1 class="offset1">Using Bootstrap grid</h1>
+	<h1 class="offset1">Adding icons</h1>
       </div>
       <nav>
 	<ul class="pager">
-	  <li class="previous"><a href="../../../Tips/2012/02/10_adding-icons.html"><i class="icon-chevron-left"></i>&nbsp;Adding icons</a></li><li class="next" style="text-align: right;"><a href="../../../Tips/2012/03/20_.html">测试个新条目哦&nbsp;<i class="icon-chevron-right"></i></a></li>
+	  <li class="previous"><a href="../../../Tips/2012/02/09_4c04a0db5c11b33d7bb752f3fbe45b6a.html"><i class="icon-chevron-left"></i>&nbsp;Using modal source code</a></li><li class="next" style="text-align: right;"><a href="../../../Tips/2012/02/10_26e59636038458d13660fd8012c5d97a.html">Using Bootstrap grid&nbsp;<i class="icon-chevron-right"></i></a></li>
 	</ul>
       </nav>
     </div>
@@ -132,65 +132,129 @@
   </header>
   <div class="article-content">
     <p>
-<a href="http://twitter.github.com/bootstrap/scaffolding.html">Bootstrap scaffolding</a> could be defined using both <code>#+begin_o_blog_row</code> and
-<code>#+end_o_blog_row</code> directives (or <code>&lt;og</code> <code>TAB</code> shortcut). A new column could
-be started using <code>#+o_blog_row_column</code> single directive (or <code>&lt;ogr</code> <code>TAB</code>
-shortcut).
+Icons from <a href="http://glyphicons.com/">glyphicons</a> are supported support by simply naming the icon using
+italic style:
 </p>
+
 
 <p>
-<b>Example</b>
+<b>Source example</b>
 </p>
 
 
 
-<pre class="src src-org"><span style="color: #ff7f24;">#+begin_o_blog_row 2 -1 show-grid</span>
-Column 1
-<span style="color: #ff7f24;">#+o_blog_row_column 2</span>
-Column 2
-<span style="color: #ff7f24;">#+end_o_blog_row</span>
+<pre class="src src-org"><span style="font-style: italic;">/icon-calendar/</span> calendar
 </pre>
 
 
 
-
 <p>
-<b>Output</b>
+<b>Rendered output</b>
 </p>
-
 <p>
-Column 1
-</p>
-
-<p>
-Column 2
+<i>icon-calendar</i> calendar
 </p>
 
 
 
 <p>
-The syntax is:
+This could also be used for the top <i>navbar</i> using something like:
+</p>
+
+<p>
+<b>Source example</b>
 </p>
 
 
 
-<pre class="src src-org"><span style="color: #ff7f24;">#+begin_o_blog_row SPAN OFFSET GRID-CLASS</span>
-Column 1
-<span style="color: #ff7f24;">#+o_blog_row_column SPAN OFFSET</span>
-Column 2
-...
-<span style="color: #ff7f24;">#+o_blog_row_column SPAN OFFSET</span>
-Column n
-<span style="color: #ff7f24;">#+end_o_blog_row</span>
+<pre class="src src-org">- <span style="color: #00ffff; text-decoration: underline;">/icon-book icon-white/ Documentation</span>
+  - <span style="color: #00ffff; text-decoration: underline;">Templates</span>
+  - <span style="color: #00ffff; text-decoration: underline;">Structures</span>
+  - <span style="color: #00ffff; text-decoration: underline;">Functions</span>
+  -
+  - <span style="color: #00ffff; text-decoration: underline;">FAQ</span>
+
+- <span style="color: #00ffff; text-decoration: underline;">/icon-file icon-white/ Blog</span>
+  - <span style="color: #00ffff; text-decoration: underline;">测试个新条目哦</span>
+  - <span style="color: #00ffff; text-decoration: underline;">Using Bootstrap grid</span>
+  - <span style="color: #00ffff; text-decoration: underline;">Adding icons</span>
+  - <span style="color: #00ffff; text-decoration: underline;">Using modal source code</span>
+  - <span style="color: #00ffff; text-decoration: underline;">Alerts</span>
+
+- <span style="color: #00ffff; font-style: italic; text-decoration: underline;">/icon-tags icon-white/</span><span style="color: #00ffff; text-decoration: underline;"> Tags</span>
 
 </pre>
+
+
+
+<p>
+<b>Rendered output</b>
+</p>
+
+
+
+<div class="navbar">
+<div class="navbar-inner">
+<div class="container">
+<div class="nav-collapse">
+
+<ul>
+<li><a href="#"><i>icon-book icon-white</i> Documentation</a>
+<ul>
+<li><a href="../../../templates.html">Templates</a>
+</li>
+<li><a href="../../../structures.html">Structures</a>
+</li>
+<li><a href="../../../functions.html">Functions</a>
+</li>
+<li>
+</li>
+<li><a href="../../../faq.html">FAQ</a>
+
+</li>
+</ul>
+
+</li>
+<li><a href="#"><i>icon-file icon-white</i> Blog</a>
+<ul>
+<li><a href="../../../Tips/2012/03/20_c2ec4d348537a9228ab418d28932a7ae.html">测试个新条目哦</a>
+</li>
+<li><a href="../../../Tips/2012/02/10_26e59636038458d13660fd8012c5d97a.html">Using Bootstrap grid</a>
+</li>
+<li><a href="../../../Tips/2012/02/10_b45da1ff7c09d67a0d7ef10b903e4e1b.html">Adding icons</a>
+</li>
+<li><a href="../../../Tips/2012/02/09_4c04a0db5c11b33d7bb752f3fbe45b6a.html">Using modal source code</a>
+</li>
+<li><a href="../../../Tips/2012/01/15_df583ae7ba964fd4806b55904da81813.html">Alerts</a>
+
+</li>
+</ul>
+
+</li>
+<li><a href="../../../tags/index.html"><i>icon-tags icon-white</i> Tags</a>
+</li>
+</ul>
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+<p>
+Please note the blank line between menu items. if blanks are omitted, the
+rendered result might be damaged.
+</p>
+
 
 
   </div>
   
   <footer class="well article-footer">
-    Posted on <time datetime="2012-02-10T01:19:00Z">
-      星期五 二月, 10 2012 at 01:19:00
+    Posted on <time datetime="2012-02-10T00:19:00Z">
+      星期五 二月, 10 2012 at 00:19:00
     </time>.
     <nav class="tag-cloud">
       <h1><i class="icon-tags"></i> related tags</h1>
@@ -213,7 +277,7 @@ Column n
 	      <h1>Links</h1>
 	      <ul>
 		  <li class="home"><a href="../../../index.html">Home</a></li>
-  <li class="blog"><a href="../../../Tips/2012/03/20_.html">Blog</a></li>
+  <li class="blog"><a href="../../../Tips/2012/03/20_c2ec4d348537a9228ab418d28932a7ae.html">Blog</a></li>
   <li class="tags"><a href="../../../tags/index.html">Tags</a></li>
   <li class="archives"><a href="../../../archives.html">Archives</a></li>
   <li class="rss"><a href="../../../index.xml">RSS</a></li>
@@ -223,7 +287,7 @@ Column n
 	    <nav id="archives" class="span3">
 	      <h1>Archives</h1>
 	      <ul>
-		<li><a href="../../../Tips/2012/03/20_.html">测试个新条目哦</a></li> <li><a href="../../../Tips/2012/02/10_using-bootstrap-grid.html">Using Bootstrap grid</a></li> <li><a href="../../../Tips/2012/02/10_adding-icons.html">Adding icons</a></li> <li><a href="../../../Tips/2012/02/09_using-modal-source-code.html">Using modal source code</a></li> <li><a href="../../../Tips/2012/01/15_alerts.html">Alerts</a></li> <li><a href="../../../Tips/2012/01/10_some-html5-samples.html">Some HTML5 samples</a></li> <li><a href="../../../Tips/2012/01/07_example-of-some-org-syntax.html">Example of some org syntax</a></li> <li><a href="../../../Tips/2012/01/07_how-to-use-tags.html">How to use tags</a></li> <li><a href="../../../Tips/2012/01/07_.html">创建一个博客条目</a></li> 
+		<li><a href="../../../Tips/2012/03/20_c2ec4d348537a9228ab418d28932a7ae.html">测试个新条目哦</a></li> <li><a href="../../../Tips/2012/02/10_26e59636038458d13660fd8012c5d97a.html">Using Bootstrap grid</a></li> <li><a href="../../../Tips/2012/02/10_b45da1ff7c09d67a0d7ef10b903e4e1b.html">Adding icons</a></li> <li><a href="../../../Tips/2012/02/09_4c04a0db5c11b33d7bb752f3fbe45b6a.html">Using modal source code</a></li> <li><a href="../../../Tips/2012/01/15_df583ae7ba964fd4806b55904da81813.html">Alerts</a></li> <li><a href="../../../Tips/2012/01/10_eaec6f3ef8499a995874c1205d003a21.html">Some HTML5 samples</a></li> <li><a href="../../../Tips/2012/01/07_3c5f8a07712b36599d15c004614e2019.html">Example of some org syntax</a></li> <li><a href="../../../Tips/2012/01/07_0fd9a1c6ec914b7e5b181ca6fcc0c6ea.html">如何使用标签</a></li> <li><a href="../../../Tips/2012/01/07_186b167aaf6e3a65a210824239a15d4f.html">创建一个博客条目</a></li> 
 	      </ul>
 	    </nav>
 	    <nav class="tags span3">
