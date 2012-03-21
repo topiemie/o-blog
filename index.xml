@@ -3,7 +3,7 @@
   <title>o-blog</title>
   <link href="http://exaos.github.com/o-blogindex.xml" rel="self" />
   <link href="http://exaos.github.com/o-blog"/>
-  <updated>2012-03-21T11:36:51Z</updated>
+  <updated>2012-03-21T13:55:16Z</updated>
   <id>http://exaos.github.com/o-blogindex.xml</id>
   <entry><title type="html">中文测试</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/03/20_089b4943ea034acfa445d050c7913e55.html"/><updated>2012-03-20T09:46:00Z</updated><published>2012-03-20T09:46:00Z</published><id>Tips/2012/03/20_089b4943ea034acfa445d050c7913e55.html</id><category scheme="/tags/a7bac2239fcdcb3a067903d8077c4a07.html" term="中文" label="中文"/><content type="html">&lt;p&gt;
 &#36825;&#26159;&#19968;&#20010;&#27979;&#35797;&#26465;&#30446;&#21727;&#12290;
@@ -15,7 +15,7 @@
 &lt;/pre&gt;
 
 
-</content></entry><entry><title type="html">Using Bootstrap grid</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/02/10_26e59636038458d13660fd8012c5d97a.html"/><updated>2012-02-10T01:19:00Z</updated><published>2012-02-10T01:19:00Z</published><id>Tips/2012/02/10_26e59636038458d13660fd8012c5d97a.html</id><category scheme="/tags/9366282e11c151558bdfaab4a264aa1b.html" term="usage" label="usage"/><category scheme="/tags/6699fc2680f2601917ba69358414fa51.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
+</content></entry><entry><title type="html">使用 Bootstrap 分格</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/02/10_9fd550eec473942a9efac26e5478d5e7.html"/><updated>2012-02-10T01:19:00Z</updated><published>2012-02-10T01:19:00Z</published><id>Tips/2012/02/10_9fd550eec473942a9efac26e5478d5e7.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/6699fc2680f2601917ba69358414fa51.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
 &lt;a href="http://twitter.github.com/bootstrap/scaffolding.html"&gt;Bootstrap scaffolding&lt;/a&gt; could be defined using both &lt;code&gt;#+begin_o_blog_row&lt;/code&gt; and
 &lt;code&gt;#+end_o_blog_row&lt;/code&gt; directives (or &lt;code&gt;&amp;lt;og&lt;/code&gt; &lt;code&gt;TAB&lt;/code&gt; shortcut). A new column could
 be started using &lt;code&gt;#+o_blog_row_column&lt;/code&gt; single directive (or &lt;code&gt;&amp;lt;ogr&lt;/code&gt; &lt;code&gt;TAB&lt;/code&gt;
@@ -91,7 +91,7 @@ Column n
 
 &lt;/pre&gt;
 
-</content></entry><entry><title type="html">添加图标</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/02/10_035692d6fc368765e391602aad0bf39a.html"/><updated>2012-02-10T00:19:00Z</updated><published>2012-02-10T00:19:00Z</published><id>Tips/2012/02/10_035692d6fc368765e391602aad0bf39a.html</id><category scheme="/tags/9366282e11c151558bdfaab4a264aa1b.html" term="usage" label="usage"/><category scheme="/tags/6699fc2680f2601917ba69358414fa51.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
+</content></entry><entry><title type="html">添加图标</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/02/10_035692d6fc368765e391602aad0bf39a.html"/><updated>2012-02-10T00:19:00Z</updated><published>2012-02-10T00:19:00Z</published><id>Tips/2012/02/10_035692d6fc368765e391602aad0bf39a.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/6699fc2680f2601917ba69358414fa51.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
 Icons from &lt;a href="http://glyphicons.com/"&gt;glyphicons&lt;/a&gt; are supported support by simply naming the icon using
 italic style:
 &lt;/p&gt;
@@ -151,9 +151,9 @@ This could also be used for the top &lt;i&gt;navbar&lt;/i&gt; using something li
 
 - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;/icon-file icon-white/ Blog&lt;/span&gt;
   - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;中文测试&lt;/span&gt;
-  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;Using Bootstrap grid&lt;/span&gt;
+  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;使用 Bootstrap 分格&lt;/span&gt;
   - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;添加图标&lt;/span&gt;
-  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;Using modal source code&lt;/span&gt;
+  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;使用 modal 显示源代码&lt;/span&gt;
   - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;警告&lt;/span&gt;
 
 - &lt;span style="color: #00ffff; font-style: italic; text-decoration: underline;"&gt;/icon-tags icon-white/&lt;/span&gt;&lt;span style="color: #00ffff; text-decoration: underline;"&gt; Tags&lt;/span&gt;
@@ -196,11 +196,11 @@ This could also be used for the top &lt;i&gt;navbar&lt;/i&gt; using something li
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="./Tips/2012/03/20_089b4943ea034acfa445d050c7913e55.html"&gt;中文测试&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href="./Tips/2012/02/10_26e59636038458d13660fd8012c5d97a.html"&gt;Using Bootstrap grid&lt;/a&gt;
+&lt;li&gt;&lt;a href="./Tips/2012/02/10_9fd550eec473942a9efac26e5478d5e7.html"&gt;使用 Bootstrap 分格&lt;/a&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href="./Tips/2012/02/10_035692d6fc368765e391602aad0bf39a.html"&gt;添加图标&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href="./Tips/2012/02/09_4c04a0db5c11b33d7bb752f3fbe45b6a.html"&gt;Using modal source code&lt;/a&gt;
+&lt;li&gt;&lt;a href="./Tips/2012/02/09_92ec1ba26890de6fa6336ab9506c8d8c.html"&gt;使用 modal 显示源代码&lt;/a&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href="./Tips/2012/01/15_900c70fa5f7dbc014e6f762d5e0e885c.html"&gt;警告&lt;/a&gt;
 
@@ -230,8 +230,7 @@ rendered result might be damaged.
 &lt;/div&gt;&lt;/div&gt;
 
 
-
-</content></entry><entry><title type="html">Using modal source code</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/02/09_4c04a0db5c11b33d7bb752f3fbe45b6a.html"/><updated>2012-02-09T23:13:00Z</updated><published>2012-02-09T23:13:00Z</published><id>Tips/2012/02/09_4c04a0db5c11b33d7bb752f3fbe45b6a.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/6699fc2680f2601917ba69358414fa51.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
+</content></entry><entry><title type="html">使用 modal 显示源代码</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/02/09_92ec1ba26890de6fa6336ab9506c8d8c.html"/><updated>2012-02-09T23:13:00Z</updated><published>2012-02-09T23:13:00Z</published><id>Tips/2012/02/09_92ec1ba26890de6fa6336ab9506c8d8c.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/6699fc2680f2601917ba69358414fa51.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
 The &lt;a href="http://twitter.github.com/bootstrap/javascript.html#modals"&gt;Modal&lt;/a&gt; bootstrap script can be used to display the content of an external
 file in a modal window. The magic line is:
 &lt;/p&gt;
@@ -886,7 +885,7 @@ A minimal blog file could be something like:
 
 &lt;span style="color: #ff7f24;"&gt;#+URL: http://blog.example.com&lt;/span&gt;
 
-&lt;span style="color: #87cefa;"&gt;* &lt;/span&gt;&lt;span style="color: #228b22; font-weight: bold;"&gt;DONE&lt;/span&gt;&lt;span style="color: #87cefa;"&gt; Lorem ipsum&lt;/span&gt;
+&lt;span style="color: #87cefa;"&gt;* &lt;/span&gt;&lt;span style="color: #98fb98; font-weight: bold;"&gt;DONE&lt;/span&gt;&lt;span style="color: #87cefa;"&gt; Lorem ipsum&lt;/span&gt;
   &lt;span style="color: #00ffff;"&gt;CLOSED:&lt;/span&gt; &lt;span style="color: #00ffff; text-decoration: underline;"&gt;[2012-01-07 Sat 00:13]&lt;/span&gt;
 &lt;span style="color: #00ffff;"&gt;  :PROPERTIES:&lt;/span&gt;
   &lt;span style="color: #00ffff;"&gt;:tags:&lt;/span&gt;     Lorem
