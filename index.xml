@@ -3,17 +3,28 @@
   <title>o-blog</title>
   <link href="http://exaos.github.com/o-blogindex.xml" rel="self" />
   <link href="http://exaos.github.com/o-blog"/>
-  <updated>2012-03-20T15:38:31Z</updated>
+  <updated>2012-03-21T11:36:51Z</updated>
   <id>http://exaos.github.com/o-blogindex.xml</id>
-  <entry><title type="html">测试个新条目哦</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/03/20_c2ec4d348537a9228ab418d28932a7ae.html"/><updated>2012-03-20T09:46:00Z</updated><published>2012-03-20T09:46:00Z</published><id>Tips/2012/03/20_c2ec4d348537a9228ab418d28932a7ae.html</id><category scheme="/tags/4e6250b7faa7cec5883e463232690d1f.html" term="标签2" label="标签2"/><content type="html">&lt;p&gt;
-  &#36825;&#26159;&#19968;&#20010;&#27979;&#35797;&#26465;&#30446;&#21727;&#12290;
+  <entry><title type="html">中文测试</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/03/20_089b4943ea034acfa445d050c7913e55.html"/><updated>2012-03-20T09:46:00Z</updated><published>2012-03-20T09:46:00Z</published><id>Tips/2012/03/20_089b4943ea034acfa445d050c7913e55.html</id><category scheme="/tags/a7bac2239fcdcb3a067903d8077c4a07.html" term="中文" label="中文"/><content type="html">&lt;p&gt;
+&#36825;&#26159;&#19968;&#20010;&#27979;&#35797;&#26465;&#30446;&#21727;&#12290;
 &lt;/p&gt;
+&lt;p&gt;
+&#21338;&#23458;&#39029;&#38754;&#30340;&#25991;&#20214;&#21517;&#40664;&#35748;&#20351;&#29992; &lt;code&gt;ob-sanitize-string&lt;/code&gt; &#20174;&#26631;&#39064;&#29983;&#25104;, &#36825;&#26679;&#20250;&#23548;&#33268;&#20013;&#25991;&#26631;&#39064;&#30340;&#21338;&#25991;&#26080;&#27861;&#27491;&#24120;&#29983;&#25104;&#12290;&#22240;&#27492;&#65292;&#23545;&#20110;&#20013;&#25991;&#21338;&#23458;&#65292;&#38656;&#35201;&#22312;&#20320;&#30340; &lt;b&gt;org&lt;/b&gt; &#25991;&#26723;&#22836;&#20013;&#28155;&#21152;
+&lt;/p&gt;&lt;pre class="example"&gt;
+#+FILENAME_SANITIZER: md5
+&lt;/pre&gt;
+
+
 </content></entry><entry><title type="html">Using Bootstrap grid</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/02/10_26e59636038458d13660fd8012c5d97a.html"/><updated>2012-02-10T01:19:00Z</updated><published>2012-02-10T01:19:00Z</published><id>Tips/2012/02/10_26e59636038458d13660fd8012c5d97a.html</id><category scheme="/tags/9366282e11c151558bdfaab4a264aa1b.html" term="usage" label="usage"/><category scheme="/tags/6699fc2680f2601917ba69358414fa51.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
 &lt;a href="http://twitter.github.com/bootstrap/scaffolding.html"&gt;Bootstrap scaffolding&lt;/a&gt; could be defined using both &lt;code&gt;#+begin_o_blog_row&lt;/code&gt; and
 &lt;code&gt;#+end_o_blog_row&lt;/code&gt; directives (or &lt;code&gt;&amp;lt;og&lt;/code&gt; &lt;code&gt;TAB&lt;/code&gt; shortcut). A new column could
 be started using &lt;code&gt;#+o_blog_row_column&lt;/code&gt; single directive (or &lt;code&gt;&amp;lt;ogr&lt;/code&gt; &lt;code&gt;TAB&lt;/code&gt;
 shortcut).
 &lt;/p&gt;
+
+
+
+&lt;div class="row show-grid"&gt;&lt;div class="span6 "&gt;
 
 &lt;p&gt;
 &lt;b&gt;Example&lt;/b&gt;
@@ -30,18 +41,36 @@ Column 2
 
 
 
+&lt;/div&gt;&lt;div class="span6 "&gt;
+
 
 &lt;p&gt;
 &lt;b&gt;Output&lt;/b&gt;
 &lt;/p&gt;
 
+
+&lt;div class="row show-grid"&gt;&lt;div class="span2 offset1"&gt;
+
+
 &lt;p&gt;
 Column 1
 &lt;/p&gt;
 
+
+&lt;/div&gt;&lt;div class="span2 "&gt;
+
+
 &lt;p&gt;
 Column 2
 &lt;/p&gt;
+
+
+
+&lt;/div&gt;&lt;/div&gt;
+
+
+
+&lt;/div&gt;&lt;/div&gt;
 
 
 
@@ -62,10 +91,14 @@ Column n
 
 &lt;/pre&gt;
 
-</content></entry><entry><title type="html">Adding icons</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/02/10_b45da1ff7c09d67a0d7ef10b903e4e1b.html"/><updated>2012-02-10T00:19:00Z</updated><published>2012-02-10T00:19:00Z</published><id>Tips/2012/02/10_b45da1ff7c09d67a0d7ef10b903e4e1b.html</id><category scheme="/tags/9366282e11c151558bdfaab4a264aa1b.html" term="usage" label="usage"/><category scheme="/tags/6699fc2680f2601917ba69358414fa51.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
+</content></entry><entry><title type="html">添加图标</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/02/10_035692d6fc368765e391602aad0bf39a.html"/><updated>2012-02-10T00:19:00Z</updated><published>2012-02-10T00:19:00Z</published><id>Tips/2012/02/10_035692d6fc368765e391602aad0bf39a.html</id><category scheme="/tags/9366282e11c151558bdfaab4a264aa1b.html" term="usage" label="usage"/><category scheme="/tags/6699fc2680f2601917ba69358414fa51.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
 Icons from &lt;a href="http://glyphicons.com/"&gt;glyphicons&lt;/a&gt; are supported support by simply naming the icon using
 italic style:
 &lt;/p&gt;
+
+
+&lt;div class="row "&gt;&lt;div class="span6 "&gt;
+
 
 
 &lt;p&gt;
@@ -78,6 +111,8 @@ italic style:
 &lt;/pre&gt;
 
 
+&lt;/div&gt;&lt;div class="span6 "&gt;
+
 
 &lt;p&gt;
 &lt;b&gt;Rendered output&lt;/b&gt;
@@ -88,9 +123,18 @@ italic style:
 
 
 
+&lt;/div&gt;&lt;/div&gt;
+
+
+
+
 &lt;p&gt;
 This could also be used for the top &lt;i&gt;navbar&lt;/i&gt; using something like:
 &lt;/p&gt;
+
+
+&lt;div class="row "&gt;&lt;div class="span6 "&gt;
+
 
 &lt;p&gt;
 &lt;b&gt;Source example&lt;/b&gt;
@@ -106,16 +150,18 @@ This could also be used for the top &lt;i&gt;navbar&lt;/i&gt; using something li
   - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;FAQ&lt;/span&gt;
 
 - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;/icon-file icon-white/ Blog&lt;/span&gt;
-  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;测试个新条目哦&lt;/span&gt;
+  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;中文测试&lt;/span&gt;
   - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;Using Bootstrap grid&lt;/span&gt;
-  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;Adding icons&lt;/span&gt;
+  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;添加图标&lt;/span&gt;
   - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;Using modal source code&lt;/span&gt;
-  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;Alerts&lt;/span&gt;
+  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;警告&lt;/span&gt;
 
 - &lt;span style="color: #00ffff; font-style: italic; text-decoration: underline;"&gt;/icon-tags icon-white/&lt;/span&gt;&lt;span style="color: #00ffff; text-decoration: underline;"&gt; Tags&lt;/span&gt;
 
 &lt;/pre&gt;
 
+
+&lt;/div&gt;&lt;div class="span6 "&gt;
 
 
 &lt;p&gt;
@@ -148,15 +194,15 @@ This could also be used for the top &lt;i&gt;navbar&lt;/i&gt; using something li
 &lt;/li&gt;
 &lt;li&gt;&lt;a href="#"&gt;&lt;i&gt;icon-file icon-white&lt;/i&gt; Blog&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="./Tips/2012/03/20_c2ec4d348537a9228ab418d28932a7ae.html"&gt;测试个新条目哦&lt;/a&gt;
+&lt;li&gt;&lt;a href="./Tips/2012/03/20_089b4943ea034acfa445d050c7913e55.html"&gt;中文测试&lt;/a&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href="./Tips/2012/02/10_26e59636038458d13660fd8012c5d97a.html"&gt;Using Bootstrap grid&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href="./Tips/2012/02/10_b45da1ff7c09d67a0d7ef10b903e4e1b.html"&gt;Adding icons&lt;/a&gt;
+&lt;li&gt;&lt;a href="./Tips/2012/02/10_035692d6fc368765e391602aad0bf39a.html"&gt;添加图标&lt;/a&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href="./Tips/2012/02/09_4c04a0db5c11b33d7bb752f3fbe45b6a.html"&gt;Using modal source code&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href="./Tips/2012/01/15_df583ae7ba964fd4806b55904da81813.html"&gt;Alerts&lt;/a&gt;
+&lt;li&gt;&lt;a href="./Tips/2012/01/15_900c70fa5f7dbc014e6f762d5e0e885c.html"&gt;警告&lt;/a&gt;
 
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -180,7 +226,12 @@ rendered result might be damaged.
 &lt;/p&gt;
 
 
-</content></entry><entry><title type="html">Using modal source code</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/02/09_4c04a0db5c11b33d7bb752f3fbe45b6a.html"/><updated>2012-02-09T23:13:00Z</updated><published>2012-02-09T23:13:00Z</published><id>Tips/2012/02/09_4c04a0db5c11b33d7bb752f3fbe45b6a.html</id><category scheme="/tags/9366282e11c151558bdfaab4a264aa1b.html" term="usage" label="usage"/><category scheme="/tags/6699fc2680f2601917ba69358414fa51.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
+
+&lt;/div&gt;&lt;/div&gt;
+
+
+
+</content></entry><entry><title type="html">Using modal source code</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/02/09_4c04a0db5c11b33d7bb752f3fbe45b6a.html"/><updated>2012-02-09T23:13:00Z</updated><published>2012-02-09T23:13:00Z</published><id>Tips/2012/02/09_4c04a0db5c11b33d7bb752f3fbe45b6a.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/6699fc2680f2601917ba69358414fa51.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
 The &lt;a href="http://twitter.github.com/bootstrap/javascript.html#modals"&gt;Modal&lt;/a&gt; bootstrap script can be used to display the content of an external
 file in a modal window. The magic line is:
 &lt;/p&gt;
@@ -203,59 +254,59 @@ The &lt;i&gt;org template shorcut&lt;/i&gt; is &lt;code&gt;&amp;lt;os&lt;/code&g
 
 
 &lt;p&gt;
-Here is an example of the &lt;code&gt;README.asciidoc&lt;/code&gt; file:
+Here is an example of the &lt;code&gt;README.md&lt;/code&gt; file:
 &lt;/p&gt;
 
 
-&lt;div class="o-blog-source"&gt;&lt;a class="btn btn-info" data-toggle="modal" data-target="#d03d78a73f737f7943dde0f33e6e2b24" &gt;&lt;i class="icon-file icon-white"&gt;&lt;/i&gt;&amp;nbsp;README.asciidoc&lt;/a&gt;&lt;/div&gt;&lt;div class="modal fade hide" id="d03d78a73f737f7943dde0f33e6e2b24"&gt;&lt;div class="modal-header"&gt;&lt;a class="close" data-dismiss="modal"&gt;&#215;&lt;/a&gt;&lt;h3&gt;README.asciidoc&lt;/h3&gt;&lt;/div&gt;&lt;div class="modal-body"&gt;&lt;pre&gt;
-= o-blog &amp;#24555;&amp;#36895;&amp;#20837;&amp;#38376;
+&lt;div class="o-blog-source"&gt;&lt;a class="btn btn-info" data-toggle="modal" data-target="#04c6e90faac2675aa89e2176d2eec7d8" &gt;&lt;i class="icon-file icon-white"&gt;&lt;/i&gt;&amp;nbsp;README.md&lt;/a&gt;&lt;/div&gt;&lt;div class="modal fade hide" id="04c6e90faac2675aa89e2176d2eec7d8"&gt;&lt;div class="modal-header"&gt;&lt;a class="close" data-dismiss="modal"&gt;&#215;&lt;/a&gt;&lt;h3&gt;README.md&lt;/h3&gt;&lt;/div&gt;&lt;div class="modal-body"&gt;&lt;pre&gt;
+&lt;span style="color: #87cefa; font-weight: bold;"&gt;# o-blog &amp;#24555;&amp;#36895;&amp;#20837;&amp;#38376;&lt;/span&gt;
 
-&amp;#22914;&amp;#20309;&amp;#20351;&amp;#29992; https://github.com/renard/o-blog[o-blog].
+&lt;span style="color: #b0c4de;"&gt;- &lt;/span&gt;&amp;#22914;&amp;#20309;&amp;#20351;&amp;#29992; &lt;span style="color: #00ffff;"&gt;[o-blog]&lt;/span&gt;&lt;span style="color: #ffa07a;"&gt;(https://github.com/renard/o-blog)&lt;/span&gt;.
+&lt;span style="color: #b0c4de;"&gt;- &lt;/span&gt;&lt;span style="color: #00ffff;"&gt;[&amp;#33521;&amp;#25991;&amp;#28436;&amp;#31034;&amp;#31449;&amp;#28857;]&lt;/span&gt;&lt;span style="color: #ffa07a;"&gt;(http://renard.github.com/o-blog)&lt;/span&gt;.
+&lt;span style="color: #b0c4de;"&gt;- &lt;/span&gt;&lt;span style="color: #00ffff;"&gt;[&amp;#20013;&amp;#25991;&amp;#28436;&amp;#31034;&amp;#31449;&amp;#28857;]&lt;/span&gt;&lt;span style="color: #ffa07a;"&gt;(http://exaos.github.com/o-blog)&lt;/span&gt;.
 
-http://renard.github.com/o-blog[&amp;#28436;&amp;#31034;&amp;#31449;&amp;#28857;].
 
-== &amp;#24555;&amp;#36895;&amp;#20837;&amp;#38376;&amp;#25351;&amp;#21335;
+&lt;span style="color: #87cefa; font-weight: bold;"&gt;## &amp;#24555;&amp;#36895;&amp;#20837;&amp;#38376;&amp;#25351;&amp;#21335;&lt;/span&gt;
 &amp;#24320;&amp;#22987;&amp;#20043;&amp;#21069;&amp;#65292;&amp;#20320;&amp;#38656;&amp;#35201;&amp;#26377;&amp;#65306;
 
-- http:www.gnu.org/s/emacs[emacs] (&amp;#20551;&amp;#35774;&amp;#20320;&amp;#24050;&amp;#32463;&amp;#26377;&amp;#20102;)
-- http://orgmode.org/[org-mode] (&amp;#21516;&amp;#19978;)
+&lt;span style="color: #b0c4de;"&gt;- &lt;/span&gt;&lt;span style="color: #00ffff;"&gt;[emacs]&lt;/span&gt;&lt;span style="color: #ffa07a;"&gt;(http:www.gnu.org/s/emacs)&lt;/span&gt; (&amp;#20551;&amp;#35774;&amp;#20320;&amp;#24050;&amp;#32463;&amp;#26377;&amp;#20102;)
+&lt;span style="color: #b0c4de;"&gt;- &lt;/span&gt;&lt;span style="color: #00ffff;"&gt;[org-mode]&lt;/span&gt;&lt;span style="color: #ffa07a;"&gt;(http://orgmode.org/)&lt;/span&gt; (&amp;#21516;&amp;#19978;)
 
-&amp;#22914;&amp;#26524;&amp;#27809;&amp;#26377;&amp;#36825;&amp;#20123;&amp;#31243;&amp;#24207;&amp;#65292;&amp;#20320;&amp;#24212;&amp;#35813;&amp;#20808;&amp;#23433;&amp;#35013;&amp;#23427;&amp;#20204;&amp;#12290;
+&amp;#22914;&amp;#26524;&amp;#27809;&amp;#26377;&amp;#36825;&amp;#20123;&amp;#31243;&amp;#24207;&amp;#65292;&amp;#20320;&amp;#24212;&amp;#35813;&amp;#20808;&amp;#23433;&amp;#35013;&amp;#22909;&amp;#23427;&amp;#20204;&amp;#12290;
 
-=== &amp;#35774;&amp;#32622;
+&lt;span style="color: #87cefa; font-weight: bold;"&gt;### &amp;#35774;&amp;#32622;&lt;/span&gt;
 
-==== &amp;#20351;&amp;#29992; +el-get+
+#### &amp;#20351;&amp;#29992; &lt;span style="color: #7fffd4;"&gt;`el-get`&lt;/span&gt;
 
-&amp;#22914;&amp;#26524;&amp;#20320;&amp;#20351;&amp;#29992; https://github.com/dimitri/el-get[el-get], &amp;#23433;&amp;#35013;&amp;#24456;&amp;#23481;&amp;#26131;&amp;#12290;&amp;#20320;&amp;#21482;&amp;#38656;&amp;#35201;&amp;#23558;
-+o-blog+ &amp;#28155;&amp;#21152;&amp;#21040; +el-get-sources+ &amp;#20013;&amp;#65292;&amp;#28982;&amp;#21518;&amp;#25191;&amp;#34892; +M-x el-get-install o-blog+.
+&amp;#22914;&amp;#26524;&amp;#20320;&amp;#20351;&amp;#29992; &lt;span style="color: #00ffff;"&gt;[el-get]&lt;/span&gt;&lt;span style="color: #ffa07a;"&gt;(https://github.com/dimitri/el-get)&lt;/span&gt;, &amp;#23433;&amp;#35013;&amp;#24456;&amp;#23481;&amp;#26131;&amp;#12290;&amp;#20320;&amp;#21482;&amp;#38656;&amp;#35201;&amp;#23558;
+&lt;span style="color: #7fffd4;"&gt;`o-blog`&lt;/span&gt; &amp;#28155;&amp;#21152;&amp;#21040; &lt;span style="color: #7fffd4;"&gt;`el-get-sources`&lt;/span&gt; &amp;#20013;&amp;#65292;&amp;#28982;&amp;#21518;&amp;#25191;&amp;#34892; &lt;span style="color: #7fffd4;"&gt;`M-x el-get-install o-blog`&lt;/span&gt;.
 
-&amp;#22914;&amp;#26524;&amp;#20320;&amp;#30340; +el-get+ &amp;#29256;&amp;#26412;&amp;#20026; 4 &amp;#25110;&amp;#20197;&amp;#19978;&amp;#65292;&amp;#20320;&amp;#21482;&amp;#38656;&amp;#35201;&amp;#25191;&amp;#34892;: +M-x el-get-install o-blog+.
+&amp;#22914;&amp;#26524;&amp;#20320;&amp;#30340; &lt;span style="color: #7fffd4;"&gt;`el-get`&lt;/span&gt; &amp;#29256;&amp;#26412;&amp;#20026; 4 &amp;#25110;&amp;#20197;&amp;#19978;&amp;#65292;&amp;#20320;&amp;#21482;&amp;#38656;&amp;#35201;&amp;#25191;&amp;#34892;: &lt;span style="color: #7fffd4;"&gt;`M-x el-get-install o-blog`&lt;/span&gt;.
 
-==== &amp;#25163;&amp;#21160;&amp;#35774;&amp;#32622;
-&amp;#39318;&amp;#20808;&amp;#20174; http:github.com[Github] &amp;#20811;&amp;#38534;&amp;#36825;&amp;#20010; +git+ &amp;#28304;&amp;#30721;&amp;#20179;&amp;#24211;&amp;#12290;
+&lt;span style="color: #87cefa; font-weight: bold;"&gt;#### &amp;#25163;&amp;#21160;&amp;#35774;&amp;#32622;&lt;/span&gt;
+&amp;#39318;&amp;#20808;&amp;#20174; &lt;span style="color: #00ffff;"&gt;[Github]&lt;/span&gt;&lt;span style="color: #ffa07a;"&gt;(http://github.com)&lt;/span&gt; &amp;#20811;&amp;#38534;&amp;#36825;&amp;#20010; &lt;span style="color: #eedd82; font-style: italic;"&gt;*git*&lt;/span&gt; &amp;#28304;&amp;#30721;&amp;#20179;&amp;#24211;&amp;#12290;
 
-----
+&lt;span style="color: #7fffd4;"&gt;```&lt;/span&gt;
 cd ~/.emacs.d
-git clone https://github.com/renard/o-blog.git
-----
+git clone &lt;span style="color: #00ffff;"&gt;https://github.com/renard/o-blog.git&lt;/span&gt;
+&lt;span style="color: #7fffd4;"&gt;```&lt;/span&gt;
 
-&amp;#23558;&amp;#21518;&amp;#38754;&amp;#30340;&amp;#20195;&amp;#30721;&amp;#28155;&amp;#21152;&amp;#21040;&amp;#20320;&amp;#30340; +~/.emacs.d/init.el+ &amp;#25991;&amp;#20214;&amp;#20013;&amp;#65306;
+&amp;#23558;&amp;#21518;&amp;#38754;&amp;#30340;&amp;#20195;&amp;#30721;&amp;#28155;&amp;#21152;&amp;#21040;&amp;#20320;&amp;#30340; &lt;span style="color: #7fffd4;"&gt;`~/.emacs.d/init.el`&lt;/span&gt; &amp;#25991;&amp;#20214;&amp;#20013;&amp;#65306;
 
-----
-(add-to-list 'load-path &lt;span style="color: #ffa07a;"&gt;"~/.emacs.d/o-blog"&lt;/span&gt;)
+&lt;span style="color: #7fffd4;"&gt;```&lt;/span&gt;
+(add-to-list 'load-path "~/.emacs.d/o-blog")
 (require 'o-blog)
-----
+&lt;span style="color: #7fffd4;"&gt;```&lt;/span&gt;
 
-=== &amp;#21457;&amp;#24067;
+&lt;span style="color: #87cefa; font-weight: bold;"&gt;### &amp;#21457;&amp;#24067;&lt;/span&gt;
 
-&amp;#25171;&amp;#24320;&amp;#25991;&amp;#20214; +~/.emacs.d/o-blog/example/sample.org+ &amp;#28982;&amp;#21518;&amp;#25191;&amp;#34892; +M-x org-publish-blog+.
-&amp;#29983;&amp;#25104;&amp;#30340;&amp;#31449;&amp;#28857;&amp;#23558;&amp;#20250;&amp;#33258;&amp;#21160;&amp;#21457;&amp;#24067;&amp;#22312; +~/.emacs.d/o-blog/out+.
+&amp;#25171;&amp;#24320;&amp;#25991;&amp;#20214; &lt;span style="color: #7fffd4;"&gt;`~/.emacs.d/o-blog/example/sample.org`&lt;/span&gt; &amp;#28982;&amp;#21518;&amp;#25191;&amp;#34892; &lt;span style="color: #7fffd4;"&gt;`M-x org-publish-blog`&lt;/span&gt;.
+&amp;#29983;&amp;#25104;&amp;#30340;&amp;#31449;&amp;#28857;&amp;#23558;&amp;#20250;&amp;#33258;&amp;#21160;&amp;#21457;&amp;#24067;&amp;#22312; &lt;span style="color: #7fffd4;"&gt;`~/.emacs.d/o-blog/out`&lt;/span&gt; &amp;#30446;&amp;#24405;&amp;#19979;&amp;#12290;
 
-&amp;#35814;&amp;#24773;&amp;#21442;&amp;#35265; +example/out/blog/index.html+ &amp;#21450; +example/out/todo.html+.
-
+&amp;#28982;&amp;#21518;&amp;#65292;&amp;#35814;&amp;#24773;&amp;#21442;&amp;#35265; &lt;span style="color: #7fffd4;"&gt;`example/out/blog/index.html`&lt;/span&gt; &amp;#21450; &lt;span style="color: #7fffd4;"&gt;`example/out/todo.html`&lt;/span&gt;.
 &lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-</content></entry><entry><title type="html">Alerts</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/01/15_df583ae7ba964fd4806b55904da81813.html"/><updated>2012-01-15T20:40:00Z</updated><published>2012-01-15T20:40:00Z</published><id>Tips/2012/01/15_df583ae7ba964fd4806b55904da81813.html</id><category scheme="/tags/9366282e11c151558bdfaab4a264aa1b.html" term="usage" label="usage"/><content type="html">&lt;p&gt;
+</content></entry><entry><title type="html">警告</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/01/15_900c70fa5f7dbc014e6f762d5e0e885c.html"/><updated>2012-01-15T20:40:00Z</updated><published>2012-01-15T20:40:00Z</published><id>Tips/2012/01/15_900c70fa5f7dbc014e6f762d5e0e885c.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><content type="html">&lt;p&gt;
 Alerts are declared in &lt;code&gt;o_blog_alert&lt;/code&gt; blocks. There are 4 types of
 them:
 &lt;/p&gt;
@@ -368,7 +419,7 @@ nulla. Nullam rutrum. Nam vestibulum accumsan nisl.
 
 &lt;/div&gt;
 
-</content></entry><entry><title type="html">Some HTML5 samples</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/01/10_eaec6f3ef8499a995874c1205d003a21.html"/><updated>2012-01-10T20:58:00Z</updated><published>2012-01-10T20:58:00Z</published><id>Tips/2012/01/10_eaec6f3ef8499a995874c1205d003a21.html</id><category scheme="/tags/6c684601bd79f7e418c6c378cc7f9b09.html" term="html 5" label="html 5"/><content type="html">&lt;div id="outline-container-1" class="outline-3"&gt;
+</content></entry><entry><title type="html">一些 HTML5 示例</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/01/10_7b880d54702f94abb926d766f38a66a2.html"/><updated>2012-01-10T20:58:00Z</updated><published>2012-01-10T20:58:00Z</published><id>Tips/2012/01/10_7b880d54702f94abb926d766f38a66a2.html</id><category scheme="/tags/6c684601bd79f7e418c6c378cc7f9b09.html" term="html 5" label="html 5"/><content type="html">&lt;div id="outline-container-1" class="outline-3"&gt;
 &lt;h3 id="sec-1"&gt;tag: &amp;lt;details&amp;gt;&lt;/h3&gt;
 &lt;div class="outline-text-3" id="text-1"&gt;
 
@@ -406,7 +457,7 @@ Works only with chrome.
 
 &lt;/div&gt;
 &lt;/div&gt;
-</content></entry><entry><title type="html">Example of some org syntax</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/01/07_3c5f8a07712b36599d15c004614e2019.html"/><updated>2012-01-07T11:23:00Z</updated><published>2012-01-07T11:23:00Z</published><id>Tips/2012/01/07_3c5f8a07712b36599d15c004614e2019.html</id><category scheme="/tags/9366282e11c151558bdfaab4a264aa1b.html" term="usage" label="usage"/><category scheme="/tags/5a445d710ae24cd276062b0c84850838.html" term="org" label="org"/><content type="html">&lt;div id="outline-container-1" class="outline-3"&gt;
+</content></entry><entry><title type="html">一些 org 语法示例</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/01/07_1c8e9b3ffcf10f3839e6607a798b3ffd.html"/><updated>2012-01-07T11:23:00Z</updated><published>2012-01-07T11:23:00Z</published><id>Tips/2012/01/07_1c8e9b3ffcf10f3839e6607a798b3ffd.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/5a445d710ae24cd276062b0c84850838.html" term="org" label="org"/><content type="html">&lt;div id="outline-container-1" class="outline-3"&gt;
 &lt;h3 id="sec-1"&gt;Titles&lt;/h3&gt;
 &lt;div class="outline-text-3" id="text-1"&gt;
 
@@ -798,7 +849,7 @@ the sun is R&lt;sub&gt;sun&lt;/sub&gt; = 6.96 x 10&lt;sup&gt;8&lt;/sup&gt; m.
 
 &lt;/div&gt;
 &lt;/div&gt;
-</content></entry><entry><title type="html">如何使用标签</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/01/07_0fd9a1c6ec914b7e5b181ca6fcc0c6ea.html"/><updated>2012-01-07T00:28:00Z</updated><published>2012-01-07T00:28:00Z</published><id>Tips/2012/01/07_0fd9a1c6ec914b7e5b181ca6fcc0c6ea.html</id><category scheme="/tags/9366282e11c151558bdfaab4a264aa1b.html" term="usage" label="usage"/><category scheme="/tags/7e02a3fb165cb1fad360d39c8cf8afa6.html" term="o-blog" label="o-blog"/><content type="html">&lt;p&gt;
+</content></entry><entry><title type="html">如何使用标签</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/01/07_0fd9a1c6ec914b7e5b181ca6fcc0c6ea.html"/><updated>2012-01-07T00:28:00Z</updated><published>2012-01-07T00:28:00Z</published><id>Tips/2012/01/07_0fd9a1c6ec914b7e5b181ca6fcc0c6ea.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/7e02a3fb165cb1fad360d39c8cf8afa6.html" term="o-blog" label="o-blog"/><content type="html">&lt;p&gt;
 Tags are useful to classify articles. They are stored as &lt;a href="http://orgmode.org/manual/Tags.html"&gt;org-mode tags&lt;/a&gt; for
 each entries. To add or modify a tag for a post, just use &lt;code&gt;C-c C-c&lt;/code&gt; and
 enter the tag value.
@@ -816,7 +867,7 @@ Special characters used in tags:
 &lt;/li&gt;
 &lt;/ul&gt;
 
-</content></entry><entry><title type="html">创建一个博客条目</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/01/07_186b167aaf6e3a65a210824239a15d4f.html"/><updated>2012-01-07T00:13:00Z</updated><published>2012-01-07T00:13:00Z</published><id>Tips/2012/01/07_186b167aaf6e3a65a210824239a15d4f.html</id><category scheme="/tags/9366282e11c151558bdfaab4a264aa1b.html" term="usage" label="usage"/><category scheme="/tags/7e02a3fb165cb1fad360d39c8cf8afa6.html" term="o-blog" label="o-blog"/><content type="html">&lt;p&gt;
+</content></entry><entry><title type="html">创建一个博客条目</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/01/07_186b167aaf6e3a65a210824239a15d4f.html"/><updated>2012-01-07T00:13:00Z</updated><published>2012-01-07T00:13:00Z</published><id>Tips/2012/01/07_186b167aaf6e3a65a210824239a15d4f.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/7e02a3fb165cb1fad360d39c8cf8afa6.html" term="o-blog" label="o-blog"/><content type="html">&lt;p&gt;
 A blog consists of org entries. Each entry has a title, some properties and
 some text. Exporting a blog means publishing all entries with a &lt;code&gt;DONE&lt;/code&gt;
 &lt;code&gt;TODO&lt;/code&gt;.
