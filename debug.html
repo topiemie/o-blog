@@ -154,7 +154,7 @@
     <caption>Dump information for blog</caption>
     <thead><tr><th>Property</th><th>Value</th></tr></thead>
     <tbody>
-      <tr><td class="property"><code>file</code></td><td class="value"><pre>"/home/exaos/Workspace/github/o-blog/example/sample.org"</pre></td></tr>
+      <tr><td class="property"><code>file</code></td><td class="value"><pre>"/home/exaos/Workspace/exaos/o-blog/example/sample.org"</pre></td></tr>
       <tr><td class="property"><code>buffer</code></td><td class="value"><pre>#&lt;buffer sample.org&gt;</pre></td></tr>
       <tr><td class="property"><code>publish-dir</code></td><td class="value"><pre>"out"</pre></td></tr>
       <tr><td class="property"><code>template-dir</code></td><td class="value"><pre>"../templates"</pre></td></tr>
@@ -692,7 +692,7 @@ The /org template shorcut/ is =&lt;os= =TAB=. Two parameters might be used:
   content should be read.
 - The optional =mode= which could be determined by if omitted.
 
-Here is an example of the =README.md= file:
+&#36825;&#26159;&#26174;&#31034; =README.md= &#25991;&#20214;&#30340;&#31034;&#20363;&#65306;
 
 #+BEGIN_HTML
 &lt;div class=\"o-blog-source\"&gt;&lt;a class=\"btn btn-info\" data-toggle=\"modal\" data-target=\"#04c6e90faac2675aa89e2176d2eec7d8\" &gt;&lt;i class=\"icon-file icon-white\"&gt;&lt;/i&gt;&amp;nbsp;README.md&lt;/a&gt;&lt;/div&gt;&lt;div class=\"modal fade hide\" id=\"04c6e90faac2675aa89e2176d2eec7d8\"&gt;&lt;div class=\"modal-header\"&gt;&lt;a class=\"close\" data-dismiss=\"modal\"&gt;&#215;&lt;/a&gt;&lt;h3&gt;README.md&lt;/h3&gt;&lt;/div&gt;&lt;div class=\"modal-body\"&gt;&lt;pre&gt;
@@ -713,7 +713,7 @@ Here is an example of the =README.md= file:
 
 &lt;span style=\"color: #87cefa; font-weight: bold;\"&gt;### &amp;#35774;&amp;#32622;&lt;/span&gt;
 
-#### &amp;#20351;&amp;#29992; &lt;span style=\"color: #7fffd4;\"&gt;`el-get`&lt;/span&gt;
+&lt;span style=\"color: #87cefa; font-weight: bold;\"&gt;#### &amp;#20351;&amp;#29992; `el-get`&lt;/span&gt;
 
 &amp;#22914;&amp;#26524;&amp;#20320;&amp;#20351;&amp;#29992; &lt;span style=\"color: #00ffff;\"&gt;[el-get]&lt;/span&gt;&lt;span style=\"color: #ffa07a;\"&gt;(https://github.com/dimitri/el-get)&lt;/span&gt;, &amp;#23433;&amp;#35013;&amp;#24456;&amp;#23481;&amp;#26131;&amp;#12290;&amp;#20320;&amp;#21482;&amp;#38656;&amp;#35201;&amp;#23558;
 &lt;span style=\"color: #7fffd4;\"&gt;`o-blog`&lt;/span&gt; &amp;#28155;&amp;#21152;&amp;#21040; &lt;span style=\"color: #7fffd4;\"&gt;`el-get-sources`&lt;/span&gt; &amp;#20013;&amp;#65292;&amp;#28982;&amp;#21518;&amp;#25191;&amp;#34892; &lt;span style=\"color: #7fffd4;\"&gt;`M-x el-get-install o-blog`&lt;/span&gt;.
@@ -723,17 +723,17 @@ Here is an example of the =README.md= file:
 &lt;span style=\"color: #87cefa; font-weight: bold;\"&gt;#### &amp;#25163;&amp;#21160;&amp;#35774;&amp;#32622;&lt;/span&gt;
 &amp;#39318;&amp;#20808;&amp;#20174; &lt;span style=\"color: #00ffff;\"&gt;[Github]&lt;/span&gt;&lt;span style=\"color: #ffa07a;\"&gt;(http://github.com)&lt;/span&gt; &amp;#20811;&amp;#38534;&amp;#36825;&amp;#20010; &lt;span style=\"color: #eedd82; font-style: italic;\"&gt;*git*&lt;/span&gt; &amp;#28304;&amp;#30721;&amp;#20179;&amp;#24211;&amp;#12290;
 
-&lt;span style=\"color: #7fffd4;\"&gt;```&lt;/span&gt;
+&lt;span style=\"color: #7fffd4;\"&gt;```
 cd ~/.emacs.d
-git clone &lt;span style=\"color: #00ffff;\"&gt;https://github.com/renard/o-blog.git&lt;/span&gt;
-&lt;span style=\"color: #7fffd4;\"&gt;```&lt;/span&gt;
+git clone https://github.com/renard/o-blog.git
+``&lt;/span&gt;`
 
 &amp;#23558;&amp;#21518;&amp;#38754;&amp;#30340;&amp;#20195;&amp;#30721;&amp;#28155;&amp;#21152;&amp;#21040;&amp;#20320;&amp;#30340; &lt;span style=\"color: #7fffd4;\"&gt;`~/.emacs.d/init.el`&lt;/span&gt; &amp;#25991;&amp;#20214;&amp;#20013;&amp;#65306;
 
-&lt;span style=\"color: #7fffd4;\"&gt;```&lt;/span&gt;
+&lt;span style=\"color: #7fffd4;\"&gt;```
 (add-to-list 'load-path \"~/.emacs.d/o-blog\")
 (require 'o-blog)
-&lt;span style=\"color: #7fffd4;\"&gt;```&lt;/span&gt;
+``&lt;/span&gt;`
 
 &lt;span style=\"color: #87cefa; font-weight: bold;\"&gt;### &amp;#21457;&amp;#24067;&lt;/span&gt;
 
@@ -741,6 +741,59 @@ git clone &lt;span style=\"color: #00ffff;\"&gt;https://github.com/renard/o-blog
 &amp;#29983;&amp;#25104;&amp;#30340;&amp;#31449;&amp;#28857;&amp;#23558;&amp;#20250;&amp;#33258;&amp;#21160;&amp;#21457;&amp;#24067;&amp;#22312; &lt;span style=\"color: #7fffd4;\"&gt;`~/.emacs.d/o-blog/out`&lt;/span&gt; &amp;#30446;&amp;#24405;&amp;#19979;&amp;#12290;
 
 &amp;#28982;&amp;#21518;&amp;#65292;&amp;#35814;&amp;#24773;&amp;#21442;&amp;#35265; &lt;span style=\"color: #7fffd4;\"&gt;`example/out/blog/index.html`&lt;/span&gt; &amp;#21450; &lt;span style=\"color: #7fffd4;\"&gt;`example/out/todo.html`&lt;/span&gt;.
+&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+#+END_HTML
+
+
+&#36825;&#26159;&#26174;&#31034; elisp &#20195;&#30721;&#30340;&#31034;&#20363;&#65306;
+
+#+BEGIN_HTML
+&lt;div class=\"o-blog-source\"&gt;&lt;a class=\"btn btn-info\" data-toggle=\"modal\" data-target=\"#835a9f8a3649619c7a03ec593b4cd5e7\" &gt;&lt;i class=\"icon-file icon-white\"&gt;&lt;/i&gt;&amp;nbsp;sample-init.el&lt;/a&gt;&lt;/div&gt;&lt;div class=\"modal fade hide\" id=\"835a9f8a3649619c7a03ec593b4cd5e7\"&gt;&lt;div class=\"modal-header\"&gt;&lt;a class=\"close\" data-dismiss=\"modal\"&gt;&#215;&lt;/a&gt;&lt;h3&gt;sample-init.el&lt;/h3&gt;&lt;/div&gt;&lt;div class=\"modal-body\"&gt;&lt;pre&gt;
+&lt;span style=\"color: #ff7f24;\"&gt;;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;sample-init.el --- sample init file to be used to debug o-blog
+&lt;/span&gt;
+&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Copyright &amp;#169; 2012 S&amp;#233;bastien Gross &amp;lt;seb&amp;#8226;&amp;#593;&amp;#428;&amp;#8226;chezwam&amp;#8226;&amp;#598;&amp;#629;&amp;#648;&amp;#8226;org&amp;gt;
+&lt;/span&gt;
+&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Author: S&amp;#233;bastien Gross &amp;lt;seb&amp;#8226;&amp;#593;&amp;#428;&amp;#8226;chezwam&amp;#8226;&amp;#598;&amp;#629;&amp;#648;&amp;#8226;org&amp;gt;
+&lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Keywords: emacs, 
+&lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Created: 2012-03-20
+&lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Last changed: 2012-03-21 00:44:39
+&lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Licence: WTFPL, grab your copy here: http://sam.zoy.org/wtfpl/
+&lt;/span&gt;
+&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;This file is NOT part of GNU Emacs.
+&lt;/span&gt;
+&lt;span style=\"color: #ff7f24;\"&gt;;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Commentary:
+&lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;
+&lt;/span&gt;
+
+&lt;span style=\"color: #ff7f24;\"&gt;;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Code:
+&lt;/span&gt;
+
+(&lt;span style=\"color: #00ffff;\"&gt;defun&lt;/span&gt; &lt;span style=\"color: #87cefa;\"&gt;ob-build-sample&lt;/span&gt; ()
+  (&lt;span style=\"color: #00ffff;\"&gt;let*&lt;/span&gt; ((d default-directory)
+         (sample (format &lt;span style=\"color: #ffa07a;\"&gt;\"%s/.emacs.d/o-blog/example/sample.org\"&lt;/span&gt; d))
+         (debugger
+          (&lt;span style=\"color: #00ffff;\"&gt;lambda&lt;/span&gt; (&lt;span style=\"color: #98fb98;\"&gt;&amp;amp;rest&lt;/span&gt; debugger-args)
+            (&lt;span style=\"color: #00ffff;\"&gt;let*&lt;/span&gt; ((trace (&lt;span style=\"color: #00ffff;\"&gt;with-temp-buffer&lt;/span&gt;
+                            (insert (&lt;span style=\"color: #00ffff;\"&gt;with-output-to-string&lt;/span&gt; (backtrace)))
+                            (beginning-of-buffer)
+                            &lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;error begins on line 16
+&lt;/span&gt;                            &lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;line stats with \"  signal(error ...\"
+&lt;/span&gt;                            (goto-line 16)
+                            (goto-char (point-at-bol))
+                            &lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Remove null chars
+&lt;/span&gt;                            (replace-regexp-in-string
+                              (char-to-string 0) &lt;span style=\"color: #ffa07a;\"&gt;\"^@\"&lt;/span&gt;
+                              (buffer-substring (point) (point-max))))))
+              (o-blog-bug-report trace))))
+         (debug-on-error t)
+         print-length print-level)
+    (add-to-list 'load-path (format &lt;span style=\"color: #ffa07a;\"&gt;\"%s/.emacs.d/org-mode/lisp\"&lt;/span&gt; d))
+    (add-to-list 'load-path (format &lt;span style=\"color: #ffa07a;\"&gt;\"%s/.emacs.d/org-mode/contrib/lisp\"&lt;/span&gt; d))
+    (add-to-list 'load-path (format &lt;span style=\"color: #ffa07a;\"&gt;\"%s/.emacs.d/o-blog\"&lt;/span&gt; d))
+    (&lt;span style=\"color: #00ffff;\"&gt;require&lt;/span&gt; '&lt;span style=\"color: #7fffd4;\"&gt;o-blog&lt;/span&gt;)
+    (find-file sample)
+    (org-publish-blog sample)
+    (kill-emacs)))
 &lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 #+END_HTML
 
@@ -768,7 +821,7 @@ The &lt;i&gt;org template shorcut&lt;/i&gt; is &lt;code&gt;&amp;lt;os&lt;/code&g
 
 
 &lt;p&gt;
-Here is an example of the &lt;code&gt;README.md&lt;/code&gt; file:
+&#36825;&#26159;&#26174;&#31034; &lt;code&gt;README.md&lt;/code&gt; &#25991;&#20214;&#30340;&#31034;&#20363;&#65306;
 &lt;/p&gt;
 
 
@@ -790,7 +843,7 @@ Here is an example of the &lt;code&gt;README.md&lt;/code&gt; file:
 
 &lt;span style=\"color: #87cefa; font-weight: bold;\"&gt;### &amp;#35774;&amp;#32622;&lt;/span&gt;
 
-#### &amp;#20351;&amp;#29992; &lt;span style=\"color: #7fffd4;\"&gt;`el-get`&lt;/span&gt;
+&lt;span style=\"color: #87cefa; font-weight: bold;\"&gt;#### &amp;#20351;&amp;#29992; `el-get`&lt;/span&gt;
 
 &amp;#22914;&amp;#26524;&amp;#20320;&amp;#20351;&amp;#29992; &lt;span style=\"color: #00ffff;\"&gt;[el-get]&lt;/span&gt;&lt;span style=\"color: #ffa07a;\"&gt;(https://github.com/dimitri/el-get)&lt;/span&gt;, &amp;#23433;&amp;#35013;&amp;#24456;&amp;#23481;&amp;#26131;&amp;#12290;&amp;#20320;&amp;#21482;&amp;#38656;&amp;#35201;&amp;#23558;
 &lt;span style=\"color: #7fffd4;\"&gt;`o-blog`&lt;/span&gt; &amp;#28155;&amp;#21152;&amp;#21040; &lt;span style=\"color: #7fffd4;\"&gt;`el-get-sources`&lt;/span&gt; &amp;#20013;&amp;#65292;&amp;#28982;&amp;#21518;&amp;#25191;&amp;#34892; &lt;span style=\"color: #7fffd4;\"&gt;`M-x el-get-install o-blog`&lt;/span&gt;.
@@ -800,17 +853,17 @@ Here is an example of the &lt;code&gt;README.md&lt;/code&gt; file:
 &lt;span style=\"color: #87cefa; font-weight: bold;\"&gt;#### &amp;#25163;&amp;#21160;&amp;#35774;&amp;#32622;&lt;/span&gt;
 &amp;#39318;&amp;#20808;&amp;#20174; &lt;span style=\"color: #00ffff;\"&gt;[Github]&lt;/span&gt;&lt;span style=\"color: #ffa07a;\"&gt;(http://github.com)&lt;/span&gt; &amp;#20811;&amp;#38534;&amp;#36825;&amp;#20010; &lt;span style=\"color: #eedd82; font-style: italic;\"&gt;*git*&lt;/span&gt; &amp;#28304;&amp;#30721;&amp;#20179;&amp;#24211;&amp;#12290;
 
-&lt;span style=\"color: #7fffd4;\"&gt;```&lt;/span&gt;
+&lt;span style=\"color: #7fffd4;\"&gt;```
 cd ~/.emacs.d
-git clone &lt;span style=\"color: #00ffff;\"&gt;https://github.com/renard/o-blog.git&lt;/span&gt;
-&lt;span style=\"color: #7fffd4;\"&gt;```&lt;/span&gt;
+git clone https://github.com/renard/o-blog.git
+``&lt;/span&gt;`
 
 &amp;#23558;&amp;#21518;&amp;#38754;&amp;#30340;&amp;#20195;&amp;#30721;&amp;#28155;&amp;#21152;&amp;#21040;&amp;#20320;&amp;#30340; &lt;span style=\"color: #7fffd4;\"&gt;`~/.emacs.d/init.el`&lt;/span&gt; &amp;#25991;&amp;#20214;&amp;#20013;&amp;#65306;
 
-&lt;span style=\"color: #7fffd4;\"&gt;```&lt;/span&gt;
+&lt;span style=\"color: #7fffd4;\"&gt;```
 (add-to-list 'load-path \"~/.emacs.d/o-blog\")
 (require 'o-blog)
-&lt;span style=\"color: #7fffd4;\"&gt;```&lt;/span&gt;
+``&lt;/span&gt;`
 
 &lt;span style=\"color: #87cefa; font-weight: bold;\"&gt;### &amp;#21457;&amp;#24067;&lt;/span&gt;
 
@@ -818,6 +871,60 @@ git clone &lt;span style=\"color: #00ffff;\"&gt;https://github.com/renard/o-blog
 &amp;#29983;&amp;#25104;&amp;#30340;&amp;#31449;&amp;#28857;&amp;#23558;&amp;#20250;&amp;#33258;&amp;#21160;&amp;#21457;&amp;#24067;&amp;#22312; &lt;span style=\"color: #7fffd4;\"&gt;`~/.emacs.d/o-blog/out`&lt;/span&gt; &amp;#30446;&amp;#24405;&amp;#19979;&amp;#12290;
 
 &amp;#28982;&amp;#21518;&amp;#65292;&amp;#35814;&amp;#24773;&amp;#21442;&amp;#35265; &lt;span style=\"color: #7fffd4;\"&gt;`example/out/blog/index.html`&lt;/span&gt; &amp;#21450; &lt;span style=\"color: #7fffd4;\"&gt;`example/out/todo.html`&lt;/span&gt;.
+&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+&#36825;&#26159;&#26174;&#31034; elisp &#20195;&#30721;&#30340;&#31034;&#20363;&#65306;
+&lt;/p&gt;
+
+
+&lt;div class=\"o-blog-source\"&gt;&lt;a class=\"btn btn-info\" data-toggle=\"modal\" data-target=\"#835a9f8a3649619c7a03ec593b4cd5e7\" &gt;&lt;i class=\"icon-file icon-white\"&gt;&lt;/i&gt;&amp;nbsp;sample-init.el&lt;/a&gt;&lt;/div&gt;&lt;div class=\"modal fade hide\" id=\"835a9f8a3649619c7a03ec593b4cd5e7\"&gt;&lt;div class=\"modal-header\"&gt;&lt;a class=\"close\" data-dismiss=\"modal\"&gt;&#215;&lt;/a&gt;&lt;h3&gt;sample-init.el&lt;/h3&gt;&lt;/div&gt;&lt;div class=\"modal-body\"&gt;&lt;pre&gt;
+&lt;span style=\"color: #ff7f24;\"&gt;;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;sample-init.el --- sample init file to be used to debug o-blog
+&lt;/span&gt;
+&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Copyright &amp;#169; 2012 S&amp;#233;bastien Gross &amp;lt;seb&amp;#8226;&amp;#593;&amp;#428;&amp;#8226;chezwam&amp;#8226;&amp;#598;&amp;#629;&amp;#648;&amp;#8226;org&amp;gt;
+&lt;/span&gt;
+&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Author: S&amp;#233;bastien Gross &amp;lt;seb&amp;#8226;&amp;#593;&amp;#428;&amp;#8226;chezwam&amp;#8226;&amp;#598;&amp;#629;&amp;#648;&amp;#8226;org&amp;gt;
+&lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Keywords: emacs, 
+&lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Created: 2012-03-20
+&lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Last changed: 2012-03-21 00:44:39
+&lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Licence: WTFPL, grab your copy here: http://sam.zoy.org/wtfpl/
+&lt;/span&gt;
+&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;This file is NOT part of GNU Emacs.
+&lt;/span&gt;
+&lt;span style=\"color: #ff7f24;\"&gt;;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Commentary:
+&lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;
+&lt;/span&gt;
+
+&lt;span style=\"color: #ff7f24;\"&gt;;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Code:
+&lt;/span&gt;
+
+(&lt;span style=\"color: #00ffff;\"&gt;defun&lt;/span&gt; &lt;span style=\"color: #87cefa;\"&gt;ob-build-sample&lt;/span&gt; ()
+  (&lt;span style=\"color: #00ffff;\"&gt;let*&lt;/span&gt; ((d default-directory)
+         (sample (format &lt;span style=\"color: #ffa07a;\"&gt;\"%s/.emacs.d/o-blog/example/sample.org\"&lt;/span&gt; d))
+         (debugger
+          (&lt;span style=\"color: #00ffff;\"&gt;lambda&lt;/span&gt; (&lt;span style=\"color: #98fb98;\"&gt;&amp;amp;rest&lt;/span&gt; debugger-args)
+            (&lt;span style=\"color: #00ffff;\"&gt;let*&lt;/span&gt; ((trace (&lt;span style=\"color: #00ffff;\"&gt;with-temp-buffer&lt;/span&gt;
+                            (insert (&lt;span style=\"color: #00ffff;\"&gt;with-output-to-string&lt;/span&gt; (backtrace)))
+                            (beginning-of-buffer)
+                            &lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;error begins on line 16
+&lt;/span&gt;                            &lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;line stats with \"  signal(error ...\"
+&lt;/span&gt;                            (goto-line 16)
+                            (goto-char (point-at-bol))
+                            &lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Remove null chars
+&lt;/span&gt;                            (replace-regexp-in-string
+                              (char-to-string 0) &lt;span style=\"color: #ffa07a;\"&gt;\"^@\"&lt;/span&gt;
+                              (buffer-substring (point) (point-max))))))
+              (o-blog-bug-report trace))))
+         (debug-on-error t)
+         print-length print-level)
+    (add-to-list 'load-path (format &lt;span style=\"color: #ffa07a;\"&gt;\"%s/.emacs.d/org-mode/lisp\"&lt;/span&gt; d))
+    (add-to-list 'load-path (format &lt;span style=\"color: #ffa07a;\"&gt;\"%s/.emacs.d/org-mode/contrib/lisp\"&lt;/span&gt; d))
+    (add-to-list 'load-path (format &lt;span style=\"color: #ffa07a;\"&gt;\"%s/.emacs.d/o-blog\"&lt;/span&gt; d))
+    (&lt;span style=\"color: #00ffff;\"&gt;require&lt;/span&gt; '&lt;span style=\"color: #7fffd4;\"&gt;o-blog&lt;/span&gt;)
+    (find-file sample)
+    (org-publish-blog sample)
+    (kill-emacs)))
 &lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 "</pre></td></tr>
@@ -1941,10 +2048,10 @@ entry.
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>0</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#24555;&#36895;&#20837;&#38376;&#25351;&#21335;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20328 43392)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20331 19584)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>3</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>21</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>23</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
@@ -2196,10 +2303,10 @@ git clone https://github.com/renard/o-blog.git
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>1</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#26356;&#26032;&#35760;&#24405;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20328 43392)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20331 19584)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>3</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>21</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>23</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
@@ -2302,10 +2409,10 @@ git clone https://github.com/renard/o-blog.git
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>2</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#35843;&#35797;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20328 43392)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20331 19584)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>3</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>21</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>23</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"debug.html"</pre></td></tr>
@@ -2329,10 +2436,10 @@ git clone https://github.com/renard/o-blog.git
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>3</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#29305;&#24615;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20328 43392)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20331 19584)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>3</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>21</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>23</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
@@ -2343,73 +2450,73 @@ git clone https://github.com/renard/o-blog.git
       <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 
-- Appearance
-  - Dynamic template system (using lisp functions) with [[file:./debug.html][nice debugging features]]
-  - Syntax highlighting for exported code snippets
-  - [[http://twitter.github.com/bootstrap/][bootstrap]] support
-  - [[http://fortaweso.me/font-awesome/][Font-Awesome]] support
-  - [[http://lesscss.org/][lesscss]] support
-  - [[http://jquery.com/][JQuery]] support
-  - HTML5 / CSS3 ready
-- Blog
-  - Static pages
-  - [[file:./tags/index.html][Tag cloud]]
-  - Multiple blogs
-  - [[file:./archives.html][Archives]]
-- Publication
-  - Both synchrone and asynchrone publication
-  - Publish directly to the webserver (using tramp)
-- [[http://twitter.github.com/bootstrap/][Bootstrap]] extra
-  - Alert boxes
-  - Icons ([[http://glyphicons.com/][glyphicons]]) support
+- &#22806;&#35266;
+  - &#24102;[[file:./debug.html][&#35843;&#35797;&#21151;&#33021;]]&#30340;&#21160;&#24577;&#27169;&#29256;&#31995;&#32479; (&#20351;&#29992; lisp &#20989;&#25968;)
+  - &#36755;&#20986;&#30340;&#20195;&#30721;&#29255;&#26029;&#24102;&#26377;&#35821;&#27861;&#21152;&#20142;
+  - &#25903;&#25345; [[http://twitter.github.com/bootstrap/][bootstrap]]
+  - &#25903;&#25345; [[http://fortaweso.me/font-awesome/][Font-Awesome]]
+  - &#25903;&#25345; [[http://lesscss.org/][lesscss]]
+  - &#25903;&#25345; [[http://jquery.com/][JQuery]]
+  - &#25903;&#25345; HTML5 / CSS3
+- &#21338;&#23458;
+  - &#38745;&#24577;&#39029;&#38754; 
+  - [[file:./tags/index.html][&#20113;&#26631;&#31614;]]
+  - &#22810;&#20010;&#21338;&#23458;
+  - [[file:./archives.html][&#21338;&#25991;&#24402;&#26723;]]
+- &#21338;&#25991;&#21457;&#24067;
+  - &#21516;&#26102;&#25903;&#25345;&#21516;&#27493;&#19982;&#24322;&#27493;&#21457;&#24067;
+  - &#30452;&#25509;&#21457;&#24067;&#21040;&#32593;&#31449;&#26381;&#21153;&#22120;&#19978; (&#36890;&#36807; tramp)
+- [[http://twitter.github.com/bootstrap/][Bootstrap]] &#39069;&#22806;&#21151;&#33021;
+  - &#35686;&#21578;&#26694;
+  - &#25903;&#25345;&#22270;&#26631; ([[http://glyphicons.com/][glyphicons]])
 "</pre></td></tr>
       <tr><td class="property"><code>content-html</code></td><td class="value"><pre>"&lt;ul&gt;
-&lt;li&gt;Appearance
+&lt;li&gt;&#22806;&#35266;
 &lt;ul&gt;
-&lt;li&gt;Dynamic template system (using lisp functions) with &lt;a href=\"./debug.html\"&gt;nice debugging features&lt;/a&gt;
+&lt;li&gt;&#24102;&lt;a href=\"./debug.html\"&gt;&#35843;&#35797;&#21151;&#33021;&lt;/a&gt;&#30340;&#21160;&#24577;&#27169;&#29256;&#31995;&#32479; (&#20351;&#29992; lisp &#20989;&#25968;)
 &lt;/li&gt;
-&lt;li&gt;Syntax highlighting for exported code snippets
+&lt;li&gt;&#36755;&#20986;&#30340;&#20195;&#30721;&#29255;&#26029;&#24102;&#26377;&#35821;&#27861;&#21152;&#20142;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=\"http://twitter.github.com/bootstrap/\"&gt;bootstrap&lt;/a&gt; support
+&lt;li&gt;&#25903;&#25345; &lt;a href=\"http://twitter.github.com/bootstrap/\"&gt;bootstrap&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=\"http://fortaweso.me/font-awesome/\"&gt;Font-Awesome&lt;/a&gt; support
+&lt;li&gt;&#25903;&#25345; &lt;a href=\"http://fortaweso.me/font-awesome/\"&gt;Font-Awesome&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=\"http://lesscss.org/\"&gt;lesscss&lt;/a&gt; support
+&lt;li&gt;&#25903;&#25345; &lt;a href=\"http://lesscss.org/\"&gt;lesscss&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=\"http://jquery.com/\"&gt;JQuery&lt;/a&gt; support
+&lt;li&gt;&#25903;&#25345; &lt;a href=\"http://jquery.com/\"&gt;JQuery&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt;HTML5 / CSS3 ready
+&lt;li&gt;&#25903;&#25345; HTML5 / CSS3
 &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;/li&gt;
-&lt;li&gt;Blog
+&lt;li&gt;&#21338;&#23458;
 &lt;ul&gt;
-&lt;li&gt;Static pages
+&lt;li&gt;&#38745;&#24577;&#39029;&#38754; 
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=\"./tags/index.html\"&gt;Tag cloud&lt;/a&gt;
+&lt;li&gt;&lt;a href=\"./tags/index.html\"&gt;&#20113;&#26631;&#31614;&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt;Multiple blogs
+&lt;li&gt;&#22810;&#20010;&#21338;&#23458;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=\"./archives.html\"&gt;Archives&lt;/a&gt;
+&lt;li&gt;&lt;a href=\"./archives.html\"&gt;&#21338;&#25991;&#24402;&#26723;&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;/li&gt;
-&lt;li&gt;Publication
+&lt;li&gt;&#21338;&#25991;&#21457;&#24067;
 &lt;ul&gt;
-&lt;li&gt;Both synchrone and asynchrone publication
+&lt;li&gt;&#21516;&#26102;&#25903;&#25345;&#21516;&#27493;&#19982;&#24322;&#27493;&#21457;&#24067;
 &lt;/li&gt;
-&lt;li&gt;Publish directly to the webserver (using tramp)
+&lt;li&gt;&#30452;&#25509;&#21457;&#24067;&#21040;&#32593;&#31449;&#26381;&#21153;&#22120;&#19978; (&#36890;&#36807; tramp)
 &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=\"http://twitter.github.com/bootstrap/\"&gt;Bootstrap&lt;/a&gt; extra
+&lt;li&gt;&lt;a href=\"http://twitter.github.com/bootstrap/\"&gt;Bootstrap&lt;/a&gt; &#39069;&#22806;&#21151;&#33021;
 &lt;ul&gt;
-&lt;li&gt;Alert boxes
+&lt;li&gt;&#35686;&#21578;&#26694;
 &lt;/li&gt;
-&lt;li&gt;Icons (&lt;a href=\"http://glyphicons.com/\"&gt;glyphicons&lt;/a&gt;) support
+&lt;li&gt;&#25903;&#25345;&#22270;&#26631; (&lt;a href=\"http://glyphicons.com/\"&gt;glyphicons&lt;/a&gt;)
 &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2428,10 +2535,10 @@ git clone https://github.com/renard/o-blog.git
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>4</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#27169;&#29256;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20328 43392)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20331 19584)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>3</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>21</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>23</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
@@ -2442,14 +2549,14 @@ git clone https://github.com/renard/o-blog.git
       <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 
-Templates which are a big part of the [[https://github.com/renard/o-blog][o-blog]] export process, are HTML-based
-files. Lisp code could be interpreted as long as =&lt;lisp&gt;= tags surrounds it.
+&#22312; [[https://github.com/renard/o-blog][o-blog]] &#23548;&#20986;&#36807;&#31243;&#20013;&#21344;&#37325;&#22836;&#25103;&#30340;&#26159;&#27169;&#29256;&#65292;&#19968;&#32452; HTML &#30340;&#25991;&#20214;&#12290;&#21487;&#35299;&#26512;&#30340; Lisp &#28304;&#30721;&#20197;
+=&lt;lisp&gt;= &#26631;&#31614;&#23884;&#20837;&#20854;&#20013;&#12290;
 
 #+begin_src html
 &lt;h1&gt;&lt;lisp&gt;(ob:blog-title BLOG)&lt;/lisp&gt;&lt;/h1&gt;
 #+end_src
 
-The previous snippet would be exported to something similar to:
+&#19978;&#38754;&#30340;&#20195;&#30721;&#29255;&#26029;&#21487;&#23548;&#20986;&#20026;&#22914;&#19979;&#31867;&#20284;&#30340;&#20869;&#23481;&#65306;
 
 #+begin_src html
 &lt;h1&gt;o-blog&lt;/h1&gt;
@@ -2459,10 +2566,10 @@ The previous snippet would be exported to something similar to:
 &lt;div class=\"alert alert-info\"&gt;&lt;p class=\"alert-heading\"&gt;Information&lt;/p&gt;
 #+END_HTML
 
-[[https://github.com/renard/o-blog][o-blog]] only needs =blog_= prefixed templates as long as they do not need any
-other templates (using =ob:insert-template= function).
+&#22914;&#26524;&#19981;&#38656;&#35201;&#20854;&#23427;&#27169;&#29256;, [[https://github.com/renard/o-blog][o-blog]] &#21482;&#29992;&#20197; =blog_= &#25171;&#22836;&#30340;&#27169;&#29256;&#25991;&#20214;&#23601;&#22815;&#20102;&#65288;&#36890;&#36807;&#20989;&#25968;
+=ob:insert-template= &#65289;&#12290;
 
-All other templates are defined for convenience.
+&#25152;&#26377;&#20854;&#23427;&#30340;&#27169;&#29256;&#21482;&#26159;&#20026;&#20102;&#26041;&#20415;&#32780;&#23450;&#20041;&#12290;
 
 #+BEGIN_HTML
 &lt;/div&gt;
@@ -2470,52 +2577,44 @@ All other templates are defined for convenience.
 
 
 
-** Required templates
+** &#24517;&#35201;&#30340;&#27169;&#29256;
 
-=blog_= prefixed templates.
+=blog_= &#25171;&#22836;&#30340;&#27169;&#29256;&#12290;
 
- - =blog_static.html=: exports any static page (function =ob-write-static=).
- - =blog_post.html=: exports a blog post (function =ob-write-posts=).
- - =blog_tags.html=: exports a tag cloud page (function =ob-write-tags=).
- - =blog_tags-detail.html=: exports page matching a specific tag (function
-   =ob-write-tags=).
- - =blog_archive.html=: exports the whole archives (all categories, all
-   years, all months) page (function =ob-write-index=).
- - =blog_rss.html=: exports the rss feed (function =ob-write-index=).
- - =blog_index_month.html= export index page for a given month (function
-   =ob-write-index=).
- - =blog_index_year.html= export index page for a given year (function
-   =ob-write-index=).
- - =blog_index_catery.html= export index page for a given category (function
-   =ob-write-index=).
+ - =blog_static.html=: &#23548;&#20986;&#20219;&#20309;&#38745;&#24577;&#39029;&#38754; (&#20989;&#25968; =ob-write-static=).
+ - =blog_post.html=: &#23548;&#20986;&#19968;&#31687;&#21338;&#25991; (&#20989;&#25968; =ob-write-posts=).
+ - =blog_tags.html=: &#23548;&#20986;&#20113;&#26631;&#31614;&#39029;&#38754; (&#20989;&#25968; =ob-write-tags=).
+ - =blog_tags-detail.html=: &#23548;&#20986;&#21305;&#37197;&#29305;&#23450;&#26631;&#31614;&#30340;&#39029;&#38754; (&#20989;&#25968; =ob-write-tags=).
+ - =blog_archive.html=: &#23548;&#20986;&#20840;&#37096;&#24402;&#26723; (&#25152;&#26377;&#31867;&#21035;&#12289;&#25152;&#26377;&#24180;&#12289;&#25152;&#26377;&#26376;) &#39029;&#38754; (&#20989;&#25968; =ob-write-index=).
+ - =blog_rss.html=: &#23548;&#20986; RSS &#35746;&#38405; (&#20989;&#25968; =ob-write-index=).
+ - =blog_index_month.html= &#23548;&#20986;&#25351;&#23450;&#26376;&#30340;&#32034;&#24341;&#39029;&#38754; (&#20989;&#25968; =ob-write-index=).
+ - =blog_index_year.html= &#23548;&#20986;&#25351;&#23450;&#26376;&#30340;&#32034;&#24341;&#39029;&#38754; (&#20989;&#25968; =ob-write-index=).
+ - =blog_index_catery.html= &#23548;&#20986;&#25351;&#23450;&#31867;&#21035;&#30340;&#32034;&#24341;&#39029;&#38754; (&#20989;&#25968; =ob-write-index=).
 
-** index templates
+** &#32034;&#24341;&#27169;&#29256;
 
-=index_= prefixed templates. They are used my all =blog_index_*.html=
-templates to generate a list of articles matching given category, year and
-month and the whole archives.
+&#20197; =index_= &#25171;&#22836;&#30340;&#27169;&#29256;&#12290;&#23427;&#20204;&#20351;&#29992;&#25152;&#26377;&#30340; =blog_index_*.html= &#27169;&#29256;&#26469;&#29983;&#25104;&#19968;&#32452;&#21305;&#37197;&#25351;&#23450;&#31867;&#21035;&#12289;&#24180;&#12289;&#26376;&#21644;&#20840;&#37096;&#24402;&#26723;&#30340;&#25991;&#31456;&#21015;&#34920;&#12290;
 
  - =index_archives.html=
  - =index_category.html=
  - =index_month.html=
  - =index_year.html=
 
-** Navigation templates
+** &#23548;&#33322;&#27169;&#29256;
 
-=nav_= prefixed templates used to generate navigation snippets:
+&#20197; =nav_= &#24320;&#22836;&#30340;&#27169;&#29256;&#29992;&#20110;&#29983;&#25104;&#23548;&#33322;&#29255;&#26029;&#65306;
 
- - =nav_links.html=: used to generate navigation menu used in both page
-   header and footer.
- - =nav_tag-cloud.html=: used to generate tag cloud on page bottom.
+ - =nav_links.html=: &#29992;&#20110;&#29983;&#25104;&#29992;&#20110;&#39029;&#39318;&#21644;&#39029;&#23614;&#30340;&#30340;&#23548;&#33322;&#33756;&#21333;&#12290;
+ - =nav_tag-cloud.html=: &#29992;&#20110;&#29983;&#25104;&#39029;&#23614;&#30340;&#20113;&#26631;&#31614;&#12290;
 
-** Page templates
+** &#39029;&#38754;&#27169;&#29256;
 
-=page_= prefixed templates used for both html header and footer.
+&#20197; =page_= &#24320;&#22836;&#30340;&#27169;&#29256;&#29992;&#20110;&#29983;&#25104; HTML &#30340;&#39029;&#22836;&#21450;&#39029;&#23614;&#12290;
 
 "</pre></td></tr>
       <tr><td class="property"><code>content-html</code></td><td class="value"><pre>"&lt;p&gt;
-Templates which are a big part of the &lt;a href=\"https://github.com/renard/o-blog\"&gt;o-blog&lt;/a&gt; export process, are HTML-based
-files. Lisp code could be interpreted as long as &lt;code&gt;&amp;lt;lisp&amp;gt;&lt;/code&gt; tags surrounds it.
+&#22312; &lt;a href=\"https://github.com/renard/o-blog\"&gt;o-blog&lt;/a&gt; &#23548;&#20986;&#36807;&#31243;&#20013;&#21344;&#37325;&#22836;&#25103;&#30340;&#26159;&#27169;&#29256;&#65292;&#19968;&#32452; HTML &#30340;&#25991;&#20214;&#12290;&#21487;&#35299;&#26512;&#30340; Lisp &#28304;&#30721;&#20197;
+&lt;code&gt;&amp;lt;lisp&amp;gt;&lt;/code&gt; &#26631;&#31614;&#23884;&#20837;&#20854;&#20013;&#12290;
 &lt;/p&gt;
 
 
@@ -2525,7 +2624,7 @@ files. Lisp code could be interpreted as long as &lt;code&gt;&amp;lt;lisp&amp;gt
 
 
 &lt;p&gt;
-The previous snippet would be exported to something similar to:
+&#19978;&#38754;&#30340;&#20195;&#30721;&#29255;&#26029;&#21487;&#23548;&#20986;&#20026;&#22914;&#19979;&#31867;&#20284;&#30340;&#20869;&#23481;&#65306;
 &lt;/p&gt;
 
 
@@ -2537,11 +2636,11 @@ The previous snippet would be exported to something similar to:
 &lt;div class=\"alert alert-info\"&gt;&lt;p class=\"alert-heading\"&gt;Information&lt;/p&gt;
 
 &lt;p&gt;
-&lt;a href=\"https://github.com/renard/o-blog\"&gt;o-blog&lt;/a&gt; only needs &lt;code&gt;blog_&lt;/code&gt; prefixed templates as long as they do not need any
-other templates (using &lt;code&gt;ob:insert-template&lt;/code&gt; function).
+&#22914;&#26524;&#19981;&#38656;&#35201;&#20854;&#23427;&#27169;&#29256;, &lt;a href=\"https://github.com/renard/o-blog\"&gt;o-blog&lt;/a&gt; &#21482;&#29992;&#20197; &lt;code&gt;blog_&lt;/code&gt; &#25171;&#22836;&#30340;&#27169;&#29256;&#25991;&#20214;&#23601;&#22815;&#20102;&#65288;&#36890;&#36807;&#20989;&#25968;
+&lt;code&gt;ob:insert-template&lt;/code&gt; &#65289;&#12290;
 &lt;/p&gt;
 &lt;p&gt;
-All other templates are defined for convenience.
+&#25152;&#26377;&#20854;&#23427;&#30340;&#27169;&#29256;&#21482;&#26159;&#20026;&#20102;&#26041;&#20415;&#32780;&#23450;&#20041;&#12290;
 &lt;/p&gt;
 
 
@@ -2551,36 +2650,31 @@ All other templates are defined for convenience.
 
 
 &lt;div id=\"outline-container-1\" class=\"outline-3\"&gt;
-&lt;h3 id=\"sec-1\"&gt;Required templates&lt;/h3&gt;
+&lt;h3 id=\"sec-1\"&gt;&#24517;&#35201;&#30340;&#27169;&#29256;&lt;/h3&gt;
 &lt;div class=\"outline-text-3\" id=\"text-1\"&gt;
 
 
 &lt;p&gt;
-&lt;code&gt;blog_&lt;/code&gt; prefixed templates.
+&lt;code&gt;blog_&lt;/code&gt; &#25171;&#22836;&#30340;&#27169;&#29256;&#12290;
 &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;blog_static.html&lt;/code&gt;: exports any static page (function &lt;code&gt;ob-write-static&lt;/code&gt;).
+&lt;li&gt;&lt;code&gt;blog_static.html&lt;/code&gt;: &#23548;&#20986;&#20219;&#20309;&#38745;&#24577;&#39029;&#38754; (&#20989;&#25968; &lt;code&gt;ob-write-static&lt;/code&gt;).
 &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;blog_post.html&lt;/code&gt;: exports a blog post (function &lt;code&gt;ob-write-posts&lt;/code&gt;).
+&lt;li&gt;&lt;code&gt;blog_post.html&lt;/code&gt;: &#23548;&#20986;&#19968;&#31687;&#21338;&#25991; (&#20989;&#25968; &lt;code&gt;ob-write-posts&lt;/code&gt;).
 &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;blog_tags.html&lt;/code&gt;: exports a tag cloud page (function &lt;code&gt;ob-write-tags&lt;/code&gt;).
+&lt;li&gt;&lt;code&gt;blog_tags.html&lt;/code&gt;: &#23548;&#20986;&#20113;&#26631;&#31614;&#39029;&#38754; (&#20989;&#25968; &lt;code&gt;ob-write-tags&lt;/code&gt;).
 &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;blog_tags-detail.html&lt;/code&gt;: exports page matching a specific tag (function
-   &lt;code&gt;ob-write-tags&lt;/code&gt;).
+&lt;li&gt;&lt;code&gt;blog_tags-detail.html&lt;/code&gt;: &#23548;&#20986;&#21305;&#37197;&#29305;&#23450;&#26631;&#31614;&#30340;&#39029;&#38754; (&#20989;&#25968; &lt;code&gt;ob-write-tags&lt;/code&gt;).
 &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;blog_archive.html&lt;/code&gt;: exports the whole archives (all categories, all
-   years, all months) page (function &lt;code&gt;ob-write-index&lt;/code&gt;).
+&lt;li&gt;&lt;code&gt;blog_archive.html&lt;/code&gt;: &#23548;&#20986;&#20840;&#37096;&#24402;&#26723; (&#25152;&#26377;&#31867;&#21035;&#12289;&#25152;&#26377;&#24180;&#12289;&#25152;&#26377;&#26376;) &#39029;&#38754; (&#20989;&#25968; &lt;code&gt;ob-write-index&lt;/code&gt;).
 &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;blog_rss.html&lt;/code&gt;: exports the rss feed (function &lt;code&gt;ob-write-index&lt;/code&gt;).
+&lt;li&gt;&lt;code&gt;blog_rss.html&lt;/code&gt;: &#23548;&#20986; RSS &#35746;&#38405; (&#20989;&#25968; &lt;code&gt;ob-write-index&lt;/code&gt;).
 &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;blog_index_month.html&lt;/code&gt; export index page for a given month (function
-   &lt;code&gt;ob-write-index&lt;/code&gt;).
+&lt;li&gt;&lt;code&gt;blog_index_month.html&lt;/code&gt; &#23548;&#20986;&#25351;&#23450;&#26376;&#30340;&#32034;&#24341;&#39029;&#38754; (&#20989;&#25968; &lt;code&gt;ob-write-index&lt;/code&gt;).
 &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;blog_index_year.html&lt;/code&gt; export index page for a given year (function
-   &lt;code&gt;ob-write-index&lt;/code&gt;).
+&lt;li&gt;&lt;code&gt;blog_index_year.html&lt;/code&gt; &#23548;&#20986;&#25351;&#23450;&#26376;&#30340;&#32034;&#24341;&#39029;&#38754; (&#20989;&#25968; &lt;code&gt;ob-write-index&lt;/code&gt;).
 &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;blog_index_catery.html&lt;/code&gt; export index page for a given category (function
-   &lt;code&gt;ob-write-index&lt;/code&gt;).
+&lt;li&gt;&lt;code&gt;blog_index_catery.html&lt;/code&gt; &#23548;&#20986;&#25351;&#23450;&#31867;&#21035;&#30340;&#32034;&#24341;&#39029;&#38754; (&#20989;&#25968; &lt;code&gt;ob-write-index&lt;/code&gt;).
 &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2590,14 +2684,12 @@ All other templates are defined for convenience.
 &lt;/div&gt;
 
 &lt;div id=\"outline-container-2\" class=\"outline-3\"&gt;
-&lt;h3 id=\"sec-2\"&gt;index templates&lt;/h3&gt;
+&lt;h3 id=\"sec-2\"&gt;&#32034;&#24341;&#27169;&#29256;&lt;/h3&gt;
 &lt;div class=\"outline-text-3\" id=\"text-2\"&gt;
 
 
 &lt;p&gt;
-&lt;code&gt;index_&lt;/code&gt; prefixed templates. They are used my all &lt;code&gt;blog_index_*.html&lt;/code&gt;
-templates to generate a list of articles matching given category, year and
-month and the whole archives.
+&#20197; &lt;code&gt;index_&lt;/code&gt; &#25171;&#22836;&#30340;&#27169;&#29256;&#12290;&#23427;&#20204;&#20351;&#29992;&#25152;&#26377;&#30340; &lt;code&gt;blog_index_*.html&lt;/code&gt; &#27169;&#29256;&#26469;&#29983;&#25104;&#19968;&#32452;&#21305;&#37197;&#25351;&#23450;&#31867;&#21035;&#12289;&#24180;&#12289;&#26376;&#21644;&#20840;&#37096;&#24402;&#26723;&#30340;&#25991;&#31456;&#21015;&#34920;&#12290;
 &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;index_archives.html&lt;/code&gt;
@@ -2616,18 +2708,17 @@ month and the whole archives.
 &lt;/div&gt;
 
 &lt;div id=\"outline-container-3\" class=\"outline-3\"&gt;
-&lt;h3 id=\"sec-3\"&gt;Navigation templates&lt;/h3&gt;
+&lt;h3 id=\"sec-3\"&gt;&#23548;&#33322;&#27169;&#29256;&lt;/h3&gt;
 &lt;div class=\"outline-text-3\" id=\"text-3\"&gt;
 
 
 &lt;p&gt;
-&lt;code&gt;nav_&lt;/code&gt; prefixed templates used to generate navigation snippets:
+&#20197; &lt;code&gt;nav_&lt;/code&gt; &#24320;&#22836;&#30340;&#27169;&#29256;&#29992;&#20110;&#29983;&#25104;&#23548;&#33322;&#29255;&#26029;&#65306;
 &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;nav_links.html&lt;/code&gt;: used to generate navigation menu used in both page
-   header and footer.
+&lt;li&gt;&lt;code&gt;nav_links.html&lt;/code&gt;: &#29992;&#20110;&#29983;&#25104;&#29992;&#20110;&#39029;&#39318;&#21644;&#39029;&#23614;&#30340;&#30340;&#23548;&#33322;&#33756;&#21333;&#12290;
 &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;nav_tag-cloud.html&lt;/code&gt;: used to generate tag cloud on page bottom.
+&lt;li&gt;&lt;code&gt;nav_tag-cloud.html&lt;/code&gt;: &#29992;&#20110;&#29983;&#25104;&#39029;&#23614;&#30340;&#20113;&#26631;&#31614;&#12290;
 &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2637,12 +2728,12 @@ month and the whole archives.
 &lt;/div&gt;
 
 &lt;div id=\"outline-container-4\" class=\"outline-3\"&gt;
-&lt;h3 id=\"sec-4\"&gt;Page templates&lt;/h3&gt;
+&lt;h3 id=\"sec-4\"&gt;&#39029;&#38754;&#27169;&#29256;&lt;/h3&gt;
 &lt;div class=\"outline-text-3\" id=\"text-4\"&gt;
 
 
 &lt;p&gt;
-&lt;code&gt;page_&lt;/code&gt; prefixed templates used for both html header and footer.
+&#20197; &lt;code&gt;page_&lt;/code&gt; &#24320;&#22836;&#30340;&#27169;&#29256;&#29992;&#20110;&#29983;&#25104; HTML &#30340;&#39029;&#22836;&#21450;&#39029;&#23614;&#12290;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2658,10 +2749,10 @@ month and the whole archives.
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>5</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#32467;&#26500;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20328 43392)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20331 19584)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>3</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>21</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>23</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
@@ -2676,7 +2767,7 @@ Some variables are available when publishing lisp parts of templates. These
 variables are defined using [[http://www.gnu.org/software/emacs/manual/html_node/cl/Structures.html][defstruct]], then any slot (or property) is
 available using a =(type-slot variable)= form.
 
-** Structures
+** &#25991;&#26723;&#32467;&#26500;
 
 *** Structures: =ob:blog=
 
@@ -2756,7 +2847,7 @@ Example:
 (ob:tags-name TAG)
 #+end_src
 
-** Variables
+** &#21464;&#37327;
 
 Following variables are always available when publishing a blog:
 
@@ -2785,7 +2876,7 @@ available using a &lt;code&gt;(type-slot variable)&lt;/code&gt; form.
 &lt;/p&gt;
 
 &lt;div id=\"outline-container-1\" class=\"outline-3\"&gt;
-&lt;h3 id=\"sec-1\"&gt;Structures&lt;/h3&gt;
+&lt;h3 id=\"sec-1\"&gt;&#25991;&#26723;&#32467;&#26500;&lt;/h3&gt;
 &lt;div class=\"outline-text-3\" id=\"text-1\"&gt;
 
 
@@ -2946,7 +3037,7 @@ Example:
 &lt;/div&gt;
 
 &lt;div id=\"outline-container-2\" class=\"outline-3\"&gt;
-&lt;h3 id=\"sec-2\"&gt;Variables&lt;/h3&gt;
+&lt;h3 id=\"sec-2\"&gt;&#21464;&#37327;&lt;/h3&gt;
 &lt;div class=\"outline-text-3\" id=\"text-2\"&gt;
 
 
@@ -3002,10 +3093,10 @@ Some variables may be defined in some functions:
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>6</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#20989;&#25968;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20328 43392)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20331 19584)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>3</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>21</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>23</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
@@ -3481,10 +3572,10 @@ Add a human readable timestamp for a post:
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>7</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#38382;&#31572;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20328 43392)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20331 19584)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>3</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>21</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>23</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
@@ -3495,19 +3586,23 @@ Add a human readable timestamp for a post:
       <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 
-** My page looks ugly
+** &#39029;&#38754;&#30475;&#36215;&#26469;&#19985;&#19985;&#30340;&#65374;&#65374;
 
 Maybe you are using [[https://www.google.com/chrome/][google-chrome]] and try to view your site locally using a
 =file:///path/to/your/site/out/index.html= scheme. Open the javascript console
 =Ctrl+Shift+I= you should see something like:
+
+&#22914;&#26524;&#20320;&#20351;&#29992;&#30340;&#26159; [[https://www.google.com/chrome/][google-chrome]] &#24182;&#19988;&#29992; =file:///path/to/your/site/out/index.html= &#36825;
+&#31181;&#26041;&#24335;&#26469;&#26597;&#30475;&#39029;&#38754;&#30340;&#35805;&#65292;&#29992; =Ctrl+Shift+I= &#25171;&#24320; JavaScript &#25511;&#21046;&#21488;&#65292;&#20320;&#21487;&#33021;&#20250;&#30475;&#21040;&#22914;&#19979;
+&#31867;&#20284;&#30340;&#25552;&#31034;&#65306;
 
 #+begin_example
 XMLHttpRequest cannot load file:///path/to/your/site/out/out/style/css/o-blog.less. Cross origin requests are only supported for HTTP.
 less-1.2.1.min.js:8Uncaught Error: NETWORK_ERR: XMLHttpRequest Exception 101
 #+end_example
 
-There is a known Chrome issue with loading local javascript files. This is a
-/security feature/ in Chrome.
+&#36825;&#26159; Chrome &#36733;&#20837;&#26412;&#22320; JavaScript &#25991;&#20214;&#26102;&#30340;&#19968;&#20010;&#29305;&#28857;&#65292;&#36825;&#20063;&#26159; Chrome &#20013;&#30340;&#19968;&#20010;
+/&#23433;&#20840;&#29305;&#24615;/ &#12290;
 
 You can disable this with the =--allow-file-access-from-files= option to
 chrome or you can use an other browser or setup a local webserver.
@@ -3539,7 +3634,7 @@ An other alternative would be the use of [[http://www.emacswiki.org/emacs/Elnode
 complex.
 "</pre></td></tr>
       <tr><td class="property"><code>content-html</code></td><td class="value"><pre>"&lt;div id=\"outline-container-1\" class=\"outline-3\"&gt;
-&lt;h3 id=\"sec-1\"&gt;My page looks ugly&lt;/h3&gt;
+&lt;h3 id=\"sec-1\"&gt;&#39029;&#38754;&#30475;&#36215;&#26469;&#19985;&#19985;&#30340;&#65374;&#65374;&lt;/h3&gt;
 &lt;div class=\"outline-text-3\" id=\"text-1\"&gt;
 
 
@@ -3547,6 +3642,11 @@ complex.
 Maybe you are using &lt;a href=\"https://www.google.com/chrome/\"&gt;google-chrome&lt;/a&gt; and try to view your site locally using a
 &lt;code&gt;file:///path/to/your/site/out/index.html&lt;/code&gt; scheme. Open the javascript console
 &lt;code&gt;Ctrl+Shift+I&lt;/code&gt; you should see something like:
+&lt;/p&gt;
+&lt;p&gt;
+&#22914;&#26524;&#20320;&#20351;&#29992;&#30340;&#26159; &lt;a href=\"https://www.google.com/chrome/\"&gt;google-chrome&lt;/a&gt; &#24182;&#19988;&#29992; &lt;code&gt;file:///path/to/your/site/out/index.html&lt;/code&gt; &#36825;
+&#31181;&#26041;&#24335;&#26469;&#26597;&#30475;&#39029;&#38754;&#30340;&#35805;&#65292;&#29992; &lt;code&gt;Ctrl+Shift+I&lt;/code&gt; &#25171;&#24320; JavaScript &#25511;&#21046;&#21488;&#65292;&#20320;&#21487;&#33021;&#20250;&#30475;&#21040;&#22914;&#19979;
+&#31867;&#20284;&#30340;&#25552;&#31034;&#65306;
 &lt;/p&gt;
 
 
@@ -3557,8 +3657,8 @@ less-1.2.1.min.js:8Uncaught Error: NETWORK_ERR: XMLHttpRequest Exception 101
 
 
 &lt;p&gt;
-There is a known Chrome issue with loading local javascript files. This is a
-&lt;i&gt;security feature&lt;/i&gt; in Chrome.
+&#36825;&#26159; Chrome &#36733;&#20837;&#26412;&#22320; JavaScript &#25991;&#20214;&#26102;&#30340;&#19968;&#20010;&#29305;&#28857;&#65292;&#36825;&#20063;&#26159; Chrome &#20013;&#30340;&#19968;&#20010;
+&lt;i&gt;&#23433;&#20840;&#29305;&#24615;&lt;/i&gt; &#12290;
 &lt;/p&gt;
 &lt;p&gt;
 You can disable this with the &lt;code&gt;--allow-file-access-from-files&lt;/code&gt; option to
@@ -3621,16 +3721,16 @@ complex.
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>0</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#29256;&#26435;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20328 43392)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20331 19584)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>3</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>21</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>23</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_post.html"</pre></td></tr>
       <tr><td class="property"><code>filepath</code></td><td class="value"><pre>"Tips/2012/03"</pre></td></tr>
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"daac757aaf7db65121e6d5786b049354"</pre></td></tr>
-      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/03/21_daac757aaf7db65121e6d5786b049354.html"</pre></td></tr>
+      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/03/23_daac757aaf7db65121e6d5786b049354.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"../../.."</pre></td></tr>
       <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
 
@@ -3653,16 +3753,16 @@ Copyright &#169; 2008-2012 &lt;a href=\"mailto:seb%20&#10088;&#593;&#422;&#629;&
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>1</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#20851;&#20110;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20328 43392)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20331 19584)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>3</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>21</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>23</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_post.html"</pre></td></tr>
       <tr><td class="property"><code>filepath</code></td><td class="value"><pre>"Tips/2012/03"</pre></td></tr>
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"81d9f505441078e06980e0bd02616e94"</pre></td></tr>
-      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/03/21_81d9f505441078e06980e0bd02616e94.html"</pre></td></tr>
+      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/03/23_81d9f505441078e06980e0bd02616e94.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"../../.."</pre></td></tr>
       <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
 
@@ -3683,16 +3783,16 @@ Copyright &#169; 2008-2012 &lt;a href=\"mailto:seb%20&#10088;&#593;&#422;&#629;&
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>2</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#23548;&#33322;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20328 43392)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20331 19584)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>3</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>21</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>23</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_post.html"</pre></td></tr>
       <tr><td class="property"><code>filepath</code></td><td class="value"><pre>"Tips/2012/03"</pre></td></tr>
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"056f2d7df6e6b64625c3a2d27ce07b05"</pre></td></tr>
-      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/03/21_056f2d7df6e6b64625c3a2d27ce07b05.html"</pre></td></tr>
+      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/03/23_056f2d7df6e6b64625c3a2d27ce07b05.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"../../.."</pre></td></tr>
       <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
 

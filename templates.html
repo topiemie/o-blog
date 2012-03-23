@@ -120,8 +120,8 @@
   </header>
   <div class="article-content">
     <p>
-Templates which are a big part of the <a href="https://github.com/renard/o-blog">o-blog</a> export process, are HTML-based
-files. Lisp code could be interpreted as long as <code>&lt;lisp&gt;</code> tags surrounds it.
+在 <a href="https://github.com/renard/o-blog">o-blog</a> 导出过程中占重头戏的是模版，一组 HTML 的文件。可解析的 Lisp 源码以
+<code>&lt;lisp&gt;</code> 标签嵌入其中。
 </p>
 
 
@@ -131,7 +131,7 @@ files. Lisp code could be interpreted as long as <code>&lt;lisp&gt;</code> tags 
 
 
 <p>
-The previous snippet would be exported to something similar to:
+上面的代码片断可导出为如下类似的内容：
 </p>
 
 
@@ -143,11 +143,11 @@ The previous snippet would be exported to something similar to:
 <div class="alert alert-info"><p class="alert-heading">Information</p>
 
 <p>
-<a href="https://github.com/renard/o-blog">o-blog</a> only needs <code>blog_</code> prefixed templates as long as they do not need any
-other templates (using <code>ob:insert-template</code> function).
+如果不需要其它模版, <a href="https://github.com/renard/o-blog">o-blog</a> 只用以 <code>blog_</code> 打头的模版文件就够了（通过函数
+<code>ob:insert-template</code> ）。
 </p>
 <p>
-All other templates are defined for convenience.
+所有其它的模版只是为了方便而定义。
 </p>
 
 
@@ -157,36 +157,31 @@ All other templates are defined for convenience.
 
 
 <div id="outline-container-1" class="outline-3">
-<h3 id="sec-1">Required templates</h3>
+<h3 id="sec-1">必要的模版</h3>
 <div class="outline-text-3" id="text-1">
 
 
 <p>
-<code>blog_</code> prefixed templates.
+<code>blog_</code> 打头的模版。
 </p>
 <ul>
-<li><code>blog_static.html</code>: exports any static page (function <code>ob-write-static</code>).
+<li><code>blog_static.html</code>: 导出任何静态页面 (函数 <code>ob-write-static</code>).
 </li>
-<li><code>blog_post.html</code>: exports a blog post (function <code>ob-write-posts</code>).
+<li><code>blog_post.html</code>: 导出一篇博文 (函数 <code>ob-write-posts</code>).
 </li>
-<li><code>blog_tags.html</code>: exports a tag cloud page (function <code>ob-write-tags</code>).
+<li><code>blog_tags.html</code>: 导出云标签页面 (函数 <code>ob-write-tags</code>).
 </li>
-<li><code>blog_tags-detail.html</code>: exports page matching a specific tag (function
-   <code>ob-write-tags</code>).
+<li><code>blog_tags-detail.html</code>: 导出匹配特定标签的页面 (函数 <code>ob-write-tags</code>).
 </li>
-<li><code>blog_archive.html</code>: exports the whole archives (all categories, all
-   years, all months) page (function <code>ob-write-index</code>).
+<li><code>blog_archive.html</code>: 导出全部归档 (所有类别、所有年、所有月) 页面 (函数 <code>ob-write-index</code>).
 </li>
-<li><code>blog_rss.html</code>: exports the rss feed (function <code>ob-write-index</code>).
+<li><code>blog_rss.html</code>: 导出 RSS 订阅 (函数 <code>ob-write-index</code>).
 </li>
-<li><code>blog_index_month.html</code> export index page for a given month (function
-   <code>ob-write-index</code>).
+<li><code>blog_index_month.html</code> 导出指定月的索引页面 (函数 <code>ob-write-index</code>).
 </li>
-<li><code>blog_index_year.html</code> export index page for a given year (function
-   <code>ob-write-index</code>).
+<li><code>blog_index_year.html</code> 导出指定月的索引页面 (函数 <code>ob-write-index</code>).
 </li>
-<li><code>blog_index_catery.html</code> export index page for a given category (function
-   <code>ob-write-index</code>).
+<li><code>blog_index_catery.html</code> 导出指定类别的索引页面 (函数 <code>ob-write-index</code>).
 </li>
 </ul>
 
@@ -196,14 +191,12 @@ All other templates are defined for convenience.
 </div>
 
 <div id="outline-container-2" class="outline-3">
-<h3 id="sec-2">index templates</h3>
+<h3 id="sec-2">索引模版</h3>
 <div class="outline-text-3" id="text-2">
 
 
 <p>
-<code>index_</code> prefixed templates. They are used my all <code>blog_index_*.html</code>
-templates to generate a list of articles matching given category, year and
-month and the whole archives.
+以 <code>index_</code> 打头的模版。它们使用所有的 <code>blog_index_*.html</code> 模版来生成一组匹配指定类别、年、月和全部归档的文章列表。
 </p>
 <ul>
 <li><code>index_archives.html</code>
@@ -222,18 +215,17 @@ month and the whole archives.
 </div>
 
 <div id="outline-container-3" class="outline-3">
-<h3 id="sec-3">Navigation templates</h3>
+<h3 id="sec-3">导航模版</h3>
 <div class="outline-text-3" id="text-3">
 
 
 <p>
-<code>nav_</code> prefixed templates used to generate navigation snippets:
+以 <code>nav_</code> 开头的模版用于生成导航片断：
 </p>
 <ul>
-<li><code>nav_links.html</code>: used to generate navigation menu used in both page
-   header and footer.
+<li><code>nav_links.html</code>: 用于生成用于页首和页尾的的导航菜单。
 </li>
-<li><code>nav_tag-cloud.html</code>: used to generate tag cloud on page bottom.
+<li><code>nav_tag-cloud.html</code>: 用于生成页尾的云标签。
 </li>
 </ul>
 
@@ -243,12 +235,12 @@ month and the whole archives.
 </div>
 
 <div id="outline-container-4" class="outline-3">
-<h3 id="sec-4">Page templates</h3>
+<h3 id="sec-4">页面模版</h3>
 <div class="outline-text-3" id="text-4">
 
 
 <p>
-<code>page_</code> prefixed templates used for both html header and footer.
+以 <code>page_</code> 开头的模版用于生成 HTML 的页头及页尾。
 </p>
 </div>
 </div>

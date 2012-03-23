@@ -120,7 +120,7 @@
   </header>
   <div class="article-content">
     <div id="outline-container-1" class="outline-3">
-<h3 id="sec-1">My page looks ugly</h3>
+<h3 id="sec-1">页面看起来丑丑的～～</h3>
 <div class="outline-text-3" id="text-1">
 
 
@@ -128,6 +128,11 @@
 Maybe you are using <a href="https://www.google.com/chrome/">google-chrome</a> and try to view your site locally using a
 <code>file:///path/to/your/site/out/index.html</code> scheme. Open the javascript console
 <code>Ctrl+Shift+I</code> you should see something like:
+</p>
+<p>
+如果你使用的是 <a href="https://www.google.com/chrome/">google-chrome</a> 并且用 <code>file:///path/to/your/site/out/index.html</code> 这
+种方式来查看页面的话，用 <code>Ctrl+Shift+I</code> 打开 JavaScript 控制台，你可能会看到如下
+类似的提示：
 </p>
 
 
@@ -138,8 +143,8 @@ less-1.2.1.min.js:8Uncaught Error: NETWORK_ERR: XMLHttpRequest Exception 101
 
 
 <p>
-There is a known Chrome issue with loading local javascript files. This is a
-<i>security feature</i> in Chrome.
+这是 Chrome 载入本地 JavaScript 文件时的一个特点，这也是 Chrome 中的一个
+<i>安全特性</i> 。
 </p>
 <p>
 You can disable this with the <code>--allow-file-access-from-files</code> option to

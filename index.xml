@@ -3,7 +3,7 @@
   <title>o-blog</title>
   <link href="http://exaos.github.com/o-blogindex.xml" rel="self" />
   <link href="http://exaos.github.com/o-blog"/>
-  <updated>2012-03-21T14:38:59Z</updated>
+  <updated>2012-03-23T21:32:56Z</updated>
   <id>http://exaos.github.com/o-blogindex.xml</id>
   <entry><title type="html">中文测试</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/03/20_089b4943ea034acfa445d050c7913e55.html"/><updated>2012-03-20T09:46:00Z</updated><published>2012-03-20T09:46:00Z</published><id>Tips/2012/03/20_089b4943ea034acfa445d050c7913e55.html</id><category scheme="/tags/a7bac2239fcdcb3a067903d8077c4a07.html" term="中文" label="中文"/><content type="html">&lt;p&gt;
 &#36825;&#26159;&#19968;&#20010;&#27979;&#35797;&#26465;&#30446;&#21727;&#12290;
@@ -253,7 +253,7 @@ The &lt;i&gt;org template shorcut&lt;/i&gt; is &lt;code&gt;&amp;lt;os&lt;/code&g
 
 
 &lt;p&gt;
-Here is an example of the &lt;code&gt;README.md&lt;/code&gt; file:
+&#36825;&#26159;&#26174;&#31034; &lt;code&gt;README.md&lt;/code&gt; &#25991;&#20214;&#30340;&#31034;&#20363;&#65306;
 &lt;/p&gt;
 
 
@@ -275,7 +275,7 @@ Here is an example of the &lt;code&gt;README.md&lt;/code&gt; file:
 
 &lt;span style="color: #87cefa; font-weight: bold;"&gt;### &amp;#35774;&amp;#32622;&lt;/span&gt;
 
-#### &amp;#20351;&amp;#29992; &lt;span style="color: #7fffd4;"&gt;`el-get`&lt;/span&gt;
+&lt;span style="color: #87cefa; font-weight: bold;"&gt;#### &amp;#20351;&amp;#29992; `el-get`&lt;/span&gt;
 
 &amp;#22914;&amp;#26524;&amp;#20320;&amp;#20351;&amp;#29992; &lt;span style="color: #00ffff;"&gt;[el-get]&lt;/span&gt;&lt;span style="color: #ffa07a;"&gt;(https://github.com/dimitri/el-get)&lt;/span&gt;, &amp;#23433;&amp;#35013;&amp;#24456;&amp;#23481;&amp;#26131;&amp;#12290;&amp;#20320;&amp;#21482;&amp;#38656;&amp;#35201;&amp;#23558;
 &lt;span style="color: #7fffd4;"&gt;`o-blog`&lt;/span&gt; &amp;#28155;&amp;#21152;&amp;#21040; &lt;span style="color: #7fffd4;"&gt;`el-get-sources`&lt;/span&gt; &amp;#20013;&amp;#65292;&amp;#28982;&amp;#21518;&amp;#25191;&amp;#34892; &lt;span style="color: #7fffd4;"&gt;`M-x el-get-install o-blog`&lt;/span&gt;.
@@ -285,17 +285,17 @@ Here is an example of the &lt;code&gt;README.md&lt;/code&gt; file:
 &lt;span style="color: #87cefa; font-weight: bold;"&gt;#### &amp;#25163;&amp;#21160;&amp;#35774;&amp;#32622;&lt;/span&gt;
 &amp;#39318;&amp;#20808;&amp;#20174; &lt;span style="color: #00ffff;"&gt;[Github]&lt;/span&gt;&lt;span style="color: #ffa07a;"&gt;(http://github.com)&lt;/span&gt; &amp;#20811;&amp;#38534;&amp;#36825;&amp;#20010; &lt;span style="color: #eedd82; font-style: italic;"&gt;*git*&lt;/span&gt; &amp;#28304;&amp;#30721;&amp;#20179;&amp;#24211;&amp;#12290;
 
-&lt;span style="color: #7fffd4;"&gt;```&lt;/span&gt;
+&lt;span style="color: #7fffd4;"&gt;```
 cd ~/.emacs.d
-git clone &lt;span style="color: #00ffff;"&gt;https://github.com/renard/o-blog.git&lt;/span&gt;
-&lt;span style="color: #7fffd4;"&gt;```&lt;/span&gt;
+git clone https://github.com/renard/o-blog.git
+``&lt;/span&gt;`
 
 &amp;#23558;&amp;#21518;&amp;#38754;&amp;#30340;&amp;#20195;&amp;#30721;&amp;#28155;&amp;#21152;&amp;#21040;&amp;#20320;&amp;#30340; &lt;span style="color: #7fffd4;"&gt;`~/.emacs.d/init.el`&lt;/span&gt; &amp;#25991;&amp;#20214;&amp;#20013;&amp;#65306;
 
-&lt;span style="color: #7fffd4;"&gt;```&lt;/span&gt;
+&lt;span style="color: #7fffd4;"&gt;```
 (add-to-list 'load-path "~/.emacs.d/o-blog")
 (require 'o-blog)
-&lt;span style="color: #7fffd4;"&gt;```&lt;/span&gt;
+``&lt;/span&gt;`
 
 &lt;span style="color: #87cefa; font-weight: bold;"&gt;### &amp;#21457;&amp;#24067;&lt;/span&gt;
 
@@ -303,6 +303,60 @@ git clone &lt;span style="color: #00ffff;"&gt;https://github.com/renard/o-blog.g
 &amp;#29983;&amp;#25104;&amp;#30340;&amp;#31449;&amp;#28857;&amp;#23558;&amp;#20250;&amp;#33258;&amp;#21160;&amp;#21457;&amp;#24067;&amp;#22312; &lt;span style="color: #7fffd4;"&gt;`~/.emacs.d/o-blog/out`&lt;/span&gt; &amp;#30446;&amp;#24405;&amp;#19979;&amp;#12290;
 
 &amp;#28982;&amp;#21518;&amp;#65292;&amp;#35814;&amp;#24773;&amp;#21442;&amp;#35265; &lt;span style="color: #7fffd4;"&gt;`example/out/blog/index.html`&lt;/span&gt; &amp;#21450; &lt;span style="color: #7fffd4;"&gt;`example/out/todo.html`&lt;/span&gt;.
+&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+&#36825;&#26159;&#26174;&#31034; elisp &#20195;&#30721;&#30340;&#31034;&#20363;&#65306;
+&lt;/p&gt;
+
+
+&lt;div class="o-blog-source"&gt;&lt;a class="btn btn-info" data-toggle="modal" data-target="#835a9f8a3649619c7a03ec593b4cd5e7" &gt;&lt;i class="icon-file icon-white"&gt;&lt;/i&gt;&amp;nbsp;sample-init.el&lt;/a&gt;&lt;/div&gt;&lt;div class="modal fade hide" id="835a9f8a3649619c7a03ec593b4cd5e7"&gt;&lt;div class="modal-header"&gt;&lt;a class="close" data-dismiss="modal"&gt;&#215;&lt;/a&gt;&lt;h3&gt;sample-init.el&lt;/h3&gt;&lt;/div&gt;&lt;div class="modal-body"&gt;&lt;pre&gt;
+&lt;span style="color: #ff7f24;"&gt;;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;sample-init.el --- sample init file to be used to debug o-blog
+&lt;/span&gt;
+&lt;span style="color: #ff7f24;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;Copyright &amp;#169; 2012 S&amp;#233;bastien Gross &amp;lt;seb&amp;#8226;&amp;#593;&amp;#428;&amp;#8226;chezwam&amp;#8226;&amp;#598;&amp;#629;&amp;#648;&amp;#8226;org&amp;gt;
+&lt;/span&gt;
+&lt;span style="color: #ff7f24;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;Author: S&amp;#233;bastien Gross &amp;lt;seb&amp;#8226;&amp;#593;&amp;#428;&amp;#8226;chezwam&amp;#8226;&amp;#598;&amp;#629;&amp;#648;&amp;#8226;org&amp;gt;
+&lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;Keywords: emacs, 
+&lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;Created: 2012-03-20
+&lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;Last changed: 2012-03-21 00:44:39
+&lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;Licence: WTFPL, grab your copy here: http://sam.zoy.org/wtfpl/
+&lt;/span&gt;
+&lt;span style="color: #ff7f24;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;This file is NOT part of GNU Emacs.
+&lt;/span&gt;
+&lt;span style="color: #ff7f24;"&gt;;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;Commentary:
+&lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;
+&lt;/span&gt;
+
+&lt;span style="color: #ff7f24;"&gt;;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;Code:
+&lt;/span&gt;
+
+(&lt;span style="color: #00ffff;"&gt;defun&lt;/span&gt; &lt;span style="color: #87cefa;"&gt;ob-build-sample&lt;/span&gt; ()
+  (&lt;span style="color: #00ffff;"&gt;let*&lt;/span&gt; ((d default-directory)
+         (sample (format &lt;span style="color: #ffa07a;"&gt;"%s/.emacs.d/o-blog/example/sample.org"&lt;/span&gt; d))
+         (debugger
+          (&lt;span style="color: #00ffff;"&gt;lambda&lt;/span&gt; (&lt;span style="color: #98fb98;"&gt;&amp;amp;rest&lt;/span&gt; debugger-args)
+            (&lt;span style="color: #00ffff;"&gt;let*&lt;/span&gt; ((trace (&lt;span style="color: #00ffff;"&gt;with-temp-buffer&lt;/span&gt;
+                            (insert (&lt;span style="color: #00ffff;"&gt;with-output-to-string&lt;/span&gt; (backtrace)))
+                            (beginning-of-buffer)
+                            &lt;span style="color: #ff7f24;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;error begins on line 16
+&lt;/span&gt;                            &lt;span style="color: #ff7f24;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;line stats with "  signal(error ..."
+&lt;/span&gt;                            (goto-line 16)
+                            (goto-char (point-at-bol))
+                            &lt;span style="color: #ff7f24;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;Remove null chars
+&lt;/span&gt;                            (replace-regexp-in-string
+                              (char-to-string 0) &lt;span style="color: #ffa07a;"&gt;"^@"&lt;/span&gt;
+                              (buffer-substring (point) (point-max))))))
+              (o-blog-bug-report trace))))
+         (debug-on-error t)
+         print-length print-level)
+    (add-to-list 'load-path (format &lt;span style="color: #ffa07a;"&gt;"%s/.emacs.d/org-mode/lisp"&lt;/span&gt; d))
+    (add-to-list 'load-path (format &lt;span style="color: #ffa07a;"&gt;"%s/.emacs.d/org-mode/contrib/lisp"&lt;/span&gt; d))
+    (add-to-list 'load-path (format &lt;span style="color: #ffa07a;"&gt;"%s/.emacs.d/o-blog"&lt;/span&gt; d))
+    (&lt;span style="color: #00ffff;"&gt;require&lt;/span&gt; '&lt;span style="color: #7fffd4;"&gt;o-blog&lt;/span&gt;)
+    (find-file sample)
+    (org-publish-blog sample)
+    (kill-emacs)))
 &lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 </content></entry><entry><title type="html">警告</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/01/15_900c70fa5f7dbc014e6f762d5e0e885c.html"/><updated>2012-01-15T20:40:00Z</updated><published>2012-01-15T20:40:00Z</published><id>Tips/2012/01/15_900c70fa5f7dbc014e6f762d5e0e885c.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><content type="html">&lt;p&gt;
