@@ -176,7 +176,7 @@ The <i>org template shorcut</i> is <code>&lt;os</code> <code>TAB</code>. Two par
 
 <span style="color: #87cefa; font-weight: bold;">### &#35774;&#32622;</span>
 
-<span style="color: #87cefa; font-weight: bold;">#### &#20351;&#29992; `el-get`</span>
+#### &#20351;&#29992; <span style="color: #7fffd4;">`el-get`</span>
 
 &#22914;&#26524;&#20320;&#20351;&#29992; <span style="color: #00ffff;">[el-get]</span><span style="color: #ffa07a;">(https://github.com/dimitri/el-get)</span>, &#23433;&#35013;&#24456;&#23481;&#26131;&#12290;&#20320;&#21482;&#38656;&#35201;&#23558;
 <span style="color: #7fffd4;">`o-blog`</span> &#28155;&#21152;&#21040; <span style="color: #7fffd4;">`el-get-sources`</span> &#20013;&#65292;&#28982;&#21518;&#25191;&#34892; <span style="color: #7fffd4;">`M-x el-get-install o-blog`</span>.
@@ -186,17 +186,17 @@ The <i>org template shorcut</i> is <code>&lt;os</code> <code>TAB</code>. Two par
 <span style="color: #87cefa; font-weight: bold;">#### &#25163;&#21160;&#35774;&#32622;</span>
 &#39318;&#20808;&#20174; <span style="color: #00ffff;">[Github]</span><span style="color: #ffa07a;">(http://github.com)</span> &#20811;&#38534;&#36825;&#20010; <span style="color: #eedd82; font-style: italic;">*git*</span> &#28304;&#30721;&#20179;&#24211;&#12290;
 
-<span style="color: #7fffd4;">```
+<span style="color: #7fffd4;">```</span>
 cd ~/.emacs.d
-git clone https://github.com/renard/o-blog.git
-``</span>`
+git clone <span style="color: #00ffff;">https://github.com/renard/o-blog.git</span>
+<span style="color: #7fffd4;">```</span>
 
 &#23558;&#21518;&#38754;&#30340;&#20195;&#30721;&#28155;&#21152;&#21040;&#20320;&#30340; <span style="color: #7fffd4;">`~/.emacs.d/init.el`</span> &#25991;&#20214;&#20013;&#65306;
 
-<span style="color: #7fffd4;">```
+<span style="color: #7fffd4;">```</span>
 (add-to-list 'load-path "~/.emacs.d/o-blog")
 (require 'o-blog)
-``</span>`
+<span style="color: #7fffd4;">```</span>
 
 <span style="color: #87cefa; font-weight: bold;">### &#21457;&#24067;</span>
 
@@ -220,7 +220,7 @@ git clone https://github.com/renard/o-blog.git
 <span style="color: #ff7f24;">;; </span><span style="color: #ff7f24;">Author: S&#233;bastien Gross &lt;seb&#8226;&#593;&#428;&#8226;chezwam&#8226;&#598;&#629;&#648;&#8226;org&gt;
 </span><span style="color: #ff7f24;">;; </span><span style="color: #ff7f24;">Keywords: emacs, 
 </span><span style="color: #ff7f24;">;; </span><span style="color: #ff7f24;">Created: 2012-03-20
-</span><span style="color: #ff7f24;">;; </span><span style="color: #ff7f24;">Last changed: 2012-03-21 00:44:39
+</span><span style="color: #ff7f24;">;; </span><span style="color: #ff7f24;">Last changed: 2012-03-26 16:36:31
 </span><span style="color: #ff7f24;">;; </span><span style="color: #ff7f24;">Licence: WTFPL, grab your copy here: http://sam.zoy.org/wtfpl/
 </span>
 <span style="color: #ff7f24;">;; </span><span style="color: #ff7f24;">This file is NOT part of GNU Emacs.
@@ -255,6 +255,11 @@ git clone https://github.com/renard/o-blog.git
     (add-to-list 'load-path (format <span style="color: #ffa07a;">"%s/.emacs.d/org-mode/contrib/lisp"</span> d))
     (add-to-list 'load-path (format <span style="color: #ffa07a;">"%s/.emacs.d/o-blog"</span> d))
     (<span style="color: #00ffff;">require</span> '<span style="color: #7fffd4;">o-blog</span>)
+    (print
+      (concat
+        (emacs-version) <span style="color: #ffa07a;">"\n"</span>
+        (org-version) <span style="color: #ffa07a;">"\n"</span>
+        (o-blog-version) <span style="color: #ffa07a;">"\n"</span>))
     (find-file sample)
     (org-publish-blog sample)
     (kill-emacs)))
