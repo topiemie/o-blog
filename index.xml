@@ -3,7 +3,7 @@
   <title>o-blog</title>
   <link href="http://exaos.github.com/o-blogindex.xml" rel="self" />
   <link href="http://exaos.github.com/o-blog"/>
-  <updated>2012-04-03T12:01:41Z</updated>
+  <updated>2012-04-03T12:05:16Z</updated>
   <id>http://exaos.github.com/o-blogindex.xml</id>
   <entry><title type="html">中文测试</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/03/20_use-chinese.html"/><updated>2012-03-20T09:46:00Z</updated><published>2012-03-20T09:46:00Z</published><id>Tips/2012/03/20_use-chinese.html</id><category scheme="/tags/a7bac2239fcdcb3a067903d8077c4a07.html" term="中文" label="中文"/><content type="html">&lt;p&gt;
 &#36825;&#26159;&#19968;&#20010;&#27979;&#35797;&#26465;&#30446;&#21727;&#12290;
@@ -21,9 +21,11 @@
   &#36825;&#20799;&#21015;&#20030;&#20102;&#19968;&#20123;&#20013;&#25991;&#22788;&#29702;&#20013;&#30340;&#38382;&#39064;&#12290;&#20855;&#20307;&#30340;&#35299;&#20915;&#21442;&#35265; &lt;a href="https://github.com/exaos/o-blog"&gt;https://github.com/exaos/o-blog&lt;/a&gt;.
 
 &lt;ol&gt;
-&lt;li&gt;&lt;code&gt;[X]&lt;/code&gt; &#20013;&#25991;&#25991;&#20214;&#21517;&#26080;&#27861;&#27491;&#24120;&#29983;&#25104; &amp;ndash;&amp;gt; &#20351;&#29992; MD5 &#21462;&#20195; sanitize-string
+&lt;li&gt;&lt;code&gt;[X]&lt;/code&gt; &#20013;&#25991;&#25991;&#20214;&#21517;&#26080;&#27861;&#27491;&#24120;&#29983;&#25104;
 &lt;ul&gt;
-&lt;li&gt;&#29616;&#22312;&#65292;&#20351;&#29992; &lt;code&gt;#+FILENAME_SANITIZER: md5&lt;/code&gt; &#20195;&#26367;&#12290;
+&lt;li&gt;&#29616;&#22312;&#65292;&#20351;&#29992; &lt;code&gt;#+FILENAME_SANITIZER: md5&lt;/code&gt; &#29983;&#25104;&#40664;&#35748;&#20026; &lt;code&gt;YYYY/MM/DD_(MD5).html&lt;/code&gt; &#30340;&#25991;&#20214;&#21517;&#12290;
+&lt;/li&gt;
+&lt;li&gt;&#25110;&#32773;&#22312;&#27599;&#20010;&#26465;&#30446;&#19979;&#28155;&#21152;&#23646;&#24615; &lt;code&gt;CUSTOM_ID&lt;/code&gt;, &#29983;&#25104;&#20026; &lt;code&gt;YYYY/MM/DD_(CUSTOM_ID).html&lt;/code&gt; &#24418;&#24335;&#30340;&#25991;&#20214;&#21517;&#12290;
 &lt;/li&gt;
 &lt;/ul&gt;
 

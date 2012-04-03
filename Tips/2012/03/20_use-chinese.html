@@ -154,9 +154,11 @@
   这儿列举了一些中文处理中的问题。具体的解决参见 <a href="https://github.com/exaos/o-blog">https://github.com/exaos/o-blog</a>.
 
 <ol>
-<li><code>[X]</code> 中文文件名无法正常生成 &ndash;&gt; 使用 MD5 取代 sanitize-string
+<li><code>[X]</code> 中文文件名无法正常生成
 <ul>
-<li>现在，使用 <code>#+FILENAME_SANITIZER: md5</code> 代替。
+<li>现在，使用 <code>#+FILENAME_SANITIZER: md5</code> 生成默认为 <code>YYYY/MM/DD_(MD5).html</code> 的文件名。
+</li>
+<li>或者在每个条目下添加属性 <code>CUSTOM_ID</code>, 生成为 <code>YYYY/MM/DD_(CUSTOM_ID).html</code> 形式的文件名。
 </li>
 </ul>
 
