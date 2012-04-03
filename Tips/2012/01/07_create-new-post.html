@@ -2,7 +2,7 @@
 <html lang="zh">
   <head>
     <meta charset="utf-8"/>
-    <title>警告</title>
+    <title>创建一个博客条目</title>
     <link rel="stylesheet" type="text/less" href="../../../style/less/o-blog.less">
     <script src="../../../style/js/less-1.2.2.min.js" type="text/javascript"></script>
     <script src="../../../style/js/jquery-1.7.1.min.js" type="text/javascript"></script>
@@ -64,15 +64,15 @@
 </li>
 <li><a href="#"><i>icon-file icon-white</i> 近期博文</a>
 <ul>
-<li><a href="../../../Tips/2012/03/20_089b4943ea034acfa445d050c7913e55.html">中文测试</a>
+<li><a href="../../../Tips/2012/03/20_use-chinese.html">中文测试</a>
 </li>
-<li><a href="../../../Tips/2012/02/10_9fd550eec473942a9efac26e5478d5e7.html">使用 Bootstrap 分格</a>
+<li><a href="../../../Tips/2012/02/10_use-bootstrap.html">使用 Bootstrap 分格</a>
 </li>
-<li><a href="../../../Tips/2012/02/10_035692d6fc368765e391602aad0bf39a.html">添加图标</a>
+<li><a href="../../../Tips/2012/02/10_add-icons.html">添加图标</a>
 </li>
-<li><a href="../../../Tips/2012/02/09_92ec1ba26890de6fa6336ab9506c8d8c.html">使用 modal 显示源代码</a>
+<li><a href="../../../Tips/2012/02/09_use-modal.html">使用 modal 显示源代码</a>
 </li>
-<li><a href="../../../Tips/2012/01/15_900c70fa5f7dbc014e6f762d5e0e885c.html">警告</a>
+<li><a href="../../../Tips/2012/01/15_warning.html">警告</a>
 
 </li>
 </ul>
@@ -103,7 +103,7 @@
       <div class="container">
 	<ul class="breadcrumb">
   <li><a href="../../../index.html">Home</a> <span class="divider">/</span></li>
-  <li><a href="../../../Tips/index.html">Tips</a> <span class="divider">/</span></li><li><a href="../../../Tips/2012/index.html">2012</a> <span class="divider">/</span></li><li><a href="../../../Tips/2012/01/index.html">01</a> <span class="divider">/</span></li><li>警告</li>
+  <li><a href="../../../Tips/index.html">Tips</a> <span class="divider">/</span></li><li><a href="../../../Tips/2012/index.html">2012</a> <span class="divider">/</span></li><li><a href="../../../Tips/2012/01/index.html">01</a> <span class="divider">/</span></li><li>创建一个博客条目</li>
   </ul>
 
       </div>
@@ -115,23 +115,23 @@
     <div class="well">
       <div class="row">
 	<div class="date span1">
-	  <div class=" date-d">15</div>
+	  <div class=" date-d">07</div>
 	  <div class=" date-m"><a href="../../../Tips/2012/01/index.html"> 1月</a></div>
 	  <div class=" date-y"><a href="../../../Tips/2012/index.html">2012</a>
 	  </div>
 	</div>
 	<div class="span1">
 	  <div class="qr-code">
-  <img src="http://chart.apis.google.com/chart?chs=50x50&cht=qr&chld=|0&chl=http%3a%2f%2fexaos.github.com%2fo-blog%2fTips%2f2012%2f01%2f15_900c70fa5f7dbc014e6f762d5e0e885c.html"
+  <img src="http://chart.apis.google.com/chart?chs=50x50&cht=qr&chld=|0&chl=http%3a%2f%2fexaos.github.com%2fo-blog%2fTips%2f2012%2f01%2f07_create-new-post.html"
        alt="qr-code" />
 </div>
 
 	</div>
-	<h1 class="offset2">警告</h1>
+	<h1 class="offset2">创建一个博客条目</h1>
       </div>
       <nav>
 	<ul class="pager">
-	  <li class="previous"><a href="../../../Tips/2012/01/10_7b880d54702f94abb926d766f38a66a2.html"><i class="icon-chevron-left"></i>&nbsp;一些 HTML5 示例</a></li><li class="next" style="text-align: right;"><a href="../../../Tips/2012/02/09_92ec1ba26890de6fa6336ab9506c8d8c.html">使用 modal 显示源代码&nbsp;<i class="icon-chevron-right"></i></a></li>
+	  <li class="previous">&nbsp;</li><li class="next" style="text-align: right;"><a href="../../../Tips/2012/01/07_use-tags.html">如何使用标签&nbsp;<i class="icon-chevron-right"></i></a></li>
 	</ul>
       </nav>
     </div>
@@ -139,129 +139,57 @@
   </header>
   <div class="article-content">
     <p>
-Alerts are declared in <code>o_blog_alert</code> blocks. There are 4 types of
-them:
+A blog consists of org entries. Each entry has a title, some properties and
+some text. Exporting a blog means publishing all entries with a <code>DONE</code>
+<code>TODO</code>.
 </p>
-<ul>
-<li>info
-</li>
-<li>success
-</li>
-<li>warning
-</li>
-<li>error
-</li>
-</ul>
+<p>
+A minimal blog file could be something like:
+</p>
 
 
 
+<pre class="src src-org"><span style="color: #b3b3b3;">#+TITLE:</span><span style="color: #ff7f24;"> </span><span style="color: #afeeee; font-size: 144%; font-weight: bold;">Lorem ipsum</span>
+<span style="color: #ff7f24;">#+DESCRIPTION: dolor sit amet</span>
+<span style="color: #b3b3b3;">#+DATE:</span>
 
+<span style="color: #ff7f24;">#+STARTUP: logdone</span>
 
-<pre class="src src-org"><span style="color: #ff7f24;">#+begin_o_blog_alert &lt;TYPE&gt; &lt;title&gt;</span>
-Text of the alert
-<span style="color: #ff7f24;">#+end_o_blog_alert</span>
+<span style="color: #ff7f24;">#+URL: http://blog.example.com</span>
+
+<span style="color: #87cefa;">* </span><span style="color: #98fb98; font-weight: bold;">DONE</span><span style="color: #87cefa;"> Lorem ipsum</span>
+  <span style="color: #00ffff;">CLOSED:</span> <span style="color: #00ffff; text-decoration: underline;">[2012-01-07 Sat 00:13]</span>
+<span style="color: #00ffff;">  :PROPERTIES:</span>
+  <span style="color: #00ffff;">:tags:</span>     Lorem
+<span style="color: #00ffff;">  :END:</span>
+
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec hendrerit
+  tempor tellus. Donec pretium posuere tellus. Proin quam nisl, tincidunt
+  et, mattis eget, convallis nec, purus. Cum sociis natoque penatibus et
+  magnis dis parturient montes, nascetur ridiculus mus. Nulla posuere. Donec
+  vitae dolor. Nullam tristique diam non turpis. Cras placerat accumsan
+  nulla. Nullam rutrum. Nam vestibulum accumsan nisl.
+
 </pre>
 
 
-
-<div class="alert alert-error"><p class="alert-heading"></p>
-
-
 <p>
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec hendrerit
-tempor tellus. Donec pretium posuere tellus. Proin quam nisl, tincidunt et,
-mattis eget, convallis nec, purus. Cum sociis natoque penatibus et magnis
-dis parturient montes, nascetur ridiculus mus. Nulla posuere. Donec vitae
-dolor. Nullam tristique diam non turpis. Cras placerat accumsan
-nulla. Nullam rutrum. Nam vestibulum accumsan nisl.
+Please note the blank line between the properties section and the text itself.
 </p>
-
-
-
-</div>
-
-
-
-<div class="alert alert-error"><p class="alert-heading">Danger</p>
-
-
 <p>
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec hendrerit
-tempor tellus. Donec pretium posuere tellus. Proin quam nisl, tincidunt et,
-mattis eget, convallis nec, purus. Cum sociis natoque penatibus et magnis
-dis parturient montes, nascetur ridiculus mus. Nulla posuere. Donec vitae
-dolor. Nullam tristique diam non turpis. Cras placerat accumsan
-nulla. Nullam rutrum. Nam vestibulum accumsan nisl.
+Use <code>#+STARTUP: logdone</code> to automatically add a time stamp when closing an
+entry.
 </p>
-
-
-
-</div>
-
-
-<div class="alert alert-warning"><p class="alert-heading">Caution</p>
-
-
-<p>
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec hendrerit
-tempor tellus. Donec pretium posuere tellus. Proin quam nisl, tincidunt et,
-mattis eget, convallis nec, purus. Cum sociis natoque penatibus et magnis
-dis parturient montes, nascetur ridiculus mus. Nulla posuere. Donec vitae
-dolor. Nullam tristique diam non turpis. Cras placerat accumsan
-nulla. Nullam rutrum. Nam vestibulum accumsan nisl.
-</p>
-
-
-
-</div>
-
-
-
-
-<div class="alert alert-success"><p class="alert-heading">Tip</p>
-
-
-<p>
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec hendrerit
-tempor tellus. Donec pretium posuere tellus. Proin quam nisl, tincidunt et,
-mattis eget, convallis nec, purus. Cum sociis natoque penatibus et magnis
-dis parturient montes, nascetur ridiculus mus. Nulla posuere. Donec vitae
-dolor. Nullam tristique diam non turpis. Cras placerat accumsan
-nulla. Nullam rutrum. Nam vestibulum accumsan nisl.
-</p>
-
-
-
-</div>
-
-
-<div class="alert alert-info"><p class="alert-heading">Information</p>
-
-
-<p>
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec hendrerit
-tempor tellus. Donec pretium posuere tellus. Proin quam nisl, tincidunt et,
-mattis eget, convallis nec, purus. Cum sociis natoque penatibus et magnis
-dis parturient montes, nascetur ridiculus mus. Nulla posuere. Donec vitae
-dolor. Nullam tristique diam non turpis. Cras placerat accumsan
-nulla. Nullam rutrum. Nam vestibulum accumsan nisl.
-</p>
-
-
-
-</div>
-
-
   </div>
   
   <footer class="well article-footer">
-    Posted on <time datetime="2012-01-15T20:40:00Z">
-      星期日 一月, 15 2012 at 20:40:00
+    Posted on <time datetime="2012-01-07T00:13:00Z">
+      星期六 一月, 07 2012 at 00:13:00
     </time>.
     <nav class="tag-cloud">
       <h1><i class="icon-tags"></i> related tags</h1>
       <ul>
-	<li><a href="../../../tags/a0b1dd52a1c893aa52b103dad9aa9d59.html">用例</a></li>
+	<li><a href="../../../tags/a0b1dd52a1c893aa52b103dad9aa9d59.html">用例</a></li><li><a href="../../../tags/7e02a3fb165cb1fad360d39c8cf8afa6.html">o-blog</a></li>
       </ul>
     </nav>
   </footer>
@@ -294,7 +222,7 @@ nulla. Nullam rutrum. Nam vestibulum accumsan nisl.
 	      <h1>链接</h1>
 	      <ul>
 		  <li class="home"><a href="../../../index.html">首页</a></li>
-  <li class="blog"><a href="../../../Tips/2012/03/20_089b4943ea034acfa445d050c7913e55.html">博文</a></li>
+  <li class="blog"><a href="../../../Tips/2012/03/20_use-chinese.html">博文</a></li>
   <li class="tags"><a href="../../../tags/index.html">标签</a></li>
   <li class="archives"><a href="../../../archives.html">归档</a></li>
   <li class="rss"><a href="../../../index.xml">RSS</a></li>
@@ -304,7 +232,7 @@ nulla. Nullam rutrum. Nam vestibulum accumsan nisl.
 	    <nav id="archives" class="span3">
 	      <h1>归档</h1>
 	      <ul>
-		<li><a href="../../../Tips/2012/03/20_089b4943ea034acfa445d050c7913e55.html">中文测试</a></li> <li><a href="../../../Tips/2012/02/10_9fd550eec473942a9efac26e5478d5e7.html">使用 Bootstrap 分格</a></li> <li><a href="../../../Tips/2012/02/10_035692d6fc368765e391602aad0bf39a.html">添加图标</a></li> <li><a href="../../../Tips/2012/02/09_92ec1ba26890de6fa6336ab9506c8d8c.html">使用 modal 显示源代码</a></li> <li><a href="../../../Tips/2012/01/15_900c70fa5f7dbc014e6f762d5e0e885c.html">警告</a></li> <li><a href="../../../Tips/2012/01/10_7b880d54702f94abb926d766f38a66a2.html">一些 HTML5 示例</a></li> <li><a href="../../../Tips/2012/01/07_1c8e9b3ffcf10f3839e6607a798b3ffd.html">一些 org 语法示例</a></li> <li><a href="../../../Tips/2012/01/07_0fd9a1c6ec914b7e5b181ca6fcc0c6ea.html">如何使用标签</a></li> <li><a href="../../../Tips/2012/01/07_186b167aaf6e3a65a210824239a15d4f.html">创建一个博客条目</a></li> 
+		<li><a href="../../../Tips/2012/03/20_use-chinese.html">中文测试</a></li> <li><a href="../../../Tips/2012/02/10_use-bootstrap.html">使用 Bootstrap 分格</a></li> <li><a href="../../../Tips/2012/02/10_add-icons.html">添加图标</a></li> <li><a href="../../../Tips/2012/02/09_use-modal.html">使用 modal 显示源代码</a></li> <li><a href="../../../Tips/2012/01/15_warning.html">警告</a></li> <li><a href="../../../Tips/2012/01/10_html5-example.html">一些 HTML5 示例</a></li> <li><a href="../../../Tips/2012/01/07_syntax-org-mode.html">一些 org 语法示例</a></li> <li><a href="../../../Tips/2012/01/07_use-tags.html">如何使用标签</a></li> <li><a href="../../../Tips/2012/01/07_create-new-post.html">创建一个博客条目</a></li> 
 	      </ul>
 	    </nav>
 	    <nav class="tags span3">
