@@ -154,10 +154,10 @@
     <caption>Dump information for blog</caption>
     <thead><tr><th>Property</th><th>Value</th></tr></thead>
     <tbody>
-      <tr><td class="property"><code>file</code></td><td class="value"><pre>"/home/exaos/Workspace/exaos/o-blog/example/sample.org"</pre></td></tr>
-      <tr><td class="property"><code>buffer</code></td><td class="value"><pre>#&lt;buffer sample.org&gt;</pre></td></tr>
+      <tr><td class="property"><code>file</code></td><td class="value"><pre>"/home/exaos/Workspace/exaos/o-blog/example/sample-zh.org"</pre></td></tr>
+      <tr><td class="property"><code>buffer</code></td><td class="value"><pre>#&lt;buffer sample-zh.org&gt;</pre></td></tr>
       <tr><td class="property"><code>publish-dir</code></td><td class="value"><pre>"out"</pre></td></tr>
-      <tr><td class="property"><code>template-dir</code></td><td class="value"><pre>"../templates"</pre></td></tr>
+      <tr><td class="property"><code>template-dir</code></td><td class="value"><pre>"../templates-zh"</pre></td></tr>
       <tr><td class="property"><code>style-dir</code></td><td class="value"><pre>"style"</pre></td></tr>
       <tr><td class="property"><code>posts-filter</code></td><td class="value"><pre>"+TODO=\"DONE\""</pre></td></tr>
       <tr><td class="property"><code>static-filter</code></td><td class="value"><pre>"+PAGE={.+.html}"</pre></td></tr>
@@ -198,6 +198,15 @@
 &#21338;&#23458;&#39029;&#38754;&#30340;&#25991;&#20214;&#21517;&#40664;&#35748;&#20351;&#29992; =ob-sanitize-string= &#20174;&#26631;&#39064;&#29983;&#25104;, &#36825;&#26679;&#20250;&#23548;&#33268;&#20013;&#25991;&#26631;&#39064;&#30340;&#21338;&#25991;&#26080;&#27861;&#27491;&#24120;&#29983;&#25104;&#12290;&#22240;&#27492;&#65292;&#23545;&#20110;&#20013;&#25991;&#21338;&#23458;&#65292;&#38656;&#35201;&#22312;&#20320;&#30340; *org* &#25991;&#26723;&#22836;&#20013;&#28155;&#21152;
 : #+FILENAME_SANITIZER: md5
 
+
+- &#24453;&#21150;&#20107;&#39033;
+  &#36825;&#20799;&#21015;&#20030;&#20102;&#19968;&#20123;&#20013;&#25991;&#22788;&#29702;&#20013;&#30340;&#38382;&#39064;&#12290;&#20855;&#20307;&#30340;&#35299;&#20915;&#21442;&#35265; [[github:exaos/o-blog]].
+
+  1. [X] &#20013;&#25991;&#25991;&#20214;&#21517;&#26080;&#27861;&#27491;&#24120;&#29983;&#25104; --&gt; &#20351;&#29992; MD5 &#21462;&#20195; sanitize-string
+     * &#29616;&#22312;&#65292;&#20351;&#29992; =#+FILENAME_SANITIZER: md5= &#20195;&#26367;&#12290;
+  2. [X] pull upstream
+  3. [X] &#21338;&#23458;&#35774;&#32622;&#20013;&#30340; =Copyright=, =About= &#21450; =Navigation= &#31561; =SNIPPET= &#19981;&#33021;&#29992;&#20013;&#25991;&#30340;&#38382;&#39064;&#12290;
+
 "</pre></td></tr>
       <tr><td class="property"><code>content-html</code></td><td class="value"><pre>"&lt;p&gt;
 &#36825;&#26159;&#19968;&#20010;&#27979;&#35797;&#26465;&#30446;&#21727;&#12290;
@@ -207,6 +216,29 @@
 &lt;/p&gt;&lt;pre class=\"example\"&gt;
 #+FILENAME_SANITIZER: md5
 &lt;/pre&gt;
+
+
+
+&lt;ul&gt;
+&lt;li&gt;&#24453;&#21150;&#20107;&#39033;
+  &#36825;&#20799;&#21015;&#20030;&#20102;&#19968;&#20123;&#20013;&#25991;&#22788;&#29702;&#20013;&#30340;&#38382;&#39064;&#12290;&#20855;&#20307;&#30340;&#35299;&#20915;&#21442;&#35265; &lt;a href=\"https://github.com/exaos/o-blog\"&gt;https://github.com/exaos/o-blog&lt;/a&gt;.
+
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;[X]&lt;/code&gt; &#20013;&#25991;&#25991;&#20214;&#21517;&#26080;&#27861;&#27491;&#24120;&#29983;&#25104; &amp;ndash;&amp;gt; &#20351;&#29992; MD5 &#21462;&#20195; sanitize-string
+&lt;ul&gt;
+&lt;li&gt;&#29616;&#22312;&#65292;&#20351;&#29992; &lt;code&gt;#+FILENAME_SANITIZER: md5&lt;/code&gt; &#20195;&#26367;&#12290;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[X]&lt;/code&gt; pull upstream
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[X]&lt;/code&gt; &#21338;&#23458;&#35774;&#32622;&#20013;&#30340; &lt;code&gt;Copyright&lt;/code&gt;, &lt;code&gt;About&lt;/code&gt; &#21450; &lt;code&gt;Navigation&lt;/code&gt; &#31561; &lt;code&gt;SNIPPET&lt;/code&gt; &#19981;&#33021;&#29992;&#20013;&#25991;&#30340;&#38382;&#39064;&#12290;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
 
 
 "</pre></td></tr>
@@ -713,7 +745,7 @@ The /org template shorcut/ is =&lt;os= =TAB=. Two parameters might be used:
 
 &lt;span style=\"color: #87cefa; font-weight: bold;\"&gt;### &amp;#35774;&amp;#32622;&lt;/span&gt;
 
-#### &amp;#20351;&amp;#29992; &lt;span style=\"color: #7fffd4;\"&gt;`el-get`&lt;/span&gt;
+&lt;span style=\"color: #87cefa; font-weight: bold;\"&gt;#### &amp;#20351;&amp;#29992; `el-get`&lt;/span&gt;
 
 &amp;#22914;&amp;#26524;&amp;#20320;&amp;#20351;&amp;#29992; &lt;span style=\"color: #00ffff;\"&gt;[el-get]&lt;/span&gt;&lt;span style=\"color: #ffa07a;\"&gt;(https://github.com/dimitri/el-get)&lt;/span&gt;, &amp;#23433;&amp;#35013;&amp;#24456;&amp;#23481;&amp;#26131;&amp;#12290;&amp;#20320;&amp;#21482;&amp;#38656;&amp;#35201;&amp;#23558;
 &lt;span style=\"color: #7fffd4;\"&gt;`o-blog`&lt;/span&gt; &amp;#28155;&amp;#21152;&amp;#21040; &lt;span style=\"color: #7fffd4;\"&gt;`el-get-sources`&lt;/span&gt; &amp;#20013;&amp;#65292;&amp;#28982;&amp;#21518;&amp;#25191;&amp;#34892; &lt;span style=\"color: #7fffd4;\"&gt;`M-x el-get-install o-blog`&lt;/span&gt;.
@@ -723,17 +755,17 @@ The /org template shorcut/ is =&lt;os= =TAB=. Two parameters might be used:
 &lt;span style=\"color: #87cefa; font-weight: bold;\"&gt;#### &amp;#25163;&amp;#21160;&amp;#35774;&amp;#32622;&lt;/span&gt;
 &amp;#39318;&amp;#20808;&amp;#20174; &lt;span style=\"color: #00ffff;\"&gt;[Github]&lt;/span&gt;&lt;span style=\"color: #ffa07a;\"&gt;(http://github.com)&lt;/span&gt; &amp;#20811;&amp;#38534;&amp;#36825;&amp;#20010; &lt;span style=\"color: #eedd82; font-style: italic;\"&gt;*git*&lt;/span&gt; &amp;#28304;&amp;#30721;&amp;#20179;&amp;#24211;&amp;#12290;
 
-&lt;span style=\"color: #7fffd4;\"&gt;```&lt;/span&gt;
+&lt;span style=\"color: #7fffd4;\"&gt;```
 cd ~/.emacs.d
-git clone &lt;span style=\"color: #00ffff;\"&gt;https://github.com/renard/o-blog.git&lt;/span&gt;
-&lt;span style=\"color: #7fffd4;\"&gt;```&lt;/span&gt;
+git clone https://github.com/renard/o-blog.git
+``&lt;/span&gt;`
 
 &amp;#23558;&amp;#21518;&amp;#38754;&amp;#30340;&amp;#20195;&amp;#30721;&amp;#28155;&amp;#21152;&amp;#21040;&amp;#20320;&amp;#30340; &lt;span style=\"color: #7fffd4;\"&gt;`~/.emacs.d/init.el`&lt;/span&gt; &amp;#25991;&amp;#20214;&amp;#20013;&amp;#65306;
 
-&lt;span style=\"color: #7fffd4;\"&gt;```&lt;/span&gt;
+&lt;span style=\"color: #7fffd4;\"&gt;```
 (add-to-list 'load-path \"~/.emacs.d/o-blog\")
 (require 'o-blog)
-&lt;span style=\"color: #7fffd4;\"&gt;```&lt;/span&gt;
+``&lt;/span&gt;`
 
 &lt;span style=\"color: #87cefa; font-weight: bold;\"&gt;### &amp;#21457;&amp;#24067;&lt;/span&gt;
 
@@ -848,7 +880,7 @@ The &lt;i&gt;org template shorcut&lt;/i&gt; is &lt;code&gt;&amp;lt;os&lt;/code&g
 
 &lt;span style=\"color: #87cefa; font-weight: bold;\"&gt;### &amp;#35774;&amp;#32622;&lt;/span&gt;
 
-#### &amp;#20351;&amp;#29992; &lt;span style=\"color: #7fffd4;\"&gt;`el-get`&lt;/span&gt;
+&lt;span style=\"color: #87cefa; font-weight: bold;\"&gt;#### &amp;#20351;&amp;#29992; `el-get`&lt;/span&gt;
 
 &amp;#22914;&amp;#26524;&amp;#20320;&amp;#20351;&amp;#29992; &lt;span style=\"color: #00ffff;\"&gt;[el-get]&lt;/span&gt;&lt;span style=\"color: #ffa07a;\"&gt;(https://github.com/dimitri/el-get)&lt;/span&gt;, &amp;#23433;&amp;#35013;&amp;#24456;&amp;#23481;&amp;#26131;&amp;#12290;&amp;#20320;&amp;#21482;&amp;#38656;&amp;#35201;&amp;#23558;
 &lt;span style=\"color: #7fffd4;\"&gt;`o-blog`&lt;/span&gt; &amp;#28155;&amp;#21152;&amp;#21040; &lt;span style=\"color: #7fffd4;\"&gt;`el-get-sources`&lt;/span&gt; &amp;#20013;&amp;#65292;&amp;#28982;&amp;#21518;&amp;#25191;&amp;#34892; &lt;span style=\"color: #7fffd4;\"&gt;`M-x el-get-install o-blog`&lt;/span&gt;.
@@ -858,17 +890,17 @@ The &lt;i&gt;org template shorcut&lt;/i&gt; is &lt;code&gt;&amp;lt;os&lt;/code&g
 &lt;span style=\"color: #87cefa; font-weight: bold;\"&gt;#### &amp;#25163;&amp;#21160;&amp;#35774;&amp;#32622;&lt;/span&gt;
 &amp;#39318;&amp;#20808;&amp;#20174; &lt;span style=\"color: #00ffff;\"&gt;[Github]&lt;/span&gt;&lt;span style=\"color: #ffa07a;\"&gt;(http://github.com)&lt;/span&gt; &amp;#20811;&amp;#38534;&amp;#36825;&amp;#20010; &lt;span style=\"color: #eedd82; font-style: italic;\"&gt;*git*&lt;/span&gt; &amp;#28304;&amp;#30721;&amp;#20179;&amp;#24211;&amp;#12290;
 
-&lt;span style=\"color: #7fffd4;\"&gt;```&lt;/span&gt;
+&lt;span style=\"color: #7fffd4;\"&gt;```
 cd ~/.emacs.d
-git clone &lt;span style=\"color: #00ffff;\"&gt;https://github.com/renard/o-blog.git&lt;/span&gt;
-&lt;span style=\"color: #7fffd4;\"&gt;```&lt;/span&gt;
+git clone https://github.com/renard/o-blog.git
+``&lt;/span&gt;`
 
 &amp;#23558;&amp;#21518;&amp;#38754;&amp;#30340;&amp;#20195;&amp;#30721;&amp;#28155;&amp;#21152;&amp;#21040;&amp;#20320;&amp;#30340; &lt;span style=\"color: #7fffd4;\"&gt;`~/.emacs.d/init.el`&lt;/span&gt; &amp;#25991;&amp;#20214;&amp;#20013;&amp;#65306;
 
-&lt;span style=\"color: #7fffd4;\"&gt;```&lt;/span&gt;
+&lt;span style=\"color: #7fffd4;\"&gt;```
 (add-to-list 'load-path \"~/.emacs.d/o-blog\")
 (require 'o-blog)
-&lt;span style=\"color: #7fffd4;\"&gt;```&lt;/span&gt;
+``&lt;/span&gt;`
 
 &lt;span style=\"color: #87cefa; font-weight: bold;\"&gt;### &amp;#21457;&amp;#24067;&lt;/span&gt;
 
@@ -2058,10 +2090,10 @@ entry.
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>0</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#24555;&#36895;&#20837;&#38376;&#25351;&#21335;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20337 58368)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20345 52480)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
-      <tr><td class="property"><code>month</code></td><td class="value"><pre>3</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>28</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
@@ -2158,13 +2190,7 @@ git clone https://github.com/renard/o-blog.git
 &#25171;&#24320;&#25991;&#20214; =~/.emacs.d/o-blog/example/sample.org= &#28982;&#21518;&#25191;&#34892; =M-x
 org-publish-blog=. &#36755;&#20986;&#30340;&#31449;&#28857;&#40664;&#35748;&#20445;&#23384;&#22312; =~/.emacs.d/o-blog/out=.
 
-** &#24453;&#21150;&#20107;&#39033;
-&#36825;&#20799;&#21015;&#20030;&#20102;&#19968;&#20123;&#20013;&#25991;&#22788;&#29702;&#20013;&#30340;&#38382;&#39064;&#12290;&#20855;&#20307;&#30340;&#35299;&#20915;&#21442;&#35265; [[github:exaos/o-blog]].
-
-1. [X] &#20013;&#25991;&#25991;&#20214;&#21517;&#26080;&#27861;&#27491;&#24120;&#29983;&#25104; --&gt; &#20351;&#29992; MD5 &#21462;&#20195; sanitize-string
-   * &#29616;&#22312;&#65292;&#20351;&#29992; =#+FILENAME_SANITIZER: md5= &#20195;&#26367;&#12290;
-2. [X] pull upstream
-3. [X] &#21338;&#23458;&#35774;&#32622;&#20013;&#30340; =Copyright=, =About= &#21450; =Navigation= &#31561; =SNIPPET= &#19981;&#33021;&#29992;&#20013;&#25991;&#30340;&#38382;&#39064;&#12290;
+&#35814;&#24773;&#21442;&#35265; [[file:blog/index.html][&#21338;&#25991;]]&#12290;
 "</pre></td></tr>
       <tr><td class="property"><code>content-html</code></td><td class="value"><pre>"&lt;div class=\"row \"&gt;&lt;div class=\"span8 \"&gt;
 
@@ -2278,31 +2304,9 @@ git clone https://github.com/renard/o-blog.git
 
 &lt;p&gt;&#25171;&#24320;&#25991;&#20214; &lt;code&gt;~/.emacs.d/o-blog/example/sample.org&lt;/code&gt; &#28982;&#21518;&#25191;&#34892; &lt;code&gt;M-x org-publish-blog&lt;/code&gt;. &#36755;&#20986;&#30340;&#31449;&#28857;&#40664;&#35748;&#20445;&#23384;&#22312; &lt;code&gt;~/.emacs.d/o-blog/out&lt;/code&gt;.
 &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div id=\"outline-container-3\" class=\"outline-3\"&gt;
-&lt;h3 id=\"sec-3\"&gt;&#24453;&#21150;&#20107;&#39033;&lt;/h3&gt;
-&lt;div class=\"outline-text-3\" id=\"text-3\"&gt;
-
-&lt;p&gt;&#36825;&#20799;&#21015;&#20030;&#20102;&#19968;&#20123;&#20013;&#25991;&#22788;&#29702;&#20013;&#30340;&#38382;&#39064;&#12290;&#20855;&#20307;&#30340;&#35299;&#20915;&#21442;&#35265; &lt;a href=\"https://github.com/exaos/o-blog\"&gt;https://github.com/exaos/o-blog&lt;/a&gt;.
-&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;[X]&lt;/code&gt; &#20013;&#25991;&#25991;&#20214;&#21517;&#26080;&#27861;&#27491;&#24120;&#29983;&#25104; &amp;ndash;&amp;gt; &#20351;&#29992; MD5 &#21462;&#20195; sanitize-string
-&lt;ul&gt;
-&lt;li&gt;&#29616;&#22312;&#65292;&#20351;&#29992; &lt;code&gt;#+FILENAME_SANITIZER: md5&lt;/code&gt; &#20195;&#26367;&#12290;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;[X]&lt;/code&gt; pull upstream
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;[X]&lt;/code&gt; &#21338;&#23458;&#35774;&#32622;&#20013;&#30340; &lt;code&gt;Copyright&lt;/code&gt;, &lt;code&gt;About&lt;/code&gt; &#21450; &lt;code&gt;Navigation&lt;/code&gt; &#31561; &lt;code&gt;SNIPPET&lt;/code&gt; &#19981;&#33021;&#29992;&#20013;&#25991;&#30340;&#38382;&#39064;&#12290;
-&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;/div&gt;
+&lt;p&gt;
+&#35814;&#24773;&#21442;&#35265; &lt;a href=\"blog/index.html\"&gt;&#21338;&#25991;&lt;/a&gt;&#12290;
+&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;
 "</pre></td></tr>
     </tbody>
@@ -2316,10 +2320,10 @@ git clone https://github.com/renard/o-blog.git
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>1</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#26356;&#26032;&#35760;&#24405;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20337 58368)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20345 52480)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
-      <tr><td class="property"><code>month</code></td><td class="value"><pre>3</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>28</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
@@ -2329,6 +2333,9 @@ git clone https://github.com/renard/o-blog.git
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"."</pre></td></tr>
       <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
 
+
+- 2012-03-28
+  - Add support for [[http://en.wikipedia.org/wiki/QR_code][QR-code]].
 
 - 2012-03-21
   - &#21512;&#24182;&#19978;&#36848;&#20195;&#30721;&#65292;&#26356;&#26032;&#20013;&#25991;&#28436;&#31034;&#27169;&#29256;&#65292;&#20462;&#25913; snippet &#20026;&#20013;&#25991;&#12290;
@@ -2353,6 +2360,14 @@ git clone https://github.com/renard/o-blog.git
   - Change tag system from \"Tags\" to org tagging system.
 "</pre></td></tr>
       <tr><td class="property"><code>content-html</code></td><td class="value"><pre>"&lt;ul&gt;
+&lt;li&gt;2012-03-28
+&lt;ul&gt;
+&lt;li&gt;Add support for &lt;a href=\"http://en.wikipedia.org/wiki/QR_code\"&gt;QR-code&lt;/a&gt;.
+
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/li&gt;
 &lt;li&gt;2012-03-21
 &lt;ul&gt;
 &lt;li&gt;&#21512;&#24182;&#19978;&#36848;&#20195;&#30721;&#65292;&#26356;&#26032;&#20013;&#25991;&#28436;&#31034;&#27169;&#29256;&#65292;&#20462;&#25913; snippet &#20026;&#20013;&#25991;&#12290;
@@ -2422,10 +2437,10 @@ git clone https://github.com/renard/o-blog.git
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>2</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#35843;&#35797;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20337 58368)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20345 52480)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
-      <tr><td class="property"><code>month</code></td><td class="value"><pre>3</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>28</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"debug.html"</pre></td></tr>
@@ -2449,10 +2464,10 @@ git clone https://github.com/renard/o-blog.git
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>3</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#29305;&#24615;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20337 58368)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20345 52480)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
-      <tr><td class="property"><code>month</code></td><td class="value"><pre>3</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>28</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
@@ -2463,8 +2478,9 @@ git clone https://github.com/renard/o-blog.git
       <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 - &#22806;&#35266;
-  - &#24102;[[file:./debug.html][&#35843;&#35797;&#21151;&#33021;]]&#30340;&#21160;&#24577;&#27169;&#29256;&#31995;&#32479; (&#20351;&#29992; lisp &#20989;&#25968;)
+  - &#24102;[[file:./debug.html][&#35843;&#35797;&#21151;&#33021;]]&#30340;&#21160;&#24577;&#27169;&#29256;&#31995;&#32479; (&#20351;&#29992; lisp &#20989;&#25968;), &#26041;&#20415;&#23884;&#20837; [[file:./bug-report.html][&#38169;&#35823;&#25253;&#21578;&#24037;&#20855;]]
   - &#36755;&#20986;&#30340;&#20195;&#30721;&#29255;&#26029;&#24102;&#26377;&#35821;&#27861;&#21152;&#20142;
   - &#25903;&#25345; [[http://twitter.github.com/bootstrap/][bootstrap]]
   - &#25903;&#25345; [[http://fortaweso.me/font-awesome/][Font-Awesome]]
@@ -2476,6 +2492,8 @@ git clone https://github.com/renard/o-blog.git
   - [[file:./tags/index.html][&#20113;&#26631;&#31614;]]
   - &#22810;&#20010;&#21338;&#23458;
   - [[file:./archives.html][&#21338;&#25991;&#24402;&#26723;]]
+  - &#25903;&#25345; [[http://disqus.com][Disqus]]
+  - &#25903;&#25345; [[http://en.wikipedia.org/wiki/QR_code][QR code]]
 - &#21338;&#25991;&#21457;&#24067;
   - &#21516;&#26102;&#25903;&#25345;&#21516;&#27493;&#19982;&#24322;&#27493;&#21457;&#24067;
   - &#30452;&#25509;&#21457;&#24067;&#21040;&#32593;&#31449;&#26381;&#21153;&#22120;&#19978; (&#36890;&#36807; tramp)
@@ -2483,10 +2501,12 @@ git clone https://github.com/renard/o-blog.git
   - &#35686;&#21578;&#26694;
   - &#25903;&#25345;&#22270;&#26631; ([[http://glyphicons.com/][glyphicons]])
 "</pre></td></tr>
-      <tr><td class="property"><code>content-html</code></td><td class="value"><pre>"&lt;ul&gt;
+      <tr><td class="property"><code>content-html</code></td><td class="value"><pre>"&lt;p&gt;
+&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD
+&lt;/p&gt;&lt;ul&gt;
 &lt;li&gt;&#22806;&#35266;
 &lt;ul&gt;
-&lt;li&gt;&#24102;&lt;a href=\"./debug.html\"&gt;&#35843;&#35797;&#21151;&#33021;&lt;/a&gt;&#30340;&#21160;&#24577;&#27169;&#29256;&#31995;&#32479; (&#20351;&#29992; lisp &#20989;&#25968;)
+&lt;li&gt;&#24102;&lt;a href=\"./debug.html\"&gt;&#35843;&#35797;&#21151;&#33021;&lt;/a&gt;&#30340;&#21160;&#24577;&#27169;&#29256;&#31995;&#32479; (&#20351;&#29992; lisp &#20989;&#25968;), &#26041;&#20415;&#23884;&#20837; &lt;a href=\"./bug-report.html\"&gt;&#38169;&#35823;&#25253;&#21578;&#24037;&#20855;&lt;/a&gt;
 &lt;/li&gt;
 &lt;li&gt;&#36755;&#20986;&#30340;&#20195;&#30721;&#29255;&#26029;&#24102;&#26377;&#35821;&#27861;&#21152;&#20142;
 &lt;/li&gt;
@@ -2512,6 +2532,10 @@ git clone https://github.com/renard/o-blog.git
 &lt;li&gt;&#22810;&#20010;&#21338;&#23458;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=\"./archives.html\"&gt;&#21338;&#25991;&#24402;&#26723;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&#25903;&#25345; &lt;a href=\"http://disqus.com\"&gt;Disqus&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&#25903;&#25345; &lt;a href=\"http://en.wikipedia.org/wiki/QR_code\"&gt;QR code&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2548,10 +2572,10 @@ git clone https://github.com/renard/o-blog.git
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>4</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#27169;&#29256;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20337 58368)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20345 52480)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
-      <tr><td class="property"><code>month</code></td><td class="value"><pre>3</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>28</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
@@ -2762,10 +2786,10 @@ git clone https://github.com/renard/o-blog.git
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>5</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#32467;&#26500;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20337 58368)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20345 52480)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
-      <tr><td class="property"><code>month</code></td><td class="value"><pre>3</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>28</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
@@ -2804,6 +2828,7 @@ Structure used to define a blog:
  - =title=: Blog title defined by the =#+TITLE:= header directive.
  - =description=: blog description defined by the =#+DESCRIPTION:= header
    directive.
+ - =url=: Blog base URL defined by the =#+URL:= header.
  - =default-category=: default category for posts  defined by the
    =#DEFAULT_CATEGORY:= header or =Blog=.
 
@@ -2932,6 +2957,8 @@ Structure used to define a blog:
 &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;description&lt;/code&gt;: blog description defined by the &lt;code&gt;#+DESCRIPTION:&lt;/code&gt; header
    directive.
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;url&lt;/code&gt;: Blog base URL defined by the &lt;code&gt;#+URL:&lt;/code&gt; header.
 &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;default-category&lt;/code&gt;: default category for posts  defined by the
    &lt;code&gt;#DEFAULT_CATEGORY:&lt;/code&gt; header or &lt;code&gt;Blog&lt;/code&gt;.
@@ -3106,10 +3133,10 @@ Some variables may be defined in some functions:
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>6</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#20989;&#25968;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20337 58368)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20345 52480)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
-      <tr><td class="property"><code>month</code></td><td class="value"><pre>3</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>28</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
@@ -3278,7 +3305,6 @@ Add a human readable timestamp for a post:
     &lt;lisp&gt; (ob:format-date (ob:post-timestamp POST) \"%A %B, %d %Y at %H:%M:%S\") &lt;/lisp&gt;
   &lt;/time&gt;.
 #+end_src
-
 "</pre></td></tr>
       <tr><td class="property"><code>content-html</code></td><td class="value"><pre>"&lt;p&gt;
 Basically any lisp function could be used withing a blog template as long as
@@ -3569,10 +3595,124 @@ Add a human readable timestamp for a post:
 &amp;lt;/&lt;span style=\"color: #87cefa;\"&gt;time&lt;/span&gt;&amp;gt;.
 &lt;/pre&gt;
 
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+"</pre></td></tr>
+    </tbody>
+  </table>
+</div>
+<div class="debug post">
+  <h2>报告软件臭虫 (BUG)</h2>
+  <table>
+    <caption>Dump information for post 报告软件臭虫 (BUG)</caption>
+    <thead><tr><th>Property</th><th>Value</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>7</pre></td></tr>
+      <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#25253;&#21578;&#36719;&#20214;&#33261;&#34411; (BUG)"</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20345 52480)</pre></td></tr>
+      <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
+      <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
+      <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
+      <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
+      <tr><td class="property"><code>filepath</code></td><td class="value"><pre>nil</pre></td></tr>
+      <tr><td class="property"><code>filename</code></td><td class="value"><pre>"bug-report"</pre></td></tr>
+      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"bug-report.html"</pre></td></tr>
+      <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"."</pre></td></tr>
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
 
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+
+To report a bug please be sure your issue is =o-blog= related.
+
+You can bootstrap a simple clean environment
+
+#+begin_src sh
+rm -rf ~/dev/.emacs.d
+mkdir -p ~/dev/.emacs.d
+cd ~/dev/.emacs.d
+git clone git://github.com/renard/o-blog.git
+git clone git://orgmode.org/org-mode.git
+#+end_src
+
+
+Then launch =emacs=:
+
+#+begin_src sh
+  cd ~/dev
+  rm -rf .emacs.d/o-blog/example/out
+  emacs --debug-init -Q  -l .emacs.d/o-blog/sample-init.el --eval \\
+      '(progn (setq browse-url-generic-program \"x-www-browser\"
+        browse-url-browser-function (quote browse-url-generic))
+        (ob-build-sample))'
+#+end_src
+
+You can change =x-www-browser= to your favorite browser.
+
+If anything runs fine emacs would exit normally. Otherwise a buffer called
+=o-blog Bug-report= is created and its content is copied to primary X
+selection (if available). This buffer contains useful information for
+debugging your issue. A browser is launch to the [[https://github.com/renard/o-blog/issues/new][o-blog new issue page]]. You
+can either paste content of the =o-blog Bug-report= buffer or the X primary
+selection (middle click).
+
+Please describe as much as possible your issue (in English). do no hesitate
+to paste your blog file to https://gist.github.com/ this might be useful to
+debug.
+
+
+"</pre></td></tr>
+      <tr><td class="property"><code>content-html</code></td><td class="value"><pre>"&lt;p&gt;
+To report a bug please be sure your issue is &lt;code&gt;o-blog&lt;/code&gt; related.
+&lt;/p&gt;
+&lt;p&gt;
+You can bootstrap a simple clean environment
+&lt;/p&gt;
+
+
+
+&lt;pre class=\"src src-sh\"&gt;rm -rf ~/dev/.emacs.d
+mkdir -p ~/dev/.emacs.d
+&lt;span style=\"color: #b0c4de;\"&gt;cd&lt;/span&gt; ~/dev/.emacs.d
+git clone git://github.com/renard/o-blog.git
+git clone git://orgmode.org/org-mode.git
+&lt;/pre&gt;
+
+
+
+&lt;p&gt;
+Then launch &lt;code&gt;emacs&lt;/code&gt;:
+&lt;/p&gt;
+
+
+
+&lt;pre class=\"src src-sh\"&gt;&lt;span style=\"color: #b0c4de;\"&gt;cd&lt;/span&gt; ~/dev
+rm -rf .emacs.d/o-blog/example/out
+emacs --debug-init -Q  -l .emacs.d/o-blog/sample-init.el --eval &lt;span style=\"color: #ffa07a;\"&gt;\\&lt;/span&gt;
+    &lt;span style=\"color: #ffa07a;\"&gt;'(progn (setq browse-url-generic-program \"x-www-browser\"&lt;/span&gt;
+&lt;span style=\"color: #ffa07a;\"&gt;      browse-url-browser-function (quote browse-url-generic))&lt;/span&gt;
+&lt;span style=\"color: #ffa07a;\"&gt;      (ob-build-sample))'&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;p&gt;
+You can change &lt;code&gt;x-www-browser&lt;/code&gt; to your favorite browser.
+&lt;/p&gt;
+&lt;p&gt;
+If anything runs fine emacs would exit normally. Otherwise a buffer called
+&lt;code&gt;o-blog Bug-report&lt;/code&gt; is created and its content is copied to primary X
+selection (if available). This buffer contains useful information for
+debugging your issue. A browser is launch to the &lt;a href=\"https://github.com/renard/o-blog/issues/new\"&gt;o-blog new issue page&lt;/a&gt;. You
+can either paste content of the &lt;code&gt;o-blog Bug-report&lt;/code&gt; buffer or the X primary
+selection (middle click).
+&lt;/p&gt;
+&lt;p&gt;
+Please describe as much as possible your issue (in English). do no hesitate
+to paste your blog file to &lt;a href=\"https://gist.github.com/\"&gt;https://gist.github.com/&lt;/a&gt; this might be useful to
+debug.
+&lt;/p&gt;
+
 "</pre></td></tr>
     </tbody>
   </table>
@@ -3583,12 +3723,12 @@ Add a human readable timestamp for a post:
     <caption>Dump information for post 问答</caption>
     <thead><tr><th>Property</th><th>Value</th></tr></thead>
     <tbody>
-      <tr><td class="property"><code>id</code></td><td class="value"><pre>7</pre></td></tr>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>8</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#38382;&#31572;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20337 58368)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20345 52480)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
-      <tr><td class="property"><code>month</code></td><td class="value"><pre>3</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>28</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
@@ -3734,16 +3874,16 @@ complex.
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>0</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#29256;&#26435;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20337 58368)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20345 52480)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
-      <tr><td class="property"><code>month</code></td><td class="value"><pre>3</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>28</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_post.html"</pre></td></tr>
-      <tr><td class="property"><code>filepath</code></td><td class="value"><pre>"Tips/2012/03"</pre></td></tr>
+      <tr><td class="property"><code>filepath</code></td><td class="value"><pre>"Tips/2012/04"</pre></td></tr>
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"daac757aaf7db65121e6d5786b049354"</pre></td></tr>
-      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/03/28_daac757aaf7db65121e6d5786b049354.html"</pre></td></tr>
+      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/04/03_daac757aaf7db65121e6d5786b049354.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"../../.."</pre></td></tr>
       <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
 
@@ -3766,16 +3906,16 @@ Copyright &#169; 2008-2012 &lt;a href=\"mailto:seb%20&#10088;&#593;&#422;&#629;&
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>1</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#20851;&#20110;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20337 58368)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20345 52480)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
-      <tr><td class="property"><code>month</code></td><td class="value"><pre>3</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>28</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_post.html"</pre></td></tr>
-      <tr><td class="property"><code>filepath</code></td><td class="value"><pre>"Tips/2012/03"</pre></td></tr>
+      <tr><td class="property"><code>filepath</code></td><td class="value"><pre>"Tips/2012/04"</pre></td></tr>
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"81d9f505441078e06980e0bd02616e94"</pre></td></tr>
-      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/03/28_81d9f505441078e06980e0bd02616e94.html"</pre></td></tr>
+      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/04/03_81d9f505441078e06980e0bd02616e94.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"../../.."</pre></td></tr>
       <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
 
@@ -3796,16 +3936,16 @@ Copyright &#169; 2008-2012 &lt;a href=\"mailto:seb%20&#10088;&#593;&#422;&#629;&
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>2</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#23548;&#33322;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20337 58368)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20345 52480)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
-      <tr><td class="property"><code>month</code></td><td class="value"><pre>3</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>28</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_post.html"</pre></td></tr>
-      <tr><td class="property"><code>filepath</code></td><td class="value"><pre>"Tips/2012/03"</pre></td></tr>
+      <tr><td class="property"><code>filepath</code></td><td class="value"><pre>"Tips/2012/04"</pre></td></tr>
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"056f2d7df6e6b64625c3a2d27ce07b05"</pre></td></tr>
-      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/03/28_056f2d7df6e6b64625c3a2d27ce07b05.html"</pre></td></tr>
+      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/04/03_056f2d7df6e6b64625c3a2d27ce07b05.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"../../.."</pre></td></tr>
       <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
 

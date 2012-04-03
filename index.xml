@@ -3,7 +3,7 @@
   <title>o-blog</title>
   <link href="http://exaos.github.com/o-blogindex.xml" rel="self" />
   <link href="http://exaos.github.com/o-blog"/>
-  <updated>2012-03-28T15:04:04Z</updated>
+  <updated>2012-04-03T08:04:34Z</updated>
   <id>http://exaos.github.com/o-blogindex.xml</id>
   <entry><title type="html">中文测试</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/03/20_089b4943ea034acfa445d050c7913e55.html"/><updated>2012-03-20T09:46:00Z</updated><published>2012-03-20T09:46:00Z</published><id>Tips/2012/03/20_089b4943ea034acfa445d050c7913e55.html</id><category scheme="/tags/a7bac2239fcdcb3a067903d8077c4a07.html" term="中文" label="中文"/><content type="html">&lt;p&gt;
 &#36825;&#26159;&#19968;&#20010;&#27979;&#35797;&#26465;&#30446;&#21727;&#12290;
@@ -13,6 +13,29 @@
 &lt;/p&gt;&lt;pre class="example"&gt;
 #+FILENAME_SANITIZER: md5
 &lt;/pre&gt;
+
+
+
+&lt;ul&gt;
+&lt;li&gt;&#24453;&#21150;&#20107;&#39033;
+  &#36825;&#20799;&#21015;&#20030;&#20102;&#19968;&#20123;&#20013;&#25991;&#22788;&#29702;&#20013;&#30340;&#38382;&#39064;&#12290;&#20855;&#20307;&#30340;&#35299;&#20915;&#21442;&#35265; &lt;a href="https://github.com/exaos/o-blog"&gt;https://github.com/exaos/o-blog&lt;/a&gt;.
+
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;[X]&lt;/code&gt; &#20013;&#25991;&#25991;&#20214;&#21517;&#26080;&#27861;&#27491;&#24120;&#29983;&#25104; &amp;ndash;&amp;gt; &#20351;&#29992; MD5 &#21462;&#20195; sanitize-string
+&lt;ul&gt;
+&lt;li&gt;&#29616;&#22312;&#65292;&#20351;&#29992; &lt;code&gt;#+FILENAME_SANITIZER: md5&lt;/code&gt; &#20195;&#26367;&#12290;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[X]&lt;/code&gt; pull upstream
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[X]&lt;/code&gt; &#21338;&#23458;&#35774;&#32622;&#20013;&#30340; &lt;code&gt;Copyright&lt;/code&gt;, &lt;code&gt;About&lt;/code&gt; &#21450; &lt;code&gt;Navigation&lt;/code&gt; &#31561; &lt;code&gt;SNIPPET&lt;/code&gt; &#19981;&#33021;&#29992;&#20013;&#25991;&#30340;&#38382;&#39064;&#12290;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
 
 
 </content></entry><entry><title type="html">使用 Bootstrap 分格</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/02/10_9fd550eec473942a9efac26e5478d5e7.html"/><updated>2012-02-10T01:19:00Z</updated><published>2012-02-10T01:19:00Z</published><id>Tips/2012/02/10_9fd550eec473942a9efac26e5478d5e7.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/6699fc2680f2601917ba69358414fa51.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
@@ -275,7 +298,7 @@ The &lt;i&gt;org template shorcut&lt;/i&gt; is &lt;code&gt;&amp;lt;os&lt;/code&g
 
 &lt;span style="color: #87cefa; font-weight: bold;"&gt;### &amp;#35774;&amp;#32622;&lt;/span&gt;
 
-#### &amp;#20351;&amp;#29992; &lt;span style="color: #7fffd4;"&gt;`el-get`&lt;/span&gt;
+&lt;span style="color: #87cefa; font-weight: bold;"&gt;#### &amp;#20351;&amp;#29992; `el-get`&lt;/span&gt;
 
 &amp;#22914;&amp;#26524;&amp;#20320;&amp;#20351;&amp;#29992; &lt;span style="color: #00ffff;"&gt;[el-get]&lt;/span&gt;&lt;span style="color: #ffa07a;"&gt;(https://github.com/dimitri/el-get)&lt;/span&gt;, &amp;#23433;&amp;#35013;&amp;#24456;&amp;#23481;&amp;#26131;&amp;#12290;&amp;#20320;&amp;#21482;&amp;#38656;&amp;#35201;&amp;#23558;
 &lt;span style="color: #7fffd4;"&gt;`o-blog`&lt;/span&gt; &amp;#28155;&amp;#21152;&amp;#21040; &lt;span style="color: #7fffd4;"&gt;`el-get-sources`&lt;/span&gt; &amp;#20013;&amp;#65292;&amp;#28982;&amp;#21518;&amp;#25191;&amp;#34892; &lt;span style="color: #7fffd4;"&gt;`M-x el-get-install o-blog`&lt;/span&gt;.
@@ -285,17 +308,17 @@ The &lt;i&gt;org template shorcut&lt;/i&gt; is &lt;code&gt;&amp;lt;os&lt;/code&g
 &lt;span style="color: #87cefa; font-weight: bold;"&gt;#### &amp;#25163;&amp;#21160;&amp;#35774;&amp;#32622;&lt;/span&gt;
 &amp;#39318;&amp;#20808;&amp;#20174; &lt;span style="color: #00ffff;"&gt;[Github]&lt;/span&gt;&lt;span style="color: #ffa07a;"&gt;(http://github.com)&lt;/span&gt; &amp;#20811;&amp;#38534;&amp;#36825;&amp;#20010; &lt;span style="color: #eedd82; font-style: italic;"&gt;*git*&lt;/span&gt; &amp;#28304;&amp;#30721;&amp;#20179;&amp;#24211;&amp;#12290;
 
-&lt;span style="color: #7fffd4;"&gt;```&lt;/span&gt;
+&lt;span style="color: #7fffd4;"&gt;```
 cd ~/.emacs.d
-git clone &lt;span style="color: #00ffff;"&gt;https://github.com/renard/o-blog.git&lt;/span&gt;
-&lt;span style="color: #7fffd4;"&gt;```&lt;/span&gt;
+git clone https://github.com/renard/o-blog.git
+``&lt;/span&gt;`
 
 &amp;#23558;&amp;#21518;&amp;#38754;&amp;#30340;&amp;#20195;&amp;#30721;&amp;#28155;&amp;#21152;&amp;#21040;&amp;#20320;&amp;#30340; &lt;span style="color: #7fffd4;"&gt;`~/.emacs.d/init.el`&lt;/span&gt; &amp;#25991;&amp;#20214;&amp;#20013;&amp;#65306;
 
-&lt;span style="color: #7fffd4;"&gt;```&lt;/span&gt;
+&lt;span style="color: #7fffd4;"&gt;```
 (add-to-list 'load-path "~/.emacs.d/o-blog")
 (require 'o-blog)
-&lt;span style="color: #7fffd4;"&gt;```&lt;/span&gt;
+``&lt;/span&gt;`
 
 &lt;span style="color: #87cefa; font-weight: bold;"&gt;### &amp;#21457;&amp;#24067;&lt;/span&gt;
 

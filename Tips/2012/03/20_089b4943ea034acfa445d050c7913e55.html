@@ -120,7 +120,14 @@
 	  <div class=" date-y"><a href="../../../Tips/2012/index.html">2012</a>
 	  </div>
 	</div>
-	<h1 class="offset1">中文测试</h1>
+	<div class="span1">
+	  <div class="qr-code">
+  <img src="http://chart.apis.google.com/chart?chs=50x50&cht=qr&chld=|0&chl=http%3a%2f%2fexaos.github.com%2fo-blog%2fTips%2f2012%2f03%2f20_089b4943ea034acfa445d050c7913e55.html"
+       alt="qr-code" />
+</div>
+
+	</div>
+	<h1 class="offset2">中文测试</h1>
       </div>
       <nav>
 	<ul class="pager">
@@ -139,6 +146,29 @@
 </p><pre class="example">
 #+FILENAME_SANITIZER: md5
 </pre>
+
+
+
+<ul>
+<li>待办事项
+  这儿列举了一些中文处理中的问题。具体的解决参见 <a href="https://github.com/exaos/o-blog">https://github.com/exaos/o-blog</a>.
+
+<ol>
+<li><code>[X]</code> 中文文件名无法正常生成 &ndash;&gt; 使用 MD5 取代 sanitize-string
+<ul>
+<li>现在，使用 <code>#+FILENAME_SANITIZER: md5</code> 代替。
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> pull upstream
+</li>
+<li><code>[X]</code> 博客设置中的 <code>Copyright</code>, <code>About</code> 及 <code>Navigation</code> 等 <code>SNIPPET</code> 不能用中文的问题。
+</li>
+</ol>
+
+</li>
+</ul>
 
 
 
