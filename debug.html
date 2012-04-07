@@ -157,7 +157,7 @@
       <tr><td class="property"><code>file</code></td><td class="value"><pre>"/home/exaos/Workspace/exaos/o-blog/example/sample-zh.org"</pre></td></tr>
       <tr><td class="property"><code>buffer</code></td><td class="value"><pre>#&lt;buffer sample-zh.org&gt;</pre></td></tr>
       <tr><td class="property"><code>publish-dir</code></td><td class="value"><pre>"out"</pre></td></tr>
-      <tr><td class="property"><code>template-dir</code></td><td class="value"><pre>"../templates-zh"</pre></td></tr>
+      <tr><td class="property"><code>template-dir</code></td><td class="value"><pre>"../templates"</pre></td></tr>
       <tr><td class="property"><code>style-dir</code></td><td class="value"><pre>"style"</pre></td></tr>
       <tr><td class="property"><code>posts-filter</code></td><td class="value"><pre>"+TODO=\"DONE\""</pre></td></tr>
       <tr><td class="property"><code>static-filter</code></td><td class="value"><pre>"+PAGE={.+.html}"</pre></td></tr>
@@ -190,7 +190,7 @@
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"use-chinese"</pre></td></tr>
       <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/03/20_use-chinese.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"../../.."</pre></td></tr>
-      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 
 &#36825;&#26159;&#19968;&#20010;&#27979;&#35797;&#26465;&#30446;&#21727;&#12290;
@@ -205,8 +205,8 @@
   1. [X] &#20013;&#25991;&#25991;&#20214;&#21517;&#26080;&#27861;&#27491;&#24120;&#29983;&#25104;
      * &#29616;&#22312;&#65292;&#20351;&#29992; =#+FILENAME_SANITIZER: md5= &#29983;&#25104;&#40664;&#35748;&#20026; =YYYY/MM/DD_(MD5).html= &#30340;&#25991;&#20214;&#21517;&#12290;
      * &#25110;&#32773;&#22312;&#27599;&#20010;&#26465;&#30446;&#19979;&#28155;&#21152;&#23646;&#24615; =CUSTOM_ID=, &#29983;&#25104;&#20026; =YYYY/MM/DD_(CUSTOM_ID).html= &#24418;&#24335;&#30340;&#25991;&#20214;&#21517;&#12290;
-  2. [X] pull upstream
-  3. [X] &#21338;&#23458;&#35774;&#32622;&#20013;&#30340; =Copyright=, =About= &#21450; =Navigation= &#31561; =SNIPPET= &#19981;&#33021;&#29992;&#20013;&#25991;&#30340;&#38382;&#39064;&#12290;
+  2. [X] &#21338;&#23458;&#35774;&#32622;&#20013;&#30340; =Copyright=, =About= &#21450; =Navigation= &#31561; =SNIPPET= &#19981;&#33021;&#29992;&#20013;&#25991;&#30340;&#38382;&#39064;&#12290;
+  3. [X] &#22810;&#35821;&#35328;&#27169;&#29256;&#25903;&#25345;&#12290;&#20320;&#38656;&#35201;&#22312;&#25991;&#20214;&#22836;&#20013;&#23450;&#20041; =#+LANGUAGE: zh=, &#28982;&#21518;&#22312; =templates/zh= &#30446;&#24405;&#19979;&#25918;&#32622;&#38656;&#35201;&#32763;&#35793;&#25104;&#20013;&#25991;&#30340;&#27169;&#29256;&#25991;&#20214;&#21363;&#21487;
 
 "</pre></td></tr>
       <tr><td class="property"><code>content-html</code></td><td class="value"><pre>"&lt;p&gt;
@@ -234,9 +234,9 @@
 &lt;/ul&gt;
 
 &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;[X]&lt;/code&gt; pull upstream
-&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;[X]&lt;/code&gt; &#21338;&#23458;&#35774;&#32622;&#20013;&#30340; &lt;code&gt;Copyright&lt;/code&gt;, &lt;code&gt;About&lt;/code&gt; &#21450; &lt;code&gt;Navigation&lt;/code&gt; &#31561; &lt;code&gt;SNIPPET&lt;/code&gt; &#19981;&#33021;&#29992;&#20013;&#25991;&#30340;&#38382;&#39064;&#12290;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[X]&lt;/code&gt; &#22810;&#35821;&#35328;&#27169;&#29256;&#25903;&#25345;&#12290;&#20320;&#38656;&#35201;&#22312;&#25991;&#20214;&#22836;&#20013;&#23450;&#20041; &lt;code&gt;#+LANGUAGE: zh&lt;/code&gt;, &#28982;&#21518;&#22312; &lt;code&gt;templates/zh&lt;/code&gt; &#30446;&#24405;&#19979;&#25918;&#32622;&#38656;&#35201;&#32763;&#35793;&#25104;&#20013;&#25991;&#30340;&#27169;&#29256;&#25991;&#20214;&#21363;&#21487;
 &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -267,7 +267,7 @@
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"use-bootstrap"</pre></td></tr>
       <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/02/10_use-bootstrap.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"../../.."</pre></td></tr>
-      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 
 [[http://twitter.github.com/bootstrap/scaffolding.html][Bootstrap scaffolding]] could be defined using both =#+begin_o_blog_row= and
@@ -438,7 +438,7 @@ Column n
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"add-icons"</pre></td></tr>
       <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/02/10_add-icons.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"../../.."</pre></td></tr>
-      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 
 Icons from [[http://glyphicons.com/][glyphicons]] are supported support by simply naming the icon using
@@ -712,7 +712,7 @@ rendered result might be damaged.
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"use-modal"</pre></td></tr>
       <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/02/09_use-modal.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"../../.."</pre></td></tr>
-      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 
 The [[http://twitter.github.com/bootstrap/javascript.html#modals][Modal]] bootstrap script can be used to display the content of an external
@@ -727,10 +727,10 @@ The /org template shorcut/ is =&lt;os= =TAB=. Two parameters might be used:
   content should be read.
 - The optional =mode= which could be determined by if omitted.
 
-&#36825;&#26159;&#26174;&#31034; =README.md= &#25991;&#20214;&#30340;&#31034;&#20363;&#65306;
+&#36825;&#26159;&#26174;&#31034; =README-zh.md= &#25991;&#20214;&#30340;&#31034;&#20363;&#65306;
 
 #+BEGIN_HTML
-&lt;div class=\"o-blog-source\"&gt;&lt;a class=\"btn btn-info\" data-toggle=\"modal\" data-target=\"#04c6e90faac2675aa89e2176d2eec7d8\" &gt;&lt;i class=\"icon-file icon-white\"&gt;&lt;/i&gt;&amp;nbsp;README.md&lt;/a&gt;&lt;/div&gt;&lt;div class=\"modal fade hide\" id=\"04c6e90faac2675aa89e2176d2eec7d8\"&gt;&lt;div class=\"modal-header\"&gt;&lt;a class=\"close\" data-dismiss=\"modal\"&gt;&#215;&lt;/a&gt;&lt;h3&gt;README.md&lt;/h3&gt;&lt;/div&gt;&lt;div class=\"modal-body\"&gt;&lt;pre&gt;
+&lt;div class=\"o-blog-source\"&gt;&lt;a class=\"btn btn-info\" data-toggle=\"modal\" data-target=\"#71d64167d5e129df68d2b6f50daafb8e\" &gt;&lt;i class=\"icon-file icon-white\"&gt;&lt;/i&gt;&amp;nbsp;README-zh.md&lt;/a&gt;&lt;/div&gt;&lt;div class=\"modal fade hide\" id=\"71d64167d5e129df68d2b6f50daafb8e\"&gt;&lt;div class=\"modal-header\"&gt;&lt;a class=\"close\" data-dismiss=\"modal\"&gt;&#215;&lt;/a&gt;&lt;h3&gt;README-zh.md&lt;/h3&gt;&lt;/div&gt;&lt;div class=\"modal-body\"&gt;&lt;pre&gt;
 &lt;span style=\"color: #87cefa; font-weight: bold;\"&gt;# o-blog &amp;#24555;&amp;#36895;&amp;#20837;&amp;#38376;&lt;/span&gt;
 
 &lt;span style=\"color: #b0c4de;\"&gt;- &lt;/span&gt;&amp;#22914;&amp;#20309;&amp;#20351;&amp;#29992; &lt;span style=\"color: #00ffff;\"&gt;[o-blog]&lt;/span&gt;&lt;span style=\"color: #ffa07a;\"&gt;(https://github.com/renard/o-blog)&lt;/span&gt;.
@@ -861,11 +861,11 @@ The &lt;i&gt;org template shorcut&lt;/i&gt; is &lt;code&gt;&amp;lt;os&lt;/code&g
 
 
 &lt;p&gt;
-&#36825;&#26159;&#26174;&#31034; &lt;code&gt;README.md&lt;/code&gt; &#25991;&#20214;&#30340;&#31034;&#20363;&#65306;
+&#36825;&#26159;&#26174;&#31034; &lt;code&gt;README-zh.md&lt;/code&gt; &#25991;&#20214;&#30340;&#31034;&#20363;&#65306;
 &lt;/p&gt;
 
 
-&lt;div class=\"o-blog-source\"&gt;&lt;a class=\"btn btn-info\" data-toggle=\"modal\" data-target=\"#04c6e90faac2675aa89e2176d2eec7d8\" &gt;&lt;i class=\"icon-file icon-white\"&gt;&lt;/i&gt;&amp;nbsp;README.md&lt;/a&gt;&lt;/div&gt;&lt;div class=\"modal fade hide\" id=\"04c6e90faac2675aa89e2176d2eec7d8\"&gt;&lt;div class=\"modal-header\"&gt;&lt;a class=\"close\" data-dismiss=\"modal\"&gt;&#215;&lt;/a&gt;&lt;h3&gt;README.md&lt;/h3&gt;&lt;/div&gt;&lt;div class=\"modal-body\"&gt;&lt;pre&gt;
+&lt;div class=\"o-blog-source\"&gt;&lt;a class=\"btn btn-info\" data-toggle=\"modal\" data-target=\"#71d64167d5e129df68d2b6f50daafb8e\" &gt;&lt;i class=\"icon-file icon-white\"&gt;&lt;/i&gt;&amp;nbsp;README-zh.md&lt;/a&gt;&lt;/div&gt;&lt;div class=\"modal fade hide\" id=\"71d64167d5e129df68d2b6f50daafb8e\"&gt;&lt;div class=\"modal-header\"&gt;&lt;a class=\"close\" data-dismiss=\"modal\"&gt;&#215;&lt;/a&gt;&lt;h3&gt;README-zh.md&lt;/h3&gt;&lt;/div&gt;&lt;div class=\"modal-body\"&gt;&lt;pre&gt;
 &lt;span style=\"color: #87cefa; font-weight: bold;\"&gt;# o-blog &amp;#24555;&amp;#36895;&amp;#20837;&amp;#38376;&lt;/span&gt;
 
 &lt;span style=\"color: #b0c4de;\"&gt;- &lt;/span&gt;&amp;#22914;&amp;#20309;&amp;#20351;&amp;#29992; &lt;span style=\"color: #00ffff;\"&gt;[o-blog]&lt;/span&gt;&lt;span style=\"color: #ffa07a;\"&gt;(https://github.com/renard/o-blog)&lt;/span&gt;.
@@ -995,7 +995,7 @@ git clone https://github.com/renard/o-blog.git
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"warning"</pre></td></tr>
       <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/01/15_warning.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"../../.."</pre></td></tr>
-      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 
 Alerts are declared in =o_blog_alert= blocks. There are 4 types of
@@ -1242,7 +1242,7 @@ nulla. Nullam rutrum. Nam vestibulum accumsan nisl.
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"html5-example"</pre></td></tr>
       <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/01/10_html5-example.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"../../.."</pre></td></tr>
-      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 
 ** tag: &lt;details&gt;
@@ -1328,7 +1328,7 @@ Works only with chrome.
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"syntax-org-mode"</pre></td></tr>
       <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/01/07_syntax-org-mode.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"../../.."</pre></td></tr>
-      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 
 ** Titles
@@ -1941,7 +1941,7 @@ the sun is R&lt;sub&gt;sun&lt;/sub&gt; = 6.96 x 10&lt;sup&gt;8&lt;/sup&gt; m.
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"use-tags"</pre></td></tr>
       <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/01/07_use-tags.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"../../.."</pre></td></tr>
-      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 
 Tags are useful to classify articles. They are stored as [[http://orgmode.org/manual/Tags.html][org-mode tags]] for
@@ -1996,7 +1996,7 @@ Special characters used in tags:
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"create-new-post"</pre></td></tr>
       <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/01/07_create-new-post.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"../../.."</pre></td></tr>
-      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 
 A blog consists of org entries. Each entry has a title, some properties and
@@ -2093,10 +2093,10 @@ entry.
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>0</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#24555;&#36895;&#20837;&#38376;&#25351;&#21335;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20345 52480)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20351 4864)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>7</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
@@ -2104,7 +2104,7 @@ entry.
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"index"</pre></td></tr>
       <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"index.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"."</pre></td></tr>
-      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 
 #+BEGIN_HTML
@@ -2323,10 +2323,10 @@ git clone https://github.com/renard/o-blog.git
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>1</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#26356;&#26032;&#35760;&#24405;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20345 52480)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20351 4864)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>7</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
@@ -2334,8 +2334,11 @@ git clone https://github.com/renard/o-blog.git
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"changelog"</pre></td></tr>
       <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"changelog.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"."</pre></td></tr>
-      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
+
+- 2012-04-07
+  - &#28155;&#21152;&#22810;&#35821;&#35328;&#27169;&#29256;&#25903;&#25345;
 
 - 2012-03-28
   - Add support for [[http://en.wikipedia.org/wiki/QR_code][QR-code]].
@@ -2363,6 +2366,14 @@ git clone https://github.com/renard/o-blog.git
   - Change tag system from \"Tags\" to org tagging system.
 "</pre></td></tr>
       <tr><td class="property"><code>content-html</code></td><td class="value"><pre>"&lt;ul&gt;
+&lt;li&gt;2012-04-07
+&lt;ul&gt;
+&lt;li&gt;&#28155;&#21152;&#22810;&#35821;&#35328;&#27169;&#29256;&#25903;&#25345;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/li&gt;
 &lt;li&gt;2012-03-28
 &lt;ul&gt;
 &lt;li&gt;Add support for &lt;a href=\"http://en.wikipedia.org/wiki/QR_code\"&gt;QR-code&lt;/a&gt;.
@@ -2440,10 +2451,10 @@ git clone https://github.com/renard/o-blog.git
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>2</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#35843;&#35797;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20345 52480)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20351 4864)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>7</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"debug.html"</pre></td></tr>
@@ -2451,7 +2462,7 @@ git clone https://github.com/renard/o-blog.git
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"debug"</pre></td></tr>
       <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"debug.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"."</pre></td></tr>
-      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 "</pre></td></tr>
       <tr><td class="property"><code>content-html</code></td><td class="value"><pre>"
@@ -2467,10 +2478,10 @@ git clone https://github.com/renard/o-blog.git
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>3</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#29305;&#24615;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20345 52480)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20351 4864)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>7</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
@@ -2478,10 +2489,9 @@ git clone https://github.com/renard/o-blog.git
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"features"</pre></td></tr>
       <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"features.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"."</pre></td></tr>
-      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 - &#22806;&#35266;
   - &#24102;[[file:./debug.html][&#35843;&#35797;&#21151;&#33021;]]&#30340;&#21160;&#24577;&#27169;&#29256;&#31995;&#32479; (&#20351;&#29992; lisp &#20989;&#25968;), &#26041;&#20415;&#23884;&#20837; [[file:./bug-report.html][&#38169;&#35823;&#25253;&#21578;&#24037;&#20855;]]
   - &#36755;&#20986;&#30340;&#20195;&#30721;&#29255;&#26029;&#24102;&#26377;&#35821;&#27861;&#21152;&#20142;
@@ -2504,9 +2514,7 @@ git clone https://github.com/renard/o-blog.git
   - &#35686;&#21578;&#26694;
   - &#25903;&#25345;&#22270;&#26631; ([[http://glyphicons.com/][glyphicons]])
 "</pre></td></tr>
-      <tr><td class="property"><code>content-html</code></td><td class="value"><pre>"&lt;p&gt;
-&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD
-&lt;/p&gt;&lt;ul&gt;
+      <tr><td class="property"><code>content-html</code></td><td class="value"><pre>"&lt;ul&gt;
 &lt;li&gt;&#22806;&#35266;
 &lt;ul&gt;
 &lt;li&gt;&#24102;&lt;a href=\"./debug.html\"&gt;&#35843;&#35797;&#21151;&#33021;&lt;/a&gt;&#30340;&#21160;&#24577;&#27169;&#29256;&#31995;&#32479; (&#20351;&#29992; lisp &#20989;&#25968;), &#26041;&#20415;&#23884;&#20837; &lt;a href=\"./bug-report.html\"&gt;&#38169;&#35823;&#25253;&#21578;&#24037;&#20855;&lt;/a&gt;
@@ -2575,10 +2583,10 @@ git clone https://github.com/renard/o-blog.git
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>4</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#27169;&#29256;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20345 52480)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20351 4864)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>7</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
@@ -2586,7 +2594,7 @@ git clone https://github.com/renard/o-blog.git
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"templates"</pre></td></tr>
       <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"templates.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"."</pre></td></tr>
-      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 
 &#22312; [[https://github.com/renard/o-blog][o-blog]] &#23548;&#20986;&#36807;&#31243;&#20013;&#21344;&#37325;&#22836;&#25103;&#30340;&#26159;&#27169;&#29256;&#65292;&#19968;&#32452; HTML &#30340;&#25991;&#20214;&#12290;&#21487;&#35299;&#26512;&#30340; Lisp &#28304;&#30721;&#20197;
@@ -2789,10 +2797,10 @@ git clone https://github.com/renard/o-blog.git
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>5</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#32467;&#26500;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20345 52480)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20351 4864)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>7</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
@@ -2800,7 +2808,7 @@ git clone https://github.com/renard/o-blog.git
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"structures"</pre></td></tr>
       <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"structures.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"."</pre></td></tr>
-      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 
 Some variables are available when publishing lisp parts of templates. These
@@ -3136,10 +3144,10 @@ Some variables may be defined in some functions:
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>6</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#20989;&#25968;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20345 52480)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20351 4864)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>7</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
@@ -3147,7 +3155,7 @@ Some variables may be defined in some functions:
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"functions"</pre></td></tr>
       <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"functions.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"."</pre></td></tr>
-      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 
 Basically any lisp function could be used withing a blog template as long as
@@ -3613,10 +3621,10 @@ Add a human readable timestamp for a post:
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>7</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#25253;&#21578;&#36719;&#20214;&#33261;&#34411; (BUG)"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20345 52480)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20351 4864)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>7</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
@@ -3624,7 +3632,7 @@ Add a human readable timestamp for a post:
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"bug-report"</pre></td></tr>
       <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"bug-report.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"."</pre></td></tr>
-      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 
 To report a bug please be sure your issue is =o-blog= related.
@@ -3728,10 +3736,10 @@ debug.
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>8</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#38382;&#31572;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20345 52480)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20351 4864)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>7</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
@@ -3739,7 +3747,7 @@ debug.
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"faq"</pre></td></tr>
       <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"faq.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"."</pre></td></tr>
-      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 
 ** &#39029;&#38754;&#30475;&#36215;&#26469;&#19985;&#19985;&#30340;&#65374;&#65374;
@@ -3877,18 +3885,18 @@ complex.
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>0</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#29256;&#26435;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20345 52480)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20351 4864)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>7</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_post.html"</pre></td></tr>
       <tr><td class="property"><code>filepath</code></td><td class="value"><pre>"Tips/2012/04"</pre></td></tr>
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"daac757aaf7db65121e6d5786b049354"</pre></td></tr>
-      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/04/03_daac757aaf7db65121e6d5786b049354.html"</pre></td></tr>
+      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/04/07_daac757aaf7db65121e6d5786b049354.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"../../.."</pre></td></tr>
-      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 
 Copyright &#169; 2008-2012 [[mailto:seb%2520%E2%9D%A8%C9%91%C6%A6%C9%B5%CF%90%C9%91%CA%82%C9%9B%E2%9D%A9%2520chezwam%2520%E2%9D%A8%C6%A4%C9%B5%C9%A9%C9%B2%CA%88%E2%9D%A9%2520org][S&#233;bastien Gross]]. Published under the therm of the
@@ -3909,18 +3917,18 @@ Copyright &#169; 2008-2012 &lt;a href=\"mailto:seb%20&#10088;&#593;&#422;&#629;&
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>1</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#20851;&#20110;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20345 52480)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20351 4864)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>7</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_post.html"</pre></td></tr>
       <tr><td class="property"><code>filepath</code></td><td class="value"><pre>"Tips/2012/04"</pre></td></tr>
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"81d9f505441078e06980e0bd02616e94"</pre></td></tr>
-      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/04/03_81d9f505441078e06980e0bd02616e94.html"</pre></td></tr>
+      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/04/07_81d9f505441078e06980e0bd02616e94.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"../../.."</pre></td></tr>
-      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 
 &#36825;&#26159;&#20010;&#35299;&#37322; [[https://github.com/renard/o-blog][o-blog]] &#24037;&#20316;&#26426;&#29702;&#30340;&#21338;&#23458;&#26679;&#20363;&#12290;
@@ -3939,18 +3947,18 @@ Copyright &#169; 2008-2012 &lt;a href=\"mailto:seb%20&#10088;&#593;&#422;&#629;&
     <tbody>
       <tr><td class="property"><code>id</code></td><td class="value"><pre>2</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#23548;&#33322;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20345 52480)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20351 4864)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
       <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>7</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_post.html"</pre></td></tr>
       <tr><td class="property"><code>filepath</code></td><td class="value"><pre>"Tips/2012/04"</pre></td></tr>
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"056f2d7df6e6b64625c3a2d27ce07b05"</pre></td></tr>
-      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/04/03_056f2d7df6e6b64625c3a2d27ce07b05.html"</pre></td></tr>
+      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/04/07_056f2d7df6e6b64625c3a2d27ce07b05.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"../../.."</pre></td></tr>
-      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:8 d:nil todo:nil &lt;:nil pri:nil tags:nil
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 
 - [[file:../../../features.html][/icon-cog icon-white/ &#29305;&#24615;]]
