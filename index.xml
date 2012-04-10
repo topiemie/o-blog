@@ -3,7 +3,7 @@
   <title>o-blog</title>
   <link href="http://exaos.github.com/o-blogindex.xml" rel="self" />
   <link href="http://exaos.github.com/o-blog"/>
-  <updated>2012-04-07T21:18:49Z</updated>
+  <updated>2012-04-10T11:25:45Z</updated>
   <id>http://exaos.github.com/o-blogindex.xml</id>
   <entry><title type="html">中文测试</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/03/20_use-chinese.html"/><updated>2012-03-20T09:46:00Z</updated><published>2012-03-20T09:46:00Z</published><id>Tips/2012/03/20_use-chinese.html</id><category scheme="/tags/a7bac2239fcdcb3a067903d8077c4a07.html" term="中文" label="中文"/><content type="html">&lt;p&gt;
 &#36825;&#26159;&#19968;&#20010;&#27979;&#35797;&#26465;&#30446;&#21727;&#12290;
@@ -14,6 +14,24 @@
 #+FILENAME_SANITIZER: md5
 &lt;/pre&gt;
 
+
+&lt;p&gt;
+&#21478;&#22806;&#30340;&#19968;&#20010;&#21150;&#27861;&#23601;&#26159;&#22312;&#25991;&#20214;&#22836;&#28155;&#21152;&#19968;&#27573;&#20320;&#33258;&#24049;&#23450;&#20041;&#30340; &lt;code&gt;emacs-lisp&lt;/code&gt; &#20195;&#30721;&#65292;&#27604;&#22914;&#65306;
+&lt;/p&gt;
+
+
+&lt;pre class="example"&gt;#+NAME: my-sanitizer
+#+begin_src emacs-lisp
+(defun el-sanitizer(s)
+  "Sanitize string S"
+  (if (eq (ob-sanitize-string s) "")
+      (md5 s)
+    (ob-sanitize-string s)))
+#+end_src
+
+#+CALL: my-sanitizer()
+#+FILENAME_SANITIZER: el-sanitizer
+&lt;/pre&gt;
 
 
 &lt;ul&gt;
@@ -40,7 +58,7 @@
 &lt;/ul&gt;
 
 
-</content></entry><entry><title type="html">使用 Bootstrap 分格</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/02/10_use-bootstrap.html"/><updated>2012-02-10T01:19:00Z</updated><published>2012-02-10T01:19:00Z</published><id>Tips/2012/02/10_use-bootstrap.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/6699fc2680f2601917ba69358414fa51.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
+</content></entry><entry><title type="html">使用 Bootstrap 分格</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/02/10_use-bootstrap.html"/><updated>2012-02-10T01:19:00Z</updated><published>2012-02-10T01:19:00Z</published><id>Tips/2012/02/10_use-bootstrap.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/bootstrap.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
 &lt;a href="http://twitter.github.com/bootstrap/scaffolding.html"&gt;Bootstrap scaffolding&lt;/a&gt; could be defined using both &lt;code&gt;#+begin_o_blog_row&lt;/code&gt; and
 &lt;code&gt;#+end_o_blog_row&lt;/code&gt; directives (or &lt;code&gt;&amp;lt;og&lt;/code&gt; &lt;code&gt;TAB&lt;/code&gt; shortcut). A new column could
 be started using &lt;code&gt;#+o_blog_row_column&lt;/code&gt; single directive (or &lt;code&gt;&amp;lt;ogr&lt;/code&gt; &lt;code&gt;TAB&lt;/code&gt;
@@ -116,7 +134,7 @@ Column n
 
 &lt;/pre&gt;
 
-</content></entry><entry><title type="html">添加图标</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/02/10_add-icons.html"/><updated>2012-02-10T00:19:00Z</updated><published>2012-02-10T00:19:00Z</published><id>Tips/2012/02/10_add-icons.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/6699fc2680f2601917ba69358414fa51.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
+</content></entry><entry><title type="html">添加图标</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/02/10_add-icons.html"/><updated>2012-02-10T00:19:00Z</updated><published>2012-02-10T00:19:00Z</published><id>Tips/2012/02/10_add-icons.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/bootstrap.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
 Icons from &lt;a href="http://glyphicons.com/"&gt;glyphicons&lt;/a&gt; are supported support by simply naming the icon using
 italic style:
 &lt;/p&gt;
@@ -255,7 +273,7 @@ rendered result might be damaged.
 &lt;/div&gt;&lt;/div&gt;
 
 
-</content></entry><entry><title type="html">使用 modal 显示源代码</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/02/09_use-modal.html"/><updated>2012-02-09T23:13:00Z</updated><published>2012-02-09T23:13:00Z</published><id>Tips/2012/02/09_use-modal.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/6699fc2680f2601917ba69358414fa51.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
+</content></entry><entry><title type="html">使用 modal 显示源代码</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/02/09_use-modal.html"/><updated>2012-02-09T23:13:00Z</updated><published>2012-02-09T23:13:00Z</published><id>Tips/2012/02/09_use-modal.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/bootstrap.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
 The &lt;a href="http://twitter.github.com/bootstrap/javascript.html#modals"&gt;Modal&lt;/a&gt; bootstrap script can be used to display the content of an external
 file in a modal window. The magic line is:
 &lt;/p&gt;
@@ -282,7 +300,7 @@ The &lt;i&gt;org template shorcut&lt;/i&gt; is &lt;code&gt;&amp;lt;os&lt;/code&g
 &lt;/p&gt;
 
 
-&lt;div class="o-blog-source"&gt;&lt;a class="btn btn-info" data-toggle="modal" data-target="#71d64167d5e129df68d2b6f50daafb8e" &gt;&lt;i class="icon-file icon-white"&gt;&lt;/i&gt;&amp;nbsp;README-zh.md&lt;/a&gt;&lt;/div&gt;&lt;div class="modal fade hide" id="71d64167d5e129df68d2b6f50daafb8e"&gt;&lt;div class="modal-header"&gt;&lt;a class="close" data-dismiss="modal"&gt;&#215;&lt;/a&gt;&lt;h3&gt;README-zh.md&lt;/h3&gt;&lt;/div&gt;&lt;div class="modal-body"&gt;&lt;pre&gt;
+&lt;div class="o-blog-source"&gt;&lt;a class="btn btn-info" data-toggle="modal" data-target="#readme-zhmd" &gt;&lt;i class="icon-file icon-white"&gt;&lt;/i&gt;&amp;nbsp;README-zh.md&lt;/a&gt;&lt;/div&gt;&lt;div class="modal fade hide" id="readme-zhmd"&gt;&lt;div class="modal-header"&gt;&lt;a class="close" data-dismiss="modal"&gt;&#215;&lt;/a&gt;&lt;h3&gt;README-zh.md&lt;/h3&gt;&lt;/div&gt;&lt;div class="modal-body"&gt;&lt;pre&gt;
 &lt;span style="color: #87cefa; font-weight: bold;"&gt;# o-blog &amp;#24555;&amp;#36895;&amp;#20837;&amp;#38376;&lt;/span&gt;
 
 &lt;span style="color: #b0c4de;"&gt;- &lt;/span&gt;&amp;#22914;&amp;#20309;&amp;#20351;&amp;#29992; &lt;span style="color: #00ffff;"&gt;[o-blog]&lt;/span&gt;&lt;span style="color: #ffa07a;"&gt;(https://github.com/renard/o-blog)&lt;/span&gt;.
@@ -300,7 +318,7 @@ The &lt;i&gt;org template shorcut&lt;/i&gt; is &lt;code&gt;&amp;lt;os&lt;/code&g
 
 &lt;span style="color: #87cefa; font-weight: bold;"&gt;### &amp;#35774;&amp;#32622;&lt;/span&gt;
 
-&lt;span style="color: #87cefa; font-weight: bold;"&gt;#### &amp;#20351;&amp;#29992; `el-get`&lt;/span&gt;
+#### &amp;#20351;&amp;#29992; &lt;span style="color: #7fffd4;"&gt;`el-get`&lt;/span&gt;
 
 &amp;#22914;&amp;#26524;&amp;#20320;&amp;#20351;&amp;#29992; &lt;span style="color: #00ffff;"&gt;[el-get]&lt;/span&gt;&lt;span style="color: #ffa07a;"&gt;(https://github.com/dimitri/el-get)&lt;/span&gt;, &amp;#23433;&amp;#35013;&amp;#24456;&amp;#23481;&amp;#26131;&amp;#12290;&amp;#20320;&amp;#21482;&amp;#38656;&amp;#35201;&amp;#23558;
 &lt;span style="color: #7fffd4;"&gt;`o-blog`&lt;/span&gt; &amp;#28155;&amp;#21152;&amp;#21040; &lt;span style="color: #7fffd4;"&gt;`el-get-sources`&lt;/span&gt; &amp;#20013;&amp;#65292;&amp;#28982;&amp;#21518;&amp;#25191;&amp;#34892; &lt;span style="color: #7fffd4;"&gt;`M-x el-get-install o-blog`&lt;/span&gt;.
@@ -310,17 +328,17 @@ The &lt;i&gt;org template shorcut&lt;/i&gt; is &lt;code&gt;&amp;lt;os&lt;/code&g
 &lt;span style="color: #87cefa; font-weight: bold;"&gt;#### &amp;#25163;&amp;#21160;&amp;#35774;&amp;#32622;&lt;/span&gt;
 &amp;#39318;&amp;#20808;&amp;#20174; &lt;span style="color: #00ffff;"&gt;[Github]&lt;/span&gt;&lt;span style="color: #ffa07a;"&gt;(http://github.com)&lt;/span&gt; &amp;#20811;&amp;#38534;&amp;#36825;&amp;#20010; &lt;span style="color: #eedd82; font-style: italic;"&gt;*git*&lt;/span&gt; &amp;#28304;&amp;#30721;&amp;#20179;&amp;#24211;&amp;#12290;
 
-&lt;span style="color: #7fffd4;"&gt;```
+&lt;span style="color: #7fffd4;"&gt;```&lt;/span&gt;
 cd ~/.emacs.d
-git clone https://github.com/renard/o-blog.git
-``&lt;/span&gt;`
+git clone &lt;span style="color: #00ffff;"&gt;https://github.com/renard/o-blog.git&lt;/span&gt;
+&lt;span style="color: #7fffd4;"&gt;```&lt;/span&gt;
 
 &amp;#23558;&amp;#21518;&amp;#38754;&amp;#30340;&amp;#20195;&amp;#30721;&amp;#28155;&amp;#21152;&amp;#21040;&amp;#20320;&amp;#30340; &lt;span style="color: #7fffd4;"&gt;`~/.emacs.d/init.el`&lt;/span&gt; &amp;#25991;&amp;#20214;&amp;#20013;&amp;#65306;
 
-&lt;span style="color: #7fffd4;"&gt;```
+&lt;span style="color: #7fffd4;"&gt;```&lt;/span&gt;
 (add-to-list 'load-path "~/.emacs.d/o-blog")
 (require 'o-blog)
-``&lt;/span&gt;`
+&lt;span style="color: #7fffd4;"&gt;```&lt;/span&gt;
 
 &lt;span style="color: #87cefa; font-weight: bold;"&gt;### &amp;#21457;&amp;#24067;&lt;/span&gt;
 
@@ -336,7 +354,7 @@ git clone https://github.com/renard/o-blog.git
 &lt;/p&gt;
 
 
-&lt;div class="o-blog-source"&gt;&lt;a class="btn btn-info" data-toggle="modal" data-target="#835a9f8a3649619c7a03ec593b4cd5e7" &gt;&lt;i class="icon-file icon-white"&gt;&lt;/i&gt;&amp;nbsp;sample-init.el&lt;/a&gt;&lt;/div&gt;&lt;div class="modal fade hide" id="835a9f8a3649619c7a03ec593b4cd5e7"&gt;&lt;div class="modal-header"&gt;&lt;a class="close" data-dismiss="modal"&gt;&#215;&lt;/a&gt;&lt;h3&gt;sample-init.el&lt;/h3&gt;&lt;/div&gt;&lt;div class="modal-body"&gt;&lt;pre&gt;
+&lt;div class="o-blog-source"&gt;&lt;a class="btn btn-info" data-toggle="modal" data-target="#sample-initel" &gt;&lt;i class="icon-file icon-white"&gt;&lt;/i&gt;&amp;nbsp;sample-init.el&lt;/a&gt;&lt;/div&gt;&lt;div class="modal fade hide" id="sample-initel"&gt;&lt;div class="modal-header"&gt;&lt;a class="close" data-dismiss="modal"&gt;&#215;&lt;/a&gt;&lt;h3&gt;sample-init.el&lt;/h3&gt;&lt;/div&gt;&lt;div class="modal-body"&gt;&lt;pre&gt;
 &lt;span style="color: #ff7f24;"&gt;;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;sample-init.el --- sample init file to be used to debug o-blog
 &lt;/span&gt;
 &lt;span style="color: #ff7f24;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;Copyright &amp;#169; 2012 S&amp;#233;bastien Gross &amp;lt;seb&amp;#8226;&amp;#593;&amp;#428;&amp;#8226;chezwam&amp;#8226;&amp;#598;&amp;#629;&amp;#648;&amp;#8226;org&amp;gt;
@@ -502,7 +520,7 @@ nulla. Nullam rutrum. Nam vestibulum accumsan nisl.
 
 &lt;/div&gt;
 
-</content></entry><entry><title type="html">一些 HTML5 示例</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/01/10_html5-example.html"/><updated>2012-01-10T20:58:00Z</updated><published>2012-01-10T20:58:00Z</published><id>Tips/2012/01/10_html5-example.html</id><category scheme="/tags/6c684601bd79f7e418c6c378cc7f9b09.html" term="html 5" label="html 5"/><content type="html">&lt;div id="outline-container-1" class="outline-3"&gt;
+</content></entry><entry><title type="html">一些 HTML5 示例</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/01/10_html5-example.html"/><updated>2012-01-10T20:58:00Z</updated><published>2012-01-10T20:58:00Z</published><id>Tips/2012/01/10_html5-example.html</id><category scheme="/tags/html-5.html" term="html 5" label="html 5"/><content type="html">&lt;div id="outline-container-1" class="outline-3"&gt;
 &lt;h3 id="sec-1"&gt;tag: &amp;lt;details&amp;gt;&lt;/h3&gt;
 &lt;div class="outline-text-3" id="text-1"&gt;
 
@@ -540,7 +558,7 @@ Works only with chrome.
 
 &lt;/div&gt;
 &lt;/div&gt;
-</content></entry><entry><title type="html">一些 org 语法示例</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/01/07_syntax-org-mode.html"/><updated>2012-01-07T11:23:00Z</updated><published>2012-01-07T11:23:00Z</published><id>Tips/2012/01/07_syntax-org-mode.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/5a445d710ae24cd276062b0c84850838.html" term="org" label="org"/><content type="html">&lt;div id="outline-container-1" class="outline-3"&gt;
+</content></entry><entry><title type="html">一些 org 语法示例</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/01/07_syntax-org-mode.html"/><updated>2012-01-07T11:23:00Z</updated><published>2012-01-07T11:23:00Z</published><id>Tips/2012/01/07_syntax-org-mode.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/org.html" term="org" label="org"/><content type="html">&lt;div id="outline-container-1" class="outline-3"&gt;
 &lt;h3 id="sec-1"&gt;Titles&lt;/h3&gt;
 &lt;div class="outline-text-3" id="text-1"&gt;
 
@@ -932,7 +950,7 @@ the sun is R&lt;sub&gt;sun&lt;/sub&gt; = 6.96 x 10&lt;sup&gt;8&lt;/sup&gt; m.
 
 &lt;/div&gt;
 &lt;/div&gt;
-</content></entry><entry><title type="html">如何使用标签</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/01/07_use-tags.html"/><updated>2012-01-07T00:28:00Z</updated><published>2012-01-07T00:28:00Z</published><id>Tips/2012/01/07_use-tags.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/7e02a3fb165cb1fad360d39c8cf8afa6.html" term="o-blog" label="o-blog"/><content type="html">&lt;p&gt;
+</content></entry><entry><title type="html">如何使用标签</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/01/07_use-tags.html"/><updated>2012-01-07T00:28:00Z</updated><published>2012-01-07T00:28:00Z</published><id>Tips/2012/01/07_use-tags.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/o-blog.html" term="o-blog" label="o-blog"/><content type="html">&lt;p&gt;
 Tags are useful to classify articles. They are stored as &lt;a href="http://orgmode.org/manual/Tags.html"&gt;org-mode tags&lt;/a&gt; for
 each entries. To add or modify a tag for a post, just use &lt;code&gt;C-c C-c&lt;/code&gt; and
 enter the tag value.
@@ -950,7 +968,7 @@ Special characters used in tags:
 &lt;/li&gt;
 &lt;/ul&gt;
 
-</content></entry><entry><title type="html">创建一个博客条目</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/01/07_create-new-post.html"/><updated>2012-01-07T00:13:00Z</updated><published>2012-01-07T00:13:00Z</published><id>Tips/2012/01/07_create-new-post.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/7e02a3fb165cb1fad360d39c8cf8afa6.html" term="o-blog" label="o-blog"/><content type="html">&lt;p&gt;
+</content></entry><entry><title type="html">创建一个博客条目</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/01/07_create-new-post.html"/><updated>2012-01-07T00:13:00Z</updated><published>2012-01-07T00:13:00Z</published><id>Tips/2012/01/07_create-new-post.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/o-blog.html" term="o-blog" label="o-blog"/><content type="html">&lt;p&gt;
 A blog consists of org entries. Each entry has a title, some properties and
 some text. Exporting a blog means publishing all entries with a &lt;code&gt;DONE&lt;/code&gt;
 &lt;code&gt;TODO&lt;/code&gt;.
@@ -969,7 +987,7 @@ A minimal blog file could be something like:
 
 &lt;span style="color: #ff7f24;"&gt;#+URL: http://blog.example.com&lt;/span&gt;
 
-&lt;span style="color: #87cefa;"&gt;* &lt;/span&gt;&lt;span style="color: #98fb98; font-weight: bold;"&gt;DONE&lt;/span&gt;&lt;span style="color: #87cefa;"&gt; Lorem ipsum&lt;/span&gt;
+&lt;span style="color: #87cefa;"&gt;* &lt;/span&gt;&lt;span style="color: #228b22; font-weight: bold;"&gt;DONE&lt;/span&gt;&lt;span style="color: #87cefa;"&gt; Lorem ipsum&lt;/span&gt;
   &lt;span style="color: #00ffff;"&gt;CLOSED:&lt;/span&gt; &lt;span style="color: #00ffff; text-decoration: underline;"&gt;[2012-01-07 Sat 00:13]&lt;/span&gt;
 &lt;span style="color: #00ffff;"&gt;  :PROPERTIES:&lt;/span&gt;
   &lt;span style="color: #00ffff;"&gt;:tags:&lt;/span&gt;     Lorem
