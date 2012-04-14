@@ -11,18 +11,17 @@
 
 #+DEFAULT_CATEGORY: Tips
 #+DISQUS: exaos-o-blog
-
 #+NAME: my-sanitizer
 #+begin_src emacs-lisp
 (defun el-sanitizer(s)
-  "Sanitize string S"
-  (if (eq (ob-sanitize-string s) "")
-      (md5 s)
-    (ob-sanitize-string s)))
+"Sanitize string S"
+(if (equal (ob-sanitize-string s) "")
+(md5 s)
+(ob-sanitize-string s)))
 #+end_src
 
 #+CALL: my-sanitizer()
-#+FILENAME_SANITIZER: md5
+#+FILENAME_SANITIZER: el-sanitizer
 
 #+POST_BUILD_SHELL: cmd 1
 #+POST_BUILD_SHELL: cmd 2
@@ -103,7 +102,7 @@ org-publish-blog=. 输出的站点默认保存在 =~/.emacs.d/o-blog/out=.
 详情参见 [[file:blog/index.html][博文]]。
 
 * 博客设置
-** 版权
+** Copyright
   :PROPERTIES:
   :SNIPPET:  t
   :END:
@@ -111,14 +110,14 @@ org-publish-blog=. 输出的站点默认保存在 =~/.emacs.d/o-blog/out=.
 Copyright © 2008-2012 [[mailto:seb%2520%E2%9D%A8%C9%91%C6%A6%C9%B5%CF%90%C9%91%CA%82%C9%9B%E2%9D%A9%2520chezwam%2520%E2%9D%A8%C6%A4%C9%B5%C9%A9%C9%B2%CA%88%E2%9D%A9%2520org][Sébastien Gross]]. Published under the therm of the
 [[http://creativecommons.org/licenses/by-nc-sa/2.0/fr/][Creative Commons Attribution-Noncommercial-Share Alike 2.0 France License]].
 
-** 关于
+** About
   :PROPERTIES:
   :SNIPPET:  t
   :END:
 
 这是个解释 [[https://github.com/renard/o-blog][o-blog]] 工作机理的博客样例。
 
-** 导航
+** Navigation
   :PROPERTIES:
   :SNIPPET:  t
   :END:
@@ -129,8 +128,10 @@ Copyright © 2008-2012 [[mailto:seb%2520%E2%9D%A8%C9%91%C6%A6%C9%B5%CF%90%C9%91%
   - [[file:{lisp}(ob:path-to-root){/lisp}/templates.html][模版]]
   - [[file:{lisp}(ob:path-to-root){/lisp}/structures.html][文档结构]]
   - [[file:{lisp}(ob:path-to-root){/lisp}/functions.html][函数]]
-  -
+  - 
   - [[file:{lisp}(ob:path-to-root){/lisp}/faq.html][FAQ]]
+  - 
+  - [[file:{lisp}(ob:path-to-root){/lisp}/bug-report.html][反馈软件缺陷]]
 
 - [[#][/icon-file icon-white/ 近期博文]]
   - [[file:{lisp}(format%20"%25s/%25s"%20(ob:path-to-root)%20(ob:post-htmlfile%20(ob:get-last-post%20"Tips"%200))){/lisp}][{lisp}(ob:post-title (ob:get-last-post "Tips" 0)){/lisp}]]
@@ -314,6 +315,11 @@ Structure used to define a blog:
  - =url=: Blog base URL defined by the =#+URL:= header.
  - =default-category=: default category for posts  defined by the
    =#DEFAULT_CATEGORY:= header or =Blog=.
+ - =disqus=: [[http://docs.disqus.com/developers/universal/][disqus]] account (called a forum on [[http://disqus.com][Disqus]]) this system
+   belongs to. Defined by the \"#DISQUS\" header.
+ - =filename-sanitizer=: 1-argument function to be used to sanitize
+   post filenames. Defined by =#+FILENAME_SANITIZER:= or
+   =ob-sanitize-string=.
 
 Example:
 
@@ -621,23 +627,21 @@ less-1.2.1.min.js:8Uncaught Error: NETWORK_ERR: XMLHttpRequest Exception 101
 这是 Chrome 载入本地 JavaScript 文件时的一个特点，这也是 Chrome 中的一个
 /安全特性/ 。
 
-You can disable this with the =--allow-file-access-from-files= option to
-chrome or you can use an other browser or setup a local webserver.
+你可以用选项 =--allow-file-access-from-files= 来关闭 Chrome 中的这个特点，或者你可以使用另一个浏览器或者设置一个本地的网页服务器。
 
-There are many complex solutions for a webserver such as [[http://nginx.org/][nginx]] or [[http://httpd.apache.org/][Apache]] or
-many [[http://en.wikipedia.org/wiki/Comparison_of_web_server_software][others]].
+有许多复杂的网页服务器解决方案，比如 [[http://nginx.org/][nginx]] 或 [[http://httpd.apache.org/][Apache]] 或许多 [[http://en.wikipedia.org/wiki/Comparison_of_web_server_software][其它的网页服务软件]]。
 
-You may want to prefer a lighter and simpler solution.
+你可能会优先选择一个轻量级的简单解决方案。
 
-With python simply run:
+使用 Python, 只需要简单地运行：
 
 #+begin_src sh
 cd /path/to/your/site && python -m SimpleHTTPServer
 #+end_src
 
-And browse http://localhost:8000
+然后浏览 http://localhost:8000
 
-Or within emacs you can run [[https://github.com/jrhbailey/emacs-http-server][emacs-http-server]]:
+在 Emacs 中你还可以使用 [[https://github.com/jrhbailey/emacs-http-server][emacs-http-server]]:
 
 #+begin_src emacs-lisp
 (require 'httpd)
@@ -645,10 +649,9 @@ Or within emacs you can run [[https://github.com/jrhbailey/emacs-http-server][em
 (httpd-start)
 #+end_src
 
-and browse http://localhost:8080
+然后浏览 http://localhost:8080
 
-An other alternative would be the use of [[http://www.emacswiki.org/emacs/Elnode][elnode]] but it seems to be more
-complex.
+其它的替代方法还有使用 [[http://www.emacswiki.org/emacs/Elnode][elnode]], 但它好象更复杂些。
 
 * 博客条目
 ** DONE 创建一个博客条目					  :用例:o@blog:
@@ -1208,19 +1211,20 @@ The syntax is:
 : #+FILENAME_SANITIZER: md5
 
 另外的一个办法就是在文件头添加一段你自己定义的 =emacs-lisp= 代码，比如：
-#+begin_example
-#+NAME: my-sanitizer
-#+begin_src emacs-lisp
-(defun el-sanitizer(s)
-  "Sanitize string S"
-  (if (eq (ob-sanitize-string s) "")
-      (md5 s)
-    (ob-sanitize-string s)))
-#+end_src
-
-#+CALL: my-sanitizer()
-#+FILENAME_SANITIZER: el-sanitizer
-#+end_example
+: #+begin_example
+: #+NAME: my-sanitizer
+: #+begin_src emacs-lisp
+: (defun el-sanitizer(s)
+:   "Sanitize string S"
+:   (if (equal (ob-sanitize-string s) "")
+:       (md5 s)
+:     (ob-sanitize-string s)))
+: #+end_src
+: 
+: #+CALL: my-sanitizer()
+: #+FILENAME_SANITIZER: el-sanitizer
+: #+end_example
+打开文件后，你需要先将光标移动到 =#+CALL:= 那一行并执行 =C-c C-c=, 然后再执行 =org-publish-blog= 即可。
 
 - 待办事项
   这儿列举了一些中文处理中的问题。具体的解决参见 [[github:exaos/o-blog]].
