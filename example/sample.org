@@ -28,7 +28,7 @@
 
 #+HTML: <h1>o-blog</h1>
 
-A stand-alone blogging and publication tool for [[http://orgmode.org/][org-mode]].
+A stand-alone blog and publication tool for [[http://orgmode.org/][org-mode]].
 
 #+HTML: </div>
 
@@ -60,7 +60,7 @@ you have 2 ways to install [[https://github.com/renard/o-blog][o-blog]].
 
 #+begin_o_blog_row 5
 
-*Using el-get*
+#+HTML: <h4>Using el-get</h4>
 
 If you are using [[https://github.com/dimitri/el-get][el-get]] it would be very easy to install. All you need to do
 is to add =o-blog= to =el-get-sources= and type:
@@ -73,7 +73,7 @@ If you are using =el-get= 4 or greater, you only need to type:
 
 #+o_blog_row_column  6
 
-*Manual setup*
+#+HTML: <h4>Manual setup</h4>
 
 Start by cloning the /git/ repository from [[http://github.com][Github]].
 
@@ -155,6 +155,21 @@ This is a sample blog to explain how [[https://github.com/renard/o-blog][o-blog]
   :PAGE:     changelog.html
   :END:
 
+- 2012-05-07
+  - Update to:
+    - less.js v1.0-547-ga2df119
+  - Bootstrap widgets:
+    - label
+    - badge
+    - progress bar
+    - well
+    - page header
+    - hero unit
+
+- 2012-05-04
+  - Update to:
+    - bootstrap v2.0.3-5-gb261f97.
+
 - 2012-04-17
   - Update to:
     - less 1.3.0.
@@ -207,6 +222,7 @@ This is a sample blog to explain how [[https://github.com/renard/o-blog][o-blog]
   - [[http://lesscss.org/][lesscss]] support
   - [[http://jquery.com/][JQuery]] support
   - HTML5 / CSS3 ready
+  - Custom [[http://www.google.com/webfonts][Google webfonts]] support.
 - Blog
   - Static pages
   - [[file:{lisp}(ob:path-to-root){/lisp}/tags/index.html][Tag cloud]]
@@ -220,6 +236,7 @@ This is a sample blog to explain how [[https://github.com/renard/o-blog][o-blog]
 - [[http://twitter.github.com/bootstrap/][Bootstrap]] extra
   - Alert boxes
   - Icons ([[http://glyphicons.com/][glyphicons]]) support
+  - widgets (labels, badges, progress bar, well, etc…)
 
 ** Templates
   :PROPERTIES:
@@ -1180,3 +1197,215 @@ The syntax is:
   ,#+end_o_blog_row
 
 #+end_src
+
+** DONE Some bootstrap features				    :usage:Bootstrap:
+   CLOSED: [2012-05-03 Thu 21:40]
+
+*** Hero-unit
+
+#+begin_o_blog_row 7
+
+#+BEGIN_SRC org
+  ,#+begin_o_blog_hero_unit
+  ,#+HTML: <h1>Heading</h1>
+
+  , tagline
+
+  ,#+BEGIN_HTML
+  ,    <a class="btn btn-primary btn-large">
+  ,      Learn more
+  ,    </a>
+  ,#+END_HTML
+  ,#+end_o_blog_hero_unit
+#+END_SRC
+
+#+o_blog_row_column 4
+
+#+begin_o_blog_hero_unit
+
+#+HTML: <h1>Heading</h1>
+
+tagline
+
+#+BEGIN_HTML
+    <a class="btn btn-primary btn-large">
+      Learn more
+    </a>
+#+END_HTML
+#+end_o_blog_hero_unit
+
+#+end_o_blog_row
+
+*** Page header
+
+#+begin_o_blog_row 7
+
+#+BEGIN_SRC org
+  ,#+begin_o_blog_page_header
+  ,#+HTML: <h1>Page header</h1>
+  ,Some text
+  ,#+end_o_blog_page_header
+#+END_SRC
+
+#+o_blog_row_column 4
+
+#+begin_o_blog_page_header
+#+HTML: <h1>Page header</h1>
+Some text
+#+end_o_blog_page_header
+
+#+end_o_blog_row
+
+*** Using labels
+
+    Label and annotate text using a =label:TYPE= link prefix where =TYPE= is
+    one of =default=, =success=, =warning=, =important=, =info= or
+    =reverse=. The URL part of the link is used as the label text.
+
+#+begin_o_blog_row 7
+
+#+BEGIN_SRC txt
+   [[ob-label:default][Default]]
+   [[ob-label:success][Success]]
+   [[ob-label:warning][Warning]]
+   [[ob-label:important][Important]]
+   [[ob-label:info][Info]]
+   [[ob-label:inverse][Inverse]]
+#+END_SRC
+
+#+o_blog_row_column 4
+   - [[ob-label:default][Default]]
+   - [[ob-label:success][Success]]
+   - [[ob-label:warning][Warning]]
+   - [[ob-label:important][Important]]
+   - [[ob-label:info][Info]]
+   - [[ob-label:inverse][Inverse]]
+#+end_o_blog_row
+
+*** Using badges
+
+    Indicators and unread counts as for labels. Use the =badge:TYPE= link
+    prefix.
+
+#+begin_o_blog_row 7
+
+#+BEGIN_SRC  text
+   [[ob-badge:default][Default]]
+   [[ob-badge:success][Success]]
+   [[ob-badge:warning][Warning]]
+   [[ob-badge:important][Important]]
+   [[ob-badge:info][Info]]
+   [[ob-badge:inverse][Inverse]]
+#+END_SRC
+
+#+o_blog_row_column 4
+   - [[ob-badge:default][Default]]
+   - [[ob-badge:success][Success]]
+   - [[ob-badge:warning][Warning]]
+   - [[ob-badge:important][Important]]
+   - [[ob-badge:info][Info]]
+   - [[ob-badge:inverse][Inverse]]
+#+end_o_blog_row
+
+*** Using progress bars
+
+    For loading, redirecting, or action status. Use a =progress:TYPE= link
+    where =TYPE= is one of =info=, =success=, =warning= or
+    =danger=. Additional classes (=striped= or =active=) can be added using comma.
+    The URL is the progress percent.
+
+#+begin_o_blog_row 7
+
+#+BEGIN_SRC  text
+    [[ob-progress:info][25]]
+    [[ob-progress:success,striped][50]]
+    [[ob-progress:warning,striped,active][75]]
+    [[ob-progress:danger][100]]
+#+END_SRC
+
+#+o_blog_row_column 4
+    [[ob-progress:info][25]]
+    [[ob-progress:success,striped][50]]
+    [[ob-progress:warning,striped,active][75]]
+    [[ob-progress:danger][100]]
+#+end_o_blog_row
+
+
+*** Well
+
+Use the well as a simple effect on an element to give it an inset effect.
+
+#+begin_o_blog_row 7
+
+#+BEGIN_SRC  text
+ , #+begin_o_blog_well
+ , Look, I'm in a well!
+ , #+end_o_blog_well
+#+END_SRC
+
+#+o_blog_row_column 4
+
+
+#+begin_o_blog_well
+Look, I'm in a well!
+#+end_o_blog_well
+
+#+end_o_blog_row
+
+** DONE Add a custom font			     :usage:Bootstrap:o@blog:
+   CLOSED: [2012-05-07 Mon 16:38]
+
+[[http://www.google.com/webfonts][Google webfonts]] can be easily used in o-blog in 2 different ways: using
+google API or by providing resources in the =templates/style= directory.
+
+Both example are given using the [[http://www.yanone.de/typedesign/kaffeesatz/][Yanone Kaffeesatz]] font.
+
+*** Using Google API
+
+The [[http://www.google.com/webfonts#QuickUsePlace:quickUse/Family:][quick use]] provides an import snippet such as:
+
+#+BEGIN_SRC css
+@import url("http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700&subset=latin,latin-ext");
+#+END_SRC
+
+That line should be included into the
+=templates/style/less/o-blog-default.less= file in which you should also add
+something like:
+
+#+BEGIN_SRC css
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+}
+#+END_SRC
+
+And that's it.
+
+*** Providing resources
+
+That is less efficient in terms of network resources but provide a good
+alternative for offline publications.
+
+
+The script =get-font= does all needed jobs.
+
+#+O_BLOG_SOURCE: ../get-font sh
+
+You can run:
+
+#+BEGIN_SRC sh
+./get-font 'http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700&subset=latin,latin-ext'
+#+END_SRC
+
+And add the font declaration in =templates/style/less/o-blog-default.less=:
+
+#+BEGIN_SRC css
+@import "font-Yanone-Kaffeesatz.less";
+#+END_SRC
+
+Add declare its use like in the Google API version:
+
+#+BEGIN_SRC css
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+}
+#+END_SRC
