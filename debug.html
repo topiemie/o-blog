@@ -4,11 +4,13 @@
     <meta charset="utf-8"/>
     <title>调试</title>
     <link rel="stylesheet" type="text/less" href="./style/less/o-blog.less">
-    <script src="./style/js/less-1.2.2.min.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./style/js/less-1.3.0.min.js" type="text/javascript"></script>
     <script src="./style/js/jquery-1.7.1.min.js" type="text/javascript"></script>
     <script src="./style/bootstrap/js/bootstrap-modal.js" type="text/javascript"></script>
     <script src="./style/bootstrap/js/bootstrap-transition.js" type="text/javascript"></script>
     <script src="./style/bootstrap/js/bootstrap-dropdown.js" type="text/javascript"></script>
+    <script src="./style/bootstrap/js/bootstrap-collapse.js" type="text/javascript"></script>
     <script src="./style/js/prettify.js" type="text/javascript"></script>
     <script src="./style/js/o-blog.linenumber.js" type="text/javascript"></script>
     <script src="./style/js/o-blog-fix.js" type="text/javascript"></script>
@@ -40,8 +42,13 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
 	<div class="container">
+	  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
 	  <a class="brand" href="./index.html">o-blog</a>
-	  <div class="nav-collapse">
+	  <div class="nav-collapse collapse">
 	    <ul>
 <li><a href="./features.html"><i>icon-cog icon-white</i> 特性</a>
 
@@ -68,15 +75,15 @@
 </li>
 <li><a href="#"><i>icon-file icon-white</i> 近期博文</a>
 <ul>
+<li><a href="./Tips/2012/05/21_static-pages.html">创建静态页面</a>
+</li>
+<li><a href="./Tips/2012/05/07_custom-fonts.html">添加自定义字体</a>
+</li>
+<li><a href="./Tips/2012/05/03_bootstrap-features.html">一些 bootstrap 特性</a>
+</li>
 <li><a href="./Tips/2012/03/20_use-chinese.html">中文测试</a>
 </li>
 <li><a href="./Tips/2012/02/10_use-bootstrap.html">使用 Bootstrap 分格</a>
-</li>
-<li><a href="./Tips/2012/02/10_add-icons.html">添加图标</a>
-</li>
-<li><a href="./Tips/2012/02/09_use-modal.html">使用 modal 显示源代码</a>
-</li>
-<li><a href="./Tips/2012/01/15_warning.html">警告</a>
 
 </li>
 </ul>
@@ -103,7 +110,7 @@
 	</div>
       </div>
     </div>
-    <div class="subnav subnav-fixed">
+    <div class="subnav subnav-fixed visible-desktop">
       <div class="container">
 	<ul class="breadcrumb">
   <li><a href="./index.html">首页</a> <span class="divider">/</span></li>
@@ -176,10 +183,896 @@
   <h1>博文</h1>
   <div class="debug post">
   <div class="debug post">
+  <h2>创建静态页面</h2>
+  <table>
+    <caption>导出博文信息 创建静态页面</caption>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>0</pre></td></tr>
+      <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#21019;&#24314;&#38745;&#24577;&#39029;&#38754;"</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20409 51456)</pre></td></tr>
+      <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>5</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>21</pre></td></tr>
+      <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
+      <tr><td class="property"><code>tags</code></td><td class="value"><pre>([cl-struct-ob:tags "&#29992;&#20363;" "a0b1dd52a1c893aa52b103dad9aa9d59" nil nil] [cl-struct-ob:tags "Bootstrap" "bootstrap" nil nil] [cl-struct-ob:tags "o-blog" "o-blog" nil nil])</pre></td></tr>
+      <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_post.html"</pre></td></tr>
+      <tr><td class="property"><code>filepath</code></td><td class="value"><pre>"Tips/2012/05"</pre></td></tr>
+      <tr><td class="property"><code>filename</code></td><td class="value"><pre>"static-pages"</pre></td></tr>
+      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/05/21_static-pages.html"</pre></td></tr>
+      <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"../../.."</pre></td></tr>
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
+
+
+#+BEGIN_HTML
+&lt;div class=\"row \"&gt;&lt;div class=\"span7 \"&gt;
+#+END_HTML
+
+
+
+&#21019;&#24314;&#38745;&#24577;&#39029;&#38754;&#19982;&#21019;&#24314;&#21338;&#25991;&#39029;&#38754;&#19968;&#26679;&#12290;&#20320;&#21807;&#19968;&#38656;&#35201;&#20570;&#30340;&#23601;&#26159;&#28155;&#21152;&#23646;&#24615; =PAGE=. &#23548;&#20986;&#30340;&#36335;&#24452;&#30456;&#23545;
+&#20110; =#+PUBLISH_DIR:=.
+
+&#20320;&#20063;&#21487;&#20197;&#20026;&#38745;&#24577;&#39029;&#38754;&#25351;&#23450;&#33258;&#23450;&#20041;&#27169;&#29256;&#65292;&#21482;&#38656;&#28155;&#21152;&#23646;&#24615; =TEMPLATE=. &#27169;&#29256;&#36335;&#24452;&#30456;&#23545;&#20110;
+=#+TEMPLATE_DIR:=.
+
+#+BEGIN_HTML
+&lt;/div&gt;&lt;div class=\"span4 \"&gt;
+#+END_HTML
+
+
+#+BEGIN_SRC org
+  ,* Static page
+  ,   :PROPERTIES:
+  ,   :PAGE:     path/to/static/page.html
+  ,   :TEMPLATE: static-page.html
+  ,   :END:
+#+END_SRC
+
+
+#+BEGIN_HTML
+&lt;/div&gt;&lt;/div&gt;
+#+END_HTML
+
+"</pre></td></tr>
+      <tr><td class="property"><code>content-html</code></td><td class="value"><pre>"&lt;div class=\"row \"&gt;&lt;div class=\"span7 \"&gt;
+
+
+
+&lt;p&gt;
+&#21019;&#24314;&#38745;&#24577;&#39029;&#38754;&#19982;&#21019;&#24314;&#21338;&#25991;&#39029;&#38754;&#19968;&#26679;&#12290;&#20320;&#21807;&#19968;&#38656;&#35201;&#20570;&#30340;&#23601;&#26159;&#28155;&#21152;&#23646;&#24615; &lt;code&gt;PAGE&lt;/code&gt;. &#23548;&#20986;&#30340;&#36335;&#24452;&#30456;&#23545;
+&#20110; &lt;code&gt;#+PUBLISH_DIR:&lt;/code&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+&#20320;&#20063;&#21487;&#20197;&#20026;&#38745;&#24577;&#39029;&#38754;&#25351;&#23450;&#33258;&#23450;&#20041;&#27169;&#29256;&#65292;&#21482;&#38656;&#28155;&#21152;&#23646;&#24615; &lt;code&gt;TEMPLATE&lt;/code&gt;. &#27169;&#29256;&#36335;&#24452;&#30456;&#23545;&#20110;
+&lt;code&gt;#+TEMPLATE_DIR:&lt;/code&gt;.
+&lt;/p&gt;
+
+
+&lt;/div&gt;&lt;div class=\"span4 \"&gt;
+
+
+
+&lt;pre class=\"src src-org\"&gt;&lt;span style=\"color: #87cefa;\"&gt;* Static page&lt;/span&gt;
+&lt;span style=\"color: #00ffff;\"&gt;   :PROPERTIES:&lt;/span&gt;
+   &lt;span style=\"color: #00ffff;\"&gt;:PAGE:&lt;/span&gt;     path/to/static/page.html
+   &lt;span style=\"color: #00ffff;\"&gt;:TEMPLATE:&lt;/span&gt; static-page.html
+&lt;span style=\"color: #00ffff;\"&gt;   :END:&lt;/span&gt;
+&lt;/pre&gt;
+
+
+
+&lt;/div&gt;&lt;/div&gt;
+
+"</pre></td></tr>
+    </tbody>
+  </table>
+</div>
+<div class="debug post">
+  <h2>添加自定义字体</h2>
+  <table>
+    <caption>导出博文信息 添加自定义字体</caption>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>1</pre></td></tr>
+      <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#28155;&#21152;&#33258;&#23450;&#20041;&#23383;&#20307;"</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20391 35304)</pre></td></tr>
+      <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>5</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>7</pre></td></tr>
+      <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
+      <tr><td class="property"><code>tags</code></td><td class="value"><pre>([cl-struct-ob:tags "&#29992;&#20363;" "a0b1dd52a1c893aa52b103dad9aa9d59" nil nil] [cl-struct-ob:tags "Bootstrap" "bootstrap" nil nil] [cl-struct-ob:tags "o-blog" "o-blog" nil nil])</pre></td></tr>
+      <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_post.html"</pre></td></tr>
+      <tr><td class="property"><code>filepath</code></td><td class="value"><pre>"Tips/2012/05"</pre></td></tr>
+      <tr><td class="property"><code>filename</code></td><td class="value"><pre>"custom-fonts"</pre></td></tr>
+      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/05/07_custom-fonts.html"</pre></td></tr>
+      <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"../../.."</pre></td></tr>
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
+
+
+&#21487;&#22312; o-blog &#20013;&#29992;&#20004;&#31181;&#26041;&#24335;&#20351;&#29992; [[http://www.google.com/webfonts][Google webfonts]]:&#20351;&#29992; google API &#25110;&#32773;&#22312;
+=templates/style= &#30446;&#24405;&#20013;&#25552;&#20379;&#36164;&#28304;&#12290;
+
+#+BEGIN_HTML
+&lt;div class=\"alert alert-warning\"&gt;&lt;p class=\"alert-heading\"&gt;Caution&lt;/p&gt;
+#+END_HTML
+
+&#20351;&#29992;&#35768;&#22810;&#23383;&#20307;&#26679;&#24335;&#20250;&#35753;&#20320;&#30340;&#39029;&#38754;&#21464;&#24471;&#24456;&#24930;&#65292;&#22240;&#27492;&#20165;&#36873;&#25321;&#37027;&#20123;&#20320;&#39029;&#38754;&#20013;&#23454;&#38469;&#38656;&#35201;&#30340;&#23383;&#20307;&#26679;&#24335;&#12290;
+
+#+BEGIN_HTML
+&lt;/div&gt;
+#+END_HTML
+
+
+Both example are given using the [[http://www.yanone.de/typedesign/kaffeesatz/][Yanone Kaffeesatz]] font.
+
+** Using Google API
+
+The [[http://www.google.com/webfonts#QuickUsePlace:quickUse/Family:][quick use]] provides an import snippet such as:
+
+#+BEGIN_SRC css
+@import url(\"http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700&amp;subset=latin,latin-ext\");
+#+END_SRC
+
+That line should be included into the
+=templates/style/less/o-blog-default.less= file in which you should also add
+something like:
+
+#+BEGIN_SRC css
+h1, h2, h3, h4, h5, h6 {
+    font-family: \"Yanone Kaffeesatz\", sans-serif;
+}
+#+END_SRC
+
+And that's it.
+
+** Providing resources
+
+That is less efficient in terms of network resources but provide a good
+alternative for offline publications.
+
+
+The script =get-font= does all needed jobs.
+
+#+BEGIN_HTML
+&lt;div class=\"o-blog-source\"&gt;&lt;a class=\"btn btn-info\" data-toggle=\"modal\" data-target=\"#get-font\" &gt;&lt;i class=\"icon-file icon-white\"&gt;&lt;/i&gt;&amp;nbsp;get-font&lt;/a&gt;&lt;/div&gt;&lt;div class=\"modal fade hide\" id=\"get-font\"&gt;&lt;div class=\"modal-header\"&gt;&lt;a class=\"close\" data-dismiss=\"modal\"&gt;&#215;&lt;/a&gt;&lt;h3&gt;get-font&lt;/h3&gt;&lt;/div&gt;&lt;div class=\"modal-body\"&gt;&lt;pre&gt;
+&lt;span style=\"color: #ff4500;\"&gt;#&lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;!/bin/&lt;/span&gt;&lt;span style=\"color: #00ffff;\"&gt;sh&lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;
+&lt;/span&gt;
+&lt;span style=\"color: #00ffff;\"&gt;if &lt;/span&gt;&lt;span style=\"color: #b0c4de;\"&gt;test&lt;/span&gt; -z &lt;span style=\"color: #ffa07a;\"&gt;\"$1\"&lt;/span&gt;; &lt;span style=\"color: #00ffff;\"&gt;then&lt;/span&gt;
+    &lt;span style=\"color: #b0c4de;\"&gt;echo&lt;/span&gt; &lt;span style=\"color: #ffa07a;\"&gt;\"Usage: $0 font-url\"&lt;/span&gt;
+    &lt;span style=\"color: #00ffff;\"&gt;exit&lt;/span&gt; 1
+&lt;span style=\"color: #00ffff;\"&gt;fi&lt;/span&gt;
+
+&lt;span style=\"color: #eedd82;\"&gt;FONT_DIR&lt;/span&gt;=templates/style/font
+&lt;span style=\"color: #eedd82;\"&gt;LESS_DIR&lt;/span&gt;=templates/style/less
+
+&lt;span style=\"color: #eedd82;\"&gt;FONT_URL&lt;/span&gt;=&lt;span style=\"color: #ffa07a;\"&gt;\"$1\"&lt;/span&gt;
+&lt;span style=\"color: #eedd82;\"&gt;LESS_FILE&lt;/span&gt;=$(&lt;span style=\"color: #b0c4de;\"&gt;echo&lt;/span&gt; &lt;span style=\"color: #ffa07a;\"&gt;\"$FONT_URL\"&lt;/span&gt; | sed -n &lt;span style=\"color: #ffa07a;\"&gt;'s/.*family=\\([^:]\\+\\).*/\\1/p'&lt;/span&gt; | sed &lt;span style=\"color: #ffa07a;\"&gt;'s/+/-/g'&lt;/span&gt;)
+
+&lt;span style=\"color: #ff4500;\"&gt;# &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;Wee need to provide a valid user agent to get woff fonts
+&lt;/span&gt;&lt;span style=\"color: #eedd82;\"&gt;UA&lt;/span&gt;=&lt;span style=\"color: #ffa07a;\"&gt;'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.65 Safari/535.11'&lt;/span&gt;
+
+
+&lt;span style=\"color: #eedd82;\"&gt;CSS&lt;/span&gt;=$(curl -H &lt;span style=\"color: #ffa07a;\"&gt;\"${UA}\"&lt;/span&gt; ${&lt;span style=\"color: #eedd82;\"&gt;FONT_URL&lt;/span&gt;})
+
+&lt;span style=\"color: #b0c4de;\"&gt;echo&lt;/span&gt; &lt;span style=\"color: #ffa07a;\"&gt;\"${CSS}\"&lt;/span&gt; | sed -n &lt;span style=\"color: #ffa07a;\"&gt;\"s#.*local('\\([^']\\+\\)'), url('\\([^']\\+\\)').*#curl -o ${FONT_DIR}/\\1.woff \\2#p\"&lt;/span&gt; | sh -
+
+&lt;span style=\"color: #b0c4de;\"&gt;echo&lt;/span&gt; &lt;span style=\"color: #ffa07a;\"&gt;\"${CSS}\"&lt;/span&gt; | sed  &lt;span style=\"color: #ffa07a;\"&gt;\"s#\\(.*\\)local('\\([^']\\+\\)'), url('\\([^']\\+\\)')\\(.*\\)#\\1local('\\2'), url('../font/\\2.woff')\\4#\"&lt;/span&gt;  &amp;gt; &lt;span style=\"color: #ffa07a;\"&gt;\"${LESS_DIR}/font-${LESS_FILE}.less\"&lt;/span&gt;
+
+&lt;span style=\"color: #b0c4de;\"&gt;echo&lt;/span&gt; &lt;span style=\"color: #ffa07a;\"&gt;\"You should add '@import \\\"font-${LESS_FILE}.less\\\";' to templates/style/less/o-blog-default.less\"&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+#+END_HTML
+
+
+You can run:
+
+#+BEGIN_SRC sh
+./get-font 'http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700&amp;subset=latin,latin-ext'
+#+END_SRC
+
+And add the font declaration in =templates/style/less/o-blog-default.less=:
+
+#+BEGIN_SRC css
+@import \"font-Yanone-Kaffeesatz.less\";
+#+END_SRC
+
+Add declare its use like in the Google API version:
+
+#+BEGIN_SRC css
+h1, h2, h3, h4, h5, h6 {
+    font-family: \"Yanone Kaffeesatz\", sans-serif;
+}
+#+END_SRC"</pre></td></tr>
+      <tr><td class="property"><code>content-html</code></td><td class="value"><pre>"&lt;p&gt;
+&#21487;&#22312; o-blog &#20013;&#29992;&#20004;&#31181;&#26041;&#24335;&#20351;&#29992; &lt;a href=\"http://www.google.com/webfonts\"&gt;Google webfonts&lt;/a&gt;:&#20351;&#29992; google API &#25110;&#32773;&#22312;
+&lt;code&gt;templates/style&lt;/code&gt; &#30446;&#24405;&#20013;&#25552;&#20379;&#36164;&#28304;&#12290;
+&lt;/p&gt;
+
+
+&lt;div class=\"alert alert-warning\"&gt;&lt;p class=\"alert-heading\"&gt;Caution&lt;/p&gt;
+
+&lt;p&gt;
+&#20351;&#29992;&#35768;&#22810;&#23383;&#20307;&#26679;&#24335;&#20250;&#35753;&#20320;&#30340;&#39029;&#38754;&#21464;&#24471;&#24456;&#24930;&#65292;&#22240;&#27492;&#20165;&#36873;&#25321;&#37027;&#20123;&#20320;&#39029;&#38754;&#20013;&#23454;&#38469;&#38656;&#35201;&#30340;&#23383;&#20307;&#26679;&#24335;&#12290;
+&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+
+&lt;p&gt;
+Both example are given using the &lt;a href=\"http://www.yanone.de/typedesign/kaffeesatz/\"&gt;Yanone Kaffeesatz&lt;/a&gt; font.
+&lt;/p&gt;
+
+&lt;div id=\"outline-container-1\" class=\"outline-3\"&gt;
+&lt;h3 id=\"sec-1\"&gt;Using Google API&lt;/h3&gt;
+&lt;div class=\"outline-text-3\" id=\"text-1\"&gt;
+
+
+&lt;p&gt;
+The &lt;a href=\"http://www.google.com/webfonts#QuickUsePlace:quickUse/Family:\"&gt;quick use&lt;/a&gt; provides an import snippet such as:
+&lt;/p&gt;
+
+
+
+&lt;pre class=\"src src-css\"&gt;&lt;span style=\"color: #b0c4de;\"&gt;@import&lt;/span&gt; url(&lt;span style=\"color: #ffa07a;\"&gt;\"http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700&amp;amp;subset=latin,latin-ext\"&lt;/span&gt;);
+&lt;/pre&gt;
+
+
+&lt;p&gt;
+That line should be included into the
+&lt;code&gt;templates/style/less/o-blog-default.less&lt;/code&gt; file in which you should also add
+something like:
+&lt;/p&gt;
+
+
+
+&lt;pre class=\"src src-css\"&gt;&lt;span style=\"color: #87cefa;\"&gt;h1, h2, h3, h4, h5, h6 &lt;/span&gt;{
+    &lt;span style=\"color: #eedd82;\"&gt;font-family&lt;/span&gt;: &lt;span style=\"color: #ffa07a;\"&gt;\"Yanone Kaffeesatz\"&lt;/span&gt;, sans-serif;
+}
+&lt;/pre&gt;
+
+
+&lt;p&gt;
+And that's it.
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div id=\"outline-container-2\" class=\"outline-3\"&gt;
+&lt;h3 id=\"sec-2\"&gt;Providing resources&lt;/h3&gt;
+&lt;div class=\"outline-text-3\" id=\"text-2\"&gt;
+
+
+&lt;p&gt;
+That is less efficient in terms of network resources but provide a good
+alternative for offline publications.
+&lt;/p&gt;
+
+&lt;p&gt;
+The script &lt;code&gt;get-font&lt;/code&gt; does all needed jobs.
+&lt;/p&gt;
+
+
+&lt;div class=\"o-blog-source\"&gt;&lt;a class=\"btn btn-info\" data-toggle=\"modal\" data-target=\"#get-font\" &gt;&lt;i class=\"icon-file icon-white\"&gt;&lt;/i&gt;&amp;nbsp;get-font&lt;/a&gt;&lt;/div&gt;&lt;div class=\"modal fade hide\" id=\"get-font\"&gt;&lt;div class=\"modal-header\"&gt;&lt;a class=\"close\" data-dismiss=\"modal\"&gt;&#215;&lt;/a&gt;&lt;h3&gt;get-font&lt;/h3&gt;&lt;/div&gt;&lt;div class=\"modal-body\"&gt;&lt;pre&gt;
+&lt;span style=\"color: #ff4500;\"&gt;#&lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;!/bin/&lt;/span&gt;&lt;span style=\"color: #00ffff;\"&gt;sh&lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;
+&lt;/span&gt;
+&lt;span style=\"color: #00ffff;\"&gt;if &lt;/span&gt;&lt;span style=\"color: #b0c4de;\"&gt;test&lt;/span&gt; -z &lt;span style=\"color: #ffa07a;\"&gt;\"$1\"&lt;/span&gt;; &lt;span style=\"color: #00ffff;\"&gt;then&lt;/span&gt;
+    &lt;span style=\"color: #b0c4de;\"&gt;echo&lt;/span&gt; &lt;span style=\"color: #ffa07a;\"&gt;\"Usage: $0 font-url\"&lt;/span&gt;
+    &lt;span style=\"color: #00ffff;\"&gt;exit&lt;/span&gt; 1
+&lt;span style=\"color: #00ffff;\"&gt;fi&lt;/span&gt;
+
+&lt;span style=\"color: #eedd82;\"&gt;FONT_DIR&lt;/span&gt;=templates/style/font
+&lt;span style=\"color: #eedd82;\"&gt;LESS_DIR&lt;/span&gt;=templates/style/less
+
+&lt;span style=\"color: #eedd82;\"&gt;FONT_URL&lt;/span&gt;=&lt;span style=\"color: #ffa07a;\"&gt;\"$1\"&lt;/span&gt;
+&lt;span style=\"color: #eedd82;\"&gt;LESS_FILE&lt;/span&gt;=$(&lt;span style=\"color: #b0c4de;\"&gt;echo&lt;/span&gt; &lt;span style=\"color: #ffa07a;\"&gt;\"$FONT_URL\"&lt;/span&gt; | sed -n &lt;span style=\"color: #ffa07a;\"&gt;'s/.*family=\\([^:]\\+\\).*/\\1/p'&lt;/span&gt; | sed &lt;span style=\"color: #ffa07a;\"&gt;'s/+/-/g'&lt;/span&gt;)
+
+&lt;span style=\"color: #ff4500;\"&gt;# &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;Wee need to provide a valid user agent to get woff fonts
+&lt;/span&gt;&lt;span style=\"color: #eedd82;\"&gt;UA&lt;/span&gt;=&lt;span style=\"color: #ffa07a;\"&gt;'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.65 Safari/535.11'&lt;/span&gt;
+
+
+&lt;span style=\"color: #eedd82;\"&gt;CSS&lt;/span&gt;=$(curl -H &lt;span style=\"color: #ffa07a;\"&gt;\"${UA}\"&lt;/span&gt; ${&lt;span style=\"color: #eedd82;\"&gt;FONT_URL&lt;/span&gt;})
+
+&lt;span style=\"color: #b0c4de;\"&gt;echo&lt;/span&gt; &lt;span style=\"color: #ffa07a;\"&gt;\"${CSS}\"&lt;/span&gt; | sed -n &lt;span style=\"color: #ffa07a;\"&gt;\"s#.*local('\\([^']\\+\\)'), url('\\([^']\\+\\)').*#curl -o ${FONT_DIR}/\\1.woff \\2#p\"&lt;/span&gt; | sh -
+
+&lt;span style=\"color: #b0c4de;\"&gt;echo&lt;/span&gt; &lt;span style=\"color: #ffa07a;\"&gt;\"${CSS}\"&lt;/span&gt; | sed  &lt;span style=\"color: #ffa07a;\"&gt;\"s#\\(.*\\)local('\\([^']\\+\\)'), url('\\([^']\\+\\)')\\(.*\\)#\\1local('\\2'), url('../font/\\2.woff')\\4#\"&lt;/span&gt;  &amp;gt; &lt;span style=\"color: #ffa07a;\"&gt;\"${LESS_DIR}/font-${LESS_FILE}.less\"&lt;/span&gt;
+
+&lt;span style=\"color: #b0c4de;\"&gt;echo&lt;/span&gt; &lt;span style=\"color: #ffa07a;\"&gt;\"You should add '@import \\\"font-${LESS_FILE}.less\\\";' to templates/style/less/o-blog-default.less\"&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+You can run:
+&lt;/p&gt;
+
+
+
+&lt;pre class=\"src src-sh\"&gt;./get-font &lt;span style=\"color: #ffa07a;\"&gt;'http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700&amp;amp;subset=latin,latin-ext'&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;p&gt;
+And add the font declaration in &lt;code&gt;templates/style/less/o-blog-default.less&lt;/code&gt;:
+&lt;/p&gt;
+
+
+
+&lt;pre class=\"src src-css\"&gt;&lt;span style=\"color: #b0c4de;\"&gt;@import&lt;/span&gt; &lt;span style=\"color: #ffa07a;\"&gt;\"font-Yanone-Kaffeesatz.less\"&lt;/span&gt;;
+&lt;/pre&gt;
+
+
+&lt;p&gt;
+Add declare its use like in the Google API version:
+&lt;/p&gt;
+
+
+
+&lt;pre class=\"src src-css\"&gt;&lt;span style=\"color: #87cefa;\"&gt;h1, h2, h3, h4, h5, h6 &lt;/span&gt;{
+    &lt;span style=\"color: #eedd82;\"&gt;font-family&lt;/span&gt;: &lt;span style=\"color: #ffa07a;\"&gt;\"Yanone Kaffeesatz\"&lt;/span&gt;, sans-serif;
+}
+&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+"</pre></td></tr>
+    </tbody>
+  </table>
+</div>
+<div class="debug post">
+  <h2>一些 bootstrap 特性</h2>
+  <table>
+    <caption>导出博文信息 一些 bootstrap 特性</caption>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>2</pre></td></tr>
+      <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#19968;&#20123; bootstrap &#29305;&#24615;"</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20386 35504)</pre></td></tr>
+      <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>5</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>3</pre></td></tr>
+      <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
+      <tr><td class="property"><code>tags</code></td><td class="value"><pre>([cl-struct-ob:tags "&#29992;&#20363;" "a0b1dd52a1c893aa52b103dad9aa9d59" nil nil] [cl-struct-ob:tags "Bootstrap" "bootstrap" nil nil])</pre></td></tr>
+      <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_post.html"</pre></td></tr>
+      <tr><td class="property"><code>filepath</code></td><td class="value"><pre>"Tips/2012/05"</pre></td></tr>
+      <tr><td class="property"><code>filename</code></td><td class="value"><pre>"bootstrap-features"</pre></td></tr>
+      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/05/03_bootstrap-features.html"</pre></td></tr>
+      <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"../../.."</pre></td></tr>
+      <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
+
+
+** Hero-unit
+
+#+BEGIN_HTML
+&lt;div class=\"row \"&gt;&lt;div class=\"span7 \"&gt;
+#+END_HTML
+
+
+#+BEGIN_SRC org
+  ,#+begin_o_blog_hero_unit
+  ,#+HTML: &lt;h1&gt;Heading&lt;/h1&gt;
+
+  , tagline
+
+  ,#+BEGIN_HTML
+  ,    &lt;a class=\"btn btn-primary btn-large\"&gt;
+  ,      Learn more
+  ,    &lt;/a&gt;
+  ,#+END_HTML
+  ,#+end_o_blog_hero_unit
+#+END_SRC
+
+#+BEGIN_HTML
+&lt;/div&gt;&lt;div class=\"span4 \"&gt;
+#+END_HTML
+
+
+#+BEGIN_HTML
+&lt;div class=\"hero-unit\"&gt;
+
+#+END_HTML
+
+
+#+HTML: &lt;h1&gt;Heading&lt;/h1&gt;
+
+tagline
+
+#+BEGIN_HTML
+    &lt;a class=\"btn btn-primary btn-large\"&gt;
+      Learn more
+    &lt;/a&gt;
+#+END_HTML
+
+#+BEGIN_HTML
+&lt;/div&gt;
+
+#+END_HTML
+
+
+
+#+BEGIN_HTML
+&lt;/div&gt;&lt;/div&gt;
+#+END_HTML
+
+
+** &#39029;&#22836;&#35774;&#32622;
+
+#+BEGIN_HTML
+&lt;div class=\"row \"&gt;&lt;div class=\"span7 \"&gt;
+#+END_HTML
+
+
+#+BEGIN_SRC org
+  ,#+begin_o_blog_page_header
+  ,#+HTML: &lt;h1&gt;Page header&lt;/h1&gt;
+  ,Some text
+  ,#+end_o_blog_page_header
+#+END_SRC
+
+#+BEGIN_HTML
+&lt;/div&gt;&lt;div class=\"span4 \"&gt;
+#+END_HTML
+
+
+#+BEGIN_HTML
+&lt;div class=\"page-header\"&gt;
+
+#+END_HTML
+
+#+HTML: &lt;h1&gt;Page header&lt;/h1&gt;
+Some text
+
+#+BEGIN_HTML
+&lt;/div&gt;
+
+#+END_HTML
+
+
+
+#+BEGIN_HTML
+&lt;/div&gt;&lt;/div&gt;
+#+END_HTML
+
+
+** &#20351;&#29992;&#26631;&#27880; (label)
+
+    &#26631;&#27880;&#21450;&#27880;&#37322;&#25991;&#26412;&#20351;&#29992; =label:TYPE= &#38142;&#25509;&#26041;&#24335;&#65292;&#20854;&#20013;&#30340; =TYPE= &#21487;&#21462;&#20540;&#20026; =default=,
+    =success=, =warning=, =important=, =info= &#25110; =reverse=. &#38142;&#25509;&#30340; URL &#37096;&#20998;&#29992;&#20316;&#26631;
+    &#27880;&#25991;&#26412;&#12290;
+
+#+BEGIN_HTML
+&lt;div class=\"row \"&gt;&lt;div class=\"span7 \"&gt;
+#+END_HTML
+
+
+#+BEGIN_SRC txt
+   [[ob-label:default][Default]]
+   [[ob-label:success][Success]]
+   [[ob-label:warning][Warning]]
+   [[ob-label:important][Important]]
+   [[ob-label:info][Info]]
+   [[ob-label:inverse][Inverse]]
+#+END_SRC
+
+#+BEGIN_HTML
+&lt;/div&gt;&lt;div class=\"span4 \"&gt;
+#+END_HTML
+
+   - [[ob-label:default][Default]]
+   - [[ob-label:success][Success]]
+   - [[ob-label:warning][Warning]]
+   - [[ob-label:important][Important]]
+   - [[ob-label:info][Info]]
+   - [[ob-label:inverse][Inverse]]
+
+#+BEGIN_HTML
+&lt;/div&gt;&lt;/div&gt;
+#+END_HTML
+
+
+** &#20351;&#29992;&#26631;&#35760; (badges)
+
+    &#23558;&#25552;&#31034;&#21450;&#26410;&#35835;&#35745;&#25968;&#24403;&#20316;&#26631;&#27880; (label), &#20351;&#29992;&#38142;&#25509;&#21069;&#32512; =badge:TYPE=.
+
+#+BEGIN_HTML
+&lt;div class=\"row \"&gt;&lt;div class=\"span7 \"&gt;
+#+END_HTML
+
+
+#+BEGIN_SRC  text
+   [[ob-badge:default][Default]]
+   [[ob-badge:success][Success]]
+   [[ob-badge:warning][Warning]]
+   [[ob-badge:important][Important]]
+   [[ob-badge:info][Info]]
+   [[ob-badge:inverse][Inverse]]
+#+END_SRC
+
+#+BEGIN_HTML
+&lt;/div&gt;&lt;div class=\"span4 \"&gt;
+#+END_HTML
+
+   - [[ob-badge:default][Default]]
+   - [[ob-badge:success][Success]]
+   - [[ob-badge:warning][Warning]]
+   - [[ob-badge:important][Important]]
+   - [[ob-badge:info][Info]]
+   - [[ob-badge:inverse][Inverse]]
+
+#+BEGIN_HTML
+&lt;/div&gt;&lt;/div&gt;
+#+END_HTML
+
+
+** &#20351;&#29992;&#36827;&#24230;&#26465;
+
+    &#29992;&#20110;&#36733;&#20837;&#12289;&#37325;&#23450;&#21521;&#25110;&#21160;&#20316;&#29366;&#24577;&#12290;&#20351;&#29992;&#38142;&#25509;&#21069;&#32512; =progress:TYPE=, &#27492;&#22788;&#30340; =TYPE= &#21487;&#21462;
+    &#20540; =info=, =success=, =warning= &#25110; =danger=. &#39069;&#22806;&#30340;&#31867; (=striped= &#25110;
+    =active=) &#21487;&#29992;&#36887;&#21495;&#28155;&#21152;&#12290; URL &#20026;&#36827;&#24230;&#30334;&#20998;&#27604;&#12290;
+
+#+BEGIN_HTML
+&lt;div class=\"row \"&gt;&lt;div class=\"span7 \"&gt;
+#+END_HTML
+
+
+#+BEGIN_SRC  text
+    [[ob-progress:info][25]]
+    [[ob-progress:success,striped][50]]
+    [[ob-progress:warning,striped,active][75]]
+    [[ob-progress:danger][100]]
+#+END_SRC
+
+#+BEGIN_HTML
+&lt;/div&gt;&lt;div class=\"span4 \"&gt;
+#+END_HTML
+
+    [[ob-progress:info][25]]
+    [[ob-progress:success,striped][50]]
+    [[ob-progress:warning,striped,active][75]]
+    [[ob-progress:danger][100]]
+
+#+BEGIN_HTML
+&lt;/div&gt;&lt;/div&gt;
+#+END_HTML
+
+
+
+** Well
+
+Use the well as a simple effect on an element to give it an inset effect.
+
+#+BEGIN_HTML
+&lt;div class=\"row \"&gt;&lt;div class=\"span7 \"&gt;
+#+END_HTML
+
+
+#+BEGIN_SRC  text
+ , #+begin_o_blog_well
+ , Look, I'm in a well!
+ , #+end_o_blog_well
+#+END_SRC
+
+#+BEGIN_HTML
+&lt;/div&gt;&lt;div class=\"span4 \"&gt;
+#+END_HTML
+
+
+
+#+BEGIN_HTML
+&lt;div class=\"well\"&gt;
+
+#+END_HTML
+
+Look, I'm in a well!
+
+#+BEGIN_HTML
+&lt;/div&gt;
+
+#+END_HTML
+
+
+
+#+BEGIN_HTML
+&lt;/div&gt;&lt;/div&gt;
+#+END_HTML
+
+"</pre></td></tr>
+      <tr><td class="property"><code>content-html</code></td><td class="value"><pre>"&lt;div id=\"outline-container-1\" class=\"outline-3\"&gt;
+&lt;h3 id=\"sec-1\"&gt;Hero-unit&lt;/h3&gt;
+&lt;div class=\"outline-text-3\" id=\"text-1\"&gt;
+
+
+
+
+&lt;div class=\"row \"&gt;&lt;div class=\"span7 \"&gt;
+
+
+
+&lt;pre class=\"src src-org\"&gt;&lt;span style=\"color: #ff4500;\"&gt;#+begin_o_blog_hero_unit&lt;/span&gt;
+&lt;span style=\"color: #ff4500;\"&gt;#+HTML: &amp;lt;h1&amp;gt;Heading&amp;lt;/h1&amp;gt;&lt;/span&gt;
+
+ tagline
+
+&lt;span style=\"color: #ff4500;\"&gt;#+BEGIN_HTML&lt;/span&gt;
+    &amp;lt;a class=\"btn btn-primary btn-large\"&amp;gt;
+      Learn more
+    &amp;lt;/a&amp;gt;
+&lt;span style=\"color: #ff4500;\"&gt;#+END_HTML&lt;/span&gt;
+&lt;span style=\"color: #ff4500;\"&gt;#+end_o_blog_hero_unit&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;/div&gt;&lt;div class=\"span4 \"&gt;
+
+
+&lt;div class=\"hero-unit\"&gt;
+
+
+
+
+
+&lt;h1&gt;Heading&lt;/h1&gt;
+
+&lt;p&gt;
+tagline
+&lt;/p&gt;
+
+
+    &lt;a class=\"btn btn-primary btn-large\"&gt;
+      Learn more
+    &lt;/a&gt;
+
+&lt;/div&gt;
+
+
+
+
+&lt;/div&gt;&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div id=\"outline-container-2\" class=\"outline-3\"&gt;
+&lt;h3 id=\"sec-2\"&gt;&#39029;&#22836;&#35774;&#32622;&lt;/h3&gt;
+&lt;div class=\"outline-text-3\" id=\"text-2\"&gt;
+
+
+
+
+&lt;div class=\"row \"&gt;&lt;div class=\"span7 \"&gt;
+
+
+
+&lt;pre class=\"src src-org\"&gt;&lt;span style=\"color: #ff4500;\"&gt;#+begin_o_blog_page_header&lt;/span&gt;
+&lt;span style=\"color: #ff4500;\"&gt;#+HTML: &amp;lt;h1&amp;gt;Page header&amp;lt;/h1&amp;gt;&lt;/span&gt;
+Some text
+&lt;span style=\"color: #ff4500;\"&gt;#+end_o_blog_page_header&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;/div&gt;&lt;div class=\"span4 \"&gt;
+
+
+&lt;div class=\"page-header\"&gt;
+
+
+
+
+&lt;h1&gt;Page header&lt;/h1&gt;
+&lt;p&gt;
+Some text
+&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+
+
+
+&lt;/div&gt;&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div id=\"outline-container-3\" class=\"outline-3\"&gt;
+&lt;h3 id=\"sec-3\"&gt;&#20351;&#29992;&#26631;&#27880; (label)&lt;/h3&gt;
+&lt;div class=\"outline-text-3\" id=\"text-3\"&gt;
+
+
+&lt;p&gt;
+    &#26631;&#27880;&#21450;&#27880;&#37322;&#25991;&#26412;&#20351;&#29992; &lt;code&gt;label:TYPE&lt;/code&gt; &#38142;&#25509;&#26041;&#24335;&#65292;&#20854;&#20013;&#30340; &lt;code&gt;TYPE&lt;/code&gt; &#21487;&#21462;&#20540;&#20026; &lt;code&gt;default&lt;/code&gt;,
+    &lt;code&gt;success&lt;/code&gt;, &lt;code&gt;warning&lt;/code&gt;, &lt;code&gt;important&lt;/code&gt;, &lt;code&gt;info&lt;/code&gt; &#25110; &lt;code&gt;reverse&lt;/code&gt;. &#38142;&#25509;&#30340; URL &#37096;&#20998;&#29992;&#20316;&#26631;
+    &#27880;&#25991;&#26412;&#12290;
+&lt;/p&gt;
+
+
+&lt;div class=\"row \"&gt;&lt;div class=\"span7 \"&gt;
+
+
+
+&lt;pre class=\"src src-txt\"&gt;[[ob-label:default][Default]]
+[[ob-label:success][Success]]
+[[ob-label:warning][Warning]]
+[[ob-label:important][Important]]
+[[ob-label:info][Info]]
+[[ob-label:inverse][Inverse]]
+&lt;/pre&gt;
+
+
+&lt;/div&gt;&lt;div class=\"span4 \"&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=\"label label-default\"&gt;Default&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class=\"label label-success\"&gt;Success&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class=\"label label-warning\"&gt;Warning&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class=\"label label-important\"&gt;Important&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class=\"label label-info\"&gt;Info&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class=\"label label-inverse\"&gt;Inverse&lt;/span&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;/div&gt;&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div id=\"outline-container-4\" class=\"outline-3\"&gt;
+&lt;h3 id=\"sec-4\"&gt;&#20351;&#29992;&#26631;&#35760; (badges)&lt;/h3&gt;
+&lt;div class=\"outline-text-3\" id=\"text-4\"&gt;
+
+
+&lt;p&gt;
+    &#23558;&#25552;&#31034;&#21450;&#26410;&#35835;&#35745;&#25968;&#24403;&#20316;&#26631;&#27880; (label), &#20351;&#29992;&#38142;&#25509;&#21069;&#32512; &lt;code&gt;badge:TYPE&lt;/code&gt;.
+&lt;/p&gt;
+
+
+&lt;div class=\"row \"&gt;&lt;div class=\"span7 \"&gt;
+
+
+
+&lt;pre class=\"src src-text\"&gt;[[ob-badge:default][Default]]
+[[ob-badge:success][Success]]
+[[ob-badge:warning][Warning]]
+[[ob-badge:important][Important]]
+[[ob-badge:info][Info]]
+[[ob-badge:inverse][Inverse]]
+&lt;/pre&gt;
+
+
+&lt;/div&gt;&lt;div class=\"span4 \"&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=\"badge badge-default\"&gt;Default&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class=\"badge badge-success\"&gt;Success&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class=\"badge badge-warning\"&gt;Warning&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class=\"badge badge-important\"&gt;Important&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class=\"badge badge-info\"&gt;Info&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class=\"badge badge-inverse\"&gt;Inverse&lt;/span&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;/div&gt;&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div id=\"outline-container-5\" class=\"outline-3\"&gt;
+&lt;h3 id=\"sec-5\"&gt;&#20351;&#29992;&#36827;&#24230;&#26465;&lt;/h3&gt;
+&lt;div class=\"outline-text-3\" id=\"text-5\"&gt;
+
+
+&lt;p&gt;
+    &#29992;&#20110;&#36733;&#20837;&#12289;&#37325;&#23450;&#21521;&#25110;&#21160;&#20316;&#29366;&#24577;&#12290;&#20351;&#29992;&#38142;&#25509;&#21069;&#32512; &lt;code&gt;progress:TYPE&lt;/code&gt;, &#27492;&#22788;&#30340; &lt;code&gt;TYPE&lt;/code&gt; &#21487;&#21462;
+    &#20540; &lt;code&gt;info&lt;/code&gt;, &lt;code&gt;success&lt;/code&gt;, &lt;code&gt;warning&lt;/code&gt; &#25110; &lt;code&gt;danger&lt;/code&gt;. &#39069;&#22806;&#30340;&#31867; (&lt;code&gt;striped&lt;/code&gt; &#25110;
+    &lt;code&gt;active&lt;/code&gt;) &#21487;&#29992;&#36887;&#21495;&#28155;&#21152;&#12290; URL &#20026;&#36827;&#24230;&#30334;&#20998;&#27604;&#12290;
+&lt;/p&gt;
+
+
+&lt;div class=\"row \"&gt;&lt;div class=\"span7 \"&gt;
+
+
+
+&lt;pre class=\"src src-text\"&gt;[[ob-progress:info][25]]
+[[ob-progress:success,striped][50]]
+[[ob-progress:warning,striped,active][75]]
+[[ob-progress:danger][100]]
+&lt;/pre&gt;
+
+
+&lt;/div&gt;&lt;div class=\"span4 \"&gt;
+
+&lt;p&gt;
+    &lt;div class=\"progress progress-info\"&gt;&lt;div class=\"bar\" style=\"width: 25%;\"&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=\"progress progress-success progress-striped\"&gt;&lt;div class=\"bar\" style=\"width: 50%;\"&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=\"progress progress-warning progress-striped active\"&gt;&lt;div class=\"bar\" style=\"width: 75%;\"&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=\"progress progress-danger\"&gt;&lt;div class=\"bar\" style=\"width: 100%;\"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+
+&lt;/div&gt;&lt;/div&gt;
+
+
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div id=\"outline-container-6\" class=\"outline-3\"&gt;
+&lt;h3 id=\"sec-6\"&gt;Well&lt;/h3&gt;
+&lt;div class=\"outline-text-3\" id=\"text-6\"&gt;
+
+
+&lt;p&gt;
+Use the well as a simple effect on an element to give it an inset effect.
+&lt;/p&gt;
+
+
+&lt;div class=\"row \"&gt;&lt;div class=\"span7 \"&gt;
+
+
+
+&lt;pre class=\"src src-text\"&gt; #+begin_o_blog_well
+, Look, I'm in a well!
+ #+end_o_blog_well
+&lt;/pre&gt;
+
+
+&lt;/div&gt;&lt;div class=\"span4 \"&gt;
+
+
+
+&lt;div class=\"well\"&gt;
+
+
+&lt;p&gt;
+Look, I'm in a well!
+&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+
+
+
+&lt;/div&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+"</pre></td></tr>
+    </tbody>
+  </table>
+</div>
+<div class="debug post">
   <h2>中文测试</h2>
   <table>
     <caption>导出博文信息 中文测试</caption>
-    <thead><tr><th>0</pre></td></tr>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>3</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#20013;&#25991;&#27979;&#35797;"</pre></td></tr>
       <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20327 57688)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
@@ -223,9 +1116,7 @@
      * &#29616;&#22312;&#65292;&#20351;&#29992; =#+FILENAME_SANITIZER: md5= &#29983;&#25104;&#40664;&#35748;&#20026; =YYYY/MM/DD_(MD5).html= &#30340;&#25991;&#20214;&#21517;&#12290;
      * &#25110;&#32773;&#22312;&#27599;&#20010;&#26465;&#30446;&#19979;&#28155;&#21152;&#23646;&#24615; =CUSTOM_ID=, &#29983;&#25104;&#20026; =YYYY/MM/DD_(CUSTOM_ID).html= &#24418;&#24335;&#30340;&#25991;&#20214;&#21517;&#12290;
   2. [X] &#21338;&#23458;&#35774;&#32622;&#20013;&#30340; =Copyright=, =About= &#21450; =Navigation= &#31561; =SNIPPET= &#19981;&#33021;&#29992;&#20013;&#25991;&#30340;&#38382;&#39064;&#12290;
-  3. [X] &#22810;&#35821;&#35328;&#27169;&#29256;&#25903;&#25345;&#12290;&#20320;&#38656;&#35201;&#22312;&#25991;&#20214;&#22836;&#20013;&#23450;&#20041; =#+LANGUAGE: zh=, &#28982;&#21518;&#22312; =templates/zh= &#30446;&#24405;&#19979;&#25918;&#32622;&#38656;&#35201;&#32763;&#35793;&#25104;&#20013;&#25991;&#30340;&#27169;&#29256;&#25991;&#20214;&#21363;&#21487;
-
-"</pre></td></tr>
+  3. [X] &#22810;&#35821;&#35328;&#27169;&#29256;&#25903;&#25345;&#12290;&#20320;&#38656;&#35201;&#22312;&#25991;&#20214;&#22836;&#20013;&#23450;&#20041; =#+LANGUAGE: zh=, &#28982;&#21518;&#22312; =templates/zh= &#30446;&#24405;&#19979;&#25918;&#32622;&#38656;&#35201;&#32763;&#35793;&#25104;&#20013;&#25991;&#30340;&#27169;&#29256;&#25991;&#20214;&#21363;&#21487;"</pre></td></tr>
       <tr><td class="property"><code>content-html</code></td><td class="value"><pre>"&lt;p&gt;
 &#36825;&#26159;&#19968;&#20010;&#27979;&#35797;&#26465;&#30446;&#21727;&#12290;
 &lt;/p&gt;
@@ -258,7 +1149,7 @@
 &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&#24453;&#21150;&#20107;&#39033;
-  &#36825;&#20799;&#21015;&#20030;&#20102;&#19968;&#20123;&#20013;&#25991;&#22788;&#29702;&#20013;&#30340;&#38382;&#39064;&#12290;&#20855;&#20307;&#30340;&#35299;&#20915;&#21442;&#35265; &lt;a href=\"https://github.com/exaos/o-blog\"&gt;https://github.com/exaos/o-blog&lt;/a&gt;.
+  &#36825;&#20799;&#21015;&#20030;&#20102;&#19968;&#20123;&#20013;&#25991;&#22788;&#29702;&#20013;&#30340;&#38382;&#39064;&#12290;&#20855;&#20307;&#30340;&#35299;&#20915;&#21442;&#35265; &lt;a href=\"#github-exaos-o-blog\"&gt;github:exaos/o-blog&lt;/a&gt;.
 
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;[X]&lt;/code&gt; &#20013;&#25991;&#25991;&#20214;&#21517;&#26080;&#27861;&#27491;&#24120;&#29983;&#25104;
@@ -279,7 +1170,6 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 
-
 "</pre></td></tr>
     </tbody>
   </table>
@@ -288,7 +1178,9 @@
   <h2>使用 Bootstrap 分格</h2>
   <table>
     <caption>导出博文信息 使用 Bootstrap 分格</caption>
-    <thead><tr><th>1</pre></td></tr>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>4</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#20351;&#29992; Bootstrap &#20998;&#26684;"</pre></td></tr>
       <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20276 4)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
@@ -390,11 +1282,11 @@ shortcut).
 
 
 
-&lt;pre class=\"src src-org\"&gt;&lt;span style=\"color: #ff7f24;\"&gt;#+begin_o_blog_row 2 -1 show-grid&lt;/span&gt;
+&lt;pre class=\"src src-org\"&gt;&lt;span style=\"color: #ff4500;\"&gt;#+begin_o_blog_row 2 -1 show-grid&lt;/span&gt;
 Column 1
-&lt;span style=\"color: #ff7f24;\"&gt;#+o_blog_row_column 2&lt;/span&gt;
+&lt;span style=\"color: #ff4500;\"&gt;#+o_blog_row_column 2&lt;/span&gt;
 Column 2
-&lt;span style=\"color: #ff7f24;\"&gt;#+end_o_blog_row&lt;/span&gt;
+&lt;span style=\"color: #ff4500;\"&gt;#+end_o_blog_row&lt;/span&gt;
 &lt;/pre&gt;
 
 
@@ -438,14 +1330,14 @@ The syntax is:
 
 
 
-&lt;pre class=\"src src-org\"&gt;&lt;span style=\"color: #ff7f24;\"&gt;#+begin_o_blog_row SPAN OFFSET GRID-CLASS&lt;/span&gt;
+&lt;pre class=\"src src-org\"&gt;&lt;span style=\"color: #ff4500;\"&gt;#+begin_o_blog_row SPAN OFFSET GRID-CLASS&lt;/span&gt;
 Column 1
-&lt;span style=\"color: #ff7f24;\"&gt;#+o_blog_row_column SPAN OFFSET&lt;/span&gt;
+&lt;span style=\"color: #ff4500;\"&gt;#+o_blog_row_column SPAN OFFSET&lt;/span&gt;
 Column 2
 ...
-&lt;span style=\"color: #ff7f24;\"&gt;#+o_blog_row_column SPAN OFFSET&lt;/span&gt;
+&lt;span style=\"color: #ff4500;\"&gt;#+o_blog_row_column SPAN OFFSET&lt;/span&gt;
 Column n
-&lt;span style=\"color: #ff7f24;\"&gt;#+end_o_blog_row&lt;/span&gt;
+&lt;span style=\"color: #ff4500;\"&gt;#+end_o_blog_row&lt;/span&gt;
 
 &lt;/pre&gt;
 
@@ -457,7 +1349,9 @@ Column n
   <h2>添加图标</h2>
   <table>
     <caption>导出博文信息 添加图标</caption>
-    <thead><tr><th>2</pre></td></tr>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>5</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#28155;&#21152;&#22270;&#26631;"</pre></td></tr>
       <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20275 61940)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
@@ -729,7 +1623,9 @@ rendered result might be damaged.
   <h2>使用 modal 显示源代码</h2>
   <table>
     <caption>导出博文信息 使用 modal 显示源代码</caption>
-    <thead><tr><th>3</pre></td></tr>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>6</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#20351;&#29992; modal &#26174;&#31034;&#28304;&#20195;&#30721;"</pre></td></tr>
       <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20275 57980)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
@@ -814,23 +1710,23 @@ git clone https://github.com/renard/o-blog.git
 
 #+BEGIN_HTML
 &lt;div class=\"o-blog-source\"&gt;&lt;a class=\"btn btn-info\" data-toggle=\"modal\" data-target=\"#sample-initel\" &gt;&lt;i class=\"icon-file icon-white\"&gt;&lt;/i&gt;&amp;nbsp;sample-init.el&lt;/a&gt;&lt;/div&gt;&lt;div class=\"modal fade hide\" id=\"sample-initel\"&gt;&lt;div class=\"modal-header\"&gt;&lt;a class=\"close\" data-dismiss=\"modal\"&gt;&#215;&lt;/a&gt;&lt;h3&gt;sample-init.el&lt;/h3&gt;&lt;/div&gt;&lt;div class=\"modal-body\"&gt;&lt;pre&gt;
-&lt;span style=\"color: #ff7f24;\"&gt;;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;sample-init.el --- sample init file to be used to debug o-blog
+&lt;span style=\"color: #ff4500;\"&gt;;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;sample-init.el --- sample init file to be used to debug o-blog
 &lt;/span&gt;
-&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Copyright &amp;#169; 2012 S&amp;#233;bastien Gross &amp;lt;seb&amp;#8226;&amp;#593;&amp;#428;&amp;#8226;chezwam&amp;#8226;&amp;#598;&amp;#629;&amp;#648;&amp;#8226;org&amp;gt;
+&lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;Copyright &amp;#169; 2012 S&amp;#233;bastien Gross &amp;lt;seb&amp;#8226;&amp;#593;&amp;#428;&amp;#8226;chezwam&amp;#8226;&amp;#598;&amp;#629;&amp;#648;&amp;#8226;org&amp;gt;
 &lt;/span&gt;
-&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Author: S&amp;#233;bastien Gross &amp;lt;seb&amp;#8226;&amp;#593;&amp;#428;&amp;#8226;chezwam&amp;#8226;&amp;#598;&amp;#629;&amp;#648;&amp;#8226;org&amp;gt;
-&lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Keywords: emacs, 
-&lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Created: 2012-03-20
-&lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Last changed: 2012-03-26 16:36:31
-&lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Licence: WTFPL, grab your copy here: http://sam.zoy.org/wtfpl/
+&lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;Author: S&amp;#233;bastien Gross &amp;lt;seb&amp;#8226;&amp;#593;&amp;#428;&amp;#8226;chezwam&amp;#8226;&amp;#598;&amp;#629;&amp;#648;&amp;#8226;org&amp;gt;
+&lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;Keywords: emacs, 
+&lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;Created: 2012-03-20
+&lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;Last changed: 2012-03-26 16:36:31
+&lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;Licence: WTFPL, grab your copy here: http://sam.zoy.org/wtfpl/
 &lt;/span&gt;
-&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;This file is NOT part of GNU Emacs.
+&lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;This file is NOT part of GNU Emacs.
 &lt;/span&gt;
-&lt;span style=\"color: #ff7f24;\"&gt;;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Commentary:
-&lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;
+&lt;span style=\"color: #ff4500;\"&gt;;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;Commentary:
+&lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;
 &lt;/span&gt;
 
-&lt;span style=\"color: #ff7f24;\"&gt;;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Code:
+&lt;span style=\"color: #ff4500;\"&gt;;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;Code:
 &lt;/span&gt;
 
 (&lt;span style=\"color: #00ffff;\"&gt;defun&lt;/span&gt; &lt;span style=\"color: #87cefa;\"&gt;ob-build-sample&lt;/span&gt; ()
@@ -841,11 +1737,11 @@ git clone https://github.com/renard/o-blog.git
             (&lt;span style=\"color: #00ffff;\"&gt;let*&lt;/span&gt; ((trace (&lt;span style=\"color: #00ffff;\"&gt;with-temp-buffer&lt;/span&gt;
                             (insert (&lt;span style=\"color: #00ffff;\"&gt;with-output-to-string&lt;/span&gt; (backtrace)))
                             (beginning-of-buffer)
-                            &lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;error begins on line 16
-&lt;/span&gt;                            &lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;line stats with \"  signal(error ...\"
+                            &lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;error begins on line 16
+&lt;/span&gt;                            &lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;line stats with \"  signal(error ...\"
 &lt;/span&gt;                            (goto-line 16)
                             (goto-char (point-at-bol))
-                            &lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Remove null chars
+                            &lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;Remove null chars
 &lt;/span&gt;                            (replace-regexp-in-string
                               (char-to-string 0) &lt;span style=\"color: #ffa07a;\"&gt;\"^@\"&lt;/span&gt;
                               (buffer-substring (point) (point-max))))))
@@ -875,7 +1771,7 @@ file in a modal window. The magic line is:
 
 
 
-&lt;pre class=\"src src-org\"&gt;&lt;span style=\"color: #ff7f24;\"&gt;#+O_BLOG_SOURCE: path/to/file [mode]&lt;/span&gt;
+&lt;pre class=\"src src-org\"&gt;&lt;span style=\"color: #ff4500;\"&gt;#+O_BLOG_SOURCE: path/to/file [mode]&lt;/span&gt;
 &lt;/pre&gt;
 
 
@@ -950,23 +1846,23 @@ git clone https://github.com/renard/o-blog.git
 
 
 &lt;div class=\"o-blog-source\"&gt;&lt;a class=\"btn btn-info\" data-toggle=\"modal\" data-target=\"#sample-initel\" &gt;&lt;i class=\"icon-file icon-white\"&gt;&lt;/i&gt;&amp;nbsp;sample-init.el&lt;/a&gt;&lt;/div&gt;&lt;div class=\"modal fade hide\" id=\"sample-initel\"&gt;&lt;div class=\"modal-header\"&gt;&lt;a class=\"close\" data-dismiss=\"modal\"&gt;&#215;&lt;/a&gt;&lt;h3&gt;sample-init.el&lt;/h3&gt;&lt;/div&gt;&lt;div class=\"modal-body\"&gt;&lt;pre&gt;
-&lt;span style=\"color: #ff7f24;\"&gt;;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;sample-init.el --- sample init file to be used to debug o-blog
+&lt;span style=\"color: #ff4500;\"&gt;;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;sample-init.el --- sample init file to be used to debug o-blog
 &lt;/span&gt;
-&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Copyright &amp;#169; 2012 S&amp;#233;bastien Gross &amp;lt;seb&amp;#8226;&amp;#593;&amp;#428;&amp;#8226;chezwam&amp;#8226;&amp;#598;&amp;#629;&amp;#648;&amp;#8226;org&amp;gt;
+&lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;Copyright &amp;#169; 2012 S&amp;#233;bastien Gross &amp;lt;seb&amp;#8226;&amp;#593;&amp;#428;&amp;#8226;chezwam&amp;#8226;&amp;#598;&amp;#629;&amp;#648;&amp;#8226;org&amp;gt;
 &lt;/span&gt;
-&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Author: S&amp;#233;bastien Gross &amp;lt;seb&amp;#8226;&amp;#593;&amp;#428;&amp;#8226;chezwam&amp;#8226;&amp;#598;&amp;#629;&amp;#648;&amp;#8226;org&amp;gt;
-&lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Keywords: emacs, 
-&lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Created: 2012-03-20
-&lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Last changed: 2012-03-26 16:36:31
-&lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Licence: WTFPL, grab your copy here: http://sam.zoy.org/wtfpl/
+&lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;Author: S&amp;#233;bastien Gross &amp;lt;seb&amp;#8226;&amp;#593;&amp;#428;&amp;#8226;chezwam&amp;#8226;&amp;#598;&amp;#629;&amp;#648;&amp;#8226;org&amp;gt;
+&lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;Keywords: emacs, 
+&lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;Created: 2012-03-20
+&lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;Last changed: 2012-03-26 16:36:31
+&lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;Licence: WTFPL, grab your copy here: http://sam.zoy.org/wtfpl/
 &lt;/span&gt;
-&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;This file is NOT part of GNU Emacs.
+&lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;This file is NOT part of GNU Emacs.
 &lt;/span&gt;
-&lt;span style=\"color: #ff7f24;\"&gt;;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Commentary:
-&lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;
+&lt;span style=\"color: #ff4500;\"&gt;;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;Commentary:
+&lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;
 &lt;/span&gt;
 
-&lt;span style=\"color: #ff7f24;\"&gt;;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Code:
+&lt;span style=\"color: #ff4500;\"&gt;;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;Code:
 &lt;/span&gt;
 
 (&lt;span style=\"color: #00ffff;\"&gt;defun&lt;/span&gt; &lt;span style=\"color: #87cefa;\"&gt;ob-build-sample&lt;/span&gt; ()
@@ -977,11 +1873,11 @@ git clone https://github.com/renard/o-blog.git
             (&lt;span style=\"color: #00ffff;\"&gt;let*&lt;/span&gt; ((trace (&lt;span style=\"color: #00ffff;\"&gt;with-temp-buffer&lt;/span&gt;
                             (insert (&lt;span style=\"color: #00ffff;\"&gt;with-output-to-string&lt;/span&gt; (backtrace)))
                             (beginning-of-buffer)
-                            &lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;error begins on line 16
-&lt;/span&gt;                            &lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;line stats with \"  signal(error ...\"
+                            &lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;error begins on line 16
+&lt;/span&gt;                            &lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;line stats with \"  signal(error ...\"
 &lt;/span&gt;                            (goto-line 16)
                             (goto-char (point-at-bol))
-                            &lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;Remove null chars
+                            &lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;Remove null chars
 &lt;/span&gt;                            (replace-regexp-in-string
                               (char-to-string 0) &lt;span style=\"color: #ffa07a;\"&gt;\"^@\"&lt;/span&gt;
                               (buffer-substring (point) (point-max))))))
@@ -1010,7 +1906,9 @@ git clone https://github.com/renard/o-blog.git
   <h2>警告</h2>
   <table>
     <caption>导出博文信息 警告</caption>
-    <thead><tr><th>4</pre></td></tr>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>7</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#35686;&#21578;"</pre></td></tr>
       <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20242 51488)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
@@ -1153,9 +2051,9 @@ them:
 
 
 
-&lt;pre class=\"src src-org\"&gt;&lt;span style=\"color: #ff7f24;\"&gt;#+begin_o_blog_alert &amp;lt;TYPE&amp;gt; &amp;lt;title&amp;gt;&lt;/span&gt;
+&lt;pre class=\"src src-org\"&gt;&lt;span style=\"color: #ff4500;\"&gt;#+begin_o_blog_alert &amp;lt;TYPE&amp;gt; &amp;lt;title&amp;gt;&lt;/span&gt;
 Text of the alert
-&lt;span style=\"color: #ff7f24;\"&gt;#+end_o_blog_alert&lt;/span&gt;
+&lt;span style=\"color: #ff4500;\"&gt;#+end_o_blog_alert&lt;/span&gt;
 &lt;/pre&gt;
 
 
@@ -1255,7 +2153,9 @@ nulla. Nullam rutrum. Nam vestibulum accumsan nisl.
   <h2>一些 HTML5 示例</h2>
   <table>
     <caption>导出博文信息 一些 HTML5 示例</caption>
-    <thead><tr><th>5</pre></td></tr>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>8</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#19968;&#20123; HTML5 &#31034;&#20363;"</pre></td></tr>
       <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20236 13784)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
@@ -1320,13 +2220,13 @@ Works only with chrome.
 &lt;/details&gt;
 
 
-&lt;pre class=\"src src-org\"&gt;&lt;span style=\"color: #ff7f24;\"&gt;#+HTML:&lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt; &lt;/span&gt;&lt;span style=\"color: #b3b3b3;\"&gt;&amp;lt;details&amp;gt;&lt;/span&gt;
-&lt;span style=\"color: #ff7f24;\"&gt;#+HTML:&lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt; &lt;/span&gt;&lt;span style=\"color: #b3b3b3;\"&gt;&amp;lt;summary&amp;gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit&amp;lt;/summary&amp;gt;&lt;/span&gt;
+&lt;pre class=\"src src-org\"&gt;&lt;span style=\"color: #ff4500;\"&gt;#+HTML:&lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt; &lt;/span&gt;&lt;span style=\"color: #b3b3b3;\"&gt;&amp;lt;details&amp;gt;&lt;/span&gt;
+&lt;span style=\"color: #ff4500;\"&gt;#+HTML:&lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt; &lt;/span&gt;&lt;span style=\"color: #b3b3b3;\"&gt;&amp;lt;summary&amp;gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit&amp;lt;/summary&amp;gt;&lt;/span&gt;
 - Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 - Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.
 - Sed diam.
 - Nam vestibulum accumsan nisl.
-&lt;span style=\"color: #ff7f24;\"&gt;#+HTML:&lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt; &lt;/span&gt;&lt;span style=\"color: #b3b3b3;\"&gt;&amp;lt;/details&amp;gt;&lt;/span&gt;
+&lt;span style=\"color: #ff4500;\"&gt;#+HTML:&lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt; &lt;/span&gt;&lt;span style=\"color: #b3b3b3;\"&gt;&amp;lt;/details&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;
 
 &lt;/div&gt;
@@ -1339,7 +2239,9 @@ Works only with chrome.
   <h2>一些 org 语法示例</h2>
   <table>
     <caption>导出博文信息 一些 org 语法示例</caption>
-    <thead><tr><th>6</pre></td></tr>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>9</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#19968;&#20123; org &#35821;&#27861;&#31034;&#20363;"</pre></td></tr>
       <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20231 47764)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
@@ -1950,7 +2852,9 @@ the sun is R&lt;sub&gt;sun&lt;/sub&gt; = 6.96 x 10&lt;sup&gt;8&lt;/sup&gt; m.
   <h2>如何使用标签</h2>
   <table>
     <caption>导出博文信息 如何使用标签</caption>
-    <thead><tr><th>7</pre></td></tr>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>10</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#22914;&#20309;&#20351;&#29992;&#26631;&#31614;"</pre></td></tr>
       <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20231 8464)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
@@ -2003,7 +2907,9 @@ Special characters used in tags:
   <h2>创建一个博客条目</h2>
   <table>
     <caption>导出博文信息 创建一个博客条目</caption>
-    <thead><tr><th>8</pre></td></tr>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>11</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#21019;&#24314;&#19968;&#20010;&#21338;&#23458;&#26465;&#30446;"</pre></td></tr>
       <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20231 7564)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
@@ -2066,13 +2972,13 @@ A minimal blog file could be something like:
 
 
 
-&lt;pre class=\"src src-org\"&gt;&lt;span style=\"color: #b3b3b3;\"&gt;#+TITLE:&lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt; &lt;/span&gt;&lt;span style=\"color: #afeeee; font-size: 144%; font-weight: bold;\"&gt;Lorem ipsum&lt;/span&gt;
-&lt;span style=\"color: #ff7f24;\"&gt;#+DESCRIPTION: dolor sit amet&lt;/span&gt;
+&lt;pre class=\"src src-org\"&gt;&lt;span style=\"color: #b3b3b3;\"&gt;#+TITLE:&lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt; &lt;/span&gt;&lt;span style=\"color: #afeeee; font-size: 144%; font-weight: bold;\"&gt;Lorem ipsum&lt;/span&gt;
+&lt;span style=\"color: #ff4500;\"&gt;#+DESCRIPTION: dolor sit amet&lt;/span&gt;
 &lt;span style=\"color: #b3b3b3;\"&gt;#+DATE:&lt;/span&gt;
 
-&lt;span style=\"color: #ff7f24;\"&gt;#+STARTUP: logdone&lt;/span&gt;
+&lt;span style=\"color: #ff4500;\"&gt;#+STARTUP: logdone&lt;/span&gt;
 
-&lt;span style=\"color: #ff7f24;\"&gt;#+URL: http://blog.example.com&lt;/span&gt;
+&lt;span style=\"color: #ff4500;\"&gt;#+URL: http://blog.example.com&lt;/span&gt;
 
 &lt;span style=\"color: #87cefa;\"&gt;* &lt;/span&gt;&lt;span style=\"color: #98fb98; font-weight: bold;\"&gt;DONE&lt;/span&gt;&lt;span style=\"color: #87cefa;\"&gt; Lorem ipsum&lt;/span&gt;
   &lt;span style=\"color: #00ffff;\"&gt;CLOSED:&lt;/span&gt; &lt;span style=\"color: #00ffff; text-decoration: underline;\"&gt;[2012-01-07 Sat 00:13]&lt;/span&gt;
@@ -2109,12 +3015,14 @@ entry.
   <h2>快速入门指南</h2>
   <table>
     <caption>导出博文信息 快速入门指南</caption>
-    <thead><tr><th>0</pre></td></tr>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>0</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#24555;&#36895;&#20837;&#38376;&#25351;&#21335;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20361 40704)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20415 44160)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
-      <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>15</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>5</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>26</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
@@ -2165,14 +3073,15 @@ entry.
 
 ** &#35774;&#32622;
 
-&#39318;&#20808;&#65292;&#20320;&#38656;&#35201;&#23433;&#35013;&#26377; [[http://www.gnu.org/s/emacs][emacs]] (&#22312;&#29256;&#26412; 23 &#19979;&#27979;&#35797;&#65292;&#22312; 24 &#19979;&#21487;&#33021;&#20063;&#34892;) &#21644; [[http://orgmode.org/][org-mode]] (&#29256;&#26412; 7.8 &#25110;&#26356;&#39640;)&#12290;&#28982;&#21518;&#20320;&#26377;&#20004;&#31181;&#26041;&#27861;&#21487;&#20197;&#23433;&#35013; [[https://github.com/renard/o-blog][o-blog]].
+&#39318;&#20808;&#65292;&#20320;&#38656;&#35201;&#23433;&#35013;&#26377; [[http://www.gnu.org/s/emacs][emacs]] (&#22312;&#29256;&#26412; 23 &#19979;&#27979;&#35797;&#65292;&#22312; 24 &#19979;&#21487;&#33021;&#20063;&#34892;) &#21644; [[http://orgmode.org/][org-mode]] (&#29256;&#26412;
+7.8 &#25110;&#26356;&#39640;)&#12290;&#28982;&#21518;&#20320;&#26377;&#20004;&#31181;&#26041;&#27861;&#21487;&#20197;&#23433;&#35013; [[https://github.com/renard/o-blog][o-blog]].
 
 #+BEGIN_HTML
 &lt;div class=\"row \"&gt;&lt;div class=\"span5 \"&gt;
 #+END_HTML
 
 
-*&#20351;&#29992; el-get*
+#+HTML: &lt;h4&gt;&#20351;&#29992; el-get&lt;/h4&gt;
 
 &#35201;&#20351;&#29992; [[https://github.com/dimitri/el-get][el-get]], &#23433;&#35013;&#36215;&#26469;&#24456;&#23481;&#26131;&#12290;&#20320;&#25152;&#35201;&#20570;&#30340;&#19981;&#36807;&#26159;&#23558; =o-blog= &#28155;&#21152;&#21040;
 =el-get-sources= &#20013;&#65292;&#28982;&#21518;&#25191;&#34892; =M-x el-get-install o-blog=.
@@ -2184,7 +3093,7 @@ entry.
 #+END_HTML
 
 
-*&#25163;&#21160;&#23433;&#35013;*
+#+html: &lt;h4&gt;&#25163;&#21160;&#23433;&#35013;&lt;/h4&gt;
 
 &#39318;&#20808;&#20174; [[http://github.com][Github]] &#20811;&#38534; /git/ &#20179;&#24211;&#28304;&#30721;&#12290;
 
@@ -2208,10 +3117,11 @@ git clone https://github.com/renard/o-blog.git
 
 
 ** &#21457;&#24067;&#21338;&#25991;
+
 &#25171;&#24320;&#25991;&#20214; =~/.emacs.d/o-blog/example/sample.org= &#28982;&#21518;&#25191;&#34892; =M-x
 org-publish-blog=. &#36755;&#20986;&#30340;&#31449;&#28857;&#40664;&#35748;&#20445;&#23384;&#22312; =~/.emacs.d/o-blog/out=.
 
-&#35814;&#24773;&#21442;&#35265; [[file:blog/index.html][&#21338;&#25991;]]&#12290;
+&#35814;&#24773;&#21442;&#35265; [[file:tips/index.html][tips]].
 "</pre></td></tr>
       <tr><td class="property"><code>content-html</code></td><td class="value"><pre>"&lt;div class=\"row \"&gt;&lt;div class=\"span8 \"&gt;
 
@@ -2263,16 +3173,18 @@ org-publish-blog=. &#36755;&#20986;&#30340;&#31449;&#28857;&#40664;&#35748;&#204
 
 
 &lt;p&gt;
-&#39318;&#20808;&#65292;&#20320;&#38656;&#35201;&#23433;&#35013;&#26377; &lt;a href=\"http://www.gnu.org/s/emacs\"&gt;emacs&lt;/a&gt; (&#22312;&#29256;&#26412; 23 &#19979;&#27979;&#35797;&#65292;&#22312; 24 &#19979;&#21487;&#33021;&#20063;&#34892;) &#21644; &lt;a href=\"http://orgmode.org/\"&gt;org-mode&lt;/a&gt; (&#29256;&#26412; 7.8 &#25110;&#26356;&#39640;)&#12290;&#28982;&#21518;&#20320;&#26377;&#20004;&#31181;&#26041;&#27861;&#21487;&#20197;&#23433;&#35013; &lt;a href=\"https://github.com/renard/o-blog\"&gt;o-blog&lt;/a&gt;.
+&#39318;&#20808;&#65292;&#20320;&#38656;&#35201;&#23433;&#35013;&#26377; &lt;a href=\"http://www.gnu.org/s/emacs\"&gt;emacs&lt;/a&gt; (&#22312;&#29256;&#26412; 23 &#19979;&#27979;&#35797;&#65292;&#22312; 24 &#19979;&#21487;&#33021;&#20063;&#34892;) &#21644; &lt;a href=\"http://orgmode.org/\"&gt;org-mode&lt;/a&gt; (&#29256;&#26412;
+7.8 &#25110;&#26356;&#39640;)&#12290;&#28982;&#21518;&#20320;&#26377;&#20004;&#31181;&#26041;&#27861;&#21487;&#20197;&#23433;&#35013; &lt;a href=\"https://github.com/renard/o-blog\"&gt;o-blog&lt;/a&gt;.
 &lt;/p&gt;
 
 
 &lt;div class=\"row \"&gt;&lt;div class=\"span5 \"&gt;
 
 
-&lt;p&gt;
-&lt;b&gt;&#20351;&#29992; el-get&lt;/b&gt;
-&lt;/p&gt;
+
+
+&lt;h4&gt;&#20351;&#29992; el-get&lt;/h4&gt;
+
 &lt;p&gt;
 &#35201;&#20351;&#29992; &lt;a href=\"https://github.com/dimitri/el-get\"&gt;el-get&lt;/a&gt;, &#23433;&#35013;&#36215;&#26469;&#24456;&#23481;&#26131;&#12290;&#20320;&#25152;&#35201;&#20570;&#30340;&#19981;&#36807;&#26159;&#23558; &lt;code&gt;o-blog&lt;/code&gt; &#28155;&#21152;&#21040;
 &lt;code&gt;el-get-sources&lt;/code&gt; &#20013;&#65292;&#28982;&#21518;&#25191;&#34892; &lt;code&gt;M-x el-get-install o-blog&lt;/code&gt;.
@@ -2285,9 +3197,10 @@ org-publish-blog=. &#36755;&#20986;&#30340;&#31449;&#28857;&#40664;&#35748;&#204
 &lt;/div&gt;&lt;div class=\"span6 \"&gt;
 
 
-&lt;p&gt;
-&lt;b&gt;&#25163;&#21160;&#23433;&#35013;&lt;/b&gt;
-&lt;/p&gt;
+
+
+&lt;h4&gt;&#25163;&#21160;&#23433;&#35013;&lt;/h4&gt;
+
 &lt;p&gt;
 &#39318;&#20808;&#20174; &lt;a href=\"http://github.com\"&gt;Github&lt;/a&gt; &#20811;&#38534; &lt;i&gt;git&lt;/i&gt; &#20179;&#24211;&#28304;&#30721;&#12290;
 &lt;/p&gt;
@@ -2323,10 +3236,12 @@ git clone https://github.com/renard/o-blog.git
 &lt;h3 id=\"sec-2\"&gt;&#21457;&#24067;&#21338;&#25991;&lt;/h3&gt;
 &lt;div class=\"outline-text-3\" id=\"text-2\"&gt;
 
-&lt;p&gt;&#25171;&#24320;&#25991;&#20214; &lt;code&gt;~/.emacs.d/o-blog/example/sample.org&lt;/code&gt; &#28982;&#21518;&#25191;&#34892; &lt;code&gt;M-x org-publish-blog&lt;/code&gt;. &#36755;&#20986;&#30340;&#31449;&#28857;&#40664;&#35748;&#20445;&#23384;&#22312; &lt;code&gt;~/.emacs.d/o-blog/out&lt;/code&gt;.
+
+&lt;p&gt;
+&#25171;&#24320;&#25991;&#20214; &lt;code&gt;~/.emacs.d/o-blog/example/sample.org&lt;/code&gt; &#28982;&#21518;&#25191;&#34892; &lt;code&gt;M-x org-publish-blog&lt;/code&gt;. &#36755;&#20986;&#30340;&#31449;&#28857;&#40664;&#35748;&#20445;&#23384;&#22312; &lt;code&gt;~/.emacs.d/o-blog/out&lt;/code&gt;.
 &lt;/p&gt;
 &lt;p&gt;
-&#35814;&#24773;&#21442;&#35265; &lt;a href=\"blog/index.html\"&gt;&#21338;&#25991;&lt;/a&gt;&#12290;
+&#35814;&#24773;&#21442;&#35265; &lt;a href=\"tips/index.html\"&gt;tips&lt;/a&gt;.
 &lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;
 "</pre></td></tr>
@@ -2337,12 +3252,14 @@ git clone https://github.com/renard/o-blog.git
   <h2>更新记录</h2>
   <table>
     <caption>导出博文信息 更新记录</caption>
-    <thead><tr><th>1</pre></td></tr>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>1</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#26356;&#26032;&#35760;&#24405;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20361 40704)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20415 44160)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
-      <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>15</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>5</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>26</pre></td></tr>
       <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
@@ -2353,8 +3270,35 @@ git clone https://github.com/renard/o-blog.git
       <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
 
-- 2012-04-07
-  - &#28155;&#21152;&#22810;&#35821;&#35328;&#27169;&#29256;&#25903;&#25345;
+- 2012-05-21
+  - Use responsive bootstrap features.
+
+- 2012-05-07
+  - Update to:
+    - less.js v1.0-547-ga2df119
+  - Bootstrap widgets:
+    - label
+    - badge
+    - progress bar
+    - well
+    - page header
+    - hero unit
+
+- 2012-05-04
+  - Update to:
+    - bootstrap v2.0.3-5-gb261f97.
+
+- 2012-04-17
+  - Update to:
+    - less 1.3.0.
+    - Font-Awesome v1.0.0-7-g563a6f3.
+    - bootstrap v2.0.2-3-g6506ede.
+
+- 2012-04-10
+  - Add i18n support.
+
+- 2012-04-06
+  - Add org-mode CUSTOM\\_ID.
 
 - 2012-03-28
   - Add support for [[http://en.wikipedia.org/wiki/QR_code][QR-code]].
@@ -2382,9 +3326,85 @@ git clone https://github.com/renard/o-blog.git
   - Change tag system from \"Tags\" to org tagging system.
 "</pre></td></tr>
       <tr><td class="property"><code>content-html</code></td><td class="value"><pre>"&lt;ul&gt;
-&lt;li&gt;2012-04-07
+&lt;li&gt;2012-05-21
 &lt;ul&gt;
-&lt;li&gt;&#28155;&#21152;&#22810;&#35821;&#35328;&#27169;&#29256;&#25903;&#25345;
+&lt;li&gt;Use responsive bootstrap features.
+
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/li&gt;
+&lt;li&gt;2012-05-07
+&lt;ul&gt;
+&lt;li&gt;Update to:
+&lt;ul&gt;
+&lt;li&gt;less.js v1.0-547-ga2df119
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/li&gt;
+&lt;li&gt;Bootstrap widgets:
+&lt;ul&gt;
+&lt;li&gt;label
+&lt;/li&gt;
+&lt;li&gt;badge
+&lt;/li&gt;
+&lt;li&gt;progress bar
+&lt;/li&gt;
+&lt;li&gt;well
+&lt;/li&gt;
+&lt;li&gt;page header
+&lt;/li&gt;
+&lt;li&gt;hero unit
+
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/li&gt;
+&lt;li&gt;2012-05-04
+&lt;ul&gt;
+&lt;li&gt;Update to:
+&lt;ul&gt;
+&lt;li&gt;bootstrap v2.0.3-5-gb261f97.
+
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/li&gt;
+&lt;li&gt;2012-04-17
+&lt;ul&gt;
+&lt;li&gt;Update to:
+&lt;ul&gt;
+&lt;li&gt;less 1.3.0.
+&lt;/li&gt;
+&lt;li&gt;Font-Awesome v1.0.0-7-g563a6f3.
+&lt;/li&gt;
+&lt;li&gt;bootstrap v2.0.2-3-g6506ede.
+
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/li&gt;
+&lt;li&gt;2012-04-10
+&lt;ul&gt;
+&lt;li&gt;Add i18n support.
+
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/li&gt;
+&lt;li&gt;2012-04-06
+&lt;ul&gt;
+&lt;li&gt;Add org-mode CUSTOM_ID.
 
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -2463,13 +3483,15 @@ git clone https://github.com/renard/o-blog.git
   <h2>调试</h2>
   <table>
     <caption>导出博文信息 调试</caption>
-    <thead><tr><th>2</pre></td></tr>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>2</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#35843;&#35797;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20361 40704)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20415 44160)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
-      <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>15</pre></td></tr>
-      <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>5</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>26</pre></td></tr>
+      <tr><td class="property"><code>category</code></td><td class="value"><pre>"&#25991;&#26723;"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"debug.html"</pre></td></tr>
       <tr><td class="property"><code>filepath</code></td><td class="value"><pre>nil</pre></td></tr>
@@ -2488,13 +3510,15 @@ git clone https://github.com/renard/o-blog.git
   <h2>特性</h2>
   <table>
     <caption>导出博文信息 特性</caption>
-    <thead><tr><th>3</pre></td></tr>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>3</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#29305;&#24615;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20361 40704)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20415 44160)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
-      <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>15</pre></td></tr>
-      <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>5</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>26</pre></td></tr>
+      <tr><td class="property"><code>category</code></td><td class="value"><pre>"&#25991;&#26723;"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
       <tr><td class="property"><code>filepath</code></td><td class="value"><pre>nil</pre></td></tr>
@@ -2591,13 +3615,15 @@ git clone https://github.com/renard/o-blog.git
   <h2>模版</h2>
   <table>
     <caption>导出博文信息 模版</caption>
-    <thead><tr><th>4</pre></td></tr>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>4</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#27169;&#29256;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20361 40704)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20415 44160)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
-      <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>15</pre></td></tr>
-      <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>5</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>26</pre></td></tr>
+      <tr><td class="property"><code>category</code></td><td class="value"><pre>"&#25991;&#26723;"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
       <tr><td class="property"><code>filepath</code></td><td class="value"><pre>nil</pre></td></tr>
@@ -2803,13 +3829,15 @@ git clone https://github.com/renard/o-blog.git
   <h2>结构</h2>
   <table>
     <caption>导出博文信息 结构</caption>
-    <thead><tr><th>5</pre></td></tr>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>5</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#32467;&#26500;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20361 40704)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20415 44160)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
-      <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>15</pre></td></tr>
-      <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>5</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>26</pre></td></tr>
+      <tr><td class="property"><code>category</code></td><td class="value"><pre>"&#25991;&#26723;"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
       <tr><td class="property"><code>filepath</code></td><td class="value"><pre>nil</pre></td></tr>
@@ -3003,7 +4031,7 @@ Example:
 
 
 
-&lt;pre class=\"src src-emacs-lisp\"&gt;&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;get the title of the current blog defined in variable BLOG.&lt;/span&gt;
+&lt;pre class=\"src src-emacs-lisp\"&gt;&lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;get the title of the current blog defined in variable BLOG.&lt;/span&gt;
 (ob:blog-title BLOG)
 &lt;/pre&gt;
 
@@ -3062,7 +4090,7 @@ Example:
 
 
 
-&lt;pre class=\"src src-emacs-lisp\"&gt;&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;get the HTML content of the post defined in variable POST.&lt;/span&gt;
+&lt;pre class=\"src src-emacs-lisp\"&gt;&lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;get the HTML content of the post defined in variable POST.&lt;/span&gt;
 (ob:post-content-html POST)
 &lt;/pre&gt;
 
@@ -3097,7 +4125,7 @@ Example:
 
 
 
-&lt;pre class=\"src src-emacs-lisp\"&gt;&lt;span style=\"color: #ff7f24;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff7f24;\"&gt;get the name of the tag defined in variable TAG.&lt;/span&gt;
+&lt;pre class=\"src src-emacs-lisp\"&gt;&lt;span style=\"color: #ff4500;\"&gt;;; &lt;/span&gt;&lt;span style=\"color: #ff4500;\"&gt;get the name of the tag defined in variable TAG.&lt;/span&gt;
 (ob:tags-name TAG)
 &lt;/pre&gt;
 
@@ -3160,13 +4188,15 @@ Some variables may be defined in some functions:
   <h2>函数</h2>
   <table>
     <caption>导出博文信息 函数</caption>
-    <thead><tr><th>6</pre></td></tr>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>6</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#20989;&#25968;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20361 40704)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20415 44160)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
-      <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>15</pre></td></tr>
-      <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>5</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>26</pre></td></tr>
+      <tr><td class="property"><code>category</code></td><td class="value"><pre>"&#25991;&#26723;"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
       <tr><td class="property"><code>filepath</code></td><td class="value"><pre>nil</pre></td></tr>
@@ -3635,13 +4665,15 @@ Add a human readable timestamp for a post:
   <h2>报告软件臭虫 (BUG)</h2>
   <table>
     <caption>导出博文信息 报告软件臭虫 (BUG)</caption>
-    <thead><tr><th>7</pre></td></tr>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>7</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#25253;&#21578;&#36719;&#20214;&#33261;&#34411; (BUG)"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20361 40704)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20415 44160)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
-      <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>15</pre></td></tr>
-      <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>5</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>26</pre></td></tr>
+      <tr><td class="property"><code>category</code></td><td class="value"><pre>"&#25991;&#26723;"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
       <tr><td class="property"><code>filepath</code></td><td class="value"><pre>nil</pre></td></tr>
@@ -3748,13 +4780,15 @@ debug.
   <h2>问答</h2>
   <table>
     <caption>导出博文信息 问答</caption>
-    <thead><tr><th>8</pre></td></tr>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>8</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"&#38382;&#31572;"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20361 40704)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20415 44160)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
-      <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>15</pre></td></tr>
-      <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>5</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>26</pre></td></tr>
+      <tr><td class="property"><code>category</code></td><td class="value"><pre>"&#25991;&#26723;"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_static.html"</pre></td></tr>
       <tr><td class="property"><code>filepath</code></td><td class="value"><pre>nil</pre></td></tr>
@@ -3889,18 +4923,20 @@ less-1.2.1.min.js:8Uncaught Error: NETWORK_ERR: XMLHttpRequest Exception 101
   <h2>Copyright</h2>
   <table>
     <caption>导出博文信息 Copyright</caption>
-    <thead><tr><th>0</pre></td></tr>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>0</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"Copyright"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20361 40704)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20415 44160)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
-      <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>15</pre></td></tr>
-      <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>5</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>26</pre></td></tr>
+      <tr><td class="property"><code>category</code></td><td class="value"><pre>"&#21338;&#23458;&#35774;&#32622;"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_post.html"</pre></td></tr>
-      <tr><td class="property"><code>filepath</code></td><td class="value"><pre>"Tips/2012/04"</pre></td></tr>
+      <tr><td class="property"><code>filepath</code></td><td class="value"><pre>"&#21338;&#23458;&#35774;&#32622;/2012/05"</pre></td></tr>
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"copyright"</pre></td></tr>
-      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/04/15_copyright.html"</pre></td></tr>
+      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"&#21338;&#23458;&#35774;&#32622;/2012/05/26_copyright.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"../../.."</pre></td></tr>
       <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
@@ -3919,18 +4955,20 @@ Copyright &#169; 2008-2012 &lt;a href=\"mailto:seb%20&#10088;&#593;&#422;&#629;&
   <h2>About</h2>
   <table>
     <caption>导出博文信息 About</caption>
-    <thead><tr><th>1</pre></td></tr>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>1</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"About"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20361 40704)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20415 44160)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
-      <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>15</pre></td></tr>
-      <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>5</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>26</pre></td></tr>
+      <tr><td class="property"><code>category</code></td><td class="value"><pre>"&#21338;&#23458;&#35774;&#32622;"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_post.html"</pre></td></tr>
-      <tr><td class="property"><code>filepath</code></td><td class="value"><pre>"Tips/2012/04"</pre></td></tr>
+      <tr><td class="property"><code>filepath</code></td><td class="value"><pre>"&#21338;&#23458;&#35774;&#32622;/2012/05"</pre></td></tr>
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"about"</pre></td></tr>
-      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/04/15_about.html"</pre></td></tr>
+      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"&#21338;&#23458;&#35774;&#32622;/2012/05/26_about.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"../../.."</pre></td></tr>
       <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
@@ -3947,18 +4985,20 @@ Copyright &#169; 2008-2012 &lt;a href=\"mailto:seb%20&#10088;&#593;&#422;&#629;&
   <h2>Navigation</h2>
   <table>
     <caption>导出博文信息 Navigation</caption>
-    <thead><tr><th>2</pre></td></tr>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>id</code></td><td class="value"><pre>2</pre></td></tr>
       <tr><td class="property"><code>title</code></td><td class="value"><pre>"Navigation"</pre></td></tr>
-      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20361 40704)</pre></td></tr>
+      <tr><td class="property"><code>timespamp</code></td><td class="value"><pre>(20415 44160)</pre></td></tr>
       <tr><td class="property"><code>year</code></td><td class="value"><pre>2012</pre></td></tr>
-      <tr><td class="property"><code>month</code></td><td class="value"><pre>4</pre></td></tr>
-      <tr><td class="property"><code>day</code></td><td class="value"><pre>15</pre></td></tr>
-      <tr><td class="property"><code>category</code></td><td class="value"><pre>"Tips"</pre></td></tr>
+      <tr><td class="property"><code>month</code></td><td class="value"><pre>5</pre></td></tr>
+      <tr><td class="property"><code>day</code></td><td class="value"><pre>26</pre></td></tr>
+      <tr><td class="property"><code>category</code></td><td class="value"><pre>"&#21338;&#23458;&#35774;&#32622;"</pre></td></tr>
       <tr><td class="property"><code>tags</code></td><td class="value"><pre>nil</pre></td></tr>
       <tr><td class="property"><code>template</code></td><td class="value"><pre>"blog_post.html"</pre></td></tr>
-      <tr><td class="property"><code>filepath</code></td><td class="value"><pre>"Tips/2012/04"</pre></td></tr>
+      <tr><td class="property"><code>filepath</code></td><td class="value"><pre>"&#21338;&#23458;&#35774;&#32622;/2012/05"</pre></td></tr>
       <tr><td class="property"><code>filename</code></td><td class="value"><pre>"navigation"</pre></td></tr>
-      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"Tips/2012/04/15_navigation.html"</pre></td></tr>
+      <tr><td class="property"><code>htmlfile</code></td><td class="value"><pre>"&#21338;&#23458;&#35774;&#32622;/2012/05/26_navigation.html"</pre></td></tr>
       <tr><td class="property"><code>path-to-root</code></td><td class="value"><pre>"../../.."</pre></td></tr>
       <tr><td class="property"><code>content</code></td><td class="value"><pre>"#+OPTIONS: H:7 num:nil  toc:nil d:nil todo:nil &lt;:nil pri:nil tags:nil
 
@@ -3976,8 +5016,8 @@ Copyright &#169; 2008-2012 &lt;a href=\"mailto:seb%20&#10088;&#593;&#422;&#629;&
 
 - [[#][/icon-file icon-white/ &#36817;&#26399;&#21338;&#25991;]]
   - [[file:Lisp error in nil: (void-function format%20"%25s/%25s"%20)][Lisp error in nil: (void-variable "Tips")]]
-  - [[file:Lisp error in nil: (void-variable "%s/%s")][Lisp error in nil: (void-variable "Tips")]]
-  - [[file:Lisp error in nil: (void-variable "%s/%s")][Lisp error in nil: (void-variable "Tips")]]
+  - [[file:Lisp error in nil: (void-function format%20"%25s/%25s"%20)][Lisp error in nil: (void-variable "Tips")]]
+  - [[file:Lisp error in nil: (void-function format%20"%25s/%25s"%20)][Lisp error in nil: (void-variable "Tips")]]
   - [[file:Lisp error in nil: (void-variable "%s/%s")][Lisp error in nil: (void-variable "Tips")]]
   - [[file:Lisp error in nil: (void-variable "%s/%s")][Lisp error in nil: (void-variable "Tips")]]
 
@@ -4059,19 +5099,23 @@ Copyright &#169; 2008-2012 &lt;a href=\"mailto:seb%20&#10088;&#593;&#422;&#629;&
   <div class="debug tag">
   <h2>Bootstrap</h2>
   <table>
-    <caption>"Bootstrap"</caption>
-    <thead><tr><th>"Bootstrap"</pre></td></tr>
+    <caption>导出标签信息 "Bootstrap"</caption>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>name</code></td><td class="value"><pre>"Bootstrap"</pre></td></tr>
       <tr><td class="property"><code>safe</code></td><td class="value"><pre>"bootstrap"</pre></td></tr>
-      <tr><td class="property"><code>count</code></td><td class="value"><pre>3</pre></td></tr>
-      <tr><td class="property"><code>size</code></td><td class="value"><pre>126.66666666666666</pre></td></tr>
+      <tr><td class="property"><code>count</code></td><td class="value"><pre>6</pre></td></tr>
+      <tr><td class="property"><code>size</code></td><td class="value"><pre>157.77777777777777</pre></td></tr>
     </tbody>
   </table>
 </div>
 <div class="debug tag">
   <h2>html 5</h2>
   <table>
-    <caption>"html 5"</caption>
-    <thead><tr><th>"html 5"</pre></td></tr>
+    <caption>导出标签信息 "html 5"</caption>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>name</code></td><td class="value"><pre>"html 5"</pre></td></tr>
       <tr><td class="property"><code>safe</code></td><td class="value"><pre>"html-5"</pre></td></tr>
       <tr><td class="property"><code>count</code></td><td class="value"><pre>1</pre></td></tr>
       <tr><td class="property"><code>size</code></td><td class="value"><pre>80.0</pre></td></tr>
@@ -4081,19 +5125,23 @@ Copyright &#169; 2008-2012 &lt;a href=\"mailto:seb%20&#10088;&#593;&#422;&#629;&
 <div class="debug tag">
   <h2>o-blog</h2>
   <table>
-    <caption>"o-blog"</caption>
-    <thead><tr><th>"o-blog"</pre></td></tr>
+    <caption>导出标签信息 "o-blog"</caption>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>name</code></td><td class="value"><pre>"o-blog"</pre></td></tr>
       <tr><td class="property"><code>safe</code></td><td class="value"><pre>"o-blog"</pre></td></tr>
-      <tr><td class="property"><code>count</code></td><td class="value"><pre>2</pre></td></tr>
-      <tr><td class="property"><code>size</code></td><td class="value"><pre>103.33333333333333</pre></td></tr>
+      <tr><td class="property"><code>count</code></td><td class="value"><pre>4</pre></td></tr>
+      <tr><td class="property"><code>size</code></td><td class="value"><pre>126.66666666666666</pre></td></tr>
     </tbody>
   </table>
 </div>
 <div class="debug tag">
   <h2>org</h2>
   <table>
-    <caption>"org"</caption>
-    <thead><tr><th>"org"</pre></td></tr>
+    <caption>导出标签信息 "org"</caption>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>name</code></td><td class="value"><pre>"org"</pre></td></tr>
       <tr><td class="property"><code>safe</code></td><td class="value"><pre>"org"</pre></td></tr>
       <tr><td class="property"><code>count</code></td><td class="value"><pre>1</pre></td></tr>
       <tr><td class="property"><code>size</code></td><td class="value"><pre>80.0</pre></td></tr>
@@ -4103,8 +5151,10 @@ Copyright &#169; 2008-2012 &lt;a href=\"mailto:seb%20&#10088;&#593;&#422;&#629;&
 <div class="debug tag">
   <h2>中文</h2>
   <table>
-    <caption>"&#20013;&#25991;"</caption>
-    <thead><tr><th>"&#20013;&#25991;"</pre></td></tr>
+    <caption>导出标签信息 "&#20013;&#25991;"</caption>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>name</code></td><td class="value"><pre>"&#20013;&#25991;"</pre></td></tr>
       <tr><td class="property"><code>safe</code></td><td class="value"><pre>"a7bac2239fcdcb3a067903d8077c4a07"</pre></td></tr>
       <tr><td class="property"><code>count</code></td><td class="value"><pre>1</pre></td></tr>
       <tr><td class="property"><code>size</code></td><td class="value"><pre>80.0</pre></td></tr>
@@ -4114,10 +5164,12 @@ Copyright &#169; 2008-2012 &lt;a href=\"mailto:seb%20&#10088;&#593;&#422;&#629;&
 <div class="debug tag">
   <h2>用例</h2>
   <table>
-    <caption>"&#29992;&#20363;"</caption>
-    <thead><tr><th>"&#29992;&#20363;"</pre></td></tr>
+    <caption>导出标签信息 "&#29992;&#20363;"</caption>
+    <thead><tr><th>属性</th><th>值</th></tr></thead>
+    <tbody>
+      <tr><td class="property"><code>name</code></td><td class="value"><pre>"&#29992;&#20363;"</pre></td></tr>
       <tr><td class="property"><code>safe</code></td><td class="value"><pre>"a0b1dd52a1c893aa52b103dad9aa9d59"</pre></td></tr>
-      <tr><td class="property"><code>count</code></td><td class="value"><pre>7</pre></td></tr>
+      <tr><td class="property"><code>count</code></td><td class="value"><pre>10</pre></td></tr>
       <tr><td class="property"><code>size</code></td><td class="value"><pre>220.0</pre></td></tr>
     </tbody>
   </table>
@@ -4140,7 +5192,7 @@ Copyright &#169; 2008-2012 &lt;a href=\"mailto:seb%20&#10088;&#593;&#422;&#629;&
 	      <h1>链接</h1>
 	      <ul>
 		<li class="home"><a href="./index.html">首页</a></li>
-<li class="blog"><a href="./Tips/2012/03/20_use-chinese.html">Blog</a></li>
+<li class="blog"><a href="./Tips/2012/05/21_static-pages.html">Blog</a></li>
 <li class="tags"><a href="./tags/index.html">标签</a></li>
 <li class="archives"><a href="./archives.html">归档</a></li>
 <li class="rss"><a href="./index.xml">RSS</a></li>
@@ -4150,13 +5202,13 @@ Copyright &#169; 2008-2012 &lt;a href=\"mailto:seb%20&#10088;&#593;&#422;&#629;&
 	    <nav id="archives" class="span3">
 	      <h1>归档</h1>
 	      <ul>
-		<li><a href="./Tips/2012/03/20_use-chinese.html">中文测试</a></li> <li><a href="./Tips/2012/02/10_use-bootstrap.html">使用 Bootstrap 分格</a></li> <li><a href="./Tips/2012/02/10_add-icons.html">添加图标</a></li> <li><a href="./Tips/2012/02/09_use-modal.html">使用 modal 显示源代码</a></li> <li><a href="./Tips/2012/01/15_warning.html">警告</a></li> <li><a href="./Tips/2012/01/10_html5-example.html">一些 HTML5 示例</a></li> <li><a href="./Tips/2012/01/07_syntax-org-mode.html">一些 org 语法示例</a></li> <li><a href="./Tips/2012/01/07_use-tags.html">如何使用标签</a></li> <li><a href="./Tips/2012/01/07_create-new-post.html">创建一个博客条目</a></li> 
+		<li><a href="./Tips/2012/05/21_static-pages.html">创建静态页面</a></li> <li><a href="./Tips/2012/05/07_custom-fonts.html">添加自定义字体</a></li> <li><a href="./Tips/2012/05/03_bootstrap-features.html">一些 bootstrap 特性</a></li> <li><a href="./Tips/2012/03/20_use-chinese.html">中文测试</a></li> <li><a href="./Tips/2012/02/10_use-bootstrap.html">使用 Bootstrap 分格</a></li> <li><a href="./Tips/2012/02/10_add-icons.html">添加图标</a></li> <li><a href="./Tips/2012/02/09_use-modal.html">使用 modal 显示源代码</a></li> <li><a href="./Tips/2012/01/15_warning.html">警告</a></li> <li><a href="./Tips/2012/01/10_html5-example.html">一些 HTML5 示例</a></li> <li><a href="./Tips/2012/01/07_syntax-org-mode.html">一些 org 语法示例</a></li> 
 	      </ul>
 	    </nav>
 	    <nav class="tags span3">
 	      <h1>标签</h1>
 	      <ul>
-  <li style="font-size: 126.67%;"><a href="./tags/bootstrap.html">Bootstrap</a></li> <li style="font-size: 80.00%;"><a href="./tags/html-5.html">html 5</a></li> <li style="font-size: 103.33%;"><a href="./tags/o-blog.html">o-blog</a></li> <li style="font-size: 80.00%;"><a href="./tags/org.html">org</a></li> <li style="font-size: 80.00%;"><a href="./tags/a7bac2239fcdcb3a067903d8077c4a07.html">中文</a></li> <li style="font-size: 220.00%;"><a href="./tags/a0b1dd52a1c893aa52b103dad9aa9d59.html">用例</a></li> 
+  <li style="font-size: 157.78%;"><a href="./tags/bootstrap.html">Bootstrap</a></li> <li style="font-size: 80.00%;"><a href="./tags/html-5.html">html 5</a></li> <li style="font-size: 126.67%;"><a href="./tags/o-blog.html">o-blog</a></li> <li style="font-size: 80.00%;"><a href="./tags/org.html">org</a></li> <li style="font-size: 80.00%;"><a href="./tags/a7bac2239fcdcb3a067903d8077c4a07.html">中文</a></li> <li style="font-size: 220.00%;"><a href="./tags/a0b1dd52a1c893aa52b103dad9aa9d59.html">用例</a></li> 
 </ul>
 
 	    </nav>
@@ -4167,7 +5219,7 @@ Copyright &#169; 2008-2012 &lt;a href=\"mailto:seb%20&#10088;&#593;&#422;&#629;&
 Copyright © 2008-2012 <a href="mailto:seb%20❨ɑƦɵϐɑʂɛ❩%20chezwam%20❨Ƥɵɩɲʈ❩%20org">Sébastien Gross</a>. Published under the therm of the
 <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">Creative Commons Attribution-Noncommercial-Share Alike 2.0 France License</a>.
 </p>
-	  <p>(ob:gettext powered-by) <a href="https://github.com/renard/o-blog">o-blog</a>.</p>
+	  <p>功能取自 <a href="https://github.com/renard/o-blog">o-blog</a>.</p>
 	</div>
       </div>
 </body>

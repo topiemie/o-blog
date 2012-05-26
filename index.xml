@@ -3,9 +3,455 @@
   <title>o-blog</title>
   <link href="http://exaos.github.com/o-blogindex.xml" rel="self" />
   <link href="http://exaos.github.com/o-blog"/>
-  <updated>2012-04-15T03:12:57Z</updated>
+  <updated>2012-05-26T17:13:11Z</updated>
   <id>http://exaos.github.com/o-blogindex.xml</id>
-  <entry><title type="html">中文测试</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/03/20_use-chinese.html"/><updated>2012-03-20T09:46:00Z</updated><published>2012-03-20T09:46:00Z</published><id>Tips/2012/03/20_use-chinese.html</id><category scheme="/tags/a7bac2239fcdcb3a067903d8077c4a07.html" term="中文" label="中文"/><content type="html">&lt;p&gt;
+  <entry><title type="html">创建静态页面</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/05/21_static-pages.html"/><updated>2012-05-21T12:48:00Z</updated><published>2012-05-21T12:48:00Z</published><id>Tips/2012/05/21_static-pages.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/bootstrap.html" term="Bootstrap" label="Bootstrap"/><category scheme="/tags/o-blog.html" term="o-blog" label="o-blog"/><content type="html">&lt;div class="row "&gt;&lt;div class="span7 "&gt;
+
+
+
+&lt;p&gt;
+&#21019;&#24314;&#38745;&#24577;&#39029;&#38754;&#19982;&#21019;&#24314;&#21338;&#25991;&#39029;&#38754;&#19968;&#26679;&#12290;&#20320;&#21807;&#19968;&#38656;&#35201;&#20570;&#30340;&#23601;&#26159;&#28155;&#21152;&#23646;&#24615; &lt;code&gt;PAGE&lt;/code&gt;. &#23548;&#20986;&#30340;&#36335;&#24452;&#30456;&#23545;
+&#20110; &lt;code&gt;#+PUBLISH_DIR:&lt;/code&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+&#20320;&#20063;&#21487;&#20197;&#20026;&#38745;&#24577;&#39029;&#38754;&#25351;&#23450;&#33258;&#23450;&#20041;&#27169;&#29256;&#65292;&#21482;&#38656;&#28155;&#21152;&#23646;&#24615; &lt;code&gt;TEMPLATE&lt;/code&gt;. &#27169;&#29256;&#36335;&#24452;&#30456;&#23545;&#20110;
+&lt;code&gt;#+TEMPLATE_DIR:&lt;/code&gt;.
+&lt;/p&gt;
+
+
+&lt;/div&gt;&lt;div class="span4 "&gt;
+
+
+
+&lt;pre class="src src-org"&gt;&lt;span style="color: #87cefa;"&gt;* Static page&lt;/span&gt;
+&lt;span style="color: #00ffff;"&gt;   :PROPERTIES:&lt;/span&gt;
+   &lt;span style="color: #00ffff;"&gt;:PAGE:&lt;/span&gt;     path/to/static/page.html
+   &lt;span style="color: #00ffff;"&gt;:TEMPLATE:&lt;/span&gt; static-page.html
+&lt;span style="color: #00ffff;"&gt;   :END:&lt;/span&gt;
+&lt;/pre&gt;
+
+
+
+&lt;/div&gt;&lt;/div&gt;
+
+</content></entry><entry><title type="html">添加自定义字体</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/05/07_custom-fonts.html"/><updated>2012-05-07T16:38:00Z</updated><published>2012-05-07T16:38:00Z</published><id>Tips/2012/05/07_custom-fonts.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/bootstrap.html" term="Bootstrap" label="Bootstrap"/><category scheme="/tags/o-blog.html" term="o-blog" label="o-blog"/><content type="html">&lt;p&gt;
+&#21487;&#22312; o-blog &#20013;&#29992;&#20004;&#31181;&#26041;&#24335;&#20351;&#29992; &lt;a href="http://www.google.com/webfonts"&gt;Google webfonts&lt;/a&gt;:&#20351;&#29992; google API &#25110;&#32773;&#22312;
+&lt;code&gt;templates/style&lt;/code&gt; &#30446;&#24405;&#20013;&#25552;&#20379;&#36164;&#28304;&#12290;
+&lt;/p&gt;
+
+
+&lt;div class="alert alert-warning"&gt;&lt;p class="alert-heading"&gt;Caution&lt;/p&gt;
+
+&lt;p&gt;
+&#20351;&#29992;&#35768;&#22810;&#23383;&#20307;&#26679;&#24335;&#20250;&#35753;&#20320;&#30340;&#39029;&#38754;&#21464;&#24471;&#24456;&#24930;&#65292;&#22240;&#27492;&#20165;&#36873;&#25321;&#37027;&#20123;&#20320;&#39029;&#38754;&#20013;&#23454;&#38469;&#38656;&#35201;&#30340;&#23383;&#20307;&#26679;&#24335;&#12290;
+&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+
+&lt;p&gt;
+Both example are given using the &lt;a href="http://www.yanone.de/typedesign/kaffeesatz/"&gt;Yanone Kaffeesatz&lt;/a&gt; font.
+&lt;/p&gt;
+
+&lt;div id="outline-container-1" class="outline-3"&gt;
+&lt;h3 id="sec-1"&gt;Using Google API&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1"&gt;
+
+
+&lt;p&gt;
+The &lt;a href="http://www.google.com/webfonts#QuickUsePlace:quickUse/Family:"&gt;quick use&lt;/a&gt; provides an import snippet such as:
+&lt;/p&gt;
+
+
+
+&lt;pre class="src src-css"&gt;&lt;span style="color: #b0c4de;"&gt;@import&lt;/span&gt; url(&lt;span style="color: #ffa07a;"&gt;"http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700&amp;amp;subset=latin,latin-ext"&lt;/span&gt;);
+&lt;/pre&gt;
+
+
+&lt;p&gt;
+That line should be included into the
+&lt;code&gt;templates/style/less/o-blog-default.less&lt;/code&gt; file in which you should also add
+something like:
+&lt;/p&gt;
+
+
+
+&lt;pre class="src src-css"&gt;&lt;span style="color: #87cefa;"&gt;h1, h2, h3, h4, h5, h6 &lt;/span&gt;{
+    &lt;span style="color: #eedd82;"&gt;font-family&lt;/span&gt;: &lt;span style="color: #ffa07a;"&gt;"Yanone Kaffeesatz"&lt;/span&gt;, sans-serif;
+}
+&lt;/pre&gt;
+
+
+&lt;p&gt;
+And that's it.
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div id="outline-container-2" class="outline-3"&gt;
+&lt;h3 id="sec-2"&gt;Providing resources&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2"&gt;
+
+
+&lt;p&gt;
+That is less efficient in terms of network resources but provide a good
+alternative for offline publications.
+&lt;/p&gt;
+
+&lt;p&gt;
+The script &lt;code&gt;get-font&lt;/code&gt; does all needed jobs.
+&lt;/p&gt;
+
+
+&lt;div class="o-blog-source"&gt;&lt;a class="btn btn-info" data-toggle="modal" data-target="#get-font" &gt;&lt;i class="icon-file icon-white"&gt;&lt;/i&gt;&amp;nbsp;get-font&lt;/a&gt;&lt;/div&gt;&lt;div class="modal fade hide" id="get-font"&gt;&lt;div class="modal-header"&gt;&lt;a class="close" data-dismiss="modal"&gt;&#215;&lt;/a&gt;&lt;h3&gt;get-font&lt;/h3&gt;&lt;/div&gt;&lt;div class="modal-body"&gt;&lt;pre&gt;
+&lt;span style="color: #ff4500;"&gt;#&lt;/span&gt;&lt;span style="color: #ff4500;"&gt;!/bin/&lt;/span&gt;&lt;span style="color: #00ffff;"&gt;sh&lt;/span&gt;&lt;span style="color: #ff4500;"&gt;
+&lt;/span&gt;
+&lt;span style="color: #00ffff;"&gt;if &lt;/span&gt;&lt;span style="color: #b0c4de;"&gt;test&lt;/span&gt; -z &lt;span style="color: #ffa07a;"&gt;"$1"&lt;/span&gt;; &lt;span style="color: #00ffff;"&gt;then&lt;/span&gt;
+    &lt;span style="color: #b0c4de;"&gt;echo&lt;/span&gt; &lt;span style="color: #ffa07a;"&gt;"Usage: $0 font-url"&lt;/span&gt;
+    &lt;span style="color: #00ffff;"&gt;exit&lt;/span&gt; 1
+&lt;span style="color: #00ffff;"&gt;fi&lt;/span&gt;
+
+&lt;span style="color: #eedd82;"&gt;FONT_DIR&lt;/span&gt;=templates/style/font
+&lt;span style="color: #eedd82;"&gt;LESS_DIR&lt;/span&gt;=templates/style/less
+
+&lt;span style="color: #eedd82;"&gt;FONT_URL&lt;/span&gt;=&lt;span style="color: #ffa07a;"&gt;"$1"&lt;/span&gt;
+&lt;span style="color: #eedd82;"&gt;LESS_FILE&lt;/span&gt;=$(&lt;span style="color: #b0c4de;"&gt;echo&lt;/span&gt; &lt;span style="color: #ffa07a;"&gt;"$FONT_URL"&lt;/span&gt; | sed -n &lt;span style="color: #ffa07a;"&gt;'s/.*family=\([^:]\+\).*/\1/p'&lt;/span&gt; | sed &lt;span style="color: #ffa07a;"&gt;'s/+/-/g'&lt;/span&gt;)
+
+&lt;span style="color: #ff4500;"&gt;# &lt;/span&gt;&lt;span style="color: #ff4500;"&gt;Wee need to provide a valid user agent to get woff fonts
+&lt;/span&gt;&lt;span style="color: #eedd82;"&gt;UA&lt;/span&gt;=&lt;span style="color: #ffa07a;"&gt;'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.65 Safari/535.11'&lt;/span&gt;
+
+
+&lt;span style="color: #eedd82;"&gt;CSS&lt;/span&gt;=$(curl -H &lt;span style="color: #ffa07a;"&gt;"${UA}"&lt;/span&gt; ${&lt;span style="color: #eedd82;"&gt;FONT_URL&lt;/span&gt;})
+
+&lt;span style="color: #b0c4de;"&gt;echo&lt;/span&gt; &lt;span style="color: #ffa07a;"&gt;"${CSS}"&lt;/span&gt; | sed -n &lt;span style="color: #ffa07a;"&gt;"s#.*local('\([^']\+\)'), url('\([^']\+\)').*#curl -o ${FONT_DIR}/\1.woff \2#p"&lt;/span&gt; | sh -
+
+&lt;span style="color: #b0c4de;"&gt;echo&lt;/span&gt; &lt;span style="color: #ffa07a;"&gt;"${CSS}"&lt;/span&gt; | sed  &lt;span style="color: #ffa07a;"&gt;"s#\(.*\)local('\([^']\+\)'), url('\([^']\+\)')\(.*\)#\1local('\2'), url('../font/\2.woff')\4#"&lt;/span&gt;  &amp;gt; &lt;span style="color: #ffa07a;"&gt;"${LESS_DIR}/font-${LESS_FILE}.less"&lt;/span&gt;
+
+&lt;span style="color: #b0c4de;"&gt;echo&lt;/span&gt; &lt;span style="color: #ffa07a;"&gt;"You should add '@import \"font-${LESS_FILE}.less\";' to templates/style/less/o-blog-default.less"&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+You can run:
+&lt;/p&gt;
+
+
+
+&lt;pre class="src src-sh"&gt;./get-font &lt;span style="color: #ffa07a;"&gt;'http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700&amp;amp;subset=latin,latin-ext'&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;p&gt;
+And add the font declaration in &lt;code&gt;templates/style/less/o-blog-default.less&lt;/code&gt;:
+&lt;/p&gt;
+
+
+
+&lt;pre class="src src-css"&gt;&lt;span style="color: #b0c4de;"&gt;@import&lt;/span&gt; &lt;span style="color: #ffa07a;"&gt;"font-Yanone-Kaffeesatz.less"&lt;/span&gt;;
+&lt;/pre&gt;
+
+
+&lt;p&gt;
+Add declare its use like in the Google API version:
+&lt;/p&gt;
+
+
+
+&lt;pre class="src src-css"&gt;&lt;span style="color: #87cefa;"&gt;h1, h2, h3, h4, h5, h6 &lt;/span&gt;{
+    &lt;span style="color: #eedd82;"&gt;font-family&lt;/span&gt;: &lt;span style="color: #ffa07a;"&gt;"Yanone Kaffeesatz"&lt;/span&gt;, sans-serif;
+}
+&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+</content></entry><entry><title type="html">一些 bootstrap 特性</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/05/03_bootstrap-features.html"/><updated>2012-05-03T21:40:00Z</updated><published>2012-05-03T21:40:00Z</published><id>Tips/2012/05/03_bootstrap-features.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/bootstrap.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;div id="outline-container-1" class="outline-3"&gt;
+&lt;h3 id="sec-1"&gt;Hero-unit&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1"&gt;
+
+
+
+
+&lt;div class="row "&gt;&lt;div class="span7 "&gt;
+
+
+
+&lt;pre class="src src-org"&gt;&lt;span style="color: #ff4500;"&gt;#+begin_o_blog_hero_unit&lt;/span&gt;
+&lt;span style="color: #ff4500;"&gt;#+HTML: &amp;lt;h1&amp;gt;Heading&amp;lt;/h1&amp;gt;&lt;/span&gt;
+
+ tagline
+
+&lt;span style="color: #ff4500;"&gt;#+BEGIN_HTML&lt;/span&gt;
+    &amp;lt;a class="btn btn-primary btn-large"&amp;gt;
+      Learn more
+    &amp;lt;/a&amp;gt;
+&lt;span style="color: #ff4500;"&gt;#+END_HTML&lt;/span&gt;
+&lt;span style="color: #ff4500;"&gt;#+end_o_blog_hero_unit&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;/div&gt;&lt;div class="span4 "&gt;
+
+
+&lt;div class="hero-unit"&gt;
+
+
+
+
+
+&lt;h1&gt;Heading&lt;/h1&gt;
+
+&lt;p&gt;
+tagline
+&lt;/p&gt;
+
+
+    &lt;a class="btn btn-primary btn-large"&gt;
+      Learn more
+    &lt;/a&gt;
+
+&lt;/div&gt;
+
+
+
+
+&lt;/div&gt;&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div id="outline-container-2" class="outline-3"&gt;
+&lt;h3 id="sec-2"&gt;&#39029;&#22836;&#35774;&#32622;&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2"&gt;
+
+
+
+
+&lt;div class="row "&gt;&lt;div class="span7 "&gt;
+
+
+
+&lt;pre class="src src-org"&gt;&lt;span style="color: #ff4500;"&gt;#+begin_o_blog_page_header&lt;/span&gt;
+&lt;span style="color: #ff4500;"&gt;#+HTML: &amp;lt;h1&amp;gt;Page header&amp;lt;/h1&amp;gt;&lt;/span&gt;
+Some text
+&lt;span style="color: #ff4500;"&gt;#+end_o_blog_page_header&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;/div&gt;&lt;div class="span4 "&gt;
+
+
+&lt;div class="page-header"&gt;
+
+
+
+
+&lt;h1&gt;Page header&lt;/h1&gt;
+&lt;p&gt;
+Some text
+&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+
+
+
+&lt;/div&gt;&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div id="outline-container-3" class="outline-3"&gt;
+&lt;h3 id="sec-3"&gt;&#20351;&#29992;&#26631;&#27880; (label)&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-3"&gt;
+
+
+&lt;p&gt;
+    &#26631;&#27880;&#21450;&#27880;&#37322;&#25991;&#26412;&#20351;&#29992; &lt;code&gt;label:TYPE&lt;/code&gt; &#38142;&#25509;&#26041;&#24335;&#65292;&#20854;&#20013;&#30340; &lt;code&gt;TYPE&lt;/code&gt; &#21487;&#21462;&#20540;&#20026; &lt;code&gt;default&lt;/code&gt;,
+    &lt;code&gt;success&lt;/code&gt;, &lt;code&gt;warning&lt;/code&gt;, &lt;code&gt;important&lt;/code&gt;, &lt;code&gt;info&lt;/code&gt; &#25110; &lt;code&gt;reverse&lt;/code&gt;. &#38142;&#25509;&#30340; URL &#37096;&#20998;&#29992;&#20316;&#26631;
+    &#27880;&#25991;&#26412;&#12290;
+&lt;/p&gt;
+
+
+&lt;div class="row "&gt;&lt;div class="span7 "&gt;
+
+
+
+&lt;pre class="src src-txt"&gt;[[ob-label:default][Default]]
+[[ob-label:success][Success]]
+[[ob-label:warning][Warning]]
+[[ob-label:important][Important]]
+[[ob-label:info][Info]]
+[[ob-label:inverse][Inverse]]
+&lt;/pre&gt;
+
+
+&lt;/div&gt;&lt;div class="span4 "&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class="label label-default"&gt;Default&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class="label label-success"&gt;Success&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class="label label-warning"&gt;Warning&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class="label label-important"&gt;Important&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class="label label-info"&gt;Info&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class="label label-inverse"&gt;Inverse&lt;/span&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;/div&gt;&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div id="outline-container-4" class="outline-3"&gt;
+&lt;h3 id="sec-4"&gt;&#20351;&#29992;&#26631;&#35760; (badges)&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-4"&gt;
+
+
+&lt;p&gt;
+    &#23558;&#25552;&#31034;&#21450;&#26410;&#35835;&#35745;&#25968;&#24403;&#20316;&#26631;&#27880; (label), &#20351;&#29992;&#38142;&#25509;&#21069;&#32512; &lt;code&gt;badge:TYPE&lt;/code&gt;.
+&lt;/p&gt;
+
+
+&lt;div class="row "&gt;&lt;div class="span7 "&gt;
+
+
+
+&lt;pre class="src src-text"&gt;[[ob-badge:default][Default]]
+[[ob-badge:success][Success]]
+[[ob-badge:warning][Warning]]
+[[ob-badge:important][Important]]
+[[ob-badge:info][Info]]
+[[ob-badge:inverse][Inverse]]
+&lt;/pre&gt;
+
+
+&lt;/div&gt;&lt;div class="span4 "&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span class="badge badge-default"&gt;Default&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class="badge badge-success"&gt;Success&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class="badge badge-warning"&gt;Warning&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class="badge badge-important"&gt;Important&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class="badge badge-info"&gt;Info&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span class="badge badge-inverse"&gt;Inverse&lt;/span&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;/div&gt;&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div id="outline-container-5" class="outline-3"&gt;
+&lt;h3 id="sec-5"&gt;&#20351;&#29992;&#36827;&#24230;&#26465;&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-5"&gt;
+
+
+&lt;p&gt;
+    &#29992;&#20110;&#36733;&#20837;&#12289;&#37325;&#23450;&#21521;&#25110;&#21160;&#20316;&#29366;&#24577;&#12290;&#20351;&#29992;&#38142;&#25509;&#21069;&#32512; &lt;code&gt;progress:TYPE&lt;/code&gt;, &#27492;&#22788;&#30340; &lt;code&gt;TYPE&lt;/code&gt; &#21487;&#21462;
+    &#20540; &lt;code&gt;info&lt;/code&gt;, &lt;code&gt;success&lt;/code&gt;, &lt;code&gt;warning&lt;/code&gt; &#25110; &lt;code&gt;danger&lt;/code&gt;. &#39069;&#22806;&#30340;&#31867; (&lt;code&gt;striped&lt;/code&gt; &#25110;
+    &lt;code&gt;active&lt;/code&gt;) &#21487;&#29992;&#36887;&#21495;&#28155;&#21152;&#12290; URL &#20026;&#36827;&#24230;&#30334;&#20998;&#27604;&#12290;
+&lt;/p&gt;
+
+
+&lt;div class="row "&gt;&lt;div class="span7 "&gt;
+
+
+
+&lt;pre class="src src-text"&gt;[[ob-progress:info][25]]
+[[ob-progress:success,striped][50]]
+[[ob-progress:warning,striped,active][75]]
+[[ob-progress:danger][100]]
+&lt;/pre&gt;
+
+
+&lt;/div&gt;&lt;div class="span4 "&gt;
+
+&lt;p&gt;
+    &lt;div class="progress progress-info"&gt;&lt;div class="bar" style="width: 25%;"&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="progress progress-success progress-striped"&gt;&lt;div class="bar" style="width: 50%;"&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="progress progress-warning progress-striped active"&gt;&lt;div class="bar" style="width: 75%;"&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="progress progress-danger"&gt;&lt;div class="bar" style="width: 100%;"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+
+&lt;/div&gt;&lt;/div&gt;
+
+
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div id="outline-container-6" class="outline-3"&gt;
+&lt;h3 id="sec-6"&gt;Well&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-6"&gt;
+
+
+&lt;p&gt;
+Use the well as a simple effect on an element to give it an inset effect.
+&lt;/p&gt;
+
+
+&lt;div class="row "&gt;&lt;div class="span7 "&gt;
+
+
+
+&lt;pre class="src src-text"&gt; #+begin_o_blog_well
+, Look, I'm in a well!
+ #+end_o_blog_well
+&lt;/pre&gt;
+
+
+&lt;/div&gt;&lt;div class="span4 "&gt;
+
+
+
+&lt;div class="well"&gt;
+
+
+&lt;p&gt;
+Look, I'm in a well!
+&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+
+
+
+&lt;/div&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+</content></entry><entry><title type="html">中文测试</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/03/20_use-chinese.html"/><updated>2012-03-20T09:46:00Z</updated><published>2012-03-20T09:46:00Z</published><id>Tips/2012/03/20_use-chinese.html</id><category scheme="/tags/a7bac2239fcdcb3a067903d8077c4a07.html" term="中文" label="中文"/><content type="html">&lt;p&gt;
 &#36825;&#26159;&#19968;&#20010;&#27979;&#35797;&#26465;&#30446;&#21727;&#12290;
 &lt;/p&gt;
 &lt;p&gt;
@@ -37,7 +483,7 @@
 &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&#24453;&#21150;&#20107;&#39033;
-  &#36825;&#20799;&#21015;&#20030;&#20102;&#19968;&#20123;&#20013;&#25991;&#22788;&#29702;&#20013;&#30340;&#38382;&#39064;&#12290;&#20855;&#20307;&#30340;&#35299;&#20915;&#21442;&#35265; &lt;a href="https://github.com/exaos/o-blog"&gt;https://github.com/exaos/o-blog&lt;/a&gt;.
+  &#36825;&#20799;&#21015;&#20030;&#20102;&#19968;&#20123;&#20013;&#25991;&#22788;&#29702;&#20013;&#30340;&#38382;&#39064;&#12290;&#20855;&#20307;&#30340;&#35299;&#20915;&#21442;&#35265; &lt;a href="#github-exaos-o-blog"&gt;github:exaos/o-blog&lt;/a&gt;.
 
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;[X]&lt;/code&gt; &#20013;&#25991;&#25991;&#20214;&#21517;&#26080;&#27861;&#27491;&#24120;&#29983;&#25104;
@@ -58,7 +504,6 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 
-
 </content></entry><entry><title type="html">使用 Bootstrap 分格</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/02/10_use-bootstrap.html"/><updated>2012-02-10T01:19:00Z</updated><published>2012-02-10T01:19:00Z</published><id>Tips/2012/02/10_use-bootstrap.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/bootstrap.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
 &lt;a href="http://twitter.github.com/bootstrap/scaffolding.html"&gt;Bootstrap scaffolding&lt;/a&gt; could be defined using both &lt;code&gt;#+begin_o_blog_row&lt;/code&gt; and
 &lt;code&gt;#+end_o_blog_row&lt;/code&gt; directives (or &lt;code&gt;&amp;lt;og&lt;/code&gt; &lt;code&gt;TAB&lt;/code&gt; shortcut). A new column could
@@ -76,11 +521,11 @@ shortcut).
 
 
 
-&lt;pre class="src src-org"&gt;&lt;span style="color: #ff7f24;"&gt;#+begin_o_blog_row 2 -1 show-grid&lt;/span&gt;
+&lt;pre class="src src-org"&gt;&lt;span style="color: #ff4500;"&gt;#+begin_o_blog_row 2 -1 show-grid&lt;/span&gt;
 Column 1
-&lt;span style="color: #ff7f24;"&gt;#+o_blog_row_column 2&lt;/span&gt;
+&lt;span style="color: #ff4500;"&gt;#+o_blog_row_column 2&lt;/span&gt;
 Column 2
-&lt;span style="color: #ff7f24;"&gt;#+end_o_blog_row&lt;/span&gt;
+&lt;span style="color: #ff4500;"&gt;#+end_o_blog_row&lt;/span&gt;
 &lt;/pre&gt;
 
 
@@ -124,14 +569,14 @@ The syntax is:
 
 
 
-&lt;pre class="src src-org"&gt;&lt;span style="color: #ff7f24;"&gt;#+begin_o_blog_row SPAN OFFSET GRID-CLASS&lt;/span&gt;
+&lt;pre class="src src-org"&gt;&lt;span style="color: #ff4500;"&gt;#+begin_o_blog_row SPAN OFFSET GRID-CLASS&lt;/span&gt;
 Column 1
-&lt;span style="color: #ff7f24;"&gt;#+o_blog_row_column SPAN OFFSET&lt;/span&gt;
+&lt;span style="color: #ff4500;"&gt;#+o_blog_row_column SPAN OFFSET&lt;/span&gt;
 Column 2
 ...
-&lt;span style="color: #ff7f24;"&gt;#+o_blog_row_column SPAN OFFSET&lt;/span&gt;
+&lt;span style="color: #ff4500;"&gt;#+o_blog_row_column SPAN OFFSET&lt;/span&gt;
 Column n
-&lt;span style="color: #ff7f24;"&gt;#+end_o_blog_row&lt;/span&gt;
+&lt;span style="color: #ff4500;"&gt;#+end_o_blog_row&lt;/span&gt;
 
 &lt;/pre&gt;
 
@@ -194,11 +639,11 @@ This could also be used for the top &lt;i&gt;navbar&lt;/i&gt; using something li
   - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;FAQ&lt;/span&gt;
 
 - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;/icon-file icon-white/ Blog&lt;/span&gt;
+  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;创建静态页面&lt;/span&gt;
+  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;添加自定义字体&lt;/span&gt;
+  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;一些 bootstrap 特性&lt;/span&gt;
   - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;中文测试&lt;/span&gt;
   - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;使用 Bootstrap 分格&lt;/span&gt;
-  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;添加图标&lt;/span&gt;
-  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;使用 modal 显示源代码&lt;/span&gt;
-  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;警告&lt;/span&gt;
 
 - &lt;span style="color: #00ffff; font-style: italic; text-decoration: underline;"&gt;/icon-tags icon-white/&lt;/span&gt;&lt;span style="color: #00ffff; text-decoration: underline;"&gt; Tags&lt;/span&gt;
 
@@ -238,15 +683,15 @@ This could also be used for the top &lt;i&gt;navbar&lt;/i&gt; using something li
 &lt;/li&gt;
 &lt;li&gt;&lt;a href="#"&gt;&lt;i&gt;icon-file icon-white&lt;/i&gt; Blog&lt;/a&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a href="./Tips/2012/05/21_static-pages.html"&gt;创建静态页面&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="./Tips/2012/05/07_custom-fonts.html"&gt;添加自定义字体&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="./Tips/2012/05/03_bootstrap-features.html"&gt;一些 bootstrap 特性&lt;/a&gt;
+&lt;/li&gt;
 &lt;li&gt;&lt;a href="./Tips/2012/03/20_use-chinese.html"&gt;中文测试&lt;/a&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href="./Tips/2012/02/10_use-bootstrap.html"&gt;使用 Bootstrap 分格&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="./Tips/2012/02/10_add-icons.html"&gt;添加图标&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="./Tips/2012/02/09_use-modal.html"&gt;使用 modal 显示源代码&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="./Tips/2012/01/15_warning.html"&gt;警告&lt;/a&gt;
 
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -281,7 +726,7 @@ file in a modal window. The magic line is:
 
 
 
-&lt;pre class="src src-org"&gt;&lt;span style="color: #ff7f24;"&gt;#+O_BLOG_SOURCE: path/to/file [mode]&lt;/span&gt;
+&lt;pre class="src src-org"&gt;&lt;span style="color: #ff4500;"&gt;#+O_BLOG_SOURCE: path/to/file [mode]&lt;/span&gt;
 &lt;/pre&gt;
 
 
@@ -356,23 +801,23 @@ git clone https://github.com/renard/o-blog.git
 
 
 &lt;div class="o-blog-source"&gt;&lt;a class="btn btn-info" data-toggle="modal" data-target="#sample-initel" &gt;&lt;i class="icon-file icon-white"&gt;&lt;/i&gt;&amp;nbsp;sample-init.el&lt;/a&gt;&lt;/div&gt;&lt;div class="modal fade hide" id="sample-initel"&gt;&lt;div class="modal-header"&gt;&lt;a class="close" data-dismiss="modal"&gt;&#215;&lt;/a&gt;&lt;h3&gt;sample-init.el&lt;/h3&gt;&lt;/div&gt;&lt;div class="modal-body"&gt;&lt;pre&gt;
-&lt;span style="color: #ff7f24;"&gt;;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;sample-init.el --- sample init file to be used to debug o-blog
+&lt;span style="color: #ff4500;"&gt;;;; &lt;/span&gt;&lt;span style="color: #ff4500;"&gt;sample-init.el --- sample init file to be used to debug o-blog
 &lt;/span&gt;
-&lt;span style="color: #ff7f24;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;Copyright &amp;#169; 2012 S&amp;#233;bastien Gross &amp;lt;seb&amp;#8226;&amp;#593;&amp;#428;&amp;#8226;chezwam&amp;#8226;&amp;#598;&amp;#629;&amp;#648;&amp;#8226;org&amp;gt;
+&lt;span style="color: #ff4500;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff4500;"&gt;Copyright &amp;#169; 2012 S&amp;#233;bastien Gross &amp;lt;seb&amp;#8226;&amp;#593;&amp;#428;&amp;#8226;chezwam&amp;#8226;&amp;#598;&amp;#629;&amp;#648;&amp;#8226;org&amp;gt;
 &lt;/span&gt;
-&lt;span style="color: #ff7f24;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;Author: S&amp;#233;bastien Gross &amp;lt;seb&amp;#8226;&amp;#593;&amp;#428;&amp;#8226;chezwam&amp;#8226;&amp;#598;&amp;#629;&amp;#648;&amp;#8226;org&amp;gt;
-&lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;Keywords: emacs, 
-&lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;Created: 2012-03-20
-&lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;Last changed: 2012-03-26 16:36:31
-&lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;Licence: WTFPL, grab your copy here: http://sam.zoy.org/wtfpl/
+&lt;span style="color: #ff4500;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff4500;"&gt;Author: S&amp;#233;bastien Gross &amp;lt;seb&amp;#8226;&amp;#593;&amp;#428;&amp;#8226;chezwam&amp;#8226;&amp;#598;&amp;#629;&amp;#648;&amp;#8226;org&amp;gt;
+&lt;/span&gt;&lt;span style="color: #ff4500;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff4500;"&gt;Keywords: emacs, 
+&lt;/span&gt;&lt;span style="color: #ff4500;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff4500;"&gt;Created: 2012-03-20
+&lt;/span&gt;&lt;span style="color: #ff4500;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff4500;"&gt;Last changed: 2012-03-26 16:36:31
+&lt;/span&gt;&lt;span style="color: #ff4500;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff4500;"&gt;Licence: WTFPL, grab your copy here: http://sam.zoy.org/wtfpl/
 &lt;/span&gt;
-&lt;span style="color: #ff7f24;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;This file is NOT part of GNU Emacs.
+&lt;span style="color: #ff4500;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff4500;"&gt;This file is NOT part of GNU Emacs.
 &lt;/span&gt;
-&lt;span style="color: #ff7f24;"&gt;;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;Commentary:
-&lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;
+&lt;span style="color: #ff4500;"&gt;;;; &lt;/span&gt;&lt;span style="color: #ff4500;"&gt;Commentary:
+&lt;/span&gt;&lt;span style="color: #ff4500;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff4500;"&gt;
 &lt;/span&gt;
 
-&lt;span style="color: #ff7f24;"&gt;;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;Code:
+&lt;span style="color: #ff4500;"&gt;;;; &lt;/span&gt;&lt;span style="color: #ff4500;"&gt;Code:
 &lt;/span&gt;
 
 (&lt;span style="color: #00ffff;"&gt;defun&lt;/span&gt; &lt;span style="color: #87cefa;"&gt;ob-build-sample&lt;/span&gt; ()
@@ -383,11 +828,11 @@ git clone https://github.com/renard/o-blog.git
             (&lt;span style="color: #00ffff;"&gt;let*&lt;/span&gt; ((trace (&lt;span style="color: #00ffff;"&gt;with-temp-buffer&lt;/span&gt;
                             (insert (&lt;span style="color: #00ffff;"&gt;with-output-to-string&lt;/span&gt; (backtrace)))
                             (beginning-of-buffer)
-                            &lt;span style="color: #ff7f24;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;error begins on line 16
-&lt;/span&gt;                            &lt;span style="color: #ff7f24;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;line stats with "  signal(error ..."
+                            &lt;span style="color: #ff4500;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff4500;"&gt;error begins on line 16
+&lt;/span&gt;                            &lt;span style="color: #ff4500;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff4500;"&gt;line stats with "  signal(error ..."
 &lt;/span&gt;                            (goto-line 16)
                             (goto-char (point-at-bol))
-                            &lt;span style="color: #ff7f24;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff7f24;"&gt;Remove null chars
+                            &lt;span style="color: #ff4500;"&gt;;; &lt;/span&gt;&lt;span style="color: #ff4500;"&gt;Remove null chars
 &lt;/span&gt;                            (replace-regexp-in-string
                               (char-to-string 0) &lt;span style="color: #ffa07a;"&gt;"^@"&lt;/span&gt;
                               (buffer-substring (point) (point-max))))))
@@ -427,9 +872,9 @@ them:
 
 
 
-&lt;pre class="src src-org"&gt;&lt;span style="color: #ff7f24;"&gt;#+begin_o_blog_alert &amp;lt;TYPE&amp;gt; &amp;lt;title&amp;gt;&lt;/span&gt;
+&lt;pre class="src src-org"&gt;&lt;span style="color: #ff4500;"&gt;#+begin_o_blog_alert &amp;lt;TYPE&amp;gt; &amp;lt;title&amp;gt;&lt;/span&gt;
 Text of the alert
-&lt;span style="color: #ff7f24;"&gt;#+end_o_blog_alert&lt;/span&gt;
+&lt;span style="color: #ff4500;"&gt;#+end_o_blog_alert&lt;/span&gt;
 &lt;/pre&gt;
 
 
@@ -548,13 +993,13 @@ Works only with chrome.
 &lt;/details&gt;
 
 
-&lt;pre class="src src-org"&gt;&lt;span style="color: #ff7f24;"&gt;#+HTML:&lt;/span&gt;&lt;span style="color: #ff7f24;"&gt; &lt;/span&gt;&lt;span style="color: #b3b3b3;"&gt;&amp;lt;details&amp;gt;&lt;/span&gt;
-&lt;span style="color: #ff7f24;"&gt;#+HTML:&lt;/span&gt;&lt;span style="color: #ff7f24;"&gt; &lt;/span&gt;&lt;span style="color: #b3b3b3;"&gt;&amp;lt;summary&amp;gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit&amp;lt;/summary&amp;gt;&lt;/span&gt;
+&lt;pre class="src src-org"&gt;&lt;span style="color: #ff4500;"&gt;#+HTML:&lt;/span&gt;&lt;span style="color: #ff4500;"&gt; &lt;/span&gt;&lt;span style="color: #b3b3b3;"&gt;&amp;lt;details&amp;gt;&lt;/span&gt;
+&lt;span style="color: #ff4500;"&gt;#+HTML:&lt;/span&gt;&lt;span style="color: #ff4500;"&gt; &lt;/span&gt;&lt;span style="color: #b3b3b3;"&gt;&amp;lt;summary&amp;gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit&amp;lt;/summary&amp;gt;&lt;/span&gt;
 - Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 - Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.
 - Sed diam.
 - Nam vestibulum accumsan nisl.
-&lt;span style="color: #ff7f24;"&gt;#+HTML:&lt;/span&gt;&lt;span style="color: #ff7f24;"&gt; &lt;/span&gt;&lt;span style="color: #b3b3b3;"&gt;&amp;lt;/details&amp;gt;&lt;/span&gt;
+&lt;span style="color: #ff4500;"&gt;#+HTML:&lt;/span&gt;&lt;span style="color: #ff4500;"&gt; &lt;/span&gt;&lt;span style="color: #b3b3b3;"&gt;&amp;lt;/details&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;
 
 &lt;/div&gt;
@@ -951,64 +1396,5 @@ the sun is R&lt;sub&gt;sun&lt;/sub&gt; = 6.96 x 10&lt;sup&gt;8&lt;/sup&gt; m.
 
 &lt;/div&gt;
 &lt;/div&gt;
-</content></entry><entry><title type="html">如何使用标签</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/01/07_use-tags.html"/><updated>2012-01-07T00:28:00Z</updated><published>2012-01-07T00:28:00Z</published><id>Tips/2012/01/07_use-tags.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/o-blog.html" term="o-blog" label="o-blog"/><content type="html">&lt;p&gt;
-Tags are useful to classify articles. They are stored as &lt;a href="http://orgmode.org/manual/Tags.html"&gt;org-mode tags&lt;/a&gt; for
-each entries. To add or modify a tag for a post, just use &lt;code&gt;C-c C-c&lt;/code&gt; and
-enter the tag value.
-&lt;/p&gt;
-&lt;p&gt;
-If an article has more than one tag, separate them by a colon (&lt;code&gt;:&lt;/code&gt;).
-&lt;/p&gt;
-&lt;p&gt;
-Special characters used in tags:
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;At sign (&lt;code&gt;@&lt;/code&gt;) is converted to a dash (&lt;code&gt;-&lt;/code&gt;).
-&lt;/li&gt;
-&lt;li&gt;Underscore (&lt;code&gt;_&lt;/code&gt;) is converted to a blank (&lt;code&gt;&#160;&lt;/code&gt;).
-&lt;/li&gt;
-&lt;/ul&gt;
-
-</content></entry><entry><title type="html">创建一个博客条目</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/01/07_create-new-post.html"/><updated>2012-01-07T00:13:00Z</updated><published>2012-01-07T00:13:00Z</published><id>Tips/2012/01/07_create-new-post.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/o-blog.html" term="o-blog" label="o-blog"/><content type="html">&lt;p&gt;
-A blog consists of org entries. Each entry has a title, some properties and
-some text. Exporting a blog means publishing all entries with a &lt;code&gt;DONE&lt;/code&gt;
-&lt;code&gt;TODO&lt;/code&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-A minimal blog file could be something like:
-&lt;/p&gt;
-
-
-
-&lt;pre class="src src-org"&gt;&lt;span style="color: #b3b3b3;"&gt;#+TITLE:&lt;/span&gt;&lt;span style="color: #ff7f24;"&gt; &lt;/span&gt;&lt;span style="color: #afeeee; font-size: 144%; font-weight: bold;"&gt;Lorem ipsum&lt;/span&gt;
-&lt;span style="color: #ff7f24;"&gt;#+DESCRIPTION: dolor sit amet&lt;/span&gt;
-&lt;span style="color: #b3b3b3;"&gt;#+DATE:&lt;/span&gt;
-
-&lt;span style="color: #ff7f24;"&gt;#+STARTUP: logdone&lt;/span&gt;
-
-&lt;span style="color: #ff7f24;"&gt;#+URL: http://blog.example.com&lt;/span&gt;
-
-&lt;span style="color: #87cefa;"&gt;* &lt;/span&gt;&lt;span style="color: #98fb98; font-weight: bold;"&gt;DONE&lt;/span&gt;&lt;span style="color: #87cefa;"&gt; Lorem ipsum&lt;/span&gt;
-  &lt;span style="color: #00ffff;"&gt;CLOSED:&lt;/span&gt; &lt;span style="color: #00ffff; text-decoration: underline;"&gt;[2012-01-07 Sat 00:13]&lt;/span&gt;
-&lt;span style="color: #00ffff;"&gt;  :PROPERTIES:&lt;/span&gt;
-  &lt;span style="color: #00ffff;"&gt;:tags:&lt;/span&gt;     Lorem
-&lt;span style="color: #00ffff;"&gt;  :END:&lt;/span&gt;
-
-  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec hendrerit
-  tempor tellus. Donec pretium posuere tellus. Proin quam nisl, tincidunt
-  et, mattis eget, convallis nec, purus. Cum sociis natoque penatibus et
-  magnis dis parturient montes, nascetur ridiculus mus. Nulla posuere. Donec
-  vitae dolor. Nullam tristique diam non turpis. Cras placerat accumsan
-  nulla. Nullam rutrum. Nam vestibulum accumsan nisl.
-
-&lt;/pre&gt;
-
-
-&lt;p&gt;
-Please note the blank line between the properties section and the text itself.
-&lt;/p&gt;
-&lt;p&gt;
-Use &lt;code&gt;#+STARTUP: logdone&lt;/code&gt; to automatically add a time stamp when closing an
-entry.
-&lt;/p&gt;</content></entry>
+</content></entry>
 </feed>
