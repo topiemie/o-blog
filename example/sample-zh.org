@@ -63,11 +63,12 @@
 
 ** 设置
 
-首先，你需要安装有 [[http://www.gnu.org/s/emacs][emacs]] (在版本 23 下测试，在 24 下可能也行) 和 [[http://orgmode.org/][org-mode]] (版本 7.8 或更高)。然后你有两种方法可以安装 [[https://github.com/renard/o-blog][o-blog]].
+首先，你需要安装有 [[http://www.gnu.org/s/emacs][emacs]] (在版本 23 下测试，在 24 下可能也行) 和 [[http://orgmode.org/][org-mode]] (版本
+7.8 或更高)。然后你有两种方法可以安装 [[https://github.com/renard/o-blog][o-blog]].
 
 #+begin_o_blog_row 5
 
-*使用 el-get*
+#+HTML: <h4>使用 el-get</h4>
 
 要使用 [[https://github.com/dimitri/el-get][el-get]], 安装起来很容易。你所要做的不过是将 =o-blog= 添加到
 =el-get-sources= 中，然后执行 =M-x el-get-install o-blog=.
@@ -76,7 +77,7 @@
 
 #+o_blog_row_column 6
 
-*手动安装*
+#+html: <h4>手动安装</h4>
 
 首先从 [[http://github.com][Github]] 克隆 /git/ 仓库源码。
 
@@ -96,10 +97,11 @@ git clone https://github.com/renard/o-blog.git
 
 
 ** 发布博文
+
 打开文件 =~/.emacs.d/o-blog/example/sample.org= 然后执行 =M-x
 org-publish-blog=. 输出的站点默认保存在 =~/.emacs.d/o-blog/out=.
 
-详情参见 [[file:blog/index.html][博文]]。
+详情参见 [[file:tips/index.html][tips]].
 
 * 博客设置
 ** Copyright
@@ -135,8 +137,8 @@ Copyright © 2008-2012 [[mailto:seb%2520%E2%9D%A8%C9%91%C6%A6%C9%B5%CF%90%C9%91%
 
 - [[#][/icon-file icon-white/ 近期博文]]
   - [[file:{lisp}(format%20"%25s/%25s"%20(ob:path-to-root)%20(ob:post-htmlfile%20(ob:get-last-post%20"Tips"%200))){/lisp}][{lisp}(ob:post-title (ob:get-last-post "Tips" 0)){/lisp}]]
-  - [[file:{lisp}(format "%s/%s" (ob:path-to-root) (ob:post-htmlfile (ob:get-last-post "Tips" 1))){/lisp}][{lisp}(ob:post-title (ob:get-last-post "Tips" 1)){/lisp}]]
-  - [[file:{lisp}(format "%s/%s" (ob:path-to-root) (ob:post-htmlfile (ob:get-last-post "Tips" 2))){/lisp}][{lisp}(ob:post-title (ob:get-last-post "Tips" 2)){/lisp}]]
+  - [[file:{lisp}(format%20"%25s/%25s"%20(ob:path-to-root)%20(ob:post-htmlfile%20(ob:get-last-post%20"Tips"%201))){/lisp}][{lisp}(ob:post-title (ob:get-last-post "Tips" 1)){/lisp}]]
+  - [[file:{lisp}(format%20"%25s/%25s"%20(ob:path-to-root)%20(ob:post-htmlfile%20(ob:get-last-post%20"Tips"%202))){/lisp}][{lisp}(ob:post-title (ob:get-last-post "Tips" 2)){/lisp}]]
   - [[file:{lisp}(format "%s/%s" (ob:path-to-root) (ob:post-htmlfile (ob:get-last-post "Tips" 3))){/lisp}][{lisp}(ob:post-title (ob:get-last-post "Tips" 3)){/lisp}]]
   - [[file:{lisp}(format "%s/%s" (ob:path-to-root) (ob:post-htmlfile (ob:get-last-post "Tips" 4))){/lisp}][{lisp}(ob:post-title (ob:get-last-post "Tips" 4)){/lisp}]]
 
@@ -155,8 +157,35 @@ Copyright © 2008-2012 [[mailto:seb%2520%E2%9D%A8%C9%91%C6%A6%C9%B5%CF%90%C9%91%
   :PAGE:     changelog.html
   :END:
 
-- 2012-04-07
-  - 添加多语言模版支持
+- 2012-05-21
+  - Use responsive bootstrap features.
+
+- 2012-05-07
+  - Update to:
+    - less.js v1.0-547-ga2df119
+  - Bootstrap widgets:
+    - label
+    - badge
+    - progress bar
+    - well
+    - page header
+    - hero unit
+
+- 2012-05-04
+  - Update to:
+    - bootstrap v2.0.3-5-gb261f97.
+
+- 2012-04-17
+  - Update to:
+    - less 1.3.0.
+    - Font-Awesome v1.0.0-7-g563a6f3.
+    - bootstrap v2.0.2-3-g6506ede.
+
+- 2012-04-10
+  - Add i18n support.
+
+- 2012-04-06
+  - Add org-mode CUSTOM\_ID.
 
 - 2012-03-28
   - Add support for [[http://en.wikipedia.org/wiki/QR_code][QR-code]].
@@ -653,7 +682,7 @@ cd /path/to/your/site && python -m SimpleHTTPServer
 
 其它的替代方法还有使用 [[http://www.emacswiki.org/emacs/Elnode][elnode]], 但它好象更复杂些。
 
-* 博客条目
+* Tips
 ** DONE 创建一个博客条目					  :用例:o@blog:
   CLOSED: [2012-01-07 Sat 00:13]
    :PROPERTIES:
@@ -1234,4 +1263,248 @@ The syntax is:
      * 或者在每个条目下添加属性 =CUSTOM_ID=, 生成为 =YYYY/MM/DD_(CUSTOM_ID).html= 形式的文件名。
   2. [X] 博客设置中的 =Copyright=, =About= 及 =Navigation= 等 =SNIPPET= 不能用中文的问题。
   3. [X] 多语言模版支持。你需要在文件头中定义 =#+LANGUAGE: zh=, 然后在 =templates/zh= 目录下放置需要翻译成中文的模版文件即可
+** DONE 一些 bootstrap 特性				       :用例:Bootstrap:
+   CLOSED: [2012-05-03 Thu 21:40]
+   :PROPERTIES:
+   :CUSTOM_ID: bootstrap-features
+   :END:
 
+*** Hero-unit
+
+#+begin_o_blog_row 7
+
+#+BEGIN_SRC org
+  ,#+begin_o_blog_hero_unit
+  ,#+HTML: <h1>Heading</h1>
+
+  , tagline
+
+  ,#+BEGIN_HTML
+  ,    <a class="btn btn-primary btn-large">
+  ,      Learn more
+  ,    </a>
+  ,#+END_HTML
+  ,#+end_o_blog_hero_unit
+#+END_SRC
+
+#+o_blog_row_column 4
+
+#+begin_o_blog_hero_unit
+
+#+HTML: <h1>Heading</h1>
+
+tagline
+
+#+BEGIN_HTML
+    <a class="btn btn-primary btn-large">
+      Learn more
+    </a>
+#+END_HTML
+#+end_o_blog_hero_unit
+
+#+end_o_blog_row
+
+*** 页头设置
+
+#+begin_o_blog_row 7
+
+#+BEGIN_SRC org
+  ,#+begin_o_blog_page_header
+  ,#+HTML: <h1>Page header</h1>
+  ,Some text
+  ,#+end_o_blog_page_header
+#+END_SRC
+
+#+o_blog_row_column 4
+
+#+begin_o_blog_page_header
+#+HTML: <h1>Page header</h1>
+Some text
+#+end_o_blog_page_header
+
+#+end_o_blog_row
+
+*** 使用标注 (label)
+
+    标注及注释文本使用 =label:TYPE= 链接方式，其中的 =TYPE= 可取值为 =default=,
+    =success=, =warning=, =important=, =info= 或 =reverse=. 链接的 URL 部分用作标
+    注文本。
+
+#+begin_o_blog_row 7
+
+#+BEGIN_SRC txt
+   [[ob-label:default][Default]]
+   [[ob-label:success][Success]]
+   [[ob-label:warning][Warning]]
+   [[ob-label:important][Important]]
+   [[ob-label:info][Info]]
+   [[ob-label:inverse][Inverse]]
+#+END_SRC
+
+#+o_blog_row_column 4
+   - [[ob-label:default][Default]]
+   - [[ob-label:success][Success]]
+   - [[ob-label:warning][Warning]]
+   - [[ob-label:important][Important]]
+   - [[ob-label:info][Info]]
+   - [[ob-label:inverse][Inverse]]
+#+end_o_blog_row
+
+*** 使用标记 (badges)
+
+    将提示及未读计数当作标注 (label), 使用链接前缀 =badge:TYPE=.
+
+#+begin_o_blog_row 7
+
+#+BEGIN_SRC  text
+   [[ob-badge:default][Default]]
+   [[ob-badge:success][Success]]
+   [[ob-badge:warning][Warning]]
+   [[ob-badge:important][Important]]
+   [[ob-badge:info][Info]]
+   [[ob-badge:inverse][Inverse]]
+#+END_SRC
+
+#+o_blog_row_column 4
+   - [[ob-badge:default][Default]]
+   - [[ob-badge:success][Success]]
+   - [[ob-badge:warning][Warning]]
+   - [[ob-badge:important][Important]]
+   - [[ob-badge:info][Info]]
+   - [[ob-badge:inverse][Inverse]]
+#+end_o_blog_row
+
+*** 使用进度条
+
+    用于载入、重定向或动作状态。使用链接前缀 =progress:TYPE=, 此处的 =TYPE= 可取
+    值 =info=, =success=, =warning= 或 =danger=. 额外的类 (=striped= 或
+    =active=) 可用逗号添加。 URL 为进度百分比。
+
+#+begin_o_blog_row 7
+
+#+BEGIN_SRC  text
+    [[ob-progress:info][25]]
+    [[ob-progress:success,striped][50]]
+    [[ob-progress:warning,striped,active][75]]
+    [[ob-progress:danger][100]]
+#+END_SRC
+
+#+o_blog_row_column 4
+    [[ob-progress:info][25]]
+    [[ob-progress:success,striped][50]]
+    [[ob-progress:warning,striped,active][75]]
+    [[ob-progress:danger][100]]
+#+end_o_blog_row
+
+
+*** Well
+
+Use the well as a simple effect on an element to give it an inset effect.
+
+#+begin_o_blog_row 7
+
+#+BEGIN_SRC  text
+ , #+begin_o_blog_well
+ , Look, I'm in a well!
+ , #+end_o_blog_well
+#+END_SRC
+
+#+o_blog_row_column 4
+
+
+#+begin_o_blog_well
+Look, I'm in a well!
+#+end_o_blog_well
+
+#+end_o_blog_row
+
+** DONE 添加自定义字体					:用例:Bootstrap:o@blog:
+   CLOSED: [2012-05-07 Mon 16:38]
+   :PROPERTIES:
+   :CUSTOM_ID: custom-fonts
+   :END:
+
+可在 o-blog 中用两种方式使用 [[http://www.google.com/webfonts][Google webfonts]]:使用 google API 或者在
+=templates/style= 目录中提供资源。
+
+#+begin_o_blog_alert warning Caution
+使用许多字体样式会让你的页面变得很慢，因此仅选择那些你页面中实际需要的字体样式。
+#+end_o_blog_alert
+
+Both example are given using the [[http://www.yanone.de/typedesign/kaffeesatz/][Yanone Kaffeesatz]] font.
+
+*** Using Google API
+
+The [[http://www.google.com/webfonts#QuickUsePlace:quickUse/Family:][quick use]] provides an import snippet such as:
+
+#+BEGIN_SRC css
+@import url("http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700&subset=latin,latin-ext");
+#+END_SRC
+
+That line should be included into the
+=templates/style/less/o-blog-default.less= file in which you should also add
+something like:
+
+#+BEGIN_SRC css
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+}
+#+END_SRC
+
+And that's it.
+
+*** Providing resources
+
+That is less efficient in terms of network resources but provide a good
+alternative for offline publications.
+
+
+The script =get-font= does all needed jobs.
+
+#+O_BLOG_SOURCE: ../get-font sh
+
+You can run:
+
+#+BEGIN_SRC sh
+./get-font 'http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700&subset=latin,latin-ext'
+#+END_SRC
+
+And add the font declaration in =templates/style/less/o-blog-default.less=:
+
+#+BEGIN_SRC css
+@import "font-Yanone-Kaffeesatz.less";
+#+END_SRC
+
+Add declare its use like in the Google API version:
+
+#+BEGIN_SRC css
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+}
+#+END_SRC
+** DONE 创建静态页面					:用例:Bootstrap:o@blog:
+   CLOSED: [2012-05-21 Mon 12:48]
+   :PROPERTIES:
+   :CUSTOM_ID: static-pages
+   :END:
+
+#+begin_o_blog_row 7
+
+
+创建静态页面与创建博文页面一样。你唯一需要做的就是添加属性 =PAGE=. 导出的路径相对
+于 =#+PUBLISH_DIR:=.
+
+你也可以为静态页面指定自定义模版，只需添加属性 =TEMPLATE=. 模版路径相对于
+=#+TEMPLATE_DIR:=.
+
+#+o_blog_row_column 4
+
+#+BEGIN_SRC org
+  ,* Static page
+  ,   :PROPERTIES:
+  ,   :PAGE:     path/to/static/page.html
+  ,   :TEMPLATE: static-page.html
+  ,   :END:
+#+END_SRC
+
+#+end_o_blog_row
