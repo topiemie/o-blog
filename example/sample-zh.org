@@ -31,6 +31,7 @@
 * 快速入门指南
   :PROPERTIES:
   :PAGE:     index.html
+  :TEMPLATE: blog_static_no_title.html
   :END:
 
 #+begin_o_blog_row 8
@@ -156,6 +157,11 @@ Copyright © 2008-2012 [[mailto:seb%2520%E2%9D%A8%C9%91%C6%A6%C9%B5%CF%90%C9%91%
   :PROPERTIES:
   :PAGE:     changelog.html
   :END:
+
+- 2012-06-05
+  - Update to
+    - Font-Awesome 2.0.0-6-g35fca03
+    - bootstrap 2.0.4
 
 - 2012-05-21
   - Use responsive bootstrap features.
