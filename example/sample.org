@@ -20,17 +20,18 @@
 * Quick start Guide
   :PROPERTIES:
   :PAGE:     index.html
+  :TEMPLATE: blog_static_no_title.html
   :END:
 
 #+begin_o_blog_row 8
 
-#+HTML: <div class="hero-unit">
-
+#+begin_o_blog_hero_unit
 #+HTML: <h1>o-blog</h1>
 
 A stand-alone blog and publication tool for [[http://orgmode.org/][org-mode]].
+#+end_o_blog_hero_unit
 
-#+HTML: </div>
+#+HTML: <h1 style="font-size: 500%;">Quick start guide</h1>
 
 #+o_blog_row_column 4
 
@@ -98,7 +99,7 @@ Open the =~/.emacs.d/o-blog/example/sample.org= file and type =M-x
 org-publish-blog=. The result site would be published by default in
 =~/.emacs.d/o-blog/out=.
 
-See the [[file:tips/index.html][tips]] for more details.
+See the [[file:Tips/index.html][tips]] for more details.
 
 
 * Blog details
@@ -150,10 +151,30 @@ This is a sample blog to explain how [[https://github.com/renard/o-blog][o-blog]
 
 - [[file:{lisp}(ob:path-to-root){/lisp}/debug.html][(debug)]]
 
+** Navigation Footer
+  :PROPERTIES:
+  :SNIPPET:  t
+  :END:
+
+  - [[file:{lisp}(ob:path-to-root){/lisp}/index.html][/icon-home icon-white/ {lisp}(ob:gettext :home){/lisp}]]
+
+  - [[file:{lisp}(let ((POSTS ALL-POSTS)) (format "%s/%s" (ob:path-to-root) (ob:post-htmlfile (car (ob:get-posts (lambda (x) (equal "Tips" (ob:post-category x)))))))){/lisp}][/icon-file icon-white/ Tips]]
+
+  - [[file:{lisp}(ob:path-to-root){/lisp}/tags/index.html][/icon-tags icon-white/ Tags]]
+
+  - [[file:{lisp}(ob:path-to-root){/lisp}/archives.html][/icon-list icon-white/ Archives]]
+
+  - [[file:{lisp}(ob:path-to-root){/lisp}/index.xml][RSS]]
+
 * Changelog
   :PROPERTIES:
   :PAGE:     changelog.html
   :END:
+
+- 2012-06-05
+  - Update to
+    - Font-Awesome 2.0.0-6-g35fca03
+    - bootstrap 2.0.4
 
 - 2012-05-21
   - Use responsive bootstrap features.
@@ -348,7 +369,7 @@ Structure used to define a blog:
  - =default-category=: default category for posts  defined by the
    =#DEFAULT_CATEGORY:= header or =Blog=.
  - =disqus=: [[http://docs.disqus.com/developers/universal/][disqus]] account (called a forum on [[http://disqus.com][Disqus]]) this system
-   belongs to. Defined by the \"#DISQUS\" header.
+   belongs to. Defined by the =#+DISQUS:= header.
  - =filename-sanitizer=: 1-argument function to be used to sanitize
    post filenames. Defined by =#+FILENAME_SANITIZER:= or
    =ob-sanitize-string=.
@@ -684,7 +705,7 @@ and browse http://localhost:8080
 An other alternative would be the use of [[http://www.emacswiki.org/emacs/Elnode][elnode]] but it seems to be more
 complex.
 
-* Blog entries
+* Tips
 ** DONE Creating a blog					       :usage:o@blog:
   CLOSED: [2012-01-07 Sat 00:13]
 
