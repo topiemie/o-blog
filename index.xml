@@ -3,7 +3,7 @@
   <title>o-blog</title>
   <link href="http://exaos.github.com/o-blogindex.xml" rel="self" />
   <link href="http://exaos.github.com/o-blog"/>
-  <updated>2012-06-20T15:49:58Z</updated>
+  <updated>2012-06-20T16:22:29Z</updated>
   <id>http://exaos.github.com/o-blogindex.xml</id>
   <entry><title type="html">创建静态页面</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/05/21_static-pages.html"/><updated>2012-05-21T12:48:00Z</updated><published>2012-05-21T12:48:00Z</published><id>Tips/2012/05/21_static-pages.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/bootstrap.html" term="Bootstrap" label="Bootstrap"/><category scheme="/tags/o-blog.html" term="o-blog" label="o-blog"/><content type="html">&lt;div class="row "&gt;&lt;div class="span7 "&gt;
 
