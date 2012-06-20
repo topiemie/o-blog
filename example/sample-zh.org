@@ -153,6 +153,21 @@ Copyright © 2008-2012 [[mailto:seb%2520%E2%9D%A8%C9%91%C6%A6%C9%B5%CF%90%C9%91%
 
 - [[file:{lisp}(ob:path-to-root){/lisp}/debug.html][(调试)]]
 
+** Navigation Footer
+   :PROPERTIES:
+   :SNIPPET:  t
+   :END:   
+
+  - [[file:{lisp}(ob:path-to-root){/lisp}/index.html][/icon-home icon-white/ {lisp}(ob:gettext :home){/lisp}]]
+
+  - [[file:{lisp}(let ((POSTS ALL-POSTS)) (format "%s/%s" (ob:path-to-root) (ob:post-htmlfile (car (ob:get-posts (lambda (x) (equal "Tips" (ob:post-category x)))))))){/lisp}][/icon-file icon-white/ Tips]]
+
+  - [[file:{lisp}(ob:path-to-root){/lisp}/tags/index.html][/icon-tags icon-white/ Tags]]
+
+  - [[file:{lisp}(ob:path-to-root){/lisp}/archives.html][/icon-list icon-white/ Archives]]
+
+  - [[file:{lisp}(ob:path-to-root){/lisp}/index.xml][RSS]]
+
 * 更新记录
   :PROPERTIES:
   :PAGE:     changelog.html
