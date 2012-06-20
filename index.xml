@@ -3,7 +3,7 @@
   <title>o-blog</title>
   <link href="http://exaos.github.com/o-blogindex.xml" rel="self" />
   <link href="http://exaos.github.com/o-blog"/>
-  <updated>2012-05-26T17:13:11Z</updated>
+  <updated>2012-06-20T15:49:58Z</updated>
   <id>http://exaos.github.com/o-blogindex.xml</id>
   <entry><title type="html">创建静态页面</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/05/21_static-pages.html"/><updated>2012-05-21T12:48:00Z</updated><published>2012-05-21T12:48:00Z</published><id>Tips/2012/05/21_static-pages.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/bootstrap.html" term="Bootstrap" label="Bootstrap"/><category scheme="/tags/o-blog.html" term="o-blog" label="o-blog"/><content type="html">&lt;div class="row "&gt;&lt;div class="span7 "&gt;
 
@@ -65,7 +65,7 @@ The &lt;a href="http://www.google.com/webfonts#QuickUsePlace:quickUse/Family:"&g
 
 
 
-&lt;pre class="src src-css"&gt;&lt;span style="color: #b0c4de;"&gt;@import&lt;/span&gt; url(&lt;span style="color: #ffa07a;"&gt;"http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700&amp;amp;subset=latin,latin-ext"&lt;/span&gt;);
+&lt;pre class="src src-css"&gt;&lt;span style="color: #00ffff;"&gt;@import&lt;/span&gt; url(&lt;span style="color: #ffa07a;"&gt;"http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700&amp;amp;subset=latin,latin-ext"&lt;/span&gt;);
 &lt;/pre&gt;
 
 
@@ -77,8 +77,8 @@ something like:
 
 
 
-&lt;pre class="src src-css"&gt;&lt;span style="color: #87cefa;"&gt;h1, h2, h3, h4, h5, h6 &lt;/span&gt;{
-    &lt;span style="color: #eedd82;"&gt;font-family&lt;/span&gt;: &lt;span style="color: #ffa07a;"&gt;"Yanone Kaffeesatz"&lt;/span&gt;, sans-serif;
+&lt;pre class="src src-css"&gt;h1, h2, h3, h4, h5, h6 {
+    &lt;span style="color: #00ffff;"&gt;font-family:&lt;/span&gt; &lt;span style="color: #ffa07a;"&gt;"Yanone Kaffeesatz"&lt;/span&gt;, sans-serif;
 }
 &lt;/pre&gt;
 
@@ -149,7 +149,7 @@ And add the font declaration in &lt;code&gt;templates/style/less/o-blog-default.
 
 
 
-&lt;pre class="src src-css"&gt;&lt;span style="color: #b0c4de;"&gt;@import&lt;/span&gt; &lt;span style="color: #ffa07a;"&gt;"font-Yanone-Kaffeesatz.less"&lt;/span&gt;;
+&lt;pre class="src src-css"&gt;&lt;span style="color: #00ffff;"&gt;@import&lt;/span&gt; &lt;span style="color: #ffa07a;"&gt;"font-Yanone-Kaffeesatz.less"&lt;/span&gt;;
 &lt;/pre&gt;
 
 
@@ -159,8 +159,8 @@ Add declare its use like in the Google API version:
 
 
 
-&lt;pre class="src src-css"&gt;&lt;span style="color: #87cefa;"&gt;h1, h2, h3, h4, h5, h6 &lt;/span&gt;{
-    &lt;span style="color: #eedd82;"&gt;font-family&lt;/span&gt;: &lt;span style="color: #ffa07a;"&gt;"Yanone Kaffeesatz"&lt;/span&gt;, sans-serif;
+&lt;pre class="src src-css"&gt;h1, h2, h3, h4, h5, h6 {
+    &lt;span style="color: #00ffff;"&gt;font-family:&lt;/span&gt; &lt;span style="color: #ffa07a;"&gt;"Yanone Kaffeesatz"&lt;/span&gt;, sans-serif;
 }
 &lt;/pre&gt;
 
@@ -764,7 +764,7 @@ The &lt;i&gt;org template shorcut&lt;/i&gt; is &lt;code&gt;&amp;lt;os&lt;/code&g
 
 &lt;span style="color: #87cefa; font-weight: bold;"&gt;### &amp;#35774;&amp;#32622;&lt;/span&gt;
 
-&lt;span style="color: #87cefa; font-weight: bold;"&gt;#### &amp;#20351;&amp;#29992; `el-get`&lt;/span&gt;
+#### &amp;#20351;&amp;#29992; &lt;span style="color: #7fffd4;"&gt;`el-get`&lt;/span&gt;
 
 &amp;#22914;&amp;#26524;&amp;#20320;&amp;#20351;&amp;#29992; &lt;span style="color: #00ffff;"&gt;[el-get]&lt;/span&gt;&lt;span style="color: #ffa07a;"&gt;(https://github.com/dimitri/el-get)&lt;/span&gt;, &amp;#23433;&amp;#35013;&amp;#24456;&amp;#23481;&amp;#26131;&amp;#12290;&amp;#20320;&amp;#21482;&amp;#38656;&amp;#35201;&amp;#23558;
 &lt;span style="color: #7fffd4;"&gt;`o-blog`&lt;/span&gt; &amp;#28155;&amp;#21152;&amp;#21040; &lt;span style="color: #7fffd4;"&gt;`el-get-sources`&lt;/span&gt; &amp;#20013;&amp;#65292;&amp;#28982;&amp;#21518;&amp;#25191;&amp;#34892; &lt;span style="color: #7fffd4;"&gt;`M-x el-get-install o-blog`&lt;/span&gt;.
@@ -774,17 +774,17 @@ The &lt;i&gt;org template shorcut&lt;/i&gt; is &lt;code&gt;&amp;lt;os&lt;/code&g
 &lt;span style="color: #87cefa; font-weight: bold;"&gt;#### &amp;#25163;&amp;#21160;&amp;#35774;&amp;#32622;&lt;/span&gt;
 &amp;#39318;&amp;#20808;&amp;#20174; &lt;span style="color: #00ffff;"&gt;[Github]&lt;/span&gt;&lt;span style="color: #ffa07a;"&gt;(http://github.com)&lt;/span&gt; &amp;#20811;&amp;#38534;&amp;#36825;&amp;#20010; &lt;span style="color: #eedd82; font-style: italic;"&gt;*git*&lt;/span&gt; &amp;#28304;&amp;#30721;&amp;#20179;&amp;#24211;&amp;#12290;
 
-&lt;span style="color: #7fffd4;"&gt;```
+&lt;span style="color: #7fffd4;"&gt;```&lt;/span&gt;
 cd ~/.emacs.d
-git clone https://github.com/renard/o-blog.git
-``&lt;/span&gt;`
+git clone &lt;span style="color: #00ffff;"&gt;https://github.com/renard/o-blog.git&lt;/span&gt;
+&lt;span style="color: #7fffd4;"&gt;```&lt;/span&gt;
 
 &amp;#23558;&amp;#21518;&amp;#38754;&amp;#30340;&amp;#20195;&amp;#30721;&amp;#28155;&amp;#21152;&amp;#21040;&amp;#20320;&amp;#30340; &lt;span style="color: #7fffd4;"&gt;`~/.emacs.d/init.el`&lt;/span&gt; &amp;#25991;&amp;#20214;&amp;#20013;&amp;#65306;
 
-&lt;span style="color: #7fffd4;"&gt;```
+&lt;span style="color: #7fffd4;"&gt;```&lt;/span&gt;
 (add-to-list 'load-path "~/.emacs.d/o-blog")
 (require 'o-blog)
-``&lt;/span&gt;`
+&lt;span style="color: #7fffd4;"&gt;```&lt;/span&gt;
 
 &lt;span style="color: #87cefa; font-weight: bold;"&gt;### &amp;#21457;&amp;#24067;&lt;/span&gt;
 
@@ -1296,7 +1296,7 @@ Table
 Image
 &lt;/p&gt;
 &lt;p&gt;
-&lt;a href="200px-Org-mode-unicorn.svg.png"&gt;&lt;img src="org-mode-unicorn.png" alt="org-mode-unicorn.png"/&gt;&lt;/a&gt;
+&lt;a href="../../../Tips/2012/01/07_syntax-org-mode/200px-Org-mode-unicorn.svg.png"&gt;&lt;img src="../../../Tips/2012/01/07_syntax-org-mode/org-mode-unicorn.png" alt="org-mode-unicorn.png"/&gt;&lt;/a&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 
