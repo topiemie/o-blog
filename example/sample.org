@@ -1,6 +1,6 @@
 #+TITLE: o-blog
 #-DESCRIPTION: standalone blogging system for org-mode
-#+DATE:
+#+DATE: 2012-07-02 22:29:39
 
 #+STARTUP: logdone
 
@@ -10,6 +10,7 @@
 #+DEFAULT_CATEGORY: Tips
 #+DISQUS: renard-o-blog
 #+FILENAME_SANITIZER: ob-sanitize-string
+#+POST_SORTER: ob-sort-posts-by-title
 
 #+POST_BUILD_SHELL: cmd 1
 #+POST_BUILD_SHELL: cmd 2
@@ -41,6 +42,8 @@ A stand-alone blog and publication tool for [[http://orgmode.org/][org-mode]].
 [[file:{lisp}(ob:path-to-root){/lisp}/features.html][/icon-cog icon-white/ Features]]
 
 [[https://github.com/renard/o-blog][/icon-github-sign icon-white/ Github]]
+
+[[file:{lisp}(ob:path-to-root){/lisp}/testimonials.html][/icon-comments-alt/ Testimonials]]
 
 [[file:{lisp}(ob:path-to-root){/lisp}/changelog.html][/icon-pencil icon-white/ Changelog]]
 
@@ -141,13 +144,17 @@ This is a sample blog to explain how [[https://github.com/renard/o-blog][o-blog]
   - [[file:{lisp}(format "%s/%s" (ob:path-to-root) (ob:post-htmlfile (ob:get-last-post "Tips" 3))){/lisp}][{lisp}(ob:post-title (ob:get-last-post "Tips" 3)){/lisp}]]
   - [[file:{lisp}(format "%s/%s" (ob:path-to-root) (ob:post-htmlfile (ob:get-last-post "Tips" 4))){/lisp}][{lisp}(ob:post-title (ob:get-last-post "Tips" 4)){/lisp}]]
 
-- [[file:{lisp}(ob:path-to-root){/lisp}/tags/index.html][/icon-tags icon-white/ Tags]]
+- [[file:{lisp}(ob:path-to-root){/lisp}/tags.html][/icon-tags icon-white/ Tags]]
 
 - [[file:{lisp}(ob:path-to-root){/lisp}/archives.html][/icon-list icon-white/ Archives]]
 
-- [[file:{lisp}(ob:path-to-root){/lisp}/index.xml][RSS]]
+- [[file:{lisp}(ob:path-to-root){/lisp}/testimonials.html][/icon-comments-alt icon-white/ Testimonials]]
+
+- [[file:{lisp}(ob:path-to-root){/lisp}/index.xml][/icon-rss icon-white/ RSS]]
 
 - [[file:{lisp}(ob:path-to-root){/lisp}/changelog.html][/icon-pencil icon-white/ Changelog]]
+
+- [[file:{lisp}(ob:path-to-root){/lisp}/roadmap.html][/icon-tasks icon-white/ Roadmap]]
 
 - [[file:{lisp}(ob:path-to-root){/lisp}/debug.html][(debug)]]
 
@@ -158,18 +165,31 @@ This is a sample blog to explain how [[https://github.com/renard/o-blog][o-blog]
 
   - [[file:{lisp}(ob:path-to-root){/lisp}/index.html][/icon-home icon-white/ {lisp}(ob:gettext :home){/lisp}]]
 
-  - [[file:{lisp}(let ((POSTS ALL-POSTS)) (format "%s/%s" (ob:path-to-root) (ob:post-htmlfile (car (ob:get-posts (lambda (x) (equal "Tips" (ob:post-category x)))))))){/lisp}][/icon-file icon-white/ Tips]]
+  - [[file:{lisp}(let ((POSTS ALL-POSTS)) (format "%s/%s" (ob:path-to-root) (ob:post-htmlfile (ob:get-last-post "Tips")))){/lisp}][/icon-file icon-white/ Tips]]
 
-  - [[file:{lisp}(ob:path-to-root){/lisp}/tags/index.html][/icon-tags icon-white/ Tags]]
+  - [[file:{lisp}(ob:path-to-root){/lisp}/tags.html][/icon-tags icon-white/ Tags]]
 
   - [[file:{lisp}(ob:path-to-root){/lisp}/archives.html][/icon-list icon-white/ Archives]]
 
-  - [[file:{lisp}(ob:path-to-root){/lisp}/index.xml][RSS]]
+  - [[file:{lisp}(ob:path-to-root){/lisp}/testimonials.html][/icon-comments-alt/ Testimonials]]
+
+  - [[file:{lisp}(ob:path-to-root){/lisp}/roadmap.html][/icon-tasks icon-white/ Roadmap]]
+
+  - [[file:{lisp}(ob:path-to-root){/lisp}/index.xml][/icon-rss icon-white/ RSS]]
+
+** Articles by tags
+  :PROPERTIES:
+  :PAGE:     tags.html
+  :TEMPLATE: blog_post-by-tags.html
+  :END:
 
 * Changelog
   :PROPERTIES:
   :PAGE:     changelog.html
   :END:
+
+- 2012-06-21
+  - Add a post-sorter option.
 
 - 2012-06-05
   - Update to
@@ -229,6 +249,7 @@ This is a sample blog to explain how [[https://github.com/renard/o-blog][o-blog]
    :PROPERTIES:
    :PAGE:     debug.html
    :TEMPLATE: debug.html
+   :SITEMAP:  f
    :END:
 
 
@@ -373,6 +394,8 @@ Structure used to define a blog:
  - =filename-sanitizer=: 1-argument function to be used to sanitize
    post filenames. Defined by =#+FILENAME_SANITIZER:= or
    =ob-sanitize-string=.
+ - =post-sorter=: a 2-argument function to be used to sort the
+   posts. Defined by =#+POST_SORTER:= or =ob-sort-posts-by-date=.
 
 Example:
 
@@ -654,6 +677,112 @@ selection (middle click).
 Please describe as much as possible your issue (in English). do no hesitate
 to paste your blog file to https://gist.github.com/ this might be useful to
 debug.
+
+
+
+** Testimonials
+  :PROPERTIES:
+  :PAGE:     testimonials.html
+  :TEMPLATE: blog_static_no_title.html
+  :END:
+
+#+begin_o_blog_row 6
+
+
+#+HTML: <h1>Testimonials</h1>
+
+#+begin_quote
+/“o-blog, great static site generator from emacs org-mode.”/
+
+-- Pierre-Yves Ritschard [[https://twitter.com/pyr/status/160466727195521024][@pyr]] ([[http://openbds.org][OpenBSD]] relayd original author)
+
+-- Sergey Konoplev [[http://twitter.com/gray_hemp][@gray\_hemp]] ([[http://PostgreSQL-Consulting.com][PostgreSQL Consultant]])
+
+-- Olivier Berger [[http://twitter.com/olberger][@olberger]] ([[http://www.april.org][APRIL administrator]])
+
+-- Dimitri Fontaine [[http://twitter.com/tapoueh][@tapoueh]] ([[http://tapoueh.org/projects.html][el-get and other]] author)
+
+-- Julien Danjou [[http://twitter.com/juldanjou][@juldanjou]] ([[http://awesome.naquadah.org/][Awesome window manager]] and [[http://julien.danjou.info/software/][other]] author)
+
+-- Daniel Farina [[http://twitter.com/danfarina][@danfarina]] (member of the [[http://www.heroku.com/][Heroku]] Department of Data)
+#+end_quote
+
+#+begin_quote
+/“o-blog, a cool static blog generator from org-mode markup with some nice
+Bootstrap integration.”/
+
+-- [[http://from-the-cloud.com/en/Random/2012/06/17_sites-back.html][Fabián Ezequiel Gallina]]
+#+end_quote
+
+#+begin_quote
+/“Thank you so much for the truly excellent elisp app. I am learning many
+things from it.”/
+
+-- [[https://github.com/priyadarshan][priyadarshan]]
+#+end_quote
+
+#+begin_quote
+/“o-blog looks awesome!”/
+
+-- [[https://github.com/djcb][Dirk-Jan C. Binnema]] (Author of [[http://www.djcbsoftware.nl/code/mu4e][mu4e]] and [[http://emacs-fu.blogspot.com][emacs-fu]])
+#+end_quote
+
+#+begin_quote
+/“o-blog is amazing. After using Wordpress seemingly since the dawn of time, then Jekyll for a couple of years, this is like a spring breeze after a long, cold winter.”/
+
+-- [[https://github.com/fravashi][Farasha Euker]]
+#+end_quote
+
+
+
+#+o_blog_row_column 6
+
+#+begin_o_blog_hero_unit
+
+#+HTML: <h1>They use it</h1>
+
+- [[http://renard.github.com/o-blog][O-blog Project]]
+- [[http://docs.chezwam.org][Mes doc à moi]]
+- [[http://from-the-cloud.com/][From the cloud]]
+- [[http://exaos.github.com/o-blog/][exaos]]
+- [[http://mikio.github.com/index.html][Mikio Kun]]
+- [[http://mimes.is/][Journal of the creative imagination]]
+- [[http://www.djcbsoftware.nl][DJCB Software]]
+
+#+end_o_blog_hero_unit
+
+
+#+begin_o_blog_hero_unit
+If you do use o-blog, please [[https://github.com/renard/o-blog/issues/new][drop me a line]].
+#+end_o_blog_hero_unit
+
+
+#+end_o_blog_row
+
+
+** Roadmap
+  :PROPERTIES:
+  :PAGE:     roadmap.html
+  :END:
+
+Here are some ideas for future versions
+
+- Use other source engines such as
+  - [[http://www.methods.co.nz/asciidoc/][AsciiDoc]]
+  - [[http://mwolson.org/projects/EmacsMuse.html][Emacs Muse]]
+  - etc...
+
+- Find a other name for the project such as
+  - Web Hypertext Otimized Rendering Easy System
+  - Building the Interweb from Texts Classic Hypermedia
+  - Build All Internet Standard E-documents
+  - Publication Unifiée de Tous E-documents
+  - el-site
+  - el-sitemanage
+  - el-sitepublish
+  - el-sitepress
+
+If you have any ideas please [[https://github.com/renard/o-blog/issues/new][drop me a line]].
 
 
 

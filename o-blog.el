@@ -5,7 +5,7 @@
 ;; Author: Sébastien Gross <seb•ɑƬ•chezwam•ɖɵʈ•org>
 ;; Keywords: emacs,
 ;; Created: 2012-01-04
-;; Last changed: Tue Jun  5 17:55:57 2012 (cest)
+;; Last changed: 2012-07-03 22:45:15
 ;; Licence: WTFPL, grab your copy here: http://sam.zoy.org/wtfpl/
 
 ;; This file is NOT part of GNU Emacs.
@@ -20,6 +20,9 @@
 (eval-when-compile
   (require 'cl nil t)
   (require 'browse-url nil t))
+(require 'htmlize nil t)
+(require 'sgml-mode nil t)
+(require 'html2text nil t)
 (require 'time-stamp nil t)
 (require 'org-xhtml nil t)
 (require 'dired-sync nil t)
@@ -116,6 +119,18 @@ This is a good place for o-blog parser plugins."
  - filename-sanitizer: 1-argument function to be used to sanitize
    post filenames. Defined by \#+FILENAME_SANITIZER:\" or
    \"ob-sanitize-string\".
+
+ - post-sorter: a 2-argument function to be used to sort the
+   posts. Defined by \"#+POSTS_SORTER:\"
+   or \"ob-sort-posts-by-date\".
+
+ - post-filepath: a 3-argument function to be used to generate
+   the post path in output directory. Defined by
+   \"#+POSTS_FILEPATH:\" or \"ob-set-default-filepath\".
+
+ - post-htmlfile: a 3-argument function to be used to generate
+   the post html filename in output directory. Defined by
+   \"#+POSTS_HTMLFILE:\" or \"ob-set-default-htmlfile\".
 "
   (file nil :read-only)
   (buffer nil :read-only)
@@ -132,7 +147,10 @@ This is a good place for o-blog parser plugins."
   post-build-shell
   default-category
   disqus
-  filename-sanitizer)
+  filename-sanitizer
+  posts-sorter
+  posts-filepath
+  posts-htmlfile)
 
 
 (defstruct (ob:post :named)
@@ -173,7 +191,10 @@ This is a good place for o-blog parser plugins."
 
  - content: raw content of the post (org-mode format).
 
- - content-html: HTML export of the post."
+ - content-html: HTML export of the post.
+
+ - sitemap: Whether to publish in sitemap."
+  
   id
   title
   timestamp
@@ -188,7 +209,8 @@ This is a good place for o-blog parser plugins."
   htmlfile
   path-to-root
   content
-  content-html)
+  content-html
+  sitemap)
 
 
 (defstruct (ob:tags :named)
@@ -199,6 +221,13 @@ This is a good place for o-blog parser plugins."
  - count: how many time the tag is used.
  - size: the font size in percent."
   name safe count size)
+
+(defstruct (ob:category :named)
+  "Category structure with following slots:
+
+ - name: string defying the category name.
+ - safe: web safe category name for URL."
+  name safe)
 
 
 ;;;###autoload
@@ -299,7 +328,10 @@ defined, or interactivelly called with `prefix-arg'.
 			(get-file-buffer file)
 			(find-file file))
     (run-hooks 'o-blog-before-publish-hook)
-    (let* ((start-time (current-time)) ;; for statistic purposes only
+    (let* (;; Make sure `org-todo-keyword' is not set to a particular value
+	   ;; by user.
+	   (org-todo-keywords (default-value 'org-todo-keywords))
+	   (start-time (current-time)) ;; for statistic purposes only
 	   ;; make sure we are on the correct directory.
 	   (default-directory (file-name-directory file))
 	   STATIC
@@ -466,6 +498,24 @@ A copy function COPYF and its arguments ARGS could be specified."
 	    (if (and ofs (functionp (intern ofs)))
 		(intern ofs)
 	      'ob-sanitize-string)))
+    (setf (ob:blog-posts-sorter blog)
+	  (let ((ops (ob:get-header "POSTS_SORTER")))
+	    (if (and ops (functionp (intern ops)))
+		(intern ops)
+	      'ob-sort-posts-by-date)))
+
+    (setf (ob:blog-posts-filepath blog)
+	  (let ((ops (ob:get-header "POSTS_FILEPATH")))
+	    (if (and ops (functionp (intern ops)))
+		(intern ops)
+	      'ob-set-default-filepath)))
+    (setf (ob:blog-posts-htmlfile blog)
+	  (let ((ops (ob:get-header "POSTS_HTMLFILE")))
+	    (if (and ops (functionp (intern ops)))
+		(intern ops)
+	      'ob-set-default-htmlfile)))
+
+
     blog))
 
 
@@ -482,7 +532,7 @@ MARKERS is a list of entries given by `org-map-entries'."
 		    (ob-parse-entry))
 	  into posts
 	  ;; Then wee need to set the post id in all all sorted posts.
-	  finally return (loop for post in (sort posts 'ob-sort-posts-by-date)
+	  finally return (loop for post in (sort posts (ob:blog-posts-sorter BLOG))
 			       with id = 0
 			       do (setf (ob:post-id post) id)
 			       and do (incf id 1)
@@ -492,6 +542,29 @@ MARKERS is a list of entries given by `org-map-entries'."
   "Sort both A and B posts by date (newer posts first)."
   (> (float-time (ob:post-timestamp a))
      (float-time (ob:post-timestamp b))))
+
+(defun ob-sort-posts-by-title (a b)
+  "Sort alphabetically both A and B posts by title."
+  (string> (ob:post-title a)
+	   (ob:post-title b)))
+
+(defun ob-set-default-filepath (category year month)
+  "Create a default filepath using CATEGEORY YEAR and MONTH which
+  looks like:
+
+  CATEGORY/YYYY/MM
+
+See also `ob-set-default-htmlfile', `ob-parse-entry'."
+  (format "%s/%.4d/%.2d" category year month))
+
+(defun ob-set-default-htmlfile (filepath day filename)
+  "Create a default htmlfile using FILEPATH DAY and FILENAME which
+  looks like:
+
+  FILEPATH/DD_FILENAME.html
+
+See also `ob-set-default-filepath', `ob-parse-entry'."
+  (format "%s/%.2d_%s.html" filepath day filename))
 
 
 (defun ob-parse-entry()
@@ -528,13 +601,13 @@ MARKERS is a list of entries given by `org-map-entries'."
 			 (car (last (org-get-outline-path)))
 			 (org-entry-get (point) "ARCHIVE_OLPATH")
 			 (ob:blog-default-category BLOG)))
-
+	   (category-safe (ob:sanitize-string category))
 	   (page (org-entry-get (point) "PAGE"))
 
 	   (filename (or (org-entry-get (point) "CUSTOM_ID")
 			 (ob:sanitize-string title)))
-	   (filepath (format "%s/%.4d/%.2d" category year month))
-	   (htmlfile (format "%s/%.2d_%s.html" filepath day filename))
+	   (filepath (funcall (ob:blog-posts-filepath BLOG) category-safe year month))
+	   (htmlfile (funcall (ob:blog-posts-htmlfile BLOG) filepath day filename))
 
 	   (content (ob-get-entry-text)))
 
@@ -557,7 +630,10 @@ MARKERS is a list of entries given by `org-map-entries'."
 				  (if page "blog_static.html" "blog_post.html"))
 		    :content content
 		    :content-html (ob-export-string-to-html content)
-		    :category category
+		    :category (make-ob:category
+			       :name category
+			       :safe category-safe)
+                    :sitemap (or (org-entry-get (point) "SITEMAP"))
 		    ))))
 
 
@@ -708,6 +784,10 @@ when publishing a page."
   			  (format "%s/index.xml"
   				  (ob:blog-publish-dir BLOG)))
 
+  (ob-write-index-to-file "blog_sitemap.html"
+  			  (format "%s/sitemap.xml"
+  				  (ob:blog-publish-dir BLOG)))
+
 
   (loop for CATEGORY in (ob:get-posts nil nil nil 'category)
 	with PATH-TO-ROOT = ".."
@@ -737,13 +817,19 @@ If provided CATEGORY YEAR and MONTH are used to select articles."
   (let* ((fp (format "%s/%s/index.html"
 		     (ob:blog-publish-dir BLOG)
 		     (cond
-		      ((and category year month) (format "%s/%.4d/%.2d" category year month))
-		      ((and category year) (format "%s/%.4d" category year))
-		      (t category))))
+		      ((and category year month) (format "%s/%.4d/%.2d"
+							 (ob:category-safe category)
+							 year month))
+		      ((and category year) (format "%s/%.4d"
+						   (ob:category-safe category) year))
+		      (t (ob:category-safe category)))))
 
 	 (POSTS (ob:get-posts
 		 (lambda (x) (and
-			      (if category (equal category (ob:post-category x)) t)
+			      (if category (equal
+					    (ob:category-name category)
+					    (ob:category-name (ob:post-category x)))
+				t)
 			      (if year (= year (ob:post-year x)) t)
 			      (if month (= month (ob:post-month x)) t))))))
 	 (ob-write-index-to-file template fp)))
@@ -906,7 +992,7 @@ Returns only fist match except if ALL is defined."
 	  (widen)
 	  (goto-char (point-min))
 	  (let (values)
-	    (while (re-search-forward (format "^#\\+%s:?[ \t]+\\(.*\\)" header) nil t)
+	    (while (re-search-forward (format "^#\\+%s:?[ \t]*\\(.*\\)" header) nil t)
 	      (add-to-list 'values (substring-no-properties (match-string 1))))
 	    (if all
 		values
@@ -946,7 +1032,7 @@ set ISO8601 \"%Y-%m-%dT%TZ\" format would be used."
 	(nth (or nth 0)))
     (nth nth (ob:get-posts (lambda (x)
 			     (equal (or category "blog")
-				    (ob:post-category x)))))))
+				    (ob:category-name (ob:post-category x))))))))
 
 (defun ob:path-to-root ()
   "Return path to site root from `PATH-TO-ROOT' or `POST'
@@ -968,5 +1054,40 @@ used. If not found, English (en) is used as a fall-back."
 		     default-text-list)))
     (or (plist-get text-list text)
 	(plist-get text-list default-text-list))))
+
+(defun ob:lesser (a b)
+  "Emulate `<' in templates."
+  (< a b))
+
+(defun ob:lesser-or-equal (a b)
+  "Emulate `<=' in templates."
+  (<= a b))
+
+(defun ob:greater (a b)
+  "Emulate `>' in templates."
+  (> a b))
+
+(defun ob:greater-or-equal (a b)
+  "Emulate `>=' in templates."
+  (>= a b))
+
+(defun ob:get-post-excerpt (post &optional words ellipsis)
+  "Return the first WORDS from POST html content.
+
+The return string would be unformatted plain text postfixed by
+ELLIPSIS if defined.."
+  (with-temp-buffer
+    (insert (ob:post-content-html post))
+    (let ((words (or words 100))
+	  (ellipsis (or ellipsis ""))
+	  (html2text-remove-tag-list
+	   (loop for tag in html-tag-alist
+		 collect (car tag))))
+      (html2text)
+      (goto-char (point-min))
+      (loop for x from 0 below words do (forward-word))
+      (concat
+       (buffer-substring-no-properties (point-min) (point))
+       ellipsis))))
 
 (provide 'o-blog)
