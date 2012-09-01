@@ -1,3 +1,11 @@
+@media (min-width: 768px) {
+    @import "font-Yanone-Kaffeesatz.less";
+    @import "font-Ubuntu-Mono.less";
+    @import "font-Andika.less";
+    @monoFontFamily: "Ubuntu Mono", Menlo, Monaco, Consolas, "Courier New";
+    @sansFontFamily: "Andika", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
 @import "../bootstrap/less/bootstrap.less";
 @import "../bootstrap/less/responsive.less";
 @import "o-blog-default.less";
@@ -250,7 +258,7 @@ html {
 }
 
 #footer {
-    #gradient > .vertical(@navbarBackgroundHighlight, @black);
+    #gradient > .vertical(lighten(@black, 15%), @black);
     color: darken(@gray, 2%);
 
     .footer-font-size();
@@ -303,4 +311,11 @@ html {
 
 .multicolumn3  {
     .multicolumn(3, 20px)
+}
+
+#toc {
+    a {
+	font-size: 75%;
+	line-height: 15px;
+    }
 }

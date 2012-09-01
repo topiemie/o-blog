@@ -5,7 +5,7 @@
 ;; Author: Sébastien Gross <seb•ɑƬ•chezwam•ɖɵʈ•org>
 ;; Keywords: emacs,
 ;; Created: 2012-01-04
-;; Last changed: 2012-07-03 22:45:15
+;; Last changed: 2012-08-21 11:44:41
 ;; Licence: WTFPL, grab your copy here: http://sam.zoy.org/wtfpl/
 
 ;; This file is NOT part of GNU Emacs.
@@ -20,6 +20,7 @@
 (eval-when-compile
   (require 'cl nil t)
   (require 'browse-url nil t))
+(require 'ob-ditaa nil t)
 (require 'htmlize nil t)
 (require 'sgml-mode nil t)
 (require 'html2text nil t)
@@ -436,37 +437,49 @@ A copy function COPYF and its arguments ARGS could be specified."
 
 	    (when (file-exists-p file)
 	      (replace-match
-	       (format "%s%s/%s/%s%s"
-		       prefix
-		       (file-relative-name "." filepath)
-		       (file-name-sans-extension htmlfile)
-		       (file-name-nondirectory file) suffix ))
+	       (if page
+		   (format "%s%s/%s%s"
+			   prefix
+			   (or (file-name-directory htmlfile) ".")
+			   (file-name-nondirectory file) suffix)
 
-	      (add-to-list 'ret file))))
+		 (format "%s%s/%s/%s%s"
+			 prefix
+			 (file-relative-name "." filepath)
+			 (file-name-sans-extension htmlfile)
+			 (file-name-nondirectory file) suffix ))
+
+	       (add-to-list 'ret file)))))
 
 	(when ret
-	  ;; create a redirection page as index.html into files' directory
-	  (with-temp-buffer
-	    (insert
-	     (mapconcat 'identity
-			`(,(format "* Redirect from (%s)" title)
-			  ":PROPERTIES:"
-			  ,(format ":PAGE: %s/index.html" (file-name-sans-extension htmlfile))
-			  ":TEMPLATE: page_redirect.html"
-			  ":END:")
-			"\n"))
-	    (org-mode)
-	    (goto-char (point-min))
-	    (setf STATIC (append STATIC (list (ob-parse-entry)))))
+	  (unless page
+	    ;; create a redirection page as index.html into files' directory
+	    (with-temp-buffer
+	      (insert
+	       (mapconcat 'identity
+			  `(,(format "* Redirect from (%s)" title)
+			    ":PROPERTIES:"
+			    ,(format ":PAGE: %s/index.html" (file-name-sans-extension htmlfile))
+			    ":TEMPLATE: page_redirect.html"
+			    ":END:")
+			  "\n"))
+	      (org-mode)
+	      (goto-char (point-min))
+	      (setf STATIC (append STATIC (list (ob-parse-entry))))))
 
 	  ;; copy all files into their target directory.
 	  (loop for f in ret
-		do (let ((target (format "%s/%s/%s"
-					 (ob:blog-publish-dir BLOG)
-					 ;; file path is nil when exporting static page?
-					 ;;(or filepath ".")
-					 (file-name-sans-extension htmlfile)
-					 (file-name-nondirectory f))))
+		do (let ((target
+			  (if page
+			      (format "%s/%s"
+ 				      (ob:blog-publish-dir BLOG)
+				      (file-name-nondirectory f))
+			    (format "%s/%s/%s"
+				    (ob:blog-publish-dir BLOG)
+				    ;; file path is nil when exporting static page?
+				    ;;(or filepath ".")
+				    (file-name-sans-extension htmlfile)
+				    (file-name-nondirectory f)))))
 		     (mkdir (file-name-directory target) t)
 		     (ob-do-copy f target))))))))
 (add-hook 'o-blog-html-plugins-hook 'o-blog-publish-linked-files)
@@ -607,34 +620,33 @@ See also `ob-set-default-filepath', `ob-parse-entry'."
 	   (filename (or (org-entry-get (point) "CUSTOM_ID")
 			 (ob:sanitize-string title)))
 	   (filepath (funcall (ob:blog-posts-filepath BLOG) category-safe year month))
-	   (htmlfile (funcall (ob:blog-posts-htmlfile BLOG) filepath day filename))
-
-	   (content (ob-get-entry-text)))
+	   (htmlfile (funcall (ob:blog-posts-htmlfile BLOG) filepath day filename)))
 
       (when page
 	(setq htmlfile page
 	      filename (file-name-sans-extension (file-name-nondirectory htmlfile))
 	      filepath (file-name-directory htmlfile)))
 
-      (make-ob:post :title title
-		    :tags tags
-		    :timestamp timestamp
-		    :year year
-		    :month month
-		    :day day
-		    :filename filename
-		    :filepath filepath
-		    :path-to-root (file-relative-name "." filepath)
-		    :htmlfile htmlfile
-		    :template (or (org-entry-get (point) "TEMPLATE")
-				  (if page "blog_static.html" "blog_post.html"))
-		    :content content
-		    :content-html (ob-export-string-to-html content)
-		    :category (make-ob:category
-			       :name category
-			       :safe category-safe)
-                    :sitemap (or (org-entry-get (point) "SITEMAP"))
-		    ))))
+      (let ((content (ob-get-entry-text)))
+	(make-ob:post :title title
+		      :tags tags
+		      :timestamp timestamp
+		      :year year
+		      :month month
+		      :day day
+		      :filename filename
+		      :filepath filepath
+		      :path-to-root (file-relative-name "." filepath)
+		      :htmlfile htmlfile
+		      :template (or (org-entry-get (point) "TEMPLATE")
+				    (if page "blog_static.html" "blog_post.html"))
+		      :content content
+		      :content-html (ob-export-string-to-html content)
+		      :category (make-ob:category
+				 :name category
+				 :safe category-safe)
+		      :sitemap (or (org-entry-get (point) "SITEMAP"))
+		      )))))
 
 
 
@@ -668,7 +680,26 @@ headers and body."
   (with-temp-buffer
     (insert string)
     (org-mode)
-    (substring-no-properties (org-export-as-html nil nil nil 'string t))))
+    (goto-char (point-min))
+    ;; exporting block with ditaa is kinda messy since it requires a real
+    ;; file (does not work with a temp-buffer which is not associated to any
+    ;; file).
+    (let ((saved-file
+	   (when
+	       (re-search-forward "^#\\+BEGIN_SRC:?[ \t]+\\(ditaa\\)" nil t)
+	     (format "/%s/%s/%s.src.org"
+		     default-directory
+		     (ob:blog-publish-dir BLOG)
+		     ;; variable inherited from `ob-parse-entry'
+		     htmlfile)))
+	  (org-confirm-babel-evaluate nil)
+	  ret)
+      (when saved-file
+	(ob-write-file saved-file))
+      (setq ret (substring-no-properties (org-export-as-html nil nil nil 'string t)))
+      (when saved-file
+	(delete-file saved-file))
+      ret)))
 
 
 (defun ob-compute-tags (posts &optional min_r max_r)
@@ -771,7 +802,11 @@ when publishing a page."
 (defun ob-write-file (file)
   "Write current buffer to FILE and create full path if necessary."
   (mkdir (file-name-directory file) t)
-  (write-file file))
+  (let ((coding-system-for-write
+	 (with-current-buffer
+	     (ob:blog-buffer BLOG)
+	   buffer-file-coding-system)))
+    (write-file file)))
 
 (defun ob-write-index()
   "Publish all indexes (default, categories, year, month)"
