@@ -3,9 +3,82 @@
   <title>o-blog</title>
   <link href="http://exaos.github.com/o-blogindex.xml" rel="self" />
   <link href="http://exaos.github.com/o-blog"/>
-  <updated>2012-06-20T16:22:29Z</updated>
+  <updated>Lisp error in nil: (wrong-type-argument integerp nil)</updated>
   <id>http://exaos.github.com/o-blogindex.xml</id>
-  <entry><title type="html">创建静态页面</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/05/21_static-pages.html"/><updated>2012-05-21T12:48:00Z</updated><published>2012-05-21T12:48:00Z</published><id>Tips/2012/05/21_static-pages.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/bootstrap.html" term="Bootstrap" label="Bootstrap"/><category scheme="/tags/o-blog.html" term="o-blog" label="o-blog"/><content type="html">&lt;div class="row "&gt;&lt;div class="span7 "&gt;
+  <entry><title type="html">在博文中添加图片</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/tips/2012/08/21_00733d4efa6667a085bebed8a14b1026.html"/><updated>2012-08-21T10:43:00Z</updated><published>2012-08-21T10:43:00Z</published><id>tips/2012/08/21_00733d4efa6667a085bebed8a14b1026.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/o-blog.html" term="o-blog" label="o-blog"/><content type="html">&lt;div class="row "&gt;&lt;div class="span8 "&gt;
+
+
+&lt;p&gt;
+&#21521;&#21338;&#25991;&#20013;&#28155;&#21152;&#22270;&#29255;&#38750;&#24120;&#31616;&#21333;&#65292;&#22240;&#20026; &lt;a href="http://org-mode.org"&gt;Org-mode&lt;/a&gt; &#25552;&#20379;&#20102;&#19968;&#20010;&#29305;&#21035;&#30340;&#38142;&#25509;&#26426;&#21046;&#12290;&#21482;&#35201;&#23427;&#30340;&#36335;&#24452;&#26159;
+&#21512;&#27861;&#30340;&#65292;&#22270;&#29255;&#28304;&#25991;&#20214;&#21487;&#20197;&#23384;&#20648;&#22312;&#20219;&#24847;&#20301;&#32622;&#12290;&#22312;&#23548;&#20986;&#39029;&#38754;&#26102;&#65292;&#22270;&#29255;&#25991;&#20214;&#20250;&#34987;&#25335;&#36125;&#21040;&#19982;&#21338;&#25991;&#30456;&#23545;
+&#30340;&#25991;&#20214;&#22841;&#19979;&#65292;&#25152;&#26377;&#30340;&#38142;&#25509;&#37117;&#20250;&#20462;&#35746;&#21040;&#26032;&#30340;&#20301;&#32622;&#19978;&#12290;
+&lt;/p&gt;
+
+
+
+&lt;div class="row "&gt;&lt;div class="span5 "&gt;
+
+
+&lt;p&gt;
+&#27604;&#22914;&#65292;&#19979;&#38754;&#36825;&#27573;&#20195;&#30721;&#20250;&#23558;&#25991;&#20214; &lt;code&gt;emacs-logo.png&lt;/code&gt; &#20174;&#24403;&#21069;&#36335;&#24452;&#25335;&#36125;&#21040;
+&lt;code&gt;tips/2012/08/21_adding-an-image-into-a-post/emacs-logo.png&lt;/code&gt;.
+&lt;/p&gt;
+
+
+&lt;/div&gt;&lt;div class="span3 "&gt;
+
+
+
+
+&lt;pre class="src src-org"&gt;&lt;span style="color: #0000ff;"&gt;file:emacs-logo.png&lt;/span&gt;
+&lt;/pre&gt;
+
+
+
+&lt;/div&gt;&lt;/div&gt;
+
+
+
+
+&lt;/div&gt;&lt;div class="span4 "&gt;
+
+&lt;p&gt;
+&lt;img src="../../../tips/2012/08/21_00733d4efa6667a085bebed8a14b1026/emacs-logo.png"  alt="../../../tips/2012/08/21_00733d4efa6667a085bebed8a14b1026/emacs-logo.png" /&gt;
+&lt;/p&gt;
+
+
+
+&lt;/div&gt;&lt;/div&gt;
+
+
+
+
+&lt;p&gt;
+HTML &#36755;&#20986;&#32467;&#26524;&#19982;&#19979;&#38754;&#31867;&#20284;&#65306;
+&lt;/p&gt;
+
+
+
+&lt;pre class="src src-html"&gt;&amp;lt;&lt;span style="color: #87cefa;"&gt;img&lt;/span&gt; &lt;span style="color: #eedd82;"&gt;src&lt;/span&gt;=&lt;span style="color: #ffa07a;"&gt;"21_adding-an-image-into-a-post/emacs-logo.png"&lt;/span&gt;  &lt;span style="color: #eedd82;"&gt;alt&lt;/span&gt;=&lt;span style="color: #ffa07a;"&gt;"21_adding-an-image-into-a-post/emacs-logo.png"&lt;/span&gt; /&amp;gt;
+&lt;/pre&gt;
+
+
+
+&lt;p&gt;
+&#26368;&#26041;&#20415;&#30340;&#21150;&#27861;&#26159;&#23558;&#25152;&#26377;&#25991;&#20214;&#37117;&#25918;&#22312;&#19968;&#20010; &lt;code&gt;/files/&lt;/code&gt; &#25991;&#20214;&#22841;&#19979;&#12290;&#28982;&#21518;&#20320;&#21487;&#20197;&#22312;&#20854;&#20013;&#20026;&#27599;&#31687;&#21338;&#25991;
+&#21019;&#24314;&#19968;&#20010;&#23376;&#30446;&#24405;&#65306;
+&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/files/post1/file1&lt;/code&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/files/post1/file2&lt;/code&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/files/post2/file&lt;/code&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;hellip;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+</content></entry><entry><title type="html">创建静态页面</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/tips/2012/05/21_static-pages.html"/><updated>2012-05-21T12:48:00Z</updated><published>2012-05-21T12:48:00Z</published><id>tips/2012/05/21_static-pages.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/bootstrap.html" term="Bootstrap" label="Bootstrap"/><category scheme="/tags/o-blog.html" term="o-blog" label="o-blog"/><content type="html">&lt;div class="row "&gt;&lt;div class="span7 "&gt;
 
 
 
@@ -33,8 +106,7 @@
 
 
 &lt;/div&gt;&lt;/div&gt;
-
-</content></entry><entry><title type="html">添加自定义字体</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/05/07_custom-fonts.html"/><updated>2012-05-07T16:38:00Z</updated><published>2012-05-07T16:38:00Z</published><id>Tips/2012/05/07_custom-fonts.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/bootstrap.html" term="Bootstrap" label="Bootstrap"/><category scheme="/tags/o-blog.html" term="o-blog" label="o-blog"/><content type="html">&lt;p&gt;
+</content></entry><entry><title type="html">添加自定义字体</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/tips/2012/05/07_custom-fonts.html"/><updated>2012-05-07T16:38:00Z</updated><published>2012-05-07T16:38:00Z</published><id>tips/2012/05/07_custom-fonts.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/bootstrap.html" term="Bootstrap" label="Bootstrap"/><category scheme="/tags/o-blog.html" term="o-blog" label="o-blog"/><content type="html">&lt;p&gt;
 &#21487;&#22312; o-blog &#20013;&#29992;&#20004;&#31181;&#26041;&#24335;&#20351;&#29992; &lt;a href="http://www.google.com/webfonts"&gt;Google webfonts&lt;/a&gt;:&#20351;&#29992; google API &#25110;&#32773;&#22312;
 &lt;code&gt;templates/style&lt;/code&gt; &#30446;&#24405;&#20013;&#25552;&#20379;&#36164;&#28304;&#12290;
 &lt;/p&gt;
@@ -166,7 +238,7 @@ Add declare its use like in the Google API version:
 
 &lt;/div&gt;
 &lt;/div&gt;
-</content></entry><entry><title type="html">一些 bootstrap 特性</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/05/03_bootstrap-features.html"/><updated>2012-05-03T21:40:00Z</updated><published>2012-05-03T21:40:00Z</published><id>Tips/2012/05/03_bootstrap-features.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/bootstrap.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;div id="outline-container-1" class="outline-3"&gt;
+</content></entry><entry><title type="html">一些 bootstrap 特性</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/tips/2012/05/03_bootstrap-features.html"/><updated>2012-05-03T21:40:00Z</updated><published>2012-05-03T21:40:00Z</published><id>tips/2012/05/03_bootstrap-features.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/bootstrap.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;div id="outline-container-1" class="outline-3"&gt;
 &lt;h3 id="sec-1"&gt;Hero-unit&lt;/h3&gt;
 &lt;div class="outline-text-3" id="text-1"&gt;
 
@@ -178,16 +250,15 @@ Add declare its use like in the Google API version:
 
 
 &lt;pre class="src src-org"&gt;&lt;span style="color: #ff4500;"&gt;#+begin_o_blog_hero_unit&lt;/span&gt;
-&lt;span style="color: #ff4500;"&gt;#+HTML: &amp;lt;h1&amp;gt;Heading&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;span style="color: #ff4500;"&gt;#+HTML: &amp;lt;h1&amp;gt;Heading&amp;lt;/h1&amp;gt;
 
  tagline
 
-&lt;span style="color: #ff4500;"&gt;#+BEGIN_HTML&lt;/span&gt;
+#+BEGIN_HTML
     &amp;lt;a class="btn btn-primary btn-large"&amp;gt;
       Learn more
     &amp;lt;/a&amp;gt;
-&lt;span style="color: #ff4500;"&gt;#+END_HTML&lt;/span&gt;
-&lt;span style="color: #ff4500;"&gt;#+end_o_blog_hero_unit&lt;/span&gt;
+&lt;/span&gt;&lt;span style="color: #ff4500;"&gt;#+end_o_blog_hero_unit&lt;/span&gt;
 &lt;/pre&gt;
 
 
@@ -235,9 +306,9 @@ tagline
 
 
 &lt;pre class="src src-org"&gt;&lt;span style="color: #ff4500;"&gt;#+begin_o_blog_page_header&lt;/span&gt;
-&lt;span style="color: #ff4500;"&gt;#+HTML: &amp;lt;h1&amp;gt;Page header&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;span style="color: #ff4500;"&gt;#+HTML: &amp;lt;h1&amp;gt;Page header&amp;lt;/h1&amp;gt;
 Some text
-&lt;span style="color: #ff4500;"&gt;#+end_o_blog_page_header&lt;/span&gt;
+&lt;/span&gt;&lt;span style="color: #ff4500;"&gt;#+end_o_blog_page_header&lt;/span&gt;
 &lt;/pre&gt;
 
 
@@ -451,7 +522,7 @@ Look, I'm in a well!
 
 &lt;/div&gt;
 &lt;/div&gt;
-</content></entry><entry><title type="html">中文测试</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/03/20_use-chinese.html"/><updated>2012-03-20T09:46:00Z</updated><published>2012-03-20T09:46:00Z</published><id>Tips/2012/03/20_use-chinese.html</id><category scheme="/tags/a7bac2239fcdcb3a067903d8077c4a07.html" term="中文" label="中文"/><content type="html">&lt;p&gt;
+</content></entry><entry><title type="html">中文测试</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/tips/2012/03/20_use-chinese.html"/><updated>2012-03-20T09:46:00Z</updated><published>2012-03-20T09:46:00Z</published><id>tips/2012/03/20_use-chinese.html</id><category scheme="/tags/a7bac2239fcdcb3a067903d8077c4a07.html" term="中文" label="中文"/><content type="html">&lt;p&gt;
 &#36825;&#26159;&#19968;&#20010;&#27979;&#35797;&#26465;&#30446;&#21727;&#12290;
 &lt;/p&gt;
 &lt;p&gt;
@@ -504,7 +575,7 @@ Look, I'm in a well!
 &lt;/li&gt;
 &lt;/ul&gt;
 
-</content></entry><entry><title type="html">使用 Bootstrap 分格</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/02/10_use-bootstrap.html"/><updated>2012-02-10T01:19:00Z</updated><published>2012-02-10T01:19:00Z</published><id>Tips/2012/02/10_use-bootstrap.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/bootstrap.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
+</content></entry><entry><title type="html">使用 Bootstrap 分格</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/tips/2012/02/10_use-bootstrap.html"/><updated>2012-02-10T01:19:00Z</updated><published>2012-02-10T01:19:00Z</published><id>tips/2012/02/10_use-bootstrap.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/bootstrap.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
 &lt;a href="http://twitter.github.com/bootstrap/scaffolding.html"&gt;Bootstrap scaffolding&lt;/a&gt; could be defined using both &lt;code&gt;#+begin_o_blog_row&lt;/code&gt; and
 &lt;code&gt;#+end_o_blog_row&lt;/code&gt; directives (or &lt;code&gt;&amp;lt;og&lt;/code&gt; &lt;code&gt;TAB&lt;/code&gt; shortcut). A new column could
 be started using &lt;code&gt;#+o_blog_row_column&lt;/code&gt; single directive (or &lt;code&gt;&amp;lt;ogr&lt;/code&gt; &lt;code&gt;TAB&lt;/code&gt;
@@ -523,7 +594,7 @@ shortcut).
 
 &lt;pre class="src src-org"&gt;&lt;span style="color: #ff4500;"&gt;#+begin_o_blog_row 2 -1 show-grid&lt;/span&gt;
 Column 1
-&lt;span style="color: #ff4500;"&gt;#+o_blog_row_column 2&lt;/span&gt;
+#+o_blog_row_column 2
 Column 2
 &lt;span style="color: #ff4500;"&gt;#+end_o_blog_row&lt;/span&gt;
 &lt;/pre&gt;
@@ -571,16 +642,16 @@ The syntax is:
 
 &lt;pre class="src src-org"&gt;&lt;span style="color: #ff4500;"&gt;#+begin_o_blog_row SPAN OFFSET GRID-CLASS&lt;/span&gt;
 Column 1
-&lt;span style="color: #ff4500;"&gt;#+o_blog_row_column SPAN OFFSET&lt;/span&gt;
+#+o_blog_row_column SPAN OFFSET
 Column 2
 ...
-&lt;span style="color: #ff4500;"&gt;#+o_blog_row_column SPAN OFFSET&lt;/span&gt;
+#+o_blog_row_column SPAN OFFSET
 Column n
 &lt;span style="color: #ff4500;"&gt;#+end_o_blog_row&lt;/span&gt;
 
 &lt;/pre&gt;
 
-</content></entry><entry><title type="html">添加图标</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/02/10_add-icons.html"/><updated>2012-02-10T00:19:00Z</updated><published>2012-02-10T00:19:00Z</published><id>Tips/2012/02/10_add-icons.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/bootstrap.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
+</content></entry><entry><title type="html">添加图标</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/tips/2012/02/10_add-icons.html"/><updated>2012-02-10T00:19:00Z</updated><published>2012-02-10T00:19:00Z</published><id>tips/2012/02/10_add-icons.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/bootstrap.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
 Icons from &lt;a href="http://glyphicons.com/"&gt;glyphicons&lt;/a&gt; are supported support by simply naming the icon using
 italic style:
 &lt;/p&gt;
@@ -631,21 +702,21 @@ This could also be used for the top &lt;i&gt;navbar&lt;/i&gt; using something li
 
 
 
-&lt;pre class="src src-org"&gt;- &lt;span style="color: #00ffff; text-decoration: underline;"&gt;/icon-book icon-white/ Documentation&lt;/span&gt;
-  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;Templates&lt;/span&gt;
-  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;Structures&lt;/span&gt;
-  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;Functions&lt;/span&gt;
+&lt;pre class="src src-org"&gt;- &lt;span style="color: #0000ff;"&gt;/icon-book icon-white/ Documentation&lt;/span&gt;
+  - &lt;span style="color: #0000ff;"&gt;Templates&lt;/span&gt;
+  - &lt;span style="color: #0000ff;"&gt;Structures&lt;/span&gt;
+  - &lt;span style="color: #0000ff;"&gt;Functions&lt;/span&gt;
   -
-  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;FAQ&lt;/span&gt;
+  - &lt;span style="color: #0000ff;"&gt;FAQ&lt;/span&gt;
 
-- &lt;span style="color: #00ffff; text-decoration: underline;"&gt;/icon-file icon-white/ Blog&lt;/span&gt;
-  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;创建静态页面&lt;/span&gt;
-  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;添加自定义字体&lt;/span&gt;
-  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;一些 bootstrap 特性&lt;/span&gt;
-  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;中文测试&lt;/span&gt;
-  - &lt;span style="color: #00ffff; text-decoration: underline;"&gt;使用 Bootstrap 分格&lt;/span&gt;
+- &lt;span style="color: #0000ff;"&gt;/icon-file icon-white/ Blog&lt;/span&gt;
+  - &lt;span style="color: #0000ff;"&gt;在博文中添加图片&lt;/span&gt;
+  - &lt;span style="color: #0000ff;"&gt;创建静态页面&lt;/span&gt;
+  - &lt;span style="color: #0000ff;"&gt;添加自定义字体&lt;/span&gt;
+  - &lt;span style="color: #0000ff;"&gt;一些 bootstrap 特性&lt;/span&gt;
+  - &lt;span style="color: #0000ff;"&gt;中文测试&lt;/span&gt;
 
-- &lt;span style="color: #00ffff; font-style: italic; text-decoration: underline;"&gt;/icon-tags icon-white/&lt;/span&gt;&lt;span style="color: #00ffff; text-decoration: underline;"&gt; Tags&lt;/span&gt;
+- &lt;span style="color: #0000ff; font-style: italic;"&gt;/icon-tags icon-white/&lt;/span&gt;&lt;span style="color: #0000ff;"&gt; Tags&lt;/span&gt;
 
 &lt;/pre&gt;
 
@@ -683,15 +754,15 @@ This could also be used for the top &lt;i&gt;navbar&lt;/i&gt; using something li
 &lt;/li&gt;
 &lt;li&gt;&lt;a href="#"&gt;&lt;i&gt;icon-file icon-white&lt;/i&gt; Blog&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="./Tips/2012/05/21_static-pages.html"&gt;创建静态页面&lt;/a&gt;
+&lt;li&gt;&lt;a href="./tips/2012/08/21_00733d4efa6667a085bebed8a14b1026.html"&gt;在博文中添加图片&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href="./Tips/2012/05/07_custom-fonts.html"&gt;添加自定义字体&lt;/a&gt;
+&lt;li&gt;&lt;a href="./tips/2012/05/21_static-pages.html"&gt;创建静态页面&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href="./Tips/2012/05/03_bootstrap-features.html"&gt;一些 bootstrap 特性&lt;/a&gt;
+&lt;li&gt;&lt;a href="./tips/2012/05/07_custom-fonts.html"&gt;添加自定义字体&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href="./Tips/2012/03/20_use-chinese.html"&gt;中文测试&lt;/a&gt;
+&lt;li&gt;&lt;a href="./tips/2012/05/03_bootstrap-features.html"&gt;一些 bootstrap 特性&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href="./Tips/2012/02/10_use-bootstrap.html"&gt;使用 Bootstrap 分格&lt;/a&gt;
+&lt;li&gt;&lt;a href="./tips/2012/03/20_use-chinese.html"&gt;中文测试&lt;/a&gt;
 
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -719,7 +790,7 @@ rendered result might be damaged.
 &lt;/div&gt;&lt;/div&gt;
 
 
-</content></entry><entry><title type="html">使用 modal 显示源代码</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/02/09_use-modal.html"/><updated>2012-02-09T23:13:00Z</updated><published>2012-02-09T23:13:00Z</published><id>Tips/2012/02/09_use-modal.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/bootstrap.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
+</content></entry><entry><title type="html">使用 modal 显示源代码</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/tips/2012/02/09_use-modal.html"/><updated>2012-02-09T23:13:00Z</updated><published>2012-02-09T23:13:00Z</published><id>tips/2012/02/09_use-modal.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/bootstrap.html" term="Bootstrap" label="Bootstrap"/><content type="html">&lt;p&gt;
 The &lt;a href="http://twitter.github.com/bootstrap/javascript.html#modals"&gt;Modal&lt;/a&gt; bootstrap script can be used to display the content of an external
 file in a modal window. The magic line is:
 &lt;/p&gt;
@@ -853,7 +924,7 @@ git clone &lt;span style="color: #00ffff;"&gt;https://github.com/renard/o-blog.g
     (kill-emacs)))
 &lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-</content></entry><entry><title type="html">警告</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/01/15_warning.html"/><updated>2012-01-15T20:40:00Z</updated><published>2012-01-15T20:40:00Z</published><id>Tips/2012/01/15_warning.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><content type="html">&lt;p&gt;
+</content></entry><entry><title type="html">警告</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/tips/2012/01/15_warning.html"/><updated>2012-01-15T20:40:00Z</updated><published>2012-01-15T20:40:00Z</published><id>tips/2012/01/15_warning.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><content type="html">&lt;p&gt;
 Alerts are declared in &lt;code&gt;o_blog_alert&lt;/code&gt; blocks. There are 4 types of
 them:
 &lt;/p&gt;
@@ -966,7 +1037,7 @@ nulla. Nullam rutrum. Nam vestibulum accumsan nisl.
 
 &lt;/div&gt;
 
-</content></entry><entry><title type="html">一些 HTML5 示例</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/01/10_html5-example.html"/><updated>2012-01-10T20:58:00Z</updated><published>2012-01-10T20:58:00Z</published><id>Tips/2012/01/10_html5-example.html</id><category scheme="/tags/html-5.html" term="html 5" label="html 5"/><content type="html">&lt;div id="outline-container-1" class="outline-3"&gt;
+</content></entry><entry><title type="html">一些 HTML5 示例</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/tips/2012/01/10_html5-example.html"/><updated>2012-01-10T20:58:00Z</updated><published>2012-01-10T20:58:00Z</published><id>tips/2012/01/10_html5-example.html</id><category scheme="/tags/html-5.html" term="html 5" label="html 5"/><content type="html">&lt;div id="outline-container-1" class="outline-3"&gt;
 &lt;h3 id="sec-1"&gt;tag: &amp;lt;details&amp;gt;&lt;/h3&gt;
 &lt;div class="outline-text-3" id="text-1"&gt;
 
@@ -993,406 +1064,14 @@ Works only with chrome.
 &lt;/details&gt;
 
 
-&lt;pre class="src src-org"&gt;&lt;span style="color: #ff4500;"&gt;#+HTML:&lt;/span&gt;&lt;span style="color: #ff4500;"&gt; &lt;/span&gt;&lt;span style="color: #b3b3b3;"&gt;&amp;lt;details&amp;gt;&lt;/span&gt;
-&lt;span style="color: #ff4500;"&gt;#+HTML:&lt;/span&gt;&lt;span style="color: #ff4500;"&gt; &lt;/span&gt;&lt;span style="color: #b3b3b3;"&gt;&amp;lt;summary&amp;gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit&amp;lt;/summary&amp;gt;&lt;/span&gt;
+&lt;pre class="src src-org"&gt;&lt;span style="color: #ff4500;"&gt;#+HTML:&lt;/span&gt;&lt;span style="color: #ff4500;"&gt; &lt;/span&gt;&lt;span style="color: #7f7f7f;"&gt;&amp;lt;details&amp;gt;&lt;/span&gt;
+&lt;span style="color: #ff4500;"&gt;#+HTML:&lt;/span&gt;&lt;span style="color: #ff4500;"&gt; &lt;/span&gt;&lt;span style="color: #7f7f7f;"&gt;&amp;lt;summary&amp;gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit&amp;lt;/summary&amp;gt;&lt;/span&gt;
 - Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 - Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.
 - Sed diam.
 - Nam vestibulum accumsan nisl.
-&lt;span style="color: #ff4500;"&gt;#+HTML:&lt;/span&gt;&lt;span style="color: #ff4500;"&gt; &lt;/span&gt;&lt;span style="color: #b3b3b3;"&gt;&amp;lt;/details&amp;gt;&lt;/span&gt;
+&lt;span style="color: #ff4500;"&gt;#+HTML:&lt;/span&gt;&lt;span style="color: #ff4500;"&gt; &lt;/span&gt;&lt;span style="color: #7f7f7f;"&gt;&amp;lt;/details&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-</content></entry><entry><title type="html">一些 org 语法示例</title><author><name>nil</name></author><link href="http://exaos.github.com/o-blog/Tips/2012/01/07_syntax-org-mode.html"/><updated>2012-01-07T11:23:00Z</updated><published>2012-01-07T11:23:00Z</published><id>Tips/2012/01/07_syntax-org-mode.html</id><category scheme="/tags/a0b1dd52a1c893aa52b103dad9aa9d59.html" term="用例" label="用例"/><category scheme="/tags/org.html" term="org" label="org"/><content type="html">&lt;div id="outline-container-1" class="outline-3"&gt;
-&lt;h3 id="sec-1"&gt;Titles&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-1"&gt;
-
-
-&lt;p&gt;
-This is a level 1
-&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;div id="outline-container-1-1" class="outline-4"&gt;
-&lt;h4 id="sec-1-1"&gt;Level 2&lt;/h4&gt;
-&lt;div class="outline-text-4" id="text-1-1"&gt;
-
-
-&lt;p&gt;
-This is a level 2
-&lt;/p&gt;
-
-
-&lt;/div&gt;
-
-&lt;div id="outline-container-1-1-1" class="outline-5"&gt;
-&lt;h5 id="sec-1-1-1"&gt;Level 3&lt;/h5&gt;
-&lt;div class="outline-text-5" id="text-1-1-1"&gt;
-
-
-&lt;p&gt;
-This is a level 3
-&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;div id="outline-container-1-1-1-1" class="outline-6"&gt;
-&lt;h6 id="sec-1-1-1-1"&gt;Level 4&lt;/h6&gt;
-&lt;div class="outline-text-6" id="text-1-1-1-1"&gt;
-
-
-&lt;p&gt;
-This is a level 4
-&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;div id="outline-container-1-1-1-1-1" class="outline-7"&gt;
-&lt;h7 id="sec-1-1-1-1-1"&gt;Level 5&lt;/h7&gt;
-&lt;div class="outline-text-7" id="text-1-1-1-1-1"&gt;
-
-
-&lt;p&gt;
-This is a level 5
-&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;div id="outline-container-1-1-1-1-1-1" class="outline-8"&gt;
-&lt;h8 id="sec-1-1-1-1-1-1"&gt;Level 6&lt;/h8&gt;
-&lt;div class="outline-text-8" id="text-1-1-1-1-1-1"&gt;
-
-
-&lt;p&gt;
-This is a level 6
-&lt;/p&gt;
-
-&lt;p&gt;
-Up to 6 levels of indentation could be used.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div id="outline-container-2" class="outline-3"&gt;
-&lt;h3 id="sec-2"&gt;Praragaphs&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-2"&gt;
-
-
-&lt;p&gt;
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec hendrerit
-tempor tellus. Donec pretium posuere tellus. Proin quam nisl, tincidunt et,
-mattis eget, convallis nec, purus. Cum sociis natoque penatibus et magnis
-dis parturient montes, nascetur ridiculus mus. Nulla posuere. Donec vitae
-dolor. Nullam tristique diam non turpis. Cras placerat accumsan
-nulla. Nullam rutrum. Nam vestibulum accumsan nisl.
-&lt;/p&gt;
-
-
-&lt;div class="two-cols"&gt;
-
-&lt;p&gt;
-Nullam eu ante vel est convallis dignissim. Fusce suscipit, wisi nec
-facilisis facilisis, est dui fermentum leo, quis tempor ligula erat quis
-odio. Nunc porta vulputate tellus. Nunc rutrum turpis sed pede. Sed
-bibendum. Aliquam posuere. Nunc aliquet, augue nec adipiscing interdum,
-lacus tellus malesuada massa, quis varius mi purus non odio. Pellentesque
-condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla, non
-luctus diam neque sit amet urna. Curabitur vulputate vestibulum lorem. Fusce
-sagittis, libero non molestie mollis, magna orci ultrices dolor, at
-vulputate neque nulla lacinia eros. Sed id ligula quis est convallis
-tempor. Curabitur lacinia pulvinar nibh. Nam a sapien.
-&lt;/p&gt;
-&lt;p&gt;
-Pellentesque dapibus suscipit ligula. Donec posuere augue in quam. Etiam vel
-tortor sodales tellus ultricies commodo. Suspendisse potenti. Aenean in sem
-ac leo mollis blandit. Donec neque quam, dignissim in, mollis nec, sagittis
-eu, wisi. Phasellus lacus. Etiam laoreet quam sed arcu. Phasellus at dui in
-ligula mollis ultricies. Integer placerat tristique nisl. Praesent
-augue. Fusce commodo. Vestibulum convallis, lorem a tempus semper, dui dui
-euismod elit, vitae placerat urna tortor vitae lacus. Nullam libero mauris,
-consequat quis, varius et, dictum id, arcu. Mauris mollis tincidunt
-felis. Aliquam feugiat tellus ut neque. Nulla facilisis, risus a rhoncus
-fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.
-&lt;/p&gt;
-
-
-&lt;/div&gt;
-
-
-
-&lt;p class="verse"&gt;
-Great clouds overhead&lt;br/&gt;
-Tiny black birds rise and fall&lt;br/&gt;
-Snow covers Emacs&lt;br/&gt;
-&lt;br/&gt;
-&amp;ndash; AlexSchroeder&lt;br/&gt;
-&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-
-&lt;p&gt;Everything should be made as simple as possible,
-but not any simpler &amp;ndash; Albert Einstein
-&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-
-&lt;div style="text-align: center"&gt;
-&lt;p&gt;Everything should be made as simple as possible, &lt;br/&gt;
-but not any simpler
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div id="outline-container-3" class="outline-3"&gt;
-&lt;h3 id="sec-3"&gt;Lists&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-3"&gt;
-
-
-&lt;p&gt;
-As taken from org manual:
-&lt;/p&gt;
-&lt;p&gt;
-My favorite scenes are (in this order)
-&lt;/p&gt;&lt;ol&gt;
-&lt;li&gt;The attack of the Rohirrim
-&lt;/li&gt;
-&lt;li&gt;Eowyn's fight with the witch king
-&lt;ul&gt;
-&lt;li&gt;this was already my favorite scene in the book
-&lt;/li&gt;
-&lt;li&gt;I really like Miranda Otto.
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;/li&gt;
-&lt;li&gt;Peter Jackson being shot by Legolas
-&lt;ul&gt;
-&lt;li&gt;on DVD only
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;           He makes a really funny face when it happens.
-&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;But in the end, no individual scenes matter but the film as a whole.
-Important actors in this film are:
-&lt;/p&gt;&lt;dl&gt;
-&lt;dt&gt;Elijah Wood&lt;/dt&gt;&lt;dd&gt;He plays Frodo
-&lt;/dd&gt;
-&lt;dt&gt;Sean Austin&lt;/dt&gt;&lt;dd&gt;He plays Sam, Frodo's friend.  I still remember
-          him very well from his role as Mikey Walsh in The Goonies.
-&lt;/dd&gt;
-&lt;/dl&gt;
-
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div id="outline-container-4" class="outline-3"&gt;
-&lt;h3 id="sec-4"&gt;Footnotes&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-4"&gt;
-
-
-&lt;p&gt;
-The Org homepage&lt;sup&gt;&lt;a class="footref" name="fnr.1" href="#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt; now looks a lot better than it used to.
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div id="outline-container-5" class="outline-3"&gt;
-&lt;h3 id="sec-5"&gt;Emphasis and monospace&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-5"&gt;
-
-
-&lt;p&gt;
-You can make words &lt;b&gt;bold&lt;/b&gt;, &lt;i&gt;italic&lt;/i&gt;, &lt;span style="text-decoration:underline;"&gt;underlined&lt;/span&gt;, &lt;code&gt;code&lt;/code&gt; and &lt;code&gt;verbatim&lt;/code&gt;,
-and, if you must, &#8216;+strike-through+&#8217;. Text in the code and verbatim string
-is not processed for Org mode specific syntax; it is exported verbatim.
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div id="outline-container-6" class="outline-3"&gt;
-&lt;h3 id="sec-6"&gt;Horizontal rules&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-6"&gt;
-
-
-&lt;p&gt;
-A line consisting of only dashes, and at least 5 of them, will be exported
-as a horizontal line (&#8216;&amp;lt;hr/&amp;gt;&#8217; in HTML and \hrule in LaTeX).
-&lt;/p&gt;
-
-&lt;hr/&gt;
-
-&lt;p&gt;
-As shown previously.
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div id="outline-container-7" class="outline-3"&gt;
-&lt;h3 id="sec-7"&gt;Comment lines&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-7"&gt;
-
-
-&lt;p&gt;
-Lines starting with &#8216;#&#8217; in column zero are treated as comments and will
-never be exported. If you want an indented line to be treated as a comment,
-start it with &#8216;#+ &#8217;. Also entire subtrees starting with the word &#8216;COMMENT&#8217;
-will never be exported. Finally, regions surrounded by &#8216;#+BEGIN_COMMENT&#8217;
-&amp;hellip; &#8216;#+END_COMMENT&#8217; will not be exported.
-&lt;/p&gt;
-
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div id="outline-container-8" class="outline-3"&gt;
-&lt;h3 id="sec-8"&gt;Images and Tables&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-8"&gt;
-
-
-&lt;p&gt;
-Table
-&lt;/p&gt;
-&lt;table  border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" id="tbl-basic-data"&gt;
-&lt;caption&gt;This is the caption for the next table (or link)&lt;/caption&gt;
-&lt;colgroup&gt;&lt;col class="right" /&gt;&lt;col class="right" /&gt;&lt;col class="left" /&gt;&lt;col class="left" /&gt;&lt;col class="left" /&gt;
-&lt;/colgroup&gt;
-&lt;thead&gt;
-&lt;tr&gt;&lt;th scope="col" class="right"&gt;Header 1&lt;/th&gt;&lt;th scope="col" class="right"&gt;Header 2&lt;/th&gt;&lt;th scope="col" class="left"&gt;Header 3&lt;/th&gt;&lt;th scope="col" class="left"&gt;Header 4&lt;/th&gt;&lt;th scope="col" class="left"&gt;Header 5&lt;/th&gt;&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;&lt;td class="right"&gt;1.1&lt;/td&gt;&lt;td class="right"&gt;1.2&lt;/td&gt;&lt;td class="left"&gt;1.3&lt;/td&gt;&lt;td class="left"&gt;X&lt;/td&gt;&lt;td class="left"&gt;This &lt;i&gt;cell&lt;/i&gt; has a &lt;b&gt;very&lt;/b&gt; &lt;code&gt;long&lt;/code&gt; &lt;code&gt;line&lt;/code&gt; &lt;span style="text-decoration:underline;"&gt;with&lt;/span&gt;  &lt;sub&gt;special&lt;/sub&gt; &lt;sup&gt;layouts&lt;/sup&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td class="right"&gt;2.1&lt;/td&gt;&lt;td class="right"&gt;2.2&lt;/td&gt;&lt;td class="left"&gt;3.3&lt;/td&gt;&lt;td class="left"&gt;Y&lt;/td&gt;&lt;td class="left"&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;tbody&gt;
-&lt;tr&gt;&lt;td class="right"&gt;3.1&lt;/td&gt;&lt;td class="right"&gt;3.1&lt;/td&gt;&lt;td class="left"&gt;C.1&lt;/td&gt;&lt;td class="left"&gt;D.1&lt;/td&gt;&lt;td class="left"&gt;E.1&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-
-
-&lt;p&gt;
-Image
-&lt;/p&gt;
-&lt;p&gt;
-&lt;a href="../../../Tips/2012/01/07_syntax-org-mode/200px-Org-mode-unicorn.svg.png"&gt;&lt;img src="../../../Tips/2012/01/07_syntax-org-mode/org-mode-unicorn.png" alt="org-mode-unicorn.png"/&gt;&lt;/a&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div id="outline-container-9" class="outline-3"&gt;
-&lt;h3 id="sec-9"&gt;Literal examples&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-9"&gt;
-
-
-
-
-
-&lt;pre class="example"&gt;Some example from a text file.
-&lt;/pre&gt;
-
-
-
-&lt;p&gt;
-Here is an example
-&lt;/p&gt;&lt;pre class="example"&gt;
-Some example from a text file.
-&lt;/pre&gt;
-
-
-
-
-
-&lt;pre class="src src-emacs-lisp"&gt;(&lt;span style="color: #00ffff;"&gt;defun&lt;/span&gt; &lt;span style="color: #87cefa;"&gt;org-xor&lt;/span&gt; (a b)
-  &lt;span style="color: #ffa07a;"&gt;"Exclusive or."&lt;/span&gt;
-  (&lt;span style="color: #00ffff;"&gt;if&lt;/span&gt; a (not b) b))
-&lt;/pre&gt;
-
-
-
-&lt;pre class="src src-emacs-lisp"&gt;&lt;span id="coderef-sc" class="coderef-off"&gt;&lt;span class="linenr"&gt;1:  &lt;/span&gt;(&lt;span style="color: #00ffff;"&gt;save-excursion&lt;/span&gt;&lt;/span&gt;
-&lt;span id="coderef-jump" class="coderef-off"&gt;&lt;span class="linenr"&gt;2:  &lt;/span&gt;   (goto-char (point-min)))&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;p&gt;
-In line &lt;a href="#coderef-sc" class="coderef" onmouseover="CodeHighlightOn(this, 'coderef-sc');" onmouseout="CodeHighlightOff(this, 'coderef-sc');"&gt;1&lt;/a&gt; we remember the current position.  &lt;a href="#coderef-jump" class="coderef" onmouseover="CodeHighlightOn(this, 'coderef-jump');" onmouseout="CodeHighlightOff(this, 'coderef-jump');"&gt;Line 2&lt;/a&gt;
-jumps to point-min.
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div id="outline-container-10" class="outline-3"&gt;
-&lt;h3 id="sec-10"&gt;Special symbols&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-10"&gt;
-
-
-&lt;p&gt;
-Angles are written as Greek letters &amp;alpha;, &amp;beta; and &amp;gamma;.
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div id="outline-container-11" class="outline-3"&gt;
-&lt;h3 id="sec-11"&gt;Subscripts and superscripts&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-11"&gt;
-
-
-&lt;p&gt;
-The mass of the sun is M&lt;sub&gt;sun&lt;/sub&gt; = 1.989 x 10&lt;sup&gt;30&lt;/sup&gt; kg.  The radius of
-the sun is R&lt;sub&gt;sun&lt;/sub&gt; = 6.96 x 10&lt;sup&gt;8&lt;/sup&gt; m.
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div id="outline-container-12" class="outline-3"&gt;
-&lt;h3 id="sec-12"&gt;links&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-12"&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;outsite (page): &lt;a href="https://github.com/renard/o-blog"&gt;&lt;i&gt;o-blog&lt;/i&gt; home&lt;/a&gt;.
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="#Creating-a-blog"&gt;Creating a blog&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;insite (file): &lt;a href="o-blog.el"&gt;o-blog.el&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;in page (anchor): &lt;a href="#sec-9"&gt;Literal examples&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;div id="footnotes"&gt;
-&lt;h2 class="footnotes"&gt;Footnotes: &lt;/h2&gt;
-&lt;div id="text-footnotes"&gt;
-&lt;p class="footnote"&gt;&lt;sup&gt;&lt;a class="footnum" name="fn.1" href="#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; The link is: &lt;a href="http://orgmode.org"&gt;http://orgmode.org&lt;/a&gt;
-&lt;/p&gt;&lt;/div&gt;
-&lt;/div&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;

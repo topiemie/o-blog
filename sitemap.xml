@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>http://exaos.github.com/o-blog/</loc>
+    <lastmod>Lisp error in nil: (wrong-type-argument integerp nil)</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://exaos.github.com/o-blog/index.html</loc>
+    <lastmod>2012-09-12T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+<url>
+    <loc>http://exaos.github.com/o-blog/tags.html</loc>
+    <lastmod>2012-09-12T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+<url>
+    <loc>http://exaos.github.com/o-blog/changelog.html</loc>
+    <lastmod>2012-09-12T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+<url>
+    <loc>http://exaos.github.com/o-blog/debug.html</loc>
+    <lastmod>2012-09-12T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+<url>
+    <loc>http://exaos.github.com/o-blog/features.html</loc>
+    <lastmod>2012-09-12T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+<url>
+    <loc>http://exaos.github.com/o-blog/templates.html</loc>
+    <lastmod>2012-09-12T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+<url>
+    <loc>http://exaos.github.com/o-blog/structures.html</loc>
+    <lastmod>2012-09-12T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+<url>
+    <loc>http://exaos.github.com/o-blog/functions.html</loc>
+    <lastmod>2012-09-12T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+<url>
+    <loc>http://exaos.github.com/o-blog/bug-report.html</loc>
+    <lastmod>2012-09-12T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+<url>
+    <loc>http://exaos.github.com/o-blog/testimonials.html</loc>
+    <lastmod>2012-09-12T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+<url>
+    <loc>http://exaos.github.com/o-blog/roadmap.html</loc>
+    <lastmod>2012-09-12T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+<url>
+    <loc>http://exaos.github.com/o-blog/faq.html</loc>
+    <lastmod>2012-09-12T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+<url>
+    <loc>http://exaos.github.com/o-blog/tips/2012/01/07_syntax-org-mode/index.html</loc>
+    <lastmod>2012-09-12T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+<url>
+    <loc>http://exaos.github.com/o-blog/tips/2012/08/21_00733d4efa6667a085bebed8a14b1026/index.html</loc>
+    <lastmod>2012-09-12T00:00:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+
+
+  <url>
+    <loc>http://exaos.github.com/o-blog/tips/2012/08/21_00733d4efa6667a085bebed8a14b1026.html</loc>
+    <lastmod>2012-08-21T10:43:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>http://exaos.github.com/o-blog/tips/2012/05/21_static-pages.html</loc>
+    <lastmod>2012-05-21T12:48:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>http://exaos.github.com/o-blog/tips/2012/05/07_custom-fonts.html</loc>
+    <lastmod>2012-05-07T16:38:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>http://exaos.github.com/o-blog/tips/2012/05/03_bootstrap-features.html</loc>
+    <lastmod>2012-05-03T21:40:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>http://exaos.github.com/o-blog/tips/2012/03/20_use-chinese.html</loc>
+    <lastmod>2012-03-20T09:46:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>http://exaos.github.com/o-blog/tips/2012/02/10_use-bootstrap.html</loc>
+    <lastmod>2012-02-10T01:19:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>http://exaos.github.com/o-blog/tips/2012/02/10_add-icons.html</loc>
+    <lastmod>2012-02-10T00:19:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>http://exaos.github.com/o-blog/tips/2012/02/09_use-modal.html</loc>
+    <lastmod>2012-02-09T23:13:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>http://exaos.github.com/o-blog/tips/2012/01/15_warning.html</loc>
+    <lastmod>2012-01-15T20:40:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>http://exaos.github.com/o-blog/tips/2012/01/10_html5-example.html</loc>
+    <lastmod>2012-01-10T20:58:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>http://exaos.github.com/o-blog/tips/2012/01/07_syntax-org-mode.html</loc>
+    <lastmod>2012-01-07T11:23:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>http://exaos.github.com/o-blog/tips/2012/01/07_use-tags.html</loc>
+    <lastmod>2012-01-07T00:28:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>http://exaos.github.com/o-blog/tips/2012/01/07_create-new-post.html</loc>
+    <lastmod>2012-01-07T00:13:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
+
